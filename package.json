@@ -1,0 +1,36 @@
+{
+  "name": "itlegend-course-player",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm run lint && npm run check:lint-rules",
+    "check:lint-rules": "node scripts/verify-lint-rules.mjs",
+    "format": "prettier --write src tests scripts *.ts *.json *.mjs *.md",
+    "format:check": "prettier --check src tests scripts *.ts *.json *.mjs *.md",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": "^22.13.0 || >=24"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "2.1.1",
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "10.12.0",
+    "eslint-config-next": "16.3.8",
+    "prettier": "3.9.9",
+    "typescript": "^5.0.0"
+  }
+}
