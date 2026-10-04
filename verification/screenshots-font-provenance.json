@@ -1,0 +1,48 @@
+{
+  "access_date": "2026-10-04",
+  "match_status": "visually inferred candidate families, not recovered Figma font metadata",
+  "assets": [
+    {
+      "file": "poppins-regular.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfecg.woff2",
+      "bytes": 7884,
+      "sha256": "7d93459d86585bfcdbb7e0376056226adb25821ee54b96236fe2123e9560929f",
+      "family": "Poppins",
+      "weight": "400"
+    },
+    {
+      "file": "poppins-medium.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
+      "bytes": 7748,
+      "sha256": "cd36de204aca2d5fa263a731f7c20009b5e3d754ba1f1e03c33e93a48f3e7446",
+      "family": "Poppins",
+      "weight": "500"
+    },
+    {
+      "file": "poppins-semibold.woff2",
+      "url": "https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
+      "bytes": 8000,
+      "sha256": "f4e80d9dfd374d02989b87a27b5ed4cb78fbb177c27f1478e9a8b0afb7513149",
+      "family": "Poppins",
+      "weight": "600"
+    },
+    {
+      "file": "spartan-variable.woff2",
+      "url": "https://fonts.gstatic.com/s/spartan/v22/l7gfbjR61M69yt8Z2QKtlA.woff2",
+      "bytes": 33008,
+      "sha256": "0e6bde53280ffff74447f376a66cd051deacd0c2295aea8d6ab7488d3fea19db",
+      "family": "Spartan",
+      "weight": "400 700 (same Google API asset for these four requested weights)"
+    }
+  ],
+  "licenses": [
+    [
+      "poppins",
+      "https://raw.githubusercontent.com/google/fonts/main/ofl/poppins/OFL.txt"
+    ],
+    [
+      "spartan",
+      "https://raw.githubusercontent.com/MattBaileyDesign/Spartan-MB/master/OFL.txt"
+    ]
+  ]
+}

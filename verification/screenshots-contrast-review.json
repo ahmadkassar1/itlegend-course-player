@@ -1,0 +1,159 @@
+{
+  "capturedAt": "2026-10-04T09:31:23.107Z",
+  "revision": "376c74da59a7ec6f4933d6eb42a3e91afb164bab",
+  "method": "Actual rendered nodes scrolled into view; computed solid foreground/background and text-line midpoint hit checks, supplementary to incomplete Axe results",
+  "findings": [
+    {
+      "width": 430,
+      "state": "exam-error",
+      "text": "Answer all 5 questions before submitting. Your answers are saved when you close this window.",
+      "foreground": "rgb(157, 35, 58)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 7.677879828639038,
+      "rect": {
+        "x": 28,
+        "y": 786.453125,
+        "width": 374,
+        "height": 47.59375
+      },
+      "textRects": [
+        {
+          "x": 28,
+          "y": 787.453125,
+          "width": 74.921875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 102.921875,
+          "y": 787.453125,
+          "width": 8.796875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 111.71875,
+          "y": 787.453125,
+          "width": 238.671875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 28,
+          "y": 811.25,
+          "width": 333.046875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "state": "leaderboard-subtitle",
+      "text": "Starting SEO as your Home Based Business",
+      "foreground": "rgb(63, 57, 144)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 9.548377166639813,
+      "rect": {
+        "x": 50,
+        "y": 139.40625,
+        "width": 330,
+        "height": 24
+      },
+      "textRects": [
+        {
+          "x": 55.671875,
+          "y": 140.40625,
+          "width": 318.640625,
+          "height": 21,
+          "visible": true,
+          "hit": "P"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "exam-error",
+      "text": "Answer all 5 questions before submitting. Your answers are saved when you close this window.",
+      "foreground": "rgb(157, 35, 58)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 7.677879828639038,
+      "rect": {
+        "x": 421,
+        "y": 814.15625,
+        "width": 598,
+        "height": 47.59375
+      },
+      "textRects": [
+        {
+          "x": 421,
+          "y": 815.15625,
+          "width": 74.921875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 495.921875,
+          "y": 815.15625,
+          "width": 8.796875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 504.71875,
+          "y": 815.15625,
+          "width": 486.421875,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 421,
+          "y": 838.953125,
+          "width": 85.28125,
+          "height": 20,
+          "visible": true,
+          "hit": "P"
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "state": "leaderboard-subtitle",
+      "text": "Starting SEO as your Home Based Business",
+      "foreground": "rgb(63, 57, 144)",
+      "background": "rgb(255, 255, 255)",
+      "contrast": 9.548377166639813,
+      "rect": {
+        "x": 565,
+        "y": 124.40625,
+        "width": 310,
+        "height": 48
+      },
+      "textRects": [
+        {
+          "x": 595.125,
+          "y": 125.40625,
+          "width": 249.75,
+          "height": 21,
+          "visible": true,
+          "hit": "P"
+        },
+        {
+          "x": 687.5625,
+          "y": 149.40625,
+          "width": 64.875,
+          "height": 21,
+          "visible": true,
+          "hit": "P"
+        }
+      ]
+    }
+  ]
+}
