@@ -1,0 +1,1550 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3100",
+      "url": "http://127.0.0.1:3100",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "rendered accessibility scan at 430px includes catalogue, every course and all modal states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:41:40.977Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-3d24f6e31160dd6e0874",
+          "file": "accessibility.spec.ts",
+          "line": 37,
+          "column": 7
+        },
+        {
+          "title": "rendered accessibility scan at 1440px includes catalogue, every course and all modal states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:01.316Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-ff8a5a94caf7ed28d57e",
+          "file": "accessibility.spec.ts",
+          "line": 37,
+          "column": 7
+        },
+        {
+          "title": "computed progress, input, selected text and focus colors meet their contrast thresholds",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2921,
+                  "error": {
+                    "message": "Error: Quiz question focus\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m3\u001b[39m\nReceived:    \u001b[31m1\u001b[39m",
+                    "stack": "Error: Quiz question focus\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m3\u001b[39m\nReceived:    \u001b[31m1\u001b[39m\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\accessibility.spec.ts:216:35",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\accessibility.spec.ts",
+                      "column": 35,
+                      "line": 216
+                    },
+                    "snippet": "  214 |   }, colors);\n  215 |   for (const pair of pairs)\n> 216 |     expect(pair.ratio, pair.name).toBeGreaterThanOrEqual(pair.minimum);\n      |                                   ^\n  217 |   await fs.writeFile(\n  218 |     capturePath(\"contrast\").replace(/\\.png$/, \".json\"),\n  219 |     JSON.stringify(pairs, null, 2),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\accessibility.spec.ts",
+                        "column": 35,
+                        "line": 216
+                      },
+                      "message": "Error: Quiz question focus\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m3\u001b[39m\nReceived:    \u001b[31m1\u001b[39m\n\n  214 |   }, colors);\n  215 |   for (const pair of pairs)\n> 216 |     expect(pair.ratio, pair.name).toBeGreaterThanOrEqual(pair.minimum);\n      |                                   ^\n  217 |   await fs.writeFile(\n  218 |     capturePath(\"contrast\").replace(/\\.png$/, \".json\"),\n  219 |     JSON.stringify(pairs, null, 2),\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\accessibility.spec.ts:216:35"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:19.022Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\accessibility-computed-pro-a6db0-t-their-contrast-thresholds\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\accessibility-computed-pro-a6db0-t-their-contrast-thresholds\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\accessibility.spec.ts",
+                    "column": 35,
+                    "line": 216
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-319c76697218e7292c83",
+          "file": "accessibility.spec.ts",
+          "line": 105,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "baseline.spec.ts",
+      "file": "baseline.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all six course cards open anonymous players with matching progress and lesson counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5613,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:23.890Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-e640a7e8211f8dd0b71a",
+          "file": "baseline.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "lesson navigation updates content and current state; back and invalid deep links stay coherent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2789,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:29.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-adf6cda3b994916fcbcb",
+          "file": "baseline.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "responsive baseline preserves order and avoids horizontal overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20271,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:32.796Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-4adbdde0797bef59c392",
+          "file": "baseline.spec.ts",
+          "line": 135,
+          "column": 5
+        },
+        {
+          "title": "keyboard navigation, section targets, and not-found behavior work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1974,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:53.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-4676f5cccf3019462405",
+          "file": "baseline.spec.ts",
+          "line": 197,
+          "column": 5
+        },
+        {
+          "title": "long selected lesson titles stay readable without blocking mobile video controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3511,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:55.100Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-e25b420eeea8fc4da5aa",
+          "file": "baseline.spec.ts",
+          "line": 231,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "exam-design.spec.ts",
+      "file": "exam-design.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "submitted practice freezes its nonzero clock across review and reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8200,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('timer')\nExpected: \u001b[32m\"09:3\u001b[7m2\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"09:3\u001b[7m1\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('timer') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('timer')\u001b[22m\n\u001b[2m    14 × locator resolved to <span role=\"timer\" aria-live=\"off\" aria-label=\"Practice time remaining\" class=\"dialogs-module__qksrwq__examTimer\" title=\"Practice countdown. You can continue when time runs out; your answers remain saved.\">…</span>\u001b[22m\n\u001b[2m       - unexpected value \"09:31\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('timer')\nExpected: \u001b[32m\"09:3\u001b[7m2\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"09:3\u001b[7m1\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('timer') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('timer')\u001b[22m\n\u001b[2m    14 × locator resolved to <span role=\"timer\" aria-live=\"off\" aria-label=\"Practice time remaining\" class=\"dialogs-module__qksrwq__examTimer\" title=\"Practice countdown. You can continue when time runs out; your answers remain saved.\">…</span>\u001b[22m\n\u001b[2m       - unexpected value \"09:31\"\u001b[22m\n\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\exam-design.spec.ts:27:41",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\exam-design.spec.ts",
+                      "column": 41,
+                      "line": 27
+                    },
+                    "snippet": "  25 |     .click();\n  26 |   await page.clock.fastForward(60000);\n> 27 |   await expect(page.getByRole(\"timer\")).toHaveText(\"09:32\");\n     |                                         ^\n  28 |   await page.reload();\n  29 |   await page.getByRole(\"button\", { name: \"Open exam\", exact: true }).click();\n  30 |   await expect(page.getByRole(\"timer\")).toHaveText(\"09:32\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\exam-design.spec.ts",
+                        "column": 41,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('timer')\nExpected: \u001b[32m\"09:3\u001b[7m2\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"09:3\u001b[7m1\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" getByRole('timer') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('timer')\u001b[22m\n\u001b[2m    14 × locator resolved to <span role=\"timer\" aria-live=\"off\" aria-label=\"Practice time remaining\" class=\"dialogs-module__qksrwq__examTimer\" title=\"Practice countdown. You can continue when time runs out; your answers remain saved.\">…</span>\u001b[22m\n\u001b[2m       - unexpected value \"09:31\"\u001b[22m\n\n\n  25 |     .click();\n  26 |   await page.clock.fastForward(60000);\n> 27 |   await expect(page.getByRole(\"timer\")).toHaveText(\"09:32\");\n     |                                         ^\n  28 |   await page.reload();\n  29 |   await page.getByRole(\"button\", { name: \"Open exam\", exact: true }).click();\n  30 |   await expect(page.getByRole(\"timer\")).toHaveText(\"09:32\");\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\exam-design.spec.ts:27:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:42:58.671Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\exam-design-submitted-prac-5c56a-ck-across-review-and-reload\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\exam-design-submitted-prac-5c56a-ck-across-review-and-reload\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\exam-design.spec.ts",
+                    "column": 41,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-0ee33efd08cea7a0b279",
+          "file": "exam-design.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "curriculum lock symbols reflect real completion after reading and reload; exam keeps its two badges",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:08.841Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-694e0ae6e5f6157ef081",
+          "file": "exam-design.spec.ts",
+          "line": 33,
+          "column": 5
+        },
+        {
+          "title": "practice timer advances by wall time across close and reload, never discards answers at zero, and freezes at submission",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3098,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:11.713Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-1fb1b9b422c13db52cdb",
+          "file": "exam-design.spec.ts",
+          "line": 73,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "interactions.spec.ts",
+      "file": "interactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "question draft survives Escape, reopening and client navigation, with isolated courses and local submission",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:14.900Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-0f2019a8920c3790c97e",
+          "file": "interactions.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "comments validate blank input, render literal text once and persist after reload and stay isolated by course",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4452,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:18.731Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-1db24082509ac569f3b3",
+          "file": "interactions.spec.ts",
+          "line": 96,
+          "column": 5
+        },
+        {
+          "title": "exam retains answer and current question after closing/navigation, validates submission and keeps the derived result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4977,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:23.211Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-02856591cb42fc107c5c",
+          "file": "interactions.spec.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "title": "PDF displays its actual rendered page and accessible text, zooms inside the popup and credits explicit read once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2802,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:28.225Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-932f09d684176a87af75",
+          "file": "interactions.spec.ts",
+          "line": 247,
+          "column": 5
+        },
+        {
+          "title": "native modal contains keyboard focus, blocks background scroll and restores trigger/scroll under the sticky player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1662,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:31.057Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-e75dda87c47d7958f56d",
+          "file": "interactions.spec.ts",
+          "line": 314,
+          "column": 5
+        },
+        {
+          "title": "leaderboard derives current progress and level-specific original Arabic encouragement for all level buckets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3341,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:32.749Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-a610ba2c8b2f2b660029",
+          "file": "interactions.spec.ts",
+          "line": 362,
+          "column": 5
+        },
+        {
+          "title": "all required popups fit narrow, tablet, desktop and short landscape viewports with reachable close controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:36.119Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-5b216ffb3202aa158439",
+          "file": "interactions.spec.ts",
+          "line": 403,
+          "column": 5
+        },
+        {
+          "title": "PDF preview failure keeps readable document text and the original-file alternative inside the popup",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1286,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:44.981Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-80498dde2c6310151903",
+          "file": "interactions.spec.ts",
+          "line": 454,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "loading.spec.ts",
+      "file": "loading.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "media and document payloads wait for intent at 430px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2129,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:46.305Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1be41964e0574414b0cd-04f265fb6d8f7a91032b",
+          "file": "loading.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "media and document payloads wait for intent at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:48.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1be41964e0574414b0cd-6012e8949128137af0aa",
+          "file": "loading.spec.ts",
+          "line": 4,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "persistence.spec.ts",
+      "file": "persistence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "restoration reconciles a valid submitted exam with missing lesson credit and ignores a forged score",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:50.828Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-7c7d1c1c692ae51ea721",
+          "file": "persistence.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "video position and genuine completion survive hard reload without duplicate credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3733,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:52.364Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-b39ede3273904e924232",
+          "file": "persistence.spec.ts",
+          "line": 57,
+          "column": 5
+        },
+        {
+          "title": "partial exam, submitted score, PDF read, drafts and reset survive reload and reconcile with catalogue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5931,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:43:56.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-76f54a56d4cf97f40f76",
+          "file": "persistence.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "blocked browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1602,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:02.090Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-1096f6dea80e1686e18d",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "quota browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1641,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:03.722Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-f1d55c8febe38139cad5",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "corrupt browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:05.392Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-bf6c0709bf0d822f9127",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "every course has its own readable PDF, playable captioned video and scored assessment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19894,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:07.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-53bf552d1a7894309bdc",
+          "file": "persistence.spec.ts",
+          "line": 248,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "player.spec.ts",
+      "file": "player.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "inline media really plays and Wide/fullscreen preserve the mounted video and playback position",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3236,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:27.166Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-7024845c8a0c8811b990",
+          "file": "player.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "switching lessons saves individual positions and does not carry timestamps into another lesson",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2467,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:30.437Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-a9012936d35e3997cdc3",
+          "file": "player.spec.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "ended media credits once, updates catalogue, preserves course isolation and returns to selected lesson",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:32.937Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-421a73e61addc4ba02d5",
+          "file": "player.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "mobile sticky player leaves section targets visible and fits a short landscape viewport",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3234,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:37.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-87abd90205b75833a012",
+          "file": "player.spec.ts",
+          "line": 189,
+          "column": 5
+        },
+        {
+          "title": "progress animates on entry; reduced motion shows the final fill directly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:40.346Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-c5faa500d7334d6f0168",
+          "file": "player.spec.ts",
+          "line": 234,
+          "column": 5
+        },
+        {
+          "title": "unsupported fullscreen and failed media give truthful recovery without progress credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:43.177Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-cbb5f9e00634da98b410",
+          "file": "player.spec.ts",
+          "line": 267,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "resilience.spec.ts",
+      "file": "resilience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "200% text sizing and WCAG text spacing preserve content, reflow and all modal controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:44.760Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-7419054ad82ba9ef8873",
+          "file": "resilience.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "long Arabic, multiline and unbroken comments remain readable with six-to-ten-lesson curricula",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4924,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:54.960Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-4b03b1aa8a966201d757",
+          "file": "resilience.spec.ts",
+          "line": 94,
+          "column": 5
+        },
+        {
+          "title": "keyboard navigation exposes targets below the sticky player and exam radio keys retain one choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2086,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:44:59.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-cefc748079858f83d1b2",
+          "file": "resilience.spec.ts",
+          "line": 130,
+          "column": 5
+        },
+        {
+          "title": "intermediate layouts preserve measured reference relationships and usable controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11954,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:45:02.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-8bb7846a4ce5e4b95361",
+          "file": "resilience.spec.ts",
+          "line": 181,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "screenshot-refinement.spec.ts",
+      "file": "screenshot-refinement.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile course markers preserve their value and do not cover section titles or lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4473,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T12:45:14.042Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c51584ad3a275481b27d-089e0e15a0b67b594a65",
+          "file": "screenshot-refinement.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T12:41:37.298Z",
+    "duration": 222649.824,
+    "expected": 37,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "width": 430,
+    "screenshot": "verification/exam-locks-final-contrast-430.png",
+    "nodes": [
+      {
+        "name": "Question 1",
+        "fg": "rgb(57, 76, 192)",
+        "background": "rgb(255, 255, 255)",
+        "x": 85,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 2",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 139,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 3",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 193,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 4",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 247,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 5",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 301,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Exam error",
+        "fg": "rgb(157, 35, 58)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 28,
+        "y": 742.34375,
+        "width": 374,
+        "height": 47.59375,
+        "cardBackground": "rgb(255, 255, 255)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "screenshot": "verification/exam-locks-final-contrast-1440.png",
+    "nodes": [
+      {
+        "name": "Question 1",
+        "fg": "rgb(57, 76, 192)",
+        "background": "rgb(255, 255, 255)",
+        "x": 590,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 2",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 644,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 3",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 698,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 4",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 752,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Question 5",
+        "fg": "rgb(255, 255, 255)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 806,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      {
+        "name": "Exam error",
+        "fg": "rgb(157, 35, 58)",
+        "background": "rgba(0, 0, 0, 0)",
+        "x": 421,
+        "y": 713.15625,
+        "width": 598,
+        "height": 47.59375,
+        "cardBackground": "rgb(255, 255, 255)"
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "screenshot": "verification/exam-locks-final-leaderboard-contrast.png",
+    "nodes": [
+      {
+        "name": "Leaderboard subtitle",
+        "fg": "rgb(63, 57, 144)",
+        "background": "rgb(255, 255, 255)",
+        "x": 565,
+        "y": 124.40625,
+        "width": 310,
+        "height": 48,
+        "overlapsClose": false
+      }
+    ]
+  }
+]

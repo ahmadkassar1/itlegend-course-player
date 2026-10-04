@@ -1,0 +1,273 @@
+[
+  {
+    "width": 430,
+    "name": "Question 1",
+    "foregroundRGB": [
+      57,
+      76,
+      192
+    ],
+    "backgroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 7.073321553909656,
+    "minimum": 4.5,
+    "method": "Computed opaque control/card/dialog background",
+    "samplePixel": null,
+    "overlapsClose": null
+  },
+  {
+    "width": 430,
+    "name": "Question 2",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      67,
+      86,
+      190
+    ],
+    "ratio": 6.33806351987527,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      133,
+      118
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 430,
+    "name": "Question 3",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      67,
+      86,
+      190
+    ],
+    "ratio": 6.33806351987527,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      187,
+      118
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 430,
+    "name": "Question 4",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      67,
+      86,
+      190
+    ],
+    "ratio": 6.33806351987527,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      241,
+      118
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 430,
+    "name": "Question 5",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      67,
+      86,
+      190
+    ],
+    "ratio": 6.33806351987527,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      295,
+      118
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 430,
+    "name": "Exam error",
+    "foregroundRGB": [
+      157,
+      35,
+      58
+    ],
+    "backgroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 7.677879828639038,
+    "minimum": 4.5,
+    "method": "Computed opaque control/card/dialog background",
+    "samplePixel": null,
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Question 1",
+    "foregroundRGB": [
+      57,
+      76,
+      192
+    ],
+    "backgroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 7.073321553909656,
+    "minimum": 4.5,
+    "method": "Computed opaque control/card/dialog background",
+    "samplePixel": null,
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Question 2",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      67,
+      86,
+      189
+    ],
+    "ratio": 6.354781319479474,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      638,
+      110
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Question 3",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      66,
+      86,
+      189
+    ],
+    "ratio": 6.368286819932821,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      692,
+      110
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Question 4",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      66,
+      86,
+      189
+    ],
+    "ratio": 6.368286819932821,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      746,
+      110
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Question 5",
+    "foregroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "backgroundRGB": [
+      66,
+      86,
+      189
+    ],
+    "ratio": 6.368286819932821,
+    "minimum": 4.5,
+    "method": "Rendered screenshot pixel beside circle at its vertical center",
+    "samplePixel": [
+      800,
+      110
+    ],
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Exam error",
+    "foregroundRGB": [
+      157,
+      35,
+      58
+    ],
+    "backgroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 7.677879828639038,
+    "minimum": 4.5,
+    "method": "Computed opaque control/card/dialog background",
+    "samplePixel": null,
+    "overlapsClose": null
+  },
+  {
+    "width": 1440,
+    "name": "Leaderboard subtitle",
+    "foregroundRGB": [
+      63,
+      57,
+      144
+    ],
+    "backgroundRGB": [
+      255,
+      255,
+      255
+    ],
+    "ratio": 9.548377166639813,
+    "minimum": 4.5,
+    "method": "Computed opaque control/card/dialog background",
+    "samplePixel": null,
+    "overlapsClose": false
+  }
+]

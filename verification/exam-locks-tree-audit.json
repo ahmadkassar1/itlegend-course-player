@@ -1,0 +1,44 @@
+{
+  "accessed": "2026-10-04T12:57:35.023Z",
+  "scope": "Tracked source tree at runtime commit; pending readiness evidence added in following docs commit. Limited signatures, not full historical secret clearance.",
+  "revision": "f44b785a055f9b5219cede6a92a527e1426bf633",
+  "files": 461,
+  "bytes": 40241999,
+  "evidenceBytes": 32685939,
+  "forbiddenTrackedPaths": [],
+  "signatureMatches": [],
+  "largest": [
+    {
+      "path": "verification/realism-performance.json",
+      "bytes": 1684031
+    },
+    {
+      "path": "verification/screenshots-performance.json",
+      "bytes": 1675144
+    },
+    {
+      "path": "verification/m5-performance.json",
+      "bytes": 1547637
+    },
+    {
+      "path": "verification/realism-media-accessible-interfaces-1.png",
+      "bytes": 438733
+    },
+    {
+      "path": "verification/realism-media-web-design-foundations-3.png",
+      "bytes": 438371
+    },
+    {
+      "path": "verification/realism-media-react-components-1.png",
+      "bytes": 422899
+    },
+    {
+      "path": "verification/realism-media-javascript-essentials-2.png",
+      "bytes": 420631
+    },
+    {
+      "path": "verification/realism-media-responsive-css-1.png",
+      "bytes": 419901
+    }
+  ]
+}
