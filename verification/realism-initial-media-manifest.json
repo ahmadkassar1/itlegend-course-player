@@ -1,0 +1,233 @@
+[
+  {
+    "id": "accessible-interfaces-1",
+    "bytes": 135870,
+    "sha256": "ffbb8478b0df079ba88b1f8ad3245865bb7860bfec565a5e0e28af8562aeb1f3",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "accessible-interfaces-2",
+    "bytes": 135968,
+    "sha256": "c596d26281def2f892d9936f74140f15dfe5774f82a1c4dc74815f827ed6348b",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "accessible-interfaces-3",
+    "bytes": 134887,
+    "sha256": "f66a46ed98b3ec22d5069266d5b162453af2e0f480cbb0b203880cfac0cf2f5d",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "accessible-interfaces-4",
+    "bytes": 135584,
+    "sha256": "18a3f1e9a045de4aa82f10732a02d9491bca27c3f346f67a9820cbfb5be52712",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "components-databinding",
+    "bytes": 106530,
+    "sha256": "e1fe8b2f75c2ad884c27ef0b21d42f3d0ab5818fffc76e8c47deadd4484ac9b6",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "course-overview",
+    "bytes": 120879,
+    "sha256": "7340c6e1c8c3be701da91b83ab4a672dd8c7db5caaea8349852b91290168637b",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "editor-setup",
+    "bytes": 118831,
+    "sha256": "6c8eec102df32121066f293e763dbb9c3bb97b88fd014a53f5cf61c6a7da1385",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "embedding-php",
+    "bytes": 117471,
+    "sha256": "609c2a69a9770e24a4cfcfcf15d202db2ddb91b81058b28a078be8b9c3efc0e4",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "introduction",
+    "bytes": 118228,
+    "sha256": "eb42016061240ff38c2384bb1e492a5cfe6cd87bba2ec122a83ce5e52474203e",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-basics",
+    "bytes": 107522,
+    "sha256": "3bea34b1defd076fb3b0878dde07c5f8655e90fea6fee0713706b1c430c09864",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-1",
+    "bytes": 28928,
+    "sha256": "6a5197c2444afa003c563a043e5825795d5723bd3ee37d3aded513c074fe1d36",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-2",
+    "bytes": 28932,
+    "sha256": "11dde99cc11372dc4b4a347c472a24c94be50e2f2e23f84a5c54c12b089c0cbd",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-3",
+    "bytes": 113381,
+    "sha256": "0dea1606cb83355410d69fcb3efd1f82d921efdebe373c3de1015ddea41d4aee",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-4",
+    "bytes": 114222,
+    "sha256": "10b3529524b443b702e9ee5a86cf9596ddedc4061d0e95f891d24dbe4d958f9d",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-5",
+    "bytes": 120384,
+    "sha256": "295b27db7043a2a37264cb998f2484cad8c496e922472edc8c95199fa3a51654",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "javascript-essentials-6",
+    "bytes": 117147,
+    "sha256": "8195988d05f0d9d6492224c6ae0d0f82bc6014d7d4e4d73d63aae76ad86cf806",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-1",
+    "bytes": 135073,
+    "sha256": "2d16ba3ec71483ff6fa0d2d3fa8885f6cffce8c8e7cfcaa151c0242eb915d9d8",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-2",
+    "bytes": 134080,
+    "sha256": "97aac6b74ad387730508d252c09dcf91d28c250402bd0829b5e13ebe6b2b76a8",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-3",
+    "bytes": 133721,
+    "sha256": "6f6b703ad4d098d5e34e48a12b34d8506357133ea3ff24dcbf8ea0024b90201c",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-4",
+    "bytes": 134524,
+    "sha256": "575432d4c1388263fbd1c3fc005a3d6943ac059ea44d108ed9ecab75081d3eed",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-5",
+    "bytes": 133467,
+    "sha256": "f1b4e09b69952dcfeff4bffcb46a8b2309aaf6928a279ba37d60148555a4a2fe",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-6",
+    "bytes": 134692,
+    "sha256": "74e3b9ec165667ddf876ee8e4e00e38a1bb23efc4b6d46d781c59792dd56282d",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-7",
+    "bytes": 135747,
+    "sha256": "7ae212e38bcfd624f510f4098c4299b8b019cd3bfe510c1365c6018a9583e75c",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "react-components-8",
+    "bytes": 134224,
+    "sha256": "8dbe40b7373affa550fbb35dccfe8af36e4eab43eae29d53fadafbf306e31228",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "responsive-css-1",
+    "bytes": 134269,
+    "sha256": "30c174dad8e1a0411e1845afd098d4b8f6e3ca1cae18ea0d14e28f9a44548ad9",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "responsive-css-2",
+    "bytes": 131782,
+    "sha256": "f1d67d52d229723566296d387161bdc1fd418d41000a6a3e0d67045fa4860ee1",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "responsive-css-3",
+    "bytes": 130767,
+    "sha256": "8d21c93c4a36ef0107805212d736de01d30af5d9b9d73d53cc23f1d33241c135",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "responsive-css-4",
+    "bytes": 132989,
+    "sha256": "faaac8b54c18c83ff49a0d486a7cd3681255a7700778bbca9e0804d9b09ade4a",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "responsive-css-5",
+    "bytes": 133894,
+    "sha256": "85ddff77f7e2834ee2c6551c9744b9b06d5db5c663aff1391dacac859894cee2",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "web-design-foundations-1",
+    "bytes": 108176,
+    "sha256": "c46da21d7ee1d3052504b6a4a3588ad2a0b03c4752f3d977484d0112b006046e",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "web-design-foundations-2",
+    "bytes": 107777,
+    "sha256": "208f8c4e9f9934660252ec596114980fbc2da26b206a1408bb58349190f1097e",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "web-design-foundations-3",
+    "bytes": 33306,
+    "sha256": "871696044163f37b02e196b1a6cd270a925556761d0835a18421ef943de5769d",
+    "frames": 4,
+    "captionSeconds": 16
+  },
+  {
+    "id": "web-design-foundations-4",
+    "bytes": 32997,
+    "sha256": "512adc0f5574a367d31d96c1aeb1bf0b4dcbb818a93b16f2675f631b1d280e9c",
+    "frames": 4,
+    "captionSeconds": 16
+  }
+]

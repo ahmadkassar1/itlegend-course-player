@@ -23,3 +23,5 @@ Original illustration/system font, canonical syllabus/metadata and added lesson 
 The production-only dependency audit reports zero advisories. The full audit reports five high entries belonging to one unpatched development lint-tool chain; compatibility peer warnings also remain. See the main README for the upstream advisory and compatibility guard details. They are follow-up tooling issues, not assertions that the full dependency tree is advisory-free.
 
 The parent vault retains detailed source dates, preservation checks, policy uncertainties and restart instructions. Only this new application and its evidence belong to this independent local Git repository; there is no remote, deployment or submission.
+
+Current content/state milestone: [Content-and-Persistence.md](Content-and-Persistence.md), with course-media manifest, actual PDF/caption/hash checks, browser storage recovery/reset flows and fresh production evidence. Prior reports retain their historical runtime and asset scope.

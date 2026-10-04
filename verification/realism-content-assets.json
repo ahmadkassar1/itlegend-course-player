@@ -1,0 +1,80 @@
+{
+  "worksheets": [
+    {
+      "course": "starting-seo",
+      "pdfBytes": 2474,
+      "pdfSha256": "946319b6e5e03b4a94c7bfc1cd4de3366cf90235e5abcdf7fbd1bf73642ec59c",
+      "previewBytes": 126634,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    },
+    {
+      "course": "web-design-foundations",
+      "pdfBytes": 2410,
+      "pdfSha256": "65826a4ccb4306a7231b643f380832a65a46ec954ef36c8f644ae4dd1875753f",
+      "previewBytes": 120014,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    },
+    {
+      "course": "javascript-essentials",
+      "pdfBytes": 2394,
+      "pdfSha256": "6748c2085bb4a0b84c5b4a6e9a0aedef5bc0bb18d2bfae36a51f38f428ec4cc7",
+      "previewBytes": 110813,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    },
+    {
+      "course": "responsive-css",
+      "pdfBytes": 2384,
+      "pdfSha256": "3a56ca7ecf55cead127d6658d0e1a7020bce22fd9698bb4c51580c0d72180d26",
+      "previewBytes": 121524,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    },
+    {
+      "course": "react-components",
+      "pdfBytes": 2373,
+      "pdfSha256": "fc87d07d06e62931744c3f176911b8835eef00c201aaebb6258c3173b74814bc",
+      "previewBytes": 113782,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    },
+    {
+      "course": "accessible-interfaces",
+      "pdfBytes": 2457,
+      "pdfSha256": "c63422b9735203de8d9b15a2f5f5fdd5a2eeeaa3b1e9fc0ed3c960d252737d24",
+      "previewBytes": 121054,
+      "pageCount": 1,
+      "titlesAndSectionsVerified": true
+    }
+  ],
+  "captionsVerified": 33,
+  "preservation": [
+    {
+      "path": "../buiseness-requirements.docx",
+      "sha256": "312a706c9a3a30e4bbf2b915a43d4094c28e00f5d9ee21640f13e34fdb17985d",
+      "matchesPrior": true
+    },
+    {
+      "path": "../ITLegend Course Player Page Test.png",
+      "sha256": "05e7a2c16f0d0774e42edd91776f320966c47b995cbfc37dd5d304af39108252",
+      "matchesPrior": true
+    },
+    {
+      "path": "public/media/study-plan.webm",
+      "sha256": "5f9e98b45e646dd0faa1d7ed7f0c5d273f17bf78be7e00a1077eeb88d6bbc042",
+      "matchesPrior": true
+    },
+    {
+      "path": "public/resources/learning-plan.pdf",
+      "sha256": "4a758a0e7a186ec18436ad35ccae9b3e4e629cad8cd1f59815249f9152b3a4dc",
+      "matchesPrior": true
+    },
+    {
+      "path": "public/resources/learning-plan.png",
+      "sha256": "918bd9a703158d3d84944b04813d2f51c202b06dd7c2fcc9ccd782959cff9572",
+      "matchesPrior": true
+    }
+  ]
+}

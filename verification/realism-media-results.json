@@ -1,0 +1,200 @@
+[
+  {
+    "id": "accessible-interfaces-1",
+    "bytes": 136623,
+    "durationSeconds": 15.913575,
+    "distinctFrames": 4
+  },
+  {
+    "id": "accessible-interfaces-2",
+    "bytes": 135430,
+    "durationSeconds": 15.914926,
+    "distinctFrames": 4
+  },
+  {
+    "id": "accessible-interfaces-3",
+    "bytes": 135474,
+    "durationSeconds": 15.904869,
+    "distinctFrames": 4
+  },
+  {
+    "id": "accessible-interfaces-4",
+    "bytes": 135030,
+    "durationSeconds": 15.91225,
+    "distinctFrames": 4
+  },
+  {
+    "id": "components-databinding",
+    "bytes": 135150,
+    "durationSeconds": 15.903641,
+    "distinctFrames": 4
+  },
+  {
+    "id": "course-overview",
+    "bytes": 125847,
+    "durationSeconds": 15.910725,
+    "distinctFrames": 4
+  },
+  {
+    "id": "editor-setup",
+    "bytes": 125438,
+    "durationSeconds": 15.904319,
+    "distinctFrames": 4
+  },
+  {
+    "id": "embedding-php",
+    "bytes": 127495,
+    "durationSeconds": 15.911018,
+    "distinctFrames": 4
+  },
+  {
+    "id": "introduction",
+    "bytes": 125183,
+    "durationSeconds": 15.900358,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-basics",
+    "bytes": 134307,
+    "durationSeconds": 15.905153,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-1",
+    "bytes": 133636,
+    "durationSeconds": 15.912467,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-2",
+    "bytes": 135392,
+    "durationSeconds": 15.900983,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-3",
+    "bytes": 134992,
+    "durationSeconds": 15.905048,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-4",
+    "bytes": 134479,
+    "durationSeconds": 15.910596,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-5",
+    "bytes": 134770,
+    "durationSeconds": 15.909451,
+    "distinctFrames": 4
+  },
+  {
+    "id": "javascript-essentials-6",
+    "bytes": 135567,
+    "durationSeconds": 15.907733,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-1",
+    "bytes": 135306,
+    "durationSeconds": 15.910717,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-2",
+    "bytes": 135168,
+    "durationSeconds": 15.901131,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-3",
+    "bytes": 135681,
+    "durationSeconds": 15.909915,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-4",
+    "bytes": 136069,
+    "durationSeconds": 15.91504,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-5",
+    "bytes": 132910,
+    "durationSeconds": 15.903815,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-6",
+    "bytes": 134640,
+    "durationSeconds": 15.902661,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-7",
+    "bytes": 135367,
+    "durationSeconds": 15.908733,
+    "distinctFrames": 4
+  },
+  {
+    "id": "react-components-8",
+    "bytes": 133692,
+    "durationSeconds": 15.915191,
+    "distinctFrames": 4
+  },
+  {
+    "id": "responsive-css-1",
+    "bytes": 134758,
+    "durationSeconds": 15.906419,
+    "distinctFrames": 4
+  },
+  {
+    "id": "responsive-css-2",
+    "bytes": 135577,
+    "durationSeconds": 15.911172,
+    "distinctFrames": 4
+  },
+  {
+    "id": "responsive-css-3",
+    "bytes": 133456,
+    "durationSeconds": 15.906061,
+    "distinctFrames": 4
+  },
+  {
+    "id": "responsive-css-4",
+    "bytes": 135500,
+    "durationSeconds": 15.920016,
+    "distinctFrames": 4
+  },
+  {
+    "id": "responsive-css-5",
+    "bytes": 135279,
+    "durationSeconds": 15.907016,
+    "distinctFrames": 4
+  },
+  {
+    "id": "web-design-foundations-1",
+    "bytes": 135326,
+    "durationSeconds": 15.910041,
+    "distinctFrames": 4
+  },
+  {
+    "id": "web-design-foundations-2",
+    "bytes": 134664,
+    "durationSeconds": 15.909754,
+    "distinctFrames": 4
+  },
+  {
+    "id": "web-design-foundations-3",
+    "bytes": 135557,
+    "durationSeconds": 15.906183,
+    "distinctFrames": 4
+  },
+  {
+    "id": "web-design-foundations-4",
+    "bytes": 133463,
+    "durationSeconds": 15.909081,
+    "distinctFrames": 4
+  }
+]

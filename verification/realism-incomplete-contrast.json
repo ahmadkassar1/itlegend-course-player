@@ -1,0 +1,20 @@
+[
+  {
+    "state": "leaderboard",
+    "text": "Starting SEO as your Home Based Business",
+    "foreground": "rgb(63, 57, 144)",
+    "background": "rgb(255, 255, 255)",
+    "contrastRatio": 9.548377166639813,
+    "visible": true,
+    "closeOverlaps": false
+  },
+  {
+    "state": "exam",
+    "text": "Answer all 5 questions before submitting. Your answers are saved when you close this window.",
+    "foreground": "rgb(157, 35, 58)",
+    "background": "rgb(255, 255, 255)",
+    "contrastRatio": 7.677879828639038,
+    "visible": true,
+    "closeOverlaps": false
+  }
+]

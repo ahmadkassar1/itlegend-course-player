@@ -1,5 +1,7 @@
 # Figma, Arabic instructions and mock-data inventory
 
+This is the pre-DEC-017 audit. Active generic fixtures and refresh-reset behavior are superseded by [Content-and-Persistence.md](Content-and-Persistence.md); the reference inventory and unresolved fidelity/policy gaps remain valid.
+
 Reviewed2026-10-04 against app **fc5e4189006d8af56bc67e12ac1de506baad0ffa** (runtime code3800720), build **d-4IyKPY-mflOlfSZHsGr**. Sources: all41 nested DOCX paragraphs reread, original high-resolution PNG desktop/mobile/player/resource/navigation/leaderboard areas reinspected, latest user screenshot S9 inspected/preserved byte-identically with access date/hash in the parent source manifest. Live Figma remains inaccessible; this is inspection of the supplied definitive export, not a claim of live-file access. Collaborator badges/cursors/arrows/browser chrome are explanatory overlays.
 
 The latest user prioritizes realistic mock content and functional progress. This supersedes the earlier choice to retain literal “Student Name Goes Here”/lorem ipsum as source content. Reference layout and behavior still govern the player. This turn supplies the requested inventory and gap review for the user's missing-item feedback; it does not claim that a comprehensive content rewrite is already complete.
