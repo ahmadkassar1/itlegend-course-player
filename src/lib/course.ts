@@ -32,7 +32,6 @@ export function getStudentLevel(progress: number): string {
 
 export function summarizeCourse(course: Course): CourseSummary {
   const lessons = getLessons(course);
-  const ids = new Set(lessons.map((lesson) => lesson.id));
   return {
     slug: course.slug,
     title: course.title,
@@ -40,10 +39,8 @@ export function summarizeCourse(course: Course): CourseSummary {
     instructor: course.instructor,
     category: course.category,
     thumbnail: course.thumbnail,
+    initialLessonId: course.initialLessonId,
     lessonCount: lessons.length,
-    completedCount: new Set(
-      course.initialCompletedLessonIds.filter((id) => ids.has(id)),
-    ).size,
   };
 }
 

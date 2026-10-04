@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { courses } from "@/data/courses";
+import { getLessons } from "@/lib/course";
+import { LearningProvider } from "@/features/learning/learning-provider";
 
 export const metadata: Metadata = {
   title: { default: "Course Library", template: "%s | Course Library" },
@@ -16,7 +19,16 @@ export default function RootLayout({
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>
-        {children}
+        <LearningProvider
+          seeds={courses.map((course) => ({
+            slug: course.slug,
+            lessonIds: getLessons(course).map((lesson) => lesson.id),
+            completedLessonIds: course.initialCompletedLessonIds,
+            initialLessonId: course.initialLessonId,
+          }))}
+        >
+          {children}
+        </LearningProvider>
       </body>
     </html>
   );

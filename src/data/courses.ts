@@ -1,5 +1,12 @@
 import type { Comment, Course, CourseSection, Lesson } from "@/types/course";
 
+const sampleMedia = {
+  src: "/media/study-plan.webm",
+  captions: "/media/study-plan.vtt",
+  transcript:
+    "Choose one topic to learn. Set a small, clear goal. Practice with a simple example. Review what you have learned.",
+};
+
 const comments: Comment[] = [
   {
     id: "review-1",
@@ -34,6 +41,7 @@ const seoSections: CourseSection[] = [
         id: "introduction",
         title: "Introduction",
         kind: "video",
+        media: sampleMedia,
         description:
           "Meet your instructor and discover what you will learn throughout this course.",
         minutes: 8,
@@ -42,6 +50,7 @@ const seoSections: CourseSection[] = [
         id: "course-overview",
         title: "Course Overview",
         kind: "video",
+        media: sampleMedia,
         description:
           "Explore the course roadmap and prepare a learning plan that fits your schedule.",
         minutes: 12,
@@ -67,6 +76,7 @@ const seoSections: CourseSection[] = [
         id: "editor-setup",
         title: "Code Editor Installation (Optional if you have one)",
         kind: "video",
+        media: sampleMedia,
         description:
           "Prepare your workspace and learn how to use an editor for the course exercises.",
         minutes: 9,
@@ -75,6 +85,7 @@ const seoSections: CourseSection[] = [
         id: "embedding-php",
         title: "Embedding PHP in HTML",
         kind: "video",
+        media: sampleMedia,
         description: "See how a small dynamic example fits into an HTML page.",
         minutes: 14,
       },
@@ -89,6 +100,7 @@ const seoSections: CourseSection[] = [
         id: "javascript-basics",
         title: "JavaScript Language Basics",
         kind: "video",
+        media: sampleMedia,
         description:
           "Learn to recognize variables, functions and the behavior they bring to a page.",
         minutes: 18,
@@ -104,6 +116,7 @@ const seoSections: CourseSection[] = [
         id: "components-databinding",
         title: "Components & Databinding",
         kind: "video",
+        media: sampleMedia,
         description:
           "Organize an interface into small components and connect them to data.",
         minutes: 16,
@@ -117,6 +130,7 @@ function makeSections(prefix: string, titles: string[]): CourseSection[] {
     id: `${prefix}-${index + 1}`,
     title,
     kind: "video",
+    media: sampleMedia,
     minutes: 8 + index * 2,
     description: `Explore ${title.toLowerCase()} with clear explanations and a practical example.`,
   }));

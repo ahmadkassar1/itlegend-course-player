@@ -2,7 +2,7 @@
   background: var(--header);
 }
 .headerInner {
-  max-width: 1240px;
+  max-width: 1320px;
   margin: auto;
   padding: 24px 40px 26px;
 }
@@ -39,12 +39,12 @@
   margin: 0;
 }
 .courseLayout {
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 24px 40px 70px;
   display: grid;
   grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
-  column-gap: 58px;
+  column-gap: 70px;
   row-gap: 0;
   grid-template-areas: "preview curriculum" "controls curriculum" "materials curriculum" "comments curriculum";
   align-items: start;
@@ -57,6 +57,7 @@
 }
 .previewFrame {
   position: relative;
+  width: 100%;
   aspect-ratio: 3 / 2;
   background: #273d35;
   border-radius: 4px;
@@ -68,12 +69,8 @@
 .posterShade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    #06140e26 0%,
-    #06140e33 50%,
-    #06140ed9 100%
-  );
+  background: #0007;
+  pointer-events: none;
 }
 .previewLabel {
   position: absolute;
@@ -317,6 +314,7 @@
   transform: translateX(-50%);
   width: 42px;
   text-align: center;
+  transition: left 1s ease-out;
 }
 .progressMarker > span {
   display: inline-flex;
@@ -358,6 +356,7 @@
   display: block;
   height: 100%;
   background: var(--progress);
+  transition: width 1s ease-out;
 }
 .courseProgress p {
   color: var(--muted);
@@ -509,8 +508,7 @@
 @media (max-width: 1023px) {
   .courseLayout {
     max-width: 760px;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "preview" "controls" "materials" "curriculum" "comments";
+    display: block;
     padding: 24px 30px 50px;
   }
   .headerInner {
@@ -528,6 +526,19 @@
   }
 }
 @media (max-width: 767px) {
+  .previewFrame {
+    max-height: 50svh;
+  }
+  .preview {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: white;
+  }
+  .curriculum,
+  .comments {
+    scroll-margin-top: calc(var(--sticky-player-height, 0px) + 20px);
+  }
   .headerInner {
     padding: 17px 18px 21px;
   }
@@ -641,5 +652,89 @@
     font-size: 12px;
     padding: 14px 20px;
     min-height: 46px;
+  }
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #111;
+}
+.playerModes {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  gap: 6px;
+}
+.playerModes button {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ffffff75;
+  border-radius: 4px;
+  color: white;
+  background: #14211cb3;
+}
+.playerModes button[aria-pressed="true"] {
+  background: var(--action);
+}
+.playerNotice {
+  position: absolute;
+  bottom: 50px;
+  left: 12px;
+  right: 12px;
+  border-radius: 4px;
+  background: #11261bef;
+  padding: 14px;
+  color: white;
+  font-size: 13px;
+}
+.playerNotice button {
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+}
+.previewFrame:fullscreen {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  border-radius: 0;
+}
+.previewFrame:fullscreen .video {
+  object-fit: contain;
+}
+.previewFrame:fullscreen .wideButton {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .wideButton {
+    display: none !important;
+  }
+}
+@media (min-width: 1024px) {
+  .wideCourse {
+    max-width: none;
+    padding-inline: 0;
+    grid-template-columns:
+      minmax(12px, 1fr) minmax(0, 759px) minmax(0, 411px)
+      minmax(12px, 1fr);
+    column-gap: 35px;
+    grid-template-areas: "preview preview preview preview" ". controls controls ." ". materials curriculum ." ". comments curriculum .";
+  }
+  .wideCourse .previewFrame {
+    aspect-ratio: auto;
+    height: min(75vh, 720px);
+    border-radius: 0;
+  }
+  .wideCourse .lessonDescription {
+    max-width: 1320px;
+    margin: 12px auto 0;
+    padding-inline: 40px;
   }
 }

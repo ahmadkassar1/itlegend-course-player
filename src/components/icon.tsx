@@ -15,7 +15,10 @@ export type IconName =
   | "play"
   | "check"
   | "plus"
-  | "minus";
+  | "minus"
+  | "wide"
+  | "expand"
+  | "shrink";
 
 const paths: Record<IconName, React.ReactNode> = {
   book: (
@@ -78,6 +81,14 @@ const paths: Record<IconName, React.ReactNode> = {
   check: <path d="m5 12 4 4L19 6" />,
   plus: <path d="M5 12h14M12 5v14" />,
   minus: <path d="M5 12h14" />,
+  wide: (
+    <>
+      <rect x="2" y="6" width="20" height="12" rx="1" />
+      <path d="m6 10-2 2 2 2m12-4 2 2-2 2" />
+    </>
+  ),
+  expand: <path d="M9 3H3v6m12-6h6v6M3 15v6h6m12-6v6h-6" />,
+  shrink: <path d="M3 9h6V3m6 0v6h6M9 21v-6H3m12 6v-6h6" />,
 };
 
 export function Icon({

@@ -1,5 +1,7 @@
 export type LessonKind = "video" | "pdf" | "exam";
 
+export type LessonMedia = { src: string; captions: string; transcript: string };
+
 type LessonBase = {
   id: string;
   title: string;
@@ -9,7 +11,7 @@ type LessonBase = {
 
 export type Lesson = LessonBase &
   (
-    | { kind: "video" }
+    | { kind: "video"; media: LessonMedia }
     | { kind: "pdf" }
     | { kind: "exam"; questionCount: number }
   );
@@ -48,8 +50,13 @@ export type Course = {
 
 export type CourseSummary = Pick<
   Course,
-  "slug" | "title" | "description" | "instructor" | "category" | "thumbnail"
+  | "slug"
+  | "title"
+  | "description"
+  | "instructor"
+  | "category"
+  | "thumbnail"
+  | "initialLessonId"
 > & {
   lessonCount: number;
-  completedCount: number;
 };

@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@/components/icon";
 import { getCourseStatus, getProgress } from "@/lib/course";
 import type { CourseSummary } from "@/types/course";
 import styles from "./catalogue.module.css";
+import { useCourseLearning } from "@/features/learning/learning-provider";
 
 export function CourseCard({ course }: { course: CourseSummary }) {
-  const progress = getProgress(course.completedCount, course.lessonCount);
+  const learning = useCourseLearning(course.slug);
+  const progress = getProgress(
+    learning.completedLessonIds.length,
+    course.lessonCount,
+  );
   const status = getCourseStatus(progress);
   return (
     <article className={styles.card}>
@@ -45,7 +52,11 @@ export function CourseCard({ course }: { course: CourseSummary }) {
         </div>
         <Link
           className={styles.courseLink}
-          href={`/courses/${course.slug}`}
+          href={
+            learning.lastLessonId === course.initialLessonId
+              ? `/courses/${course.slug}`
+              : `/courses/${course.slug}?lesson=${learning.lastLessonId}`
+          }
           aria-label={`${progress > 0 ? "Continue" : "Start"} ${course.title}`}
         >
           {progress > 0 ? "Continue Course" : "Start Course"}

@@ -1,37 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useSyncExternalStore } from "react";
+import { useState } from "react";
 import { Icon } from "@/components/icon";
-import { getLessons, getProgress, getStudentLevel } from "@/lib/course";
+import { getLessons } from "@/lib/course";
 import type { Course } from "@/types/course";
 import styles from "./course.module.css";
-
-const desktopQuery = "(min-width: 1024px)";
-function subscribeDesktop(callback: () => void) {
-  const query = window.matchMedia(desktopQuery);
-  query.addEventListener("change", callback);
-  return () => query.removeEventListener("change", callback);
-}
-const getDesktopSnapshot = () => window.matchMedia(desktopQuery).matches;
-const getServerSnapshot = () => false;
+import { useMediaQuery } from "@/lib/use-media-query";
+import { useCourseLearning } from "@/features/learning/learning-provider";
+import { CourseProgress } from "./course-progress";
 
 export function Curriculum({
   course,
   selectedLessonId,
 }: {
-  course: Pick<Course, "slug" | "sections" | "initialCompletedLessonIds">;
+  course: Pick<Course, "slug" | "sections">;
   selectedLessonId: string;
 }) {
-  const desktop = useSyncExternalStore(
-    subscribeDesktop,
-    getDesktopSnapshot,
-    getServerSnapshot,
-  );
+  const desktop = useMediaQuery("(min-width: 1024px)");
+  const learning = useCourseLearning(course.slug);
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
-  const completedIds = new Set(course.initialCompletedLessonIds);
+  const completedIds = new Set(learning.completedLessonIds);
   const total = getLessons(course).length;
-  const progress = getProgress(completedIds.size, total);
   return (
     <aside
       id="curriculum"
@@ -40,29 +30,7 @@ export function Curriculum({
       aria-labelledby="curriculum-heading"
     >
       <h2 id="curriculum-heading">Topics for This Course</h2>
-      <div className={styles.courseProgress}>
-        <div
-          className={styles.progressMarker}
-          style={{ left: `clamp(21px, ${progress}%, calc(100% - 21px))` }}
-        >
-          <span>You</span>
-          <small>{progress}%</small>
-        </div>
-        <div
-          className={styles.progressTrack}
-          role="progressbar"
-          aria-label="Course completion"
-          aria-valuemin={0}
-          aria-valuemax={100}
-          aria-valuenow={progress}
-        >
-          <span style={{ width: `${progress}%` }} />
-        </div>
-        <p>
-          {getStudentLevel(progress)} <span aria-hidden="true">·</span>{" "}
-          {completedIds.size} of {total} lessons completed
-        </p>
-      </div>
+      <CourseProgress completed={completedIds.size} total={total} />
       <div className={styles.sections}>
         {course.sections.map((section, index) => {
           const activeGroup = section.lessons.some(
