@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Define columns appropriate to the available space.
+
+2
+00:00:04.000 --> 00:00:08.000
+Let card content determine its own height.
+
+3
+00:00:08.000 --> 00:00:12.000
+Avoid a minimum column width larger than the viewport.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: compare one-column and two-column layouts.

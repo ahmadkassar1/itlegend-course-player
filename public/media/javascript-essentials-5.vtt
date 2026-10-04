@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Compare the cart total with a delivery threshold.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use an if branch for the qualifying case.
+
+3
+00:00:08.000 --> 00:00:12.000
+Provide a clear message for the other case.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: test values below, at and above the threshold.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Select a button and its associated status message.
+
+2
+00:00:04.000 --> 00:00:08.000
+Register a click listener on the button.
+
+3
+00:00:08.000 --> 00:00:12.000
+Update the message using textContent.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: make a contact prompt appear after a click.

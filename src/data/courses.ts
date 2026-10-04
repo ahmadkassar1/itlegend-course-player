@@ -1,67 +1,33 @@
-import type { Comment, Course, CourseSection, Lesson } from "@/types/course";
-import { overviewExam, worksheet } from "./learning-resources";
-
-const sampleMedia = {
-  src: "/media/study-plan.webm",
-  captions: "/media/study-plan.vtt",
-  transcript:
-    "Choose one topic to learn. Set a small, clear goal. Practice with a simple example. Review what you have learned.",
-};
-
-const comments: Comment[] = [
-  {
-    id: "review-1",
-    name: "Alex Morgan",
-    date: "2026-09-12",
-    body: "The examples made the first steps much easier to understand. Looking forward to putting this into practice.",
-    avatar: "/images/avatar-1.svg",
-  },
-  {
-    id: "review-2",
-    name: "Sam Taylor",
-    date: "2026-09-15",
-    body: "A clear introduction and a helpful place to start. I have been taking notes as I work through each lesson.",
-    avatar: "/images/avatar-2.svg",
-  },
-  {
-    id: "review-3",
-    name: "Jamie Lee",
-    date: "2026-09-19",
-    body: "I like being able to come back to the curriculum and review the topics at my own pace.",
-    avatar: "/images/avatar-3.svg",
-  },
-];
-
-const referenceComments: Comment[] = comments.map((comment, index) => ({
-  ...comment,
-  name: "Student Name Goes Here",
-  date: ["2021-10-10", "2021-10-15", "2021-10-19"][index],
-  body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-}));
+import type { Course, CourseSection, Lesson } from "@/types/course";
+import {
+  getCourseContent,
+  getCourseComments,
+  getLessonMedia,
+} from "./course-content";
+const seoContent = getCourseContent("starting-seo");
 
 const seoSections: CourseSection[] = [
   {
     id: "introduction",
     title: "Course Introduction",
-    description: "Build a strong foundation, one lesson at a time.",
+    description:
+      "Plan a useful service page and understand its web foundations.",
     lessons: [
       {
         id: "introduction",
         title: "Introduction",
         kind: "video",
-        media: sampleMedia,
-        description:
-          "Meet your instructor and discover what you will learn throughout this course.",
-        minutes: 8,
+        media: getLessonMedia("starting-seo", "introduction"),
+        description: seoContent.lessons["introduction"].summary,
+        minutes: 1,
       },
       {
         id: "course-overview",
         title: "Course Overview",
         kind: "video",
-        media: sampleMedia,
-        description:
-          "Explore the course roadmap and prepare a learning plan that fits your schedule.",
-        minutes: 12,
+        media: getLessonMedia("starting-seo", "course-overview"),
+        description: seoContent.lessons["course-overview"].summary,
+        minutes: 1,
       },
       {
         id: "knowledge-check",
@@ -71,13 +37,13 @@ const seoSections: CourseSection[] = [
         description:
           "Review the key ideas from the opening lessons with a short knowledge check.",
         minutes: 10,
-        exam: overviewExam,
+        exam: seoContent.exam,
       },
       {
         id: "reference-files",
         title: "Course Exercise / Reference Files",
         kind: "pdf",
-        resource: worksheet,
+        resource: seoContent.worksheet,
         description:
           "A companion worksheet for organizing your notes and planning your first project.",
         minutes: 5,
@@ -86,18 +52,17 @@ const seoSections: CourseSection[] = [
         id: "editor-setup",
         title: "Code Editor Installation (Optional if you have one)",
         kind: "video",
-        media: sampleMedia,
-        description:
-          "Prepare your workspace and learn how to use an editor for the course exercises.",
-        minutes: 9,
+        media: getLessonMedia("starting-seo", "editor-setup"),
+        description: seoContent.lessons["editor-setup"].summary,
+        minutes: 1,
       },
       {
         id: "embedding-php",
         title: "Embedding PHP in HTML",
         kind: "video",
-        media: sampleMedia,
-        description: "See how a small dynamic example fits into an HTML page.",
-        minutes: 14,
+        media: getLessonMedia("starting-seo", "embedding-php"),
+        description: seoContent.lessons["embedding-php"].summary,
+        minutes: 1,
       },
     ],
   },
@@ -110,10 +75,9 @@ const seoSections: CourseSection[] = [
         id: "javascript-basics",
         title: "JavaScript Language Basics",
         kind: "video",
-        media: sampleMedia,
-        description:
-          "Learn to recognize variables, functions and the behavior they bring to a page.",
-        minutes: 18,
+        media: getLessonMedia("starting-seo", "javascript-basics"),
+        description: seoContent.lessons["javascript-basics"].summary,
+        minutes: 1,
       },
     ],
   },
@@ -126,24 +90,42 @@ const seoSections: CourseSection[] = [
         id: "components-databinding",
         title: "Components & Databinding",
         kind: "video",
-        media: sampleMedia,
-        description:
-          "Organize an interface into small components and connect them to data.",
-        minutes: 16,
+        media: getLessonMedia("starting-seo", "components-databinding"),
+        description: seoContent.lessons["components-databinding"].summary,
+        minutes: 1,
       },
     ],
   },
 ];
 
 function makeSections(prefix: string, titles: string[]): CourseSection[] {
-  const lessons: Lesson[] = titles.map((title, index) => ({
-    id: `${prefix}-${index + 1}`,
-    title,
-    kind: "video",
-    media: sampleMedia,
-    minutes: 8 + index * 2,
-    description: `Explore ${title.toLowerCase()} with clear explanations and a practical example.`,
-  }));
+  const content = getCourseContent(prefix);
+  const lessons: Lesson[] = titles.map((title, index) => {
+    const id = `${prefix}-${index + 1}`;
+    const base = { id, title, description: content.lessons[id].summary };
+    if (index === titles.length - 2)
+      return {
+        ...base,
+        title: "Practice Worksheet",
+        kind: "pdf",
+        resource: content.worksheet,
+        minutes: 5,
+      };
+    if (index === titles.length - 1)
+      return {
+        ...base,
+        title: "Final Knowledge Check",
+        kind: "exam",
+        exam: content.exam,
+        minutes: 10,
+      };
+    return {
+      ...base,
+      kind: "video",
+      media: getLessonMedia(prefix, id),
+      minutes: 1,
+    };
+  });
   const split = Math.ceil(lessons.length / 2);
   return [
     {
@@ -301,7 +283,8 @@ export const courses: Course[] = [
       "components-databinding",
     ],
     initialLessonId: "introduction",
-    comments: referenceComments,
+    comments: getCourseComments("starting-seo"),
+    peers: seoContent.peers,
   },
   ...samples.map((sample): Course => {
     const sections = makeSections(sample.slug, sample.titles);
@@ -322,7 +305,8 @@ export const courses: Course[] = [
       sections,
       initialCompletedLessonIds: ids.slice(0, sample.completed),
       initialLessonId: ids[Math.min(sample.completed, ids.length - 1)],
-      comments,
+      comments: getCourseComments(sample.slug),
+      peers: getCourseContent(sample.slug).peers,
     };
   }),
 ];

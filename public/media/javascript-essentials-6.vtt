@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Find the summary element with querySelector.
+
+2
+00:00:04.000 --> 00:00:08.000
+Insert plain text using textContent.
+
+3
+00:00:08.000 --> 00:00:12.000
+Keep the source data separate from the displayed text.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: update the total after changing quantity.

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Find the nearest shared parent of the controls and summary.
+
+2
+00:00:04.000 --> 00:00:08.000
+Own the cart state in that parent.
+
+3
+00:00:08.000 --> 00:00:12.000
+Pass values and event callbacks to the children.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: update the summary from two sibling controls.

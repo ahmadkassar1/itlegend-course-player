@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Map product data to card components.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use each product's stable identifier as its key.
+
+3
+00:00:08.000 --> 00:00:12.000
+Do not generate a new key during every render.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: reorder the list and check the displayed products.

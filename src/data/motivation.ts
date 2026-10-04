@@ -10,10 +10,3 @@ export const motivationalMessages = {
 } as const;
 
 // Original demo copy inspired by the requested tone; no quotation or endorsement.
-export const sampleLearners = [
-  { id: "ana", name: "Ana Patel", fraction: 1 },
-  { id: "marcus", name: "Marcus Chen", fraction: 0.85 },
-  { id: "sofia", name: "Sofia Reyes", fraction: 0.65 },
-  { id: "daniel", name: "Daniel Kim", fraction: 0.45 },
-  { id: "maya", name: "Maya Johnson", fraction: 0.2 },
-];

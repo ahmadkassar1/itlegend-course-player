@@ -1,0 +1,1529 @@
+{
+  "starting-seo": {
+    "lessons": {
+      "introduction": {
+        "summary": "Plan a small service website around a specific customer need.",
+        "points": [
+          "Start with one service and one audience.",
+          "List the questions a prospective customer asks.",
+          "Write a useful page that answers those questions.",
+          "Exercise: outline a local repair service page."
+        ]
+      },
+      "course-overview": {
+        "summary": "Connect useful content with the page's technical foundations.",
+        "points": [
+          "Use a descriptive page title and a clear main heading.",
+          "Keep important information in readable HTML.",
+          "Build navigation from real links with meaningful labels.",
+          "Review the page on a narrow screen before publishing."
+        ]
+      },
+      "editor-setup": {
+        "summary": "Create a tiny project you can inspect and change confidently.",
+        "points": [
+          "Create a folder with an index.html file.",
+          "Add a document title and a main heading.",
+          "Open the file in your browser and inspect the elements.",
+          "Change the heading, save the file and reload."
+        ]
+      },
+      "embedding-php": {
+        "summary": "Understand which part of a PHP page runs on the server.",
+        "points": [
+          "PHP is executed by a configured server before HTML reaches the browser.",
+          "A PHP template can insert a value into an HTML page.",
+          "Escape untrusted text when inserting it into HTML.",
+          "Exercise: compare the template with its rendered HTML."
+        ]
+      },
+      "javascript-basics": {
+        "summary": "Make a small interaction respond to a deliberate user action.",
+        "points": [
+          "Select a button and its associated status message.",
+          "Register a click listener on the button.",
+          "Update the message using textContent.",
+          "Exercise: make a contact prompt appear after a click."
+        ]
+      },
+      "components-databinding": {
+        "summary": "Use one card component for several services.",
+        "points": [
+          "Store each service's title and description as data.",
+          "Pass that data to the same card component.",
+          "Use stable identifiers when rendering a list.",
+          "Exercise: change one title without changing the card layout."
+        ]
+      },
+      "reference-files": {
+        "summary": "Draft and inspect your first service page.",
+        "points": []
+      },
+      "knowledge-check": {
+        "summary": "Check the page and programming foundations from the opening lessons.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Nadia Haddad",
+        "date": "2026-09-12",
+        "body": "The service-page outline helped me turn a vague business idea into a useful page. I still need to refine the main heading."
+      },
+      {
+        "name": "Omar Saleh",
+        "date": "2026-09-16",
+        "body": "Comparing the PHP template with browser HTML finally made the server step click. The worksheet is a useful checkpoint."
+      },
+      {
+        "name": "Leila Mansour",
+        "date": "2026-09-20",
+        "body": "I used the card exercise for three repair services. Testing at a narrow width revealed a link label I had missed."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/starting-seo.pdf",
+      "preview": "/resources/starting-seo.png",
+      "title": "Service page planning worksheet",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Choose a service",
+          "body": "Pick a local service and name its intended customer. Write the customer's main question in one sentence."
+        },
+        {
+          "title": "2. Outline useful content",
+          "body": "Draft a descriptive title, one main heading and three sections answering customer questions. Avoid promises you cannot support."
+        },
+        {
+          "title": "3. Inspect the HTML",
+          "body": "Check heading order, meaningful link text and readable page content. Explain which parts would be produced by a server template."
+        },
+        {
+          "title": "4. Review on mobile",
+          "body": "Read the page at a narrow width. Check navigation and a contact button with the keyboard. Record one improvement and its reason."
+        }
+      ]
+    },
+    "exam": {
+      "id": "course-overview-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "Which heading best describes a service page?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "Bicycle repairs in Beirut"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Welcome to our website"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Click here"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Everything you need"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "A descriptive heading explains the service and helps readers recognize the page's purpose."
+        },
+        {
+          "id": "practice",
+          "prompt": "Where is PHP in a server-rendered page executed?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "Inside the browser's CSS engine"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Only when a search result is clicked"
+            },
+            {
+              "id": "alternative-2",
+              "label": "In a downloaded image"
+            },
+            {
+              "id": "try",
+              "label": "On the server before HTML reaches the browser"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "A configured PHP server executes the template and sends the resulting response to the browser."
+        },
+        {
+          "id": "notes",
+          "prompt": "Which API inserts a plain status message into an element?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "document.write after loading"
+            },
+            {
+              "id": "alternative-2",
+              "label": "A CSS background image"
+            },
+            {
+              "id": "insights",
+              "label": "textContent"
+            },
+            {
+              "id": "alternative-0",
+              "label": "innerHTML with untrusted text"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "textContent treats the value as text rather than parsing it as HTML."
+        },
+        {
+          "id": "question",
+          "prompt": "What should identify repeated service cards in a component list?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "The card's color"
+            },
+            {
+              "id": "context",
+              "label": "A stable identifier from the service data"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A new random number on every render"
+            },
+            {
+              "id": "alternative-1",
+              "label": "The current clock time"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "A stable identifier lets the renderer track a service through changes in list order."
+        },
+        {
+          "id": "review",
+          "prompt": "Which review is most useful before publishing a service page?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "Read the page on mobile and test its links and keyboard controls"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Count how many animations it has"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Hide the navigation on every small screen"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Replace headings with decorative images"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "Content, responsive layout and operable controls matter more than decorative feature count."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "starting-seo-learner-0",
+        "name": "Nadia Haddad",
+        "completed": 8
+      },
+      {
+        "id": "starting-seo-learner-1",
+        "name": "Omar Saleh",
+        "completed": 6
+      },
+      {
+        "id": "starting-seo-learner-2",
+        "name": "Leila Mansour",
+        "completed": 5
+      },
+      {
+        "id": "starting-seo-learner-3",
+        "name": "Karim Nasser",
+        "completed": 2
+      },
+      {
+        "id": "starting-seo-learner-4",
+        "name": "Rana Khalil",
+        "completed": 1
+      }
+    ]
+  },
+  "web-design-foundations": {
+    "lessons": {
+      "web-design-foundations-1": {
+        "summary": "Start a landing page with a clear purpose and audience.",
+        "points": [
+          "Name the page's audience and main task.",
+          "Write the main message before choosing decoration.",
+          "Sketch a heading, supporting text and primary action.",
+          "Exercise: outline a neighborhood workshop page."
+        ]
+      },
+      "web-design-foundations-2": {
+        "summary": "Guide attention with size, grouping and reading order.",
+        "points": [
+          "Give the main heading the strongest emphasis.",
+          "Place supporting text close to its heading.",
+          "Make one primary action easy to find.",
+          "Exercise: remove a competing highlight from your sketch."
+        ]
+      },
+      "web-design-foundations-3": {
+        "summary": "Choose readable type and a consistent heading scale.",
+        "points": [
+          "Use a limited set of text sizes.",
+          "Keep paragraph lines comfortable to read.",
+          "Increase line spacing for dense text.",
+          "Exercise: test your paragraph at twice its normal text size."
+        ]
+      },
+      "web-design-foundations-4": {
+        "summary": "Use color to reinforce meaning without relying on it alone.",
+        "points": [
+          "Check the contrast of text against its background.",
+          "Pair a status color with a text label.",
+          "Give links an additional visual cue.",
+          "Exercise: review the page in grayscale."
+        ]
+      },
+      "web-design-foundations-5": {
+        "summary": "Apply a spacing and hierarchy worksheet to your page.",
+        "points": []
+      },
+      "web-design-foundations-6": {
+        "summary": "Review the decisions behind your first page design.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Emma Wilson",
+        "date": "2026-09-12",
+        "body": "Grouping each caption with its heading cleaned up my workshop page more than changing the colors did."
+      },
+      {
+        "name": "Hassan Ali",
+        "date": "2026-09-16",
+        "body": "The text-resize exercise exposed cramped buttons in my first draft. I increased spacing and kept the labels visible."
+      },
+      {
+        "name": "Chloe Martin",
+        "date": "2026-09-20",
+        "body": "I finally chose one primary action instead of highlighting every link. The hierarchy is much easier to follow."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/web-design-foundations.pdf",
+      "preview": "/resources/web-design-foundations.png",
+      "title": "Landing page design review",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Define the task",
+          "body": "Name your audience and write the one action the page should support. Sketch the main heading and supporting sentence."
+        },
+        {
+          "title": "2. Build hierarchy",
+          "body": "Mark the first, second and third things a reader should notice. Remove one competing highlight."
+        },
+        {
+          "title": "3. Review typography",
+          "body": "Read a paragraph at normal and enlarged text sizes. Check line spacing, wrapping and button labels."
+        },
+        {
+          "title": "4. Check color and spacing",
+          "body": "Check text contrast and review the page in grayscale. Use labels as well as status colors. Record two concrete improvements."
+        }
+      ]
+    },
+    "exam": {
+      "id": "web-design-foundations-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "Which element should usually have the strongest emphasis?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "The page's main message"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Every link equally"
+            },
+            {
+              "id": "alternative-1",
+              "label": "A decorative divider"
+            },
+            {
+              "id": "alternative-2",
+              "label": "The footer copyright"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "Hierarchy should support the page's purpose and reading order."
+        },
+        {
+          "id": "practice",
+          "prompt": "How should related headings and paragraphs be grouped?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "Separate every line with a large gap"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Put captions beside unrelated images"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Scatter them randomly"
+            },
+            {
+              "id": "try",
+              "label": "Keep related content visually close"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "Proximity helps readers understand which pieces belong together."
+        },
+        {
+          "id": "notes",
+          "prompt": "What is a useful typography check?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "Make every paragraph uppercase"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Remove all line spacing"
+            },
+            {
+              "id": "insights",
+              "label": "Resize text and check wrapping and readability"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Use the smallest text possible"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "Text enlargement reveals clipping and overly tight layouts."
+        },
+        {
+          "id": "question",
+          "prompt": "How should an error be communicated?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "Play an unexplained animation"
+            },
+            {
+              "id": "context",
+              "label": "Use a clear message as well as color"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Use red alone"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Hide its label"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "A text message communicates meaning without requiring color perception."
+        },
+        {
+          "id": "review",
+          "prompt": "Which choice improves a crowded page?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "Make one primary action clear"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Add highlights to all controls"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Use a new font for each sentence"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Reduce all whitespace"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "A clear primary action reduces competing visual emphasis."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "web-design-foundations-learner-0",
+        "name": "Emma Wilson",
+        "completed": 6
+      },
+      {
+        "id": "web-design-foundations-learner-1",
+        "name": "Hassan Ali",
+        "completed": 4
+      },
+      {
+        "id": "web-design-foundations-learner-2",
+        "name": "Chloe Martin",
+        "completed": 3
+      },
+      {
+        "id": "web-design-foundations-learner-3",
+        "name": "Yara Daher",
+        "completed": 2
+      },
+      {
+        "id": "web-design-foundations-learner-4",
+        "name": "Luca Rossi",
+        "completed": 1
+      }
+    ]
+  },
+  "javascript-essentials": {
+    "lessons": {
+      "javascript-essentials-1": {
+        "summary": "Connect a tiny script to a plain HTML page.",
+        "points": [
+          "Load your script using a script element.",
+          "Open developer tools and inspect the console.",
+          "Log a short message to verify the script runs.",
+          "Exercise: change the message and reload."
+        ]
+      },
+      "javascript-essentials-2": {
+        "summary": "Represent a cart item's label, price and quantity.",
+        "points": [
+          "Use const when you will not reassign a binding.",
+          "Use let for a binding that changes.",
+          "Numbers support arithmetic; strings represent text.",
+          "Exercise: calculate a line total from price and quantity."
+        ]
+      },
+      "javascript-essentials-3": {
+        "summary": "Turn a repeated calculation into a small function.",
+        "points": [
+          "Accept price and quantity as function parameters.",
+          "Return their product to the caller.",
+          "Call the function with different input values.",
+          "Exercise: check zero quantity and a normal order."
+        ]
+      },
+      "javascript-essentials-4": {
+        "summary": "Describe a cart with arrays and objects.",
+        "points": [
+          "Use an object to group an item's related properties.",
+          "Use an array to hold several items.",
+          "Map items to their display labels.",
+          "Exercise: add an item without changing existing objects."
+        ]
+      },
+      "javascript-essentials-5": {
+        "summary": "Choose a message based on a simple condition.",
+        "points": [
+          "Compare the cart total with a delivery threshold.",
+          "Use an if branch for the qualifying case.",
+          "Provide a clear message for the other case.",
+          "Exercise: test values below, at and above the threshold."
+        ]
+      },
+      "javascript-essentials-6": {
+        "summary": "Update a cart summary through the DOM.",
+        "points": [
+          "Find the summary element with querySelector.",
+          "Insert plain text using textContent.",
+          "Keep the source data separate from the displayed text.",
+          "Exercise: update the total after changing quantity."
+        ]
+      },
+      "javascript-essentials-7": {
+        "summary": "Use a cart worksheet to test event-driven behavior.",
+        "points": []
+      },
+      "javascript-essentials-8": {
+        "summary": "Check variables, functions, data and DOM updates.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Mina Farah",
+        "date": "2026-09-12",
+        "body": "Testing the delivery threshold at the exact boundary caught a mistake in my condition. The three test cases were useful."
+      },
+      {
+        "name": "Oliver Reed",
+        "date": "2026-09-16",
+        "body": "Keeping the item object separate from the displayed total made my cart example easier to change."
+      },
+      {
+        "name": "Sara Hamdan",
+        "date": "2026-09-20",
+        "body": "I used textContent for the summary instead of building an HTML string. The event worksheet tied the earlier lessons together."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/javascript-essentials.pdf",
+      "preview": "/resources/javascript-essentials.png",
+      "title": "Interactive cart practice",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Model the items",
+          "body": "Create two item objects with label, price and quantity. Keep them in an array and compute each line total."
+        },
+        {
+          "title": "2. Write a calculation",
+          "body": "Write a function that accepts price and quantity and returns their product. Test zero quantity and a normal item."
+        },
+        {
+          "title": "3. Handle an event",
+          "body": "Connect a button click to a quantity change. Update a summary element using textContent."
+        },
+        {
+          "title": "4. Test boundaries",
+          "body": "Check the delivery threshold below, at and above its boundary. Record input, expected message and actual message."
+        }
+      ]
+    },
+    "exam": {
+      "id": "javascript-essentials-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "Which declaration permits reassignment?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "let"
+            },
+            {
+              "id": "alternative-0",
+              "label": "const"
+            },
+            {
+              "id": "alternative-1",
+              "label": "A quoted string"
+            },
+            {
+              "id": "alternative-2",
+              "label": "An object property name"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "A let binding can be reassigned; a const binding cannot be reassigned."
+        },
+        {
+          "id": "practice",
+          "prompt": "What does a return statement do?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "Always prints to the console"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Changes the page title automatically"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Repeats a loop forever"
+            },
+            {
+              "id": "try",
+              "label": "Gives a result back to the function's caller"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "return supplies the function result and ends that function call."
+        },
+        {
+          "id": "notes",
+          "prompt": "Which structure naturally represents several cart items?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "A CSS selector"
+            },
+            {
+              "id": "alternative-2",
+              "label": "A single timer"
+            },
+            {
+              "id": "insights",
+              "label": "An array of item objects"
+            },
+            {
+              "id": "alternative-0",
+              "label": "One unrelated boolean"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "An array holds the collection while each object groups an item's properties."
+        },
+        {
+          "id": "question",
+          "prompt": "Which property inserts a plain summary message?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "style.background"
+            },
+            {
+              "id": "context",
+              "label": "textContent"
+            },
+            {
+              "id": "alternative-0",
+              "label": "innerHTML with unchecked input"
+            },
+            {
+              "id": "alternative-1",
+              "label": "className for every word"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "textContent updates text without interpreting the value as HTML."
+        },
+        {
+          "id": "review",
+          "prompt": "Which values should test a delivery threshold?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "Below, at and above the boundary"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Only a random large value"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Only the first item label"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Only an empty image"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "Boundary cases help verify the comparison's exact behavior."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "javascript-essentials-learner-0",
+        "name": "Mina Farah",
+        "completed": 8
+      },
+      {
+        "id": "javascript-essentials-learner-1",
+        "name": "Oliver Reed",
+        "completed": 6
+      },
+      {
+        "id": "javascript-essentials-learner-2",
+        "name": "Sara Hamdan",
+        "completed": 5
+      },
+      {
+        "id": "javascript-essentials-learner-3",
+        "name": "Noah Brooks",
+        "completed": 2
+      },
+      {
+        "id": "javascript-essentials-learner-4",
+        "name": "Amira Said",
+        "completed": 1
+      }
+    ]
+  },
+  "responsive-css": {
+    "lessons": {
+      "responsive-css-1": {
+        "summary": "Start with readable content on the narrowest layout.",
+        "points": [
+          "Use normal document flow for the initial layout.",
+          "Allow text and cards to wrap naturally.",
+          "Avoid a fixed page width that exceeds the viewport.",
+          "Exercise: inspect the page at 320 CSS pixels."
+        ]
+      },
+      "responsive-css-2": {
+        "summary": "Keep sizing flexible while bounding readable content.",
+        "points": [
+          "Use relative sizes for flexible page content.",
+          "Add a maximum width for long text blocks.",
+          "Include padding in your sizing decisions.",
+          "Exercise: enlarge text without clipping card labels."
+        ]
+      },
+      "responsive-css-3": {
+        "summary": "Use Flexbox for a row that can wrap.",
+        "points": [
+          "Display the group as flex.",
+          "Allow items to wrap when space runs out.",
+          "Use gap to separate adjacent items.",
+          "Exercise: resize a group of navigation links."
+        ]
+      },
+      "responsive-css-4": {
+        "summary": "Use Grid to align cards in rows and columns.",
+        "points": [
+          "Define columns appropriate to the available space.",
+          "Let card content determine its own height.",
+          "Avoid a minimum column width larger than the viewport.",
+          "Exercise: compare one-column and two-column layouts."
+        ]
+      },
+      "responsive-css-5": {
+        "summary": "Choose breakpoints when the content needs a different arrangement.",
+        "points": [
+          "Resize until the current layout becomes cramped.",
+          "Change the arrangement at that content boundary.",
+          "Test a width just below and above the breakpoint.",
+          "Exercise: inspect long card titles at both widths."
+        ]
+      },
+      "responsive-css-6": {
+        "summary": "Complete a responsive layout test worksheet.",
+        "points": []
+      },
+      "responsive-css-7": {
+        "summary": "Review flexible sizing and responsive verification.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Aya Karam",
+        "date": "2026-09-12",
+        "body": "The long-title check found an overflowing grid item at 320px. A flexible minimum fixed it without hiding the content."
+      },
+      {
+        "name": "Ben Carter",
+        "date": "2026-09-16",
+        "body": "Testing just either side of the breakpoint caught a cramped two-column layout I had overlooked."
+      },
+      {
+        "name": "Fatima Noor",
+        "date": "2026-09-20",
+        "body": "I used wrapping flex links instead of shrinking the labels. The navigation is now readable at narrow widths."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/responsive-css.pdf",
+      "preview": "/resources/responsive-css.png",
+      "title": "Responsive layout test sheet",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Check narrow content",
+          "body": "Open your page at 320 and 430 CSS pixels. Check long titles and navigation without horizontal page scrolling."
+        },
+        {
+          "title": "2. Compare arrangements",
+          "body": "Use one column when cards are cramped and more columns when they fit. Explain the content need behind your breakpoint."
+        },
+        {
+          "title": "3. Stress the layout",
+          "body": "Enlarge text, add a long title and test immediately below and above each breakpoint."
+        },
+        {
+          "title": "4. Review media",
+          "body": "Check that images keep their aspect ratio and fit their container. Record each tested width and any remaining issue."
+        }
+      ]
+    },
+    "exam": {
+      "id": "responsive-css-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "What should drive a layout breakpoint?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "When the content needs a different arrangement"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A random number"
+            },
+            {
+              "id": "alternative-1",
+              "label": "The instructor's screen alone"
+            },
+            {
+              "id": "alternative-2",
+              "label": "The date"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "A breakpoint should solve an observed content or layout problem."
+        },
+        {
+          "id": "practice",
+          "prompt": "What helps a row of links fit a narrow width?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "Hiding all labels"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Giving the page a huge fixed width"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Clipping the right edge"
+            },
+            {
+              "id": "try",
+              "label": "Allowing items to wrap"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "Wrapping preserves readable items when the row runs out of space."
+        },
+        {
+          "id": "notes",
+          "prompt": "Which CSS layout is suited to aligned rows and columns?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "An opacity transition"
+            },
+            {
+              "id": "alternative-2",
+              "label": "A background color"
+            },
+            {
+              "id": "insights",
+              "label": "Grid"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A text shadow"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "Grid provides a two-dimensional layout system."
+        },
+        {
+          "id": "question",
+          "prompt": "How should an image fit a flexible container?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "Crop every important label"
+            },
+            {
+              "id": "context",
+              "label": "Keep its aspect ratio and constrain its width"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Stretch it in both directions"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Force a width wider than the page"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "A constrained width and preserved aspect ratio avoid distortion and overflow."
+        },
+        {
+          "id": "review",
+          "prompt": "Which test is useful near a breakpoint?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "Check widths just below and above it"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Check only one wide screenshot"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Disable all text"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Use only short headings"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "Adjacent widths reveal abrupt layout or wrapping problems."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "responsive-css-learner-0",
+        "name": "Aya Karam",
+        "completed": 7
+      },
+      {
+        "id": "responsive-css-learner-1",
+        "name": "Ben Carter",
+        "completed": 5
+      },
+      {
+        "id": "responsive-css-learner-2",
+        "name": "Fatima Noor",
+        "completed": 4
+      },
+      {
+        "id": "responsive-css-learner-3",
+        "name": "Theo Evans",
+        "completed": 2
+      },
+      {
+        "id": "responsive-css-learner-4",
+        "name": "Jad Hanna",
+        "completed": 1
+      }
+    ]
+  },
+  "react-components": {
+    "lessons": {
+      "react-components-1": {
+        "summary": "Split a product page along meaningful responsibilities.",
+        "points": [
+          "Identify the product list, card and cart summary.",
+          "Give each component a clear purpose.",
+          "Keep data shared by siblings in a common owner.",
+          "Exercise: sketch the component tree before coding."
+        ]
+      },
+      "react-components-2": {
+        "summary": "Pass product information through props.",
+        "points": [
+          "Let a card receive its title and price as props.",
+          "Use composition for a card's optional content.",
+          "Avoid copying the same card markup for every product.",
+          "Exercise: render two cards from the same component."
+        ]
+      },
+      "react-components-3": {
+        "summary": "Render a product list with stable keys.",
+        "points": [
+          "Map product data to card components.",
+          "Use each product's stable identifier as its key.",
+          "Do not generate a new key during every render.",
+          "Exercise: reorder the list and check the displayed products."
+        ]
+      },
+      "react-components-4": {
+        "summary": "Keep one source of truth for an interactive count.",
+        "points": [
+          "Use state for a value changed by an interaction.",
+          "Update it through an event handler.",
+          "Derive the visible total from the current state.",
+          "Exercise: add an item without storing a duplicate total."
+        ]
+      },
+      "react-components-5": {
+        "summary": "Give a form clear labels and feedback.",
+        "points": [
+          "Associate the visible label with the input.",
+          "Keep the entered value in the form's state.",
+          "Explain invalid input next to the form.",
+          "Exercise: preserve the value when validation fails."
+        ]
+      },
+      "react-components-6": {
+        "summary": "Move shared cart state to a common owner.",
+        "points": [
+          "Find the nearest shared parent of the controls and summary.",
+          "Own the cart state in that parent.",
+          "Pass values and event callbacks to the children.",
+          "Exercise: update the summary from two sibling controls."
+        ]
+      },
+      "react-components-7": {
+        "summary": "Separate user events from external-system synchronization.",
+        "points": [
+          "Handle a deliberate click in its event handler.",
+          "Use an effect to synchronize with an external system.",
+          "Clean up subscriptions when the component unmounts.",
+          "Exercise: remove an unnecessary effect for a derived value."
+        ]
+      },
+      "react-components-8": {
+        "summary": "Build a component that works with the keyboard.",
+        "points": [
+          "Use a native button for a button action.",
+          "Keep a visible focus indicator.",
+          "Give icon-only controls an accessible name.",
+          "Exercise: operate the component without a mouse."
+        ]
+      },
+      "react-components-9": {
+        "summary": "Review a reusable cart with a component worksheet.",
+        "points": []
+      },
+      "react-components-10": {
+        "summary": "Check component responsibilities and state ownership.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Nour Abboud",
+        "date": "2026-09-12",
+        "body": "Moving the cart state to the common parent removed two competing totals in my first version."
+      },
+      {
+        "name": "James Patel",
+        "date": "2026-09-16",
+        "body": "The effect lesson helped me recognize a calculation that belonged in rendering. There is less state to keep synchronized now."
+      },
+      {
+        "name": "Lina Youssef",
+        "date": "2026-09-20",
+        "body": "I replaced a clickable div with a button and tested the card from the keyboard. The accessible name check was easy to repeat."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/react-components.pdf",
+      "preview": "/resources/react-components.png",
+      "title": "Component and state review",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Draw the tree",
+          "body": "Sketch a product list, product card and cart summary. Give each component a single clear responsibility."
+        },
+        {
+          "title": "2. Choose the owner",
+          "body": "Mark the common owner of cart state. Derive totals from item data rather than storing a second total."
+        },
+        {
+          "title": "3. Review interactions",
+          "body": "Write down the events that change state. Identify any external subscription and its cleanup."
+        },
+        {
+          "title": "4. Verify reuse",
+          "body": "Render two products, reorder them and operate every control by keyboard. Check keys, labels and focus visibility."
+        }
+      ]
+    },
+    "exam": {
+      "id": "react-components-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "What should a product card receive from its parent?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "Product data through props"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A new global variable for every label"
+            },
+            {
+              "id": "alternative-1",
+              "label": "A copied HTML string"
+            },
+            {
+              "id": "alternative-2",
+              "label": "An unrelated effect"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "Props express the card's inputs and allow the same component to render different products."
+        },
+        {
+          "id": "practice",
+          "prompt": "Which key should identify a product in a list?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "A new random value per render"
+            },
+            {
+              "id": "alternative-1",
+              "label": "The current time"
+            },
+            {
+              "id": "alternative-2",
+              "label": "A changing label color"
+            },
+            {
+              "id": "try",
+              "label": "The product's stable identifier"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "Stable keys preserve identity when a list changes."
+        },
+        {
+          "id": "notes",
+          "prompt": "Where should sibling controls keep shared cart state?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "In a CSS rule"
+            },
+            {
+              "id": "alternative-2",
+              "label": "In the page title"
+            },
+            {
+              "id": "insights",
+              "label": "In their nearest common owner"
+            },
+            {
+              "id": "alternative-0",
+              "label": "In two unrelated copies"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "A common owner gives both controls and the summary one source of truth."
+        },
+        {
+          "id": "question",
+          "prompt": "What is an effect suited to?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "Mutating props during render"
+            },
+            {
+              "id": "context",
+              "label": "Synchronizing with an external system"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Calculating every derived label"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Replacing all click handlers"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "Effects synchronize external systems; user actions belong in event handlers."
+        },
+        {
+          "id": "review",
+          "prompt": "Which element should perform a button action?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "A native button with a clear name"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A div without keyboard behavior"
+            },
+            {
+              "id": "alternative-1",
+              "label": "An image with no alternative"
+            },
+            {
+              "id": "alternative-2",
+              "label": "An unlabelled span"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "A native button provides expected keyboard and semantic behavior."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "react-components-learner-0",
+        "name": "Nour Abboud",
+        "completed": 10
+      },
+      {
+        "id": "react-components-learner-1",
+        "name": "James Patel",
+        "completed": 8
+      },
+      {
+        "id": "react-components-learner-2",
+        "name": "Lina Youssef",
+        "completed": 7
+      },
+      {
+        "id": "react-components-learner-3",
+        "name": "Grace Chen",
+        "completed": 2
+      },
+      {
+        "id": "react-components-learner-4",
+        "name": "Elias Daher",
+        "completed": 1
+      }
+    ]
+  },
+  "accessible-interfaces": {
+    "lessons": {
+      "accessible-interfaces-1": {
+        "summary": "Review a page through the tasks people need to complete.",
+        "points": [
+          "Name the page's main task.",
+          "Consider keyboard, zoom and assistive technology use.",
+          "Keep content understandable and controls predictable.",
+          "Exercise: list three ways to operate the same task."
+        ]
+      },
+      "accessible-interfaces-2": {
+        "summary": "Give the document a useful semantic structure.",
+        "points": [
+          "Use a main landmark for the primary content.",
+          "Use headings to describe the content hierarchy.",
+          "Use links for navigation and buttons for actions.",
+          "Exercise: inspect the heading and landmark outline."
+        ]
+      },
+      "accessible-interfaces-3": {
+        "summary": "Follow the focus order through a form.",
+        "points": [
+          "Move through controls using Tab and Shift+Tab.",
+          "Keep a visible focus indicator.",
+          "Check that every action works from the keyboard.",
+          "Exercise: open and close a dialog and check restored focus."
+        ]
+      },
+      "accessible-interfaces-4": {
+        "summary": "Make input requirements and errors understandable.",
+        "points": [
+          "Associate labels with their form controls.",
+          "Explain a format requirement before submission.",
+          "Describe an error in text near the affected control.",
+          "Exercise: correct an invalid value without losing the draft."
+        ]
+      },
+      "accessible-interfaces-5": {
+        "summary": "Use a practical accessibility review worksheet.",
+        "points": []
+      },
+      "accessible-interfaces-6": {
+        "summary": "Check semantics, focus, labels and readable feedback.",
+        "points": []
+      }
+    },
+    "reviews": [
+      {
+        "name": "Dalia Osman",
+        "date": "2026-09-12",
+        "body": "Following focus through the dialog exposed a missing return-to-trigger step. I added it and repeated the keyboard check."
+      },
+      {
+        "name": "Adam Wright",
+        "date": "2026-09-16",
+        "body": "The label exercise caught a placeholder that disappeared while typing. A persistent label made the form easier to understand."
+      },
+      {
+        "name": "Mariam Fares",
+        "date": "2026-09-20",
+        "body": "I used the review sheet alongside automated checks. Enlarged text found a clipped error that the scan did not explain."
+      }
+    ],
+    "worksheet": {
+      "src": "/resources/accessible-interfaces.pdf",
+      "preview": "/resources/accessible-interfaces.png",
+      "title": "Accessibility review checklist",
+      "introduction": "Work through these four exercises, then compare your result with the lesson examples.",
+      "sections": [
+        {
+          "title": "1. Inspect structure",
+          "body": "Check the main landmark and heading order. Confirm that links navigate and buttons perform actions."
+        },
+        {
+          "title": "2. Follow the keyboard",
+          "body": "Use Tab, Shift+Tab, Enter and Escape where appropriate. Check visible focus and its return after closing a dialog."
+        },
+        {
+          "title": "3. Review form feedback",
+          "body": "Check persistent labels, instructions and text errors. Submit invalid input, correct it and confirm your draft remains."
+        },
+        {
+          "title": "4. Stress readability",
+          "body": "Enlarge text and check contrast. Combine automated checks with keyboard and screen-reader review; record limitations honestly."
+        }
+      ]
+    },
+    "exam": {
+      "id": "accessible-interfaces-check",
+      "questions": [
+        {
+          "id": "goal",
+          "prompt": "Which element should navigate to another page?",
+          "options": [
+            {
+              "id": "specific",
+              "label": "A link with a meaningful destination"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A button that hides its purpose"
+            },
+            {
+              "id": "alternative-1",
+              "label": "An unlabelled div"
+            },
+            {
+              "id": "alternative-2",
+              "label": "A decorative image"
+            }
+          ],
+          "correctOptionId": "specific",
+          "explanation": "Links express navigation and expose their destinations to browsers and assistive technology."
+        },
+        {
+          "id": "practice",
+          "prompt": "What should happen to focus after a dialog closes?",
+          "options": [
+            {
+              "id": "alternative-0",
+              "label": "Disappear entirely"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Remain inside hidden content"
+            },
+            {
+              "id": "alternative-2",
+              "label": "Jump randomly"
+            },
+            {
+              "id": "try",
+              "label": "Return to a sensible trigger or next task control"
+            }
+          ],
+          "correctOptionId": "try",
+          "explanation": "Restoring focus allows the keyboard user to continue from the task context."
+        },
+        {
+          "id": "notes",
+          "prompt": "What should identify a form field while someone types?",
+          "options": [
+            {
+              "id": "alternative-1",
+              "label": "Its border color alone"
+            },
+            {
+              "id": "alternative-2",
+              "label": "An unrelated footer note"
+            },
+            {
+              "id": "insights",
+              "label": "A persistent associated label"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A placeholder alone"
+            }
+          ],
+          "correctOptionId": "insights",
+          "explanation": "An associated label remains available when the field contains a value."
+        },
+        {
+          "id": "question",
+          "prompt": "How should invalid input be explained?",
+          "options": [
+            {
+              "id": "alternative-2",
+              "label": "A silent vibration only"
+            },
+            {
+              "id": "context",
+              "label": "A clear text message near the control"
+            },
+            {
+              "id": "alternative-0",
+              "label": "A color change alone"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Clearing every field"
+            }
+          ],
+          "correctOptionId": "context",
+          "explanation": "Text feedback identifies the problem without relying on color and preserves context."
+        },
+        {
+          "id": "review",
+          "prompt": "What can an automated accessibility scan establish?",
+          "options": [
+            {
+              "id": "explain",
+              "label": "Some detectable issues, supplemented by manual review"
+            },
+            {
+              "id": "alternative-0",
+              "label": "Complete accessibility for every person"
+            },
+            {
+              "id": "alternative-1",
+              "label": "Physical keyboard behavior on every device"
+            },
+            {
+              "id": "alternative-2",
+              "label": "All screen-reader experiences"
+            }
+          ],
+          "correctOptionId": "explain",
+          "explanation": "Automated scans cover only part of accessibility; task and assistive-technology checks remain necessary."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "id": "accessible-interfaces-learner-0",
+        "name": "Dalia Osman",
+        "completed": 6
+      },
+      {
+        "id": "accessible-interfaces-learner-1",
+        "name": "Adam Wright",
+        "completed": 4
+      },
+      {
+        "id": "accessible-interfaces-learner-2",
+        "name": "Mariam Fares",
+        "completed": 3
+      },
+      {
+        "id": "accessible-interfaces-learner-3",
+        "name": "Leo Silva",
+        "completed": 2
+      },
+      {
+        "id": "accessible-interfaces-learner-4",
+        "name": "Rita Azar",
+        "completed": 1
+      }
+    ]
+  }
+}

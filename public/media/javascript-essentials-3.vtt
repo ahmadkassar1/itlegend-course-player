@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Accept price and quantity as function parameters.
+
+2
+00:00:04.000 --> 00:00:08.000
+Return their product to the caller.
+
+3
+00:00:08.000 --> 00:00:12.000
+Call the function with different input values.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: check zero quantity and a normal order.

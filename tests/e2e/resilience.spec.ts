@@ -64,6 +64,9 @@ test("200% text sizing and WCAG text spacing preserve content, reflow and all mo
         modal.getByRole("button", { name: /^Close / }),
       ).toBeInViewport();
       if (kind === "exam") {
+        await modal
+          .getByRole("button", { name: /^Question 1(, answered)?$/ })
+          .click();
         await modal.getByRole("radio").last().check();
         await expect(modal.getByRole("radio").last()).toBeChecked();
         await modal.getByRole("button", { name: "Next question" }).click();
@@ -101,7 +104,9 @@ test("long Arabic, multiline and unbroken comments remain readable with six-to-t
     await page
       .getByRole("button", { name: "Submit Review", exact: true })
       .click();
-    await expect(page.getByRole("status")).toContainText("added");
+    await expect(page.getByRole("status")).toContainText(
+      "saved on this device",
+    );
     const added = page.locator("#comments li").last().locator("p");
     await expect(added).toHaveText(message);
     expect(

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Use an object to group an item's related properties.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use an array to hold several items.
+
+3
+00:00:08.000 --> 00:00:12.000
+Map items to their display labels.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: add an item without changing existing objects.

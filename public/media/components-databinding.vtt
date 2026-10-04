@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Store each service's title and description as data.
+
+2
+00:00:04.000 --> 00:00:08.000
+Pass that data to the same card component.
+
+3
+00:00:08.000 --> 00:00:12.000
+Use stable identifiers when rendering a list.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: change one title without changing the card layout.

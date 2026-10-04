@@ -13,6 +13,7 @@ import type { CourseDialog } from "./course-dialogs";
 import { getLessons } from "@/lib/course";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { useLearningStore } from "@/features/learning/learning-provider";
+import { usePersistence } from "@/features/learning/persistence-provider";
 import type { Course, Lesson } from "@/types/course";
 import { Curriculum } from "./curriculum";
 import { LessonPlayer } from "./lesson-player";
@@ -29,7 +30,7 @@ export function CourseLayout({
   materials,
   comments,
 }: {
-  course: Pick<Course, "slug" | "title" | "poster" | "sections">;
+  course: Pick<Course, "slug" | "title" | "poster" | "sections" | "peers">;
   lesson: Lesson;
   materials: ReactNode;
   comments: ReactNode;
@@ -40,9 +41,11 @@ export function CourseLayout({
   const main = useRef<HTMLElement>(null);
   const desktop = useMediaQuery("(min-width: 1024px)");
   const store = useLearningStore();
+  const { status } = usePersistence();
   useEffect(() => {
+    if (status === "loading") return;
     store.dispatch(course.slug, { type: "select", lessonId: lesson.id });
-  }, [course.slug, lesson.id, store]);
+  }, [course.slug, lesson.id, store, status]);
   useEffect(() => {
     const player = main.current?.querySelector<HTMLElement>(
       '[aria-label="Current lesson"]',
@@ -124,6 +127,7 @@ export function CourseLayout({
           courseSlug={course.slug}
           courseTitle={course.title}
           total={getLessons(course).length}
+          peers={course.peers}
           onClose={() => setDialog(null)}
         />
       ) : null}

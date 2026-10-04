@@ -73,7 +73,7 @@ test("question draft survives Escape, reopening and client navigation, with isol
   await expect(dialog.getByRole("textbox")).toHaveValue(draft);
   await dialog.getByRole("button", { name: "Submit Question" }).click();
   await expect(dialog.getByRole("status")).toContainText(
-    "saved in this demo session",
+    "saved on this device",
   );
   await expect(dialog.getByRole("textbox")).toHaveValue("");
   await expect(
@@ -89,11 +89,11 @@ test("question draft survives Escape, reopening and client navigation, with isol
   await trigger.click();
   await expect(
     dialog.getByRole("region", { name: "Your saved questions" }),
-  ).toHaveCount(0);
+  ).toContainText(draft);
   await expect(dialog.getByRole("textbox")).toHaveValue("");
 });
 
-test("comments validate blank input, render literal text once and retain only in their course session", async ({
+test("comments validate blank input, render literal text once and persist after reload and stay isolated by course", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -115,7 +115,7 @@ test("comments validate blank input, render literal text once and retain only in
   await expect(comments.getByRole("listitem")).toHaveCount(4);
   await expect(comments.getByRole("listitem").last()).toContainText(body);
   await expect(comments.getByRole("status")).toContainText(
-    "added to this demo session",
+    "saved on this device",
   );
   await expect(comments.getByRole("textbox")).toHaveValue("");
   await comments.getByRole("button", { name: "Submit Review" }).click();
@@ -130,7 +130,8 @@ test("comments validate blank input, render literal text once and retain only in
   );
   await expect(comments.getByRole("listitem")).toHaveCount(4);
   await page.reload();
-  await expect(comments.getByRole("listitem")).toHaveCount(3);
+  await expect(comments.getByRole("listitem")).toHaveCount(4);
+  await expect(comments.getByRole("listitem").last()).toContainText(body);
   expect(errors).toEqual([]);
 });
 
@@ -152,7 +153,9 @@ test("exam retains answer and current question after closing/navigation, validat
   await expect(dialog.getByRole("alert")).toContainText("Answer all 5");
   await dialog.getByRole("button", { name: "Question 2", exact: true }).click();
   await dialog
-    .getByRole("radio", { name: "Try a simple example yourself" })
+    .getByRole("radio", {
+      name: "On the server before HTML reaches the browser",
+    })
     .check();
   await dialog.getByRole("button", { name: "Next question" }).click();
   await page.keyboard.press("Escape");
@@ -165,7 +168,9 @@ test("exam retains answer and current question after closing/navigation, validat
     .getByRole("button", { name: "Question 2, answered", exact: true })
     .click();
   await expect(
-    dialog.getByRole("radio", { name: "Try a simple example yourself" }),
+    dialog.getByRole("radio", {
+      name: "On the server before HTML reaches the browser",
+    }),
   ).toBeChecked();
   await closeDialog(page);
   await openCourseFromCatalogue(page, "JavaScript Essentials");
@@ -179,13 +184,15 @@ test("exam retains answer and current question after closing/navigation, validat
   );
   await page.getByRole("button", { name: "Open exam", exact: true }).click();
   await expect(
-    dialog.getByRole("radio", { name: "Try a simple example yourself" }),
+    dialog.getByRole("radio", {
+      name: "On the server before HTML reaches the browser",
+    }),
   ).toBeChecked();
   for (const [index, label] of [
-    [1, "Learning everything at once"], // One deliberately incorrect answer verifies scoring.
-    [3, "Key ideas, observations and questions"],
-    [4, "Describe what you tried and what happened"],
-    [5, "Explain and apply the idea in your own words"],
+    [1, "Welcome to our website"], // One deliberately incorrect answer verifies scoring.
+    [3, "textContent"],
+    [4, "A stable identifier from the service data"],
+    [5, "Read the page on mobile and test its links and keyboard controls"],
   ] as const) {
     await dialog
       .getByRole("button", { name: `Question ${index}`, exact: true })
@@ -213,7 +220,9 @@ test("exam retains answer and current question after closing/navigation, validat
     .getByRole("button", { name: "Question 2, answered", exact: true })
     .click();
   await expect(
-    dialog.getByRole("radio", { name: "Try a simple example yourself" }),
+    dialog.getByRole("radio", {
+      name: "On the server before HTML reaches the browser",
+    }),
   ).toBeChecked();
   await page.screenshot({ path: capturePath("desktop-exam-result") });
   await closeDialog(page);
@@ -247,7 +256,7 @@ test("PDF displays its actual rendered page and accessible text, zooms inside th
   });
   await expect(dialog).toBeVisible();
   const image = dialog.getByRole("img", {
-    name: /Page 1 of Your learning plan/,
+    name: /Page 1 of Service page planning worksheet/,
   });
   await expect(image).toBeVisible();
   await expect
@@ -260,7 +269,7 @@ test("PDF displays its actual rendered page and accessible text, zooms inside th
       ),
     )
     .toBe(true);
-  const pdf = await request.get("/resources/learning-plan.pdf");
+  const pdf = await request.get("/resources/starting-seo.pdf");
   expect(pdf.ok()).toBe(true);
   expect(pdf.headers()["content-type"]).toContain("application/pdf");
   expect((await pdf.body()).subarray(0, 5).toString()).toBe("%PDF-");
@@ -279,7 +288,7 @@ test("PDF displays its actual rendered page and accessible text, zooms inside th
   await dialog.getByLabel("PDF page size").selectOption("100");
   await dialog.getByText("Read worksheet as text", { exact: true }).click();
   await expect(
-    dialog.getByRole("heading", { name: "1. Choose one goal" }),
+    dialog.getByRole("heading", { name: "1. Choose a service" }),
   ).toBeVisible();
   await dialog.getByRole("button", { name: "Mark read", exact: true }).click();
   await expect(
@@ -448,7 +457,7 @@ test("PDF preview failure keeps readable document text and the original-file alt
   await page.route(
     (url) =>
       url.pathname === "/_next/image" &&
-      url.searchParams.get("url") === "/resources/learning-plan.png",
+      url.searchParams.get("url") === "/resources/starting-seo.png",
     (route) => route.abort(),
   );
   await page.goto(`${seo}?lesson=reference-files`);
@@ -458,9 +467,9 @@ test("PDF preview failure keeps readable document text and the original-file alt
     "preview could not load",
   );
   await expect(
-    dialog.getByRole("heading", { name: "1. Choose one goal" }),
+    dialog.getByRole("heading", { name: "1. Choose a service" }),
   ).toBeVisible();
   await expect(
     dialog.getByRole("link", { name: /Open original PDF/ }),
-  ).toHaveAttribute("href", "/resources/learning-plan.pdf");
+  ).toHaveAttribute("href", "/resources/starting-seo.pdf");
 });

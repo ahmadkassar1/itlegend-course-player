@@ -185,6 +185,19 @@
   font-size: 0.75rem;
   text-align: center;
 }
+.learnerSettings p {
+  margin: 8px 0;
+}
+.learnerSettings button {
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: white;
+  color: var(--action);
+  font: inherit;
+  cursor: pointer;
+}
 @media (max-width: 1099px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

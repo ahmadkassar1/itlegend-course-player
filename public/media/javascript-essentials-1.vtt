@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Load your script using a script element.
+
+2
+00:00:04.000 --> 00:00:08.000
+Open developer tools and inspect the console.
+
+3
+00:00:08.000 --> 00:00:12.000
+Log a short message to verify the script runs.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: change the message and reload.

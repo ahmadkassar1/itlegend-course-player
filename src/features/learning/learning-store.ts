@@ -1,3 +1,5 @@
+import { record } from "./saved-state.ts";
+
 export type CourseSeed = {
   slug: string;
   lessonIds: readonly string[];
@@ -77,6 +79,49 @@ export function createLearningStore(seeds: readonly CourseSeed[]) {
   }
   return {
     get,
+    snapshot: () => current,
+    restore(value: unknown) {
+      const saved = record(value);
+      current = Object.fromEntries(
+        seeds.map((seed) => {
+          const entry = record(saved[seed.slug]);
+          const defaults = initialCourseState(seed);
+          const ids = Array.isArray(entry.completedLessonIds)
+            ? entry.completedLessonIds.filter(
+                (id): id is string =>
+                  typeof id === "string" && seed.lessonIds.includes(id),
+              )
+            : defaults.completedLessonIds;
+          const positions = Object.fromEntries(
+            Object.entries(record(entry.positions)).filter(
+              ([id, seconds]) =>
+                seed.lessonIds.includes(id) &&
+                typeof seconds === "number" &&
+                Number.isFinite(seconds) &&
+                seconds >= 0 &&
+                seconds <= 86400,
+            ),
+          );
+          return [
+            seed.slug,
+            {
+              completedLessonIds: [...new Set(ids)],
+              lastLessonId:
+                typeof entry.lastLessonId === "string" &&
+                seed.lessonIds.includes(entry.lastLessonId)
+                  ? entry.lastLessonId
+                  : defaults.lastLessonId,
+              positions: positions as Record<string, number>,
+            },
+          ];
+        }),
+      );
+      listeners.forEach((listener) => listener());
+    },
+    reset() {
+      current = initial;
+      listeners.forEach((listener) => listener());
+    },
     getInitial: (slug: string) => initial[slug],
     subscribe(listener: () => void) {
       listeners.add(listener);

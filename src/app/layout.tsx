@@ -5,6 +5,7 @@ import { courses } from "@/data/courses";
 import { getLessons } from "@/lib/course";
 import { LearningProvider } from "@/features/learning/learning-provider";
 import { InteractionProvider } from "@/features/learning/interaction-provider";
+import { PersistenceProvider } from "@/features/learning/persistence-provider";
 
 export const metadata: Metadata = {
   title: { default: "Course Library", template: "%s | Course Library" },
@@ -36,6 +37,7 @@ export default function RootLayout({
                 .filter((lesson) => lesson.kind === "exam")
                 .map((lesson) => ({
                   id: lesson.exam.id,
+                  lessonId: lesson.id,
                   questions: lesson.exam.questions.map((question) => ({
                     id: question.id,
                     optionIds: question.options.map((option) => option.id),
@@ -44,7 +46,7 @@ export default function RootLayout({
                 })),
             }))}
           >
-            {children}
+            <PersistenceProvider>{children}</PersistenceProvider>
           </InteractionProvider>
         </LearningProvider>
       </body>

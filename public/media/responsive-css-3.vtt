@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Display the group as flex.
+
+2
+00:00:04.000 --> 00:00:08.000
+Allow items to wrap when space runs out.
+
+3
+00:00:08.000 --> 00:00:12.000
+Use gap to separate adjacent items.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: resize a group of navigation links.

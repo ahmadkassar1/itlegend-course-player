@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+PHP is executed by a configured server before HTML reaches the browser.
+
+2
+00:00:04.000 --> 00:00:08.000
+A PHP template can insert a value into an HTML page.
+
+3
+00:00:08.000 --> 00:00:12.000
+Escape untrusted text when inserting it into HTML.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: compare the template with its rendered HTML.

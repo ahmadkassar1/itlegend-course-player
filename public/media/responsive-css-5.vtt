@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Resize until the current layout becomes cramped.
+
+2
+00:00:04.000 --> 00:00:08.000
+Change the arrangement at that content boundary.
+
+3
+00:00:08.000 --> 00:00:12.000
+Test a width just below and above the breakpoint.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: inspect long card titles at both widths.

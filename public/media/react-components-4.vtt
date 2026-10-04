@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Use state for a value changed by an interaction.
+
+2
+00:00:04.000 --> 00:00:08.000
+Update it through an event handler.
+
+3
+00:00:08.000 --> 00:00:12.000
+Derive the visible total from the current state.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: add an item without storing a duplicate total.

@@ -42,10 +42,22 @@ export function LessonPlayer({
       setFullscreen(false);
     }
     document.addEventListener("fullscreenchange", syncFullscreen);
+    function saveOnHide() {
+      if (element)
+        store.dispatch(courseSlug, {
+          type: "position",
+          lessonId: lesson.id,
+          seconds: element.ended ? 0 : element.currentTime,
+        });
+    }
+    window.addEventListener("pagehide", saveOnHide);
+    document.addEventListener("visibilitychange", saveOnHide);
     element?.addEventListener("webkitbeginfullscreen", nativeEnter);
     element?.addEventListener("webkitendfullscreen", nativeExit);
     return () => {
       document.removeEventListener("fullscreenchange", syncFullscreen);
+      window.removeEventListener("pagehide", saveOnHide);
+      document.removeEventListener("visibilitychange", saveOnHide);
       element?.removeEventListener("webkitbeginfullscreen", nativeEnter);
       element?.removeEventListener("webkitendfullscreen", nativeExit);
       if (element) {
@@ -110,7 +122,7 @@ export function LessonPlayer({
           ref={video}
           className={styles.video}
           src={lesson.media.src}
-          poster={poster}
+          poster={lesson.media.poster ?? poster}
           preload="none"
           playsInline
           controls={started}

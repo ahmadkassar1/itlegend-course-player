@@ -10,9 +10,13 @@ for (const width of [430, 1440]) {
     page.on("request", (request) => requests.push(request.url()));
     page.on("pageerror", (error) => errors.push(error.message));
     const mediaRequests = () =>
-      requests.filter((url) => url.includes("study-plan.webm"));
+      requests.filter((url) => url.includes("introduction.webm"));
     const documentRequests = () =>
-      requests.filter((url) => url.includes("learning-plan"));
+      requests.filter(
+        (url) =>
+          url.includes("resources%2Fstarting-seo") ||
+          url.includes("/resources/starting-seo"),
+      );
 
     await page.goto("/courses/starting-seo");
     await page

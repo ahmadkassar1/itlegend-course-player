@@ -270,7 +270,7 @@ test("unsupported fullscreen and failed media give truthful recovery without pro
   await page.addInitScript(() =>
     Object.defineProperty(document, "fullscreenEnabled", { get: () => false }),
   );
-  await page.route("**/media/study-plan.webm", (route) => route.abort());
+  await page.route("**/media/embedding-php.webm", (route) => route.abort());
   await page.goto("/courses/starting-seo?lesson=embedding-php");
   await page.getByRole("button", { name: "Maximize player" }).click();
   await expect(page.getByRole("status")).toContainText(
@@ -285,7 +285,7 @@ test("unsupported fullscreen and failed media give truthful recovery without pro
   await expect(
     page.getByRole("progressbar", { name: "Course completion" }),
   ).toHaveAttribute("aria-valuenow", "63");
-  await page.unroute("**/media/study-plan.webm");
+  await page.unroute("**/media/embedding-php.webm");
   await page.getByRole("button", { name: "Retry playback" }).click();
   await expect
     .poll(() => page.$eval("video", (element) => element.currentTime))

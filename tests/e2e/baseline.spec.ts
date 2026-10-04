@@ -93,7 +93,7 @@ test("lesson navigation updates content and current state; back and invalid deep
   );
   await expect(
     page.getByText(
-      "Explore the course roadmap and prepare a learning plan that fits your schedule.",
+      "Connect useful content with the page's technical foundations.",
     ),
   ).toBeAttached();
   const toggle = page.getByRole("button", {

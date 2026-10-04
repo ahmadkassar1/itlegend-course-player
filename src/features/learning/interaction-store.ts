@@ -1,4 +1,5 @@
 import type { DemoMessage, ExamAttempt } from "../../types/interaction";
+import { record, boundedText } from "./saved-state.ts";
 
 export const MAX_MESSAGE_LENGTH = 2000;
 
@@ -6,6 +7,7 @@ export type InteractionSeed = {
   slug: string;
   exams: readonly {
     id: string;
+    lessonId?: string;
     questions: readonly {
       id: string;
       optionIds: readonly string[];
@@ -48,6 +50,81 @@ export function initialInteractions(seed: InteractionSeed): CourseInteractions {
   };
 }
 
+function restoreMessages(value: unknown): DemoMessage[] {
+  if (!Array.isArray(value)) return [];
+  const seen = new Set<string>();
+  return value.slice(-50).flatMap((item) => {
+    const entry = record(item);
+    const id = boundedText(entry.id, 100);
+    const body = boundedText(entry.body, MAX_MESSAGE_LENGTH).trim();
+    const date = boundedText(entry.date, 40);
+    if (
+      !id.trim() ||
+      !validMessage(body) ||
+      !Number.isFinite(Date.parse(date)) ||
+      seen.has(id)
+    )
+      return [];
+    seen.add(id);
+    return [{ id, body, date }];
+  });
+}
+
+export function restoreInteractions(
+  seed: InteractionSeed,
+  value: unknown,
+): CourseInteractions {
+  const saved = record(value);
+  const attempts = record(saved.attempts);
+  return {
+    questionDraft: boundedText(saved.questionDraft, MAX_MESSAGE_LENGTH),
+    commentDraft: boundedText(saved.commentDraft, MAX_MESSAGE_LENGTH),
+    questions: restoreMessages(saved.questions),
+    comments: restoreMessages(saved.comments),
+    attempts: Object.fromEntries(
+      seed.exams.map((exam) => {
+        const entry = record(attempts[exam.id]);
+        const rawAnswers = record(entry.answers);
+        const answers = Object.fromEntries(
+          exam.questions.flatMap((question) => {
+            const option = rawAnswers[question.id];
+            return typeof option === "string" &&
+              question.optionIds.includes(option)
+              ? [[question.id, option]]
+              : [];
+          }),
+        );
+        const submitted =
+          entry.submitted === true &&
+          exam.questions.length > 0 &&
+          exam.questions.every(
+            (question) => answers[question.id] !== undefined,
+          );
+        return [
+          exam.id,
+          {
+            index:
+              typeof entry.index === "number" &&
+              Number.isInteger(entry.index) &&
+              entry.index >= 0 &&
+              entry.index < exam.questions.length
+                ? entry.index
+                : 0,
+            answers,
+            submitted,
+            correct: submitted
+              ? exam.questions.filter(
+                  (question) =>
+                    answers[question.id] === question.correctOptionId,
+                ).length
+              : null,
+          },
+        ];
+      }),
+    ),
+  };
+}
+
 export function updateInteractions(
   state: CourseInteractions,
   seed: InteractionSeed,
@@ -73,7 +150,7 @@ export function updateInteractions(
       ...state,
       [draft]: "",
       [list]: [
-        ...state[list],
+        ...state[list].slice(-49),
         { id: action.id, date: action.date, body: state[draft].trim() },
       ],
     };
@@ -139,6 +216,29 @@ export function createInteractionStore(seeds: readonly InteractionSeed[]) {
   }
   return {
     get,
+    snapshot: () => current,
+    submittedLessons: () =>
+      seeds.flatMap((seed) =>
+        seed.exams.flatMap((exam) =>
+          exam.lessonId && get(seed.slug).attempts[exam.id].submitted
+            ? [{ slug: seed.slug, lessonId: exam.lessonId }]
+            : [],
+        ),
+      ),
+    restore(value: unknown) {
+      const saved = record(value);
+      current = Object.fromEntries(
+        seeds.map((seed) => [
+          seed.slug,
+          restoreInteractions(seed, saved[seed.slug]),
+        ]),
+      );
+      listeners.forEach((listener) => listener());
+    },
+    reset() {
+      current = initial;
+      listeners.forEach((listener) => listener());
+    },
     getInitial: (slug: string) => initial[slug],
     subscribe(listener: () => void) {
       listeners.add(listener);

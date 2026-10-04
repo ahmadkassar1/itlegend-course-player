@@ -55,7 +55,12 @@ export function resolveLesson(course: Course, requested?: string): Lesson {
 }
 
 export function rankLearners(
-  peers: readonly { id: string; name: string; fraction: number }[],
+  peers: readonly {
+    id: string;
+    name: string;
+    fraction?: number;
+    completed?: number;
+  }[],
   completed: number,
   total: number,
 ) {
@@ -65,7 +70,10 @@ export function rankLearners(
       name: peer.name,
       completed: Math.max(
         0,
-        Math.min(total, Math.floor(total * peer.fraction)),
+        Math.min(
+          total,
+          peer.completed ?? Math.floor(total * (peer.fraction ?? 0)),
+        ),
       ),
     })),
     { id: "you", name: "You", completed },

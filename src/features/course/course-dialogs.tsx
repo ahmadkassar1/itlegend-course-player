@@ -1,7 +1,7 @@
 "use client";
 
 import { Dialog } from "@/components/dialog";
-import type { Lesson } from "@/types/course";
+import type { Course, Lesson } from "@/types/course";
 import { ExamDialog } from "./exam-dialog";
 import { PdfDialog } from "./pdf-dialog";
 import { QuestionDialog } from "./question-dialog";
@@ -17,12 +17,14 @@ export function CourseDialogs({
   courseSlug,
   courseTitle,
   total,
+  peers,
   onClose,
 }: {
   dialog: CourseDialog;
   courseSlug: string;
   courseTitle: string;
   total: number;
+  peers: Course["peers"];
   onClose: () => void;
 }) {
   const title =
@@ -43,7 +45,11 @@ export function CourseDialogs({
       {dialog.kind === "question" ? (
         <QuestionDialog courseSlug={courseSlug} />
       ) : dialog.kind === "leaderboard" ? (
-        <LeaderboardDialog courseSlug={courseSlug} total={total} />
+        <LeaderboardDialog
+          courseSlug={courseSlug}
+          total={total}
+          peers={peers}
+        />
       ) : dialog.lesson.kind === "pdf" ? (
         <PdfDialog courseSlug={courseSlug} lesson={dialog.lesson} />
       ) : (

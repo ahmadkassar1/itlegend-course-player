@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Use const when you will not reassign a binding.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use let for a binding that changes.
+
+3
+00:00:08.000 --> 00:00:12.000
+Numbers support arithmetic; strings represent text.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: calculate a line total from price and quantity.

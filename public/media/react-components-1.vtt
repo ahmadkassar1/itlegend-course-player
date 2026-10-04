@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Identify the product list, card and cart summary.
+
+2
+00:00:04.000 --> 00:00:08.000
+Give each component a clear purpose.
+
+3
+00:00:08.000 --> 00:00:12.000
+Keep data shared by siblings in a common owner.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: sketch the component tree before coding.

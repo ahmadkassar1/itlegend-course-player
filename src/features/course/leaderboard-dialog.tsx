@@ -2,20 +2,23 @@
 
 import { useCourseLearning } from "@/features/learning/learning-provider";
 import { getProgress, getStudentLevel, rankLearners } from "@/lib/course";
-import { motivationalMessages, sampleLearners } from "@/data/motivation";
+import { motivationalMessages } from "@/data/motivation";
+import type { Course } from "@/types/course";
 import styles from "./dialogs.module.css";
 
 export function LeaderboardDialog({
   courseSlug,
   total,
+  peers,
 }: {
   courseSlug: string;
   total: number;
+  peers: Course["peers"];
 }) {
   const state = useCourseLearning(courseSlug);
   const completed = state.completedLessonIds.length;
   const level = getStudentLevel(getProgress(completed, total));
-  const rows = rankLearners(sampleLearners, completed, total);
+  const rows = rankLearners(peers, completed, total);
   return (
     <div className={styles.leaderboard}>
       <p className={styles.motivation} lang="ar" dir="rtl">

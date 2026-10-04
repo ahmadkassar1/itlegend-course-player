@@ -6,10 +6,12 @@ import {
 } from "@/features/learning/interaction-provider";
 import { TextEntryForm } from "./text-entry-form";
 import styles from "./dialogs.module.css";
+import { usePersistence } from "@/features/learning/persistence-provider";
 
 export function QuestionDialog({ courseSlug }: { courseSlug: string }) {
   const state = useCourseInteractions(courseSlug);
   const store = useInteractionStore();
+  const { status } = usePersistence();
   return (
     <div className={styles.question}>
       <p className={styles.muted}>
@@ -30,7 +32,11 @@ export function QuestionDialog({ courseSlug }: { courseSlug: string }) {
             date: new Date().toISOString(),
           })
         }
-        confirmation="Your question was saved in this demo session."
+        confirmation={
+          status === "saved"
+            ? "Your question was saved on this device. It has not been sent to an instructor."
+            : "Your question was kept for this visit. Saving is unavailable; it has not been sent to an instructor."
+        }
       />
       {state.questions.length ? (
         <section aria-label="Your saved questions">

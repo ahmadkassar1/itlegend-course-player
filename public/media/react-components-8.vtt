@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Use a native button for a button action.
+
+2
+00:00:04.000 --> 00:00:08.000
+Keep a visible focus indicator.
+
+3
+00:00:08.000 --> 00:00:12.000
+Give icon-only controls an accessible name.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: operate the component without a mouse.

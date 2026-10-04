@@ -4,6 +4,7 @@ import { courses } from "@/data/courses";
 import { CourseCard } from "@/features/catalogue/course-card";
 import { summarizeCourse } from "@/lib/course";
 import styles from "@/features/catalogue/catalogue.module.css";
+import { LearnerSettings } from "@/features/catalogue/learner-settings";
 
 export default function CataloguePage() {
   return (
@@ -37,7 +38,7 @@ export default function CataloguePage() {
         </section>
       </main>
       <footer className={styles.footer}>
-        Small steps. Meaningful progress.
+        <LearnerSettings />
       </footer>
     </div>
   );

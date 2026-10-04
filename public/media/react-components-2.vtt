@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Let a card receive its title and price as props.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use composition for a card's optional content.
+
+3
+00:00:08.000 --> 00:00:12.000
+Avoid copying the same card markup for every product.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: render two cards from the same component.

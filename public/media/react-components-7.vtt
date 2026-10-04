@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.000
+Handle a deliberate click in its event handler.
+
+2
+00:00:04.000 --> 00:00:08.000
+Use an effect to synchronize with an external system.
+
+3
+00:00:08.000 --> 00:00:12.000
+Clean up subscriptions when the component unmounts.
+
+4
+00:00:12.000 --> 00:00:16.000
+Exercise: remove an unnecessary effect for a derived value.

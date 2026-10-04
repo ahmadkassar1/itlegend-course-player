@@ -2,7 +2,12 @@ import type { Exam, Worksheet } from "./interaction";
 
 export type LessonKind = "video" | "pdf" | "exam";
 
-export type LessonMedia = { src: string; captions: string; transcript: string };
+export type LessonMedia = {
+  src: string;
+  captions: string;
+  transcript: string;
+  poster?: string;
+};
 
 type LessonBase = {
   id: string;
@@ -50,6 +55,7 @@ export type Course = {
   initialCompletedLessonIds: string[];
   initialLessonId: string;
   comments: Comment[];
+  peers: { id: string; name: string; completed: number }[];
 };
 
 export type CourseSummary = Pick<

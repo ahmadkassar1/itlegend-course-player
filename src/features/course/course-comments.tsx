@@ -8,6 +8,7 @@ import {
 import { CommentItem } from "./comment-item";
 import { TextEntryForm } from "./text-entry-form";
 import styles from "./course.module.css";
+import { usePersistence } from "@/features/learning/persistence-provider";
 
 export function CourseComments({
   courseSlug,
@@ -18,6 +19,7 @@ export function CourseComments({
 }) {
   const state = useCourseInteractions(courseSlug);
   const store = useInteractionStore();
+  const { status } = usePersistence();
   return (
     <section
       id="comments"
@@ -54,7 +56,11 @@ export function CourseComments({
             date: new Date().toISOString(),
           })
         }
-        confirmation="Your comment was added to this demo session."
+        confirmation={
+          status === "saved"
+            ? "Your review was saved on this device."
+            : "Your review was kept for this visit. Saving is unavailable."
+        }
       />
     </section>
   );

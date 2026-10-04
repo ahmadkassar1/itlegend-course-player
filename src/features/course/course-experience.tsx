@@ -22,6 +22,7 @@ export function CourseExperience({
         title: course.title,
         poster: course.poster,
         sections: course.sections,
+        peers: course.peers,
       }}
       lesson={resolveLesson(course, selectedLessonId)}
       materials={materials}
