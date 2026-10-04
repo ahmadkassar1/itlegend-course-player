@@ -2,7 +2,15 @@ import Link from "next/link";
 import { Icon } from "@/components/icon";
 import styles from "./course.module.css";
 
-export function CourseHeader({ title }: { title: string }) {
+export function CourseHeader({
+  title,
+  desktopTitle,
+}: {
+  title: string;
+  desktopTitle?: string;
+}) {
+  const prefix =
+    desktopTitle && title.startsWith(desktopTitle) ? desktopTitle : title;
   return (
     <header className={styles.header}>
       <div className={styles.headerInner}>
@@ -21,7 +29,14 @@ export function CourseHeader({ title }: { title: string }) {
             </li>
           </ol>
         </nav>
-        <h1>{title}</h1>
+        <h1>
+          {prefix}
+          {prefix !== title ? (
+            <span className={styles.desktopTitleContinuation}>
+              {title.slice(prefix.length)}
+            </span>
+          ) : null}
+        </h1>
       </div>
     </header>
   );

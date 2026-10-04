@@ -86,7 +86,7 @@ export function Curriculum({
                         >
                           <Icon name="document" />
                           <span className={styles.lessonTitle}>
-                            {lesson.title}
+                            {lesson.curriculumTitle ?? lesson.title}
                             {active ? (
                               <span className={styles.currentLabel}>
                                 Current lesson
@@ -103,7 +103,8 @@ export function Curriculum({
                               <span className={styles.questionBadge}>PDF</span>
                             ) : (
                               <span className={styles.durationBadge}>
-                                {lesson.minutes} MIN
+                                {lesson.minutes}{" "}
+                                {lesson.kind === "exam" ? "MINUTES" : "MIN"}
                               </span>
                             )}
                           </span>

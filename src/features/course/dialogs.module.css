@@ -195,11 +195,34 @@
   border-color: #4359d1;
 }
 .options input {
+  appearance: none;
+  display: grid;
+  place-items: center;
   flex: 0 0 auto;
   width: 18px;
   height: 18px;
-  accent-color: #4359d1;
+  border: 2px solid #4359d1;
+  border-radius: 2px;
+  background: transparent;
   margin: 0;
+}
+.options input:checked {
+  border-color: white;
+}
+.options input:checked::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+}
+@media (forced-colors: active) {
+  .options input {
+    appearance: auto;
+  }
+  .options input:checked::before {
+    content: none;
+  }
 }
 .options:disabled label {
   cursor: default;

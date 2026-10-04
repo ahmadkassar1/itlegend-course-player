@@ -7,6 +7,7 @@ export type LessonMedia = { src: string; captions: string; transcript: string };
 type LessonBase = {
   id: string;
   title: string;
+  curriculumTitle?: string;
   description: string;
   minutes: number;
 };
@@ -36,6 +37,7 @@ export type Comment = {
 export type Course = {
   slug: string;
   title: string;
+  desktopTitle?: string;
   description: string;
   instructor: string;
   category: string;

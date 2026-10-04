@@ -32,6 +32,13 @@ const comments: Comment[] = [
   },
 ];
 
+const referenceComments: Comment[] = comments.map((comment, index) => ({
+  ...comment,
+  name: "Student Name Goes Here",
+  date: ["2021-10-10", "2021-10-15", "2021-10-19"][index],
+  body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+}));
+
 const seoSections: CourseSection[] = [
   {
     id: "introduction",
@@ -59,6 +66,7 @@ const seoSections: CourseSection[] = [
       {
         id: "knowledge-check",
         title: "Course Overview — Knowledge Check",
+        curriculumTitle: "Course Overview",
         kind: "exam",
         description:
           "Review the key ideas from the opening lessons with a short knowledge check.",
@@ -274,6 +282,7 @@ export const courses: Course[] = [
   {
     slug: "starting-seo",
     title: "Starting SEO as your Home Based Business",
+    desktopTitle: "Starting SEO as your Home",
     description:
       "Take the first steps toward your home-based business with a clear, guided learning path.",
     instructor: "Edward Norton",
@@ -292,7 +301,7 @@ export const courses: Course[] = [
       "components-databinding",
     ],
     initialLessonId: "introduction",
-    comments,
+    comments: referenceComments,
   },
   ...samples.map((sample): Course => {
     const sections = makeSections(sample.slug, sample.titles);

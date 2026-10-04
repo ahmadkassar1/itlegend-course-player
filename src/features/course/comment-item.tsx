@@ -12,7 +12,7 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 export function CommentItem({ comment }: { comment: Comment }) {
   return (
     <li className={styles.comment}>
-      <Image src={comment.avatar} width={64} height={64} alt="" />
+      <Image src={comment.avatar} width={80} height={80} alt="" />
       <div>
         <h3>{comment.name}</h3>
         <time dateTime={comment.date}>

@@ -160,6 +160,17 @@ test("keyboard navigation exposes targets below the sticky player and exam radio
   await page.keyboard.press("Escape");
   await page.getByRole("button", { name: "Open exam", exact: true }).click();
   await expect(radios.nth(1)).toBeChecked();
+  await page.emulateMedia({ forcedColors: "active" });
+  await radios.nth(1).focus();
+  await page.keyboard.press("ArrowDown");
+  await expect(radios.nth(2)).toBeChecked();
+  await expect(radios.nth(1)).not.toBeChecked();
+  await expect(radios.nth(2)).toBeFocused();
+  await page.screenshot({ path: capturePath("exam-forced-colors") });
+  await page.keyboard.press("Escape");
+  await expect(
+    page.getByRole("button", { name: "Open exam", exact: true }),
+  ).toBeFocused();
 });
 
 test("intermediate layouts preserve measured reference relationships and usable controls", async ({

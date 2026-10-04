@@ -32,7 +32,7 @@ export default async function CoursePage({ params, searchParams }: Props) {
   );
   return (
     <>
-      <CourseHeader title={course.title} />
+      <CourseHeader title={course.title} desktopTitle={course.desktopTitle} />
       <CourseExperience
         key={course.slug}
         course={course}

@@ -77,6 +77,35 @@
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
+.exam,
+.exam .header,
+.exam .content {
+  background: #4e60d8;
+}
+.exam .header {
+  border: 0;
+}
+.exam .titleGroup {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.exam .close {
+  background: transparent;
+  border: 0;
+  color: white;
+}
+.exam .close svg {
+  transform: rotate(180deg);
+}
+.exam .close:focus-visible {
+  outline-color: white;
+}
 .compactHeader {
   position: relative;
   border: 0;

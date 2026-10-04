@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, type ReactNode } from "react";
+import { Icon } from "./icon";
 import styles from "./dialog.module.css";
 
 export function Dialog({
@@ -8,6 +9,7 @@ export function Dialog({
   subtitle,
   fullScreen = false,
   compact = false,
+  exam = false,
   children,
   onClose,
 }: {
@@ -15,6 +17,7 @@ export function Dialog({
   subtitle?: string;
   fullScreen?: boolean;
   compact?: boolean;
+  exam?: boolean;
   children: ReactNode;
   onClose: () => void;
 }) {
@@ -56,7 +59,7 @@ export function Dialog({
     <dialog
       ref={ref}
       aria-labelledby={titleId}
-      className={`${styles.dialog} ${fullScreen ? styles.fullScreen : ""} ${compact ? styles.compact : ""}`}
+      className={`${styles.dialog} ${fullScreen ? styles.fullScreen : ""} ${compact ? styles.compact : ""} ${exam ? styles.exam : ""}`}
       onKeyDown={(event) => {
         if (event.key !== "Tab") return;
         const dialog = event.currentTarget;
@@ -104,7 +107,7 @@ export function Dialog({
           aria-label={`Close ${title}`}
           onClick={onClose}
         >
-          <span aria-hidden="true">×</span>
+          {exam ? <Icon name="chevron" /> : <span aria-hidden="true">×</span>}
         </button>
       </header>
       <div className={styles.content}>{children}</div>

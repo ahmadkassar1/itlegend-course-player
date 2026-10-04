@@ -37,6 +37,7 @@ export function CourseDialogs({
       subtitle={dialog.kind === "leaderboard" ? courseTitle : undefined}
       fullScreen={dialog.kind === "resource"}
       compact={dialog.kind === "leaderboard"}
+      exam={dialog.kind === "resource" && dialog.lesson.kind === "exam"}
       onClose={onClose}
     >
       {dialog.kind === "question" ? (
