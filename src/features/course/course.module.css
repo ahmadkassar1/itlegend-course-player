@@ -651,6 +651,13 @@
   }
 }
 
+@media (max-width: 360px) {
+  .materials > h2,
+  .facts {
+    padding-inline: 24px;
+  }
+}
+
 .video {
   position: absolute;
   inset: 0;
