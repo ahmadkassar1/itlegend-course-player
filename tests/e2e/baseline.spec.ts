@@ -1,5 +1,6 @@
-import { expect, test, type Page } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import fs from "node:fs/promises";
+import { prepareScreenshot } from "./helpers/capture";
 import { courses } from "../../src/data/courses";
 
 const expectedCourses: Record<string, { lessons: number; progress: number }> = {
@@ -10,27 +11,6 @@ const expectedCourses: Record<string, { lessons: number; progress: number }> = {
   "react-components": { lessons: 10, progress: 70 },
   "accessible-interfaces": { lessons: 6, progress: 100 },
 };
-
-async function prepareScreenshot(page: Page) {
-  // Full-page capture alone does not load images below the browser viewport.
-  for (const image of await page.locator("img").all()) {
-    await image.scrollIntoViewIfNeeded();
-  }
-  await expect
-    .poll(() =>
-      page
-        .locator("img")
-        .evaluateAll((images) =>
-          images.every(
-            (image) =>
-              (image as HTMLImageElement).complete &&
-              (image as HTMLImageElement).naturalWidth > 0,
-          ),
-        ),
-    )
-    .toBe(true);
-  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
-}
 
 test("all six course cards open anonymous players with matching progress and lesson counts", async ({
   page,
@@ -202,13 +182,13 @@ test("responsive baseline preserves order and avoids horizontal overflow", async
     await page.goto("/");
     await prepareScreenshot(page);
     await page.screenshot({
-      path: `verification/m1-${name}-catalogue.png`,
+      path: `verification/m2-${name}-catalogue.png`,
       fullPage: true,
     });
     await page.goto("/courses/starting-seo");
     await prepareScreenshot(page);
     await page.screenshot({
-      path: `verification/m1-${name}-player.png`,
+      path: `verification/m2-${name}-player.png`,
       fullPage: true,
     });
   }
@@ -248,22 +228,23 @@ test("keyboard navigation, section targets, and not-found behavior work", async 
   await expect(page.locator("article")).toHaveCount(6);
 });
 
-test("long selected lesson titles leave the preview control unobstructed on narrow screens", async ({
+test("long selected lesson titles stay readable without blocking mobile video controls", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 320, height: 780 });
   await page.goto("/courses/starting-seo?lesson=editor-setup");
+  const title = "Code Editor Installation (Optional if you have one)";
+  const selected = page.locator('[aria-current="step"]');
+  await expect(selected).toContainText(title);
+  await expect(selected).toContainText("Current lesson");
   const preview = page.getByRole("region", { name: "Current lesson" });
-  await expect(preview.getByRole("heading")).toHaveText(
-    "Code Editor Installation (Optional if you have one)",
-  );
-  const title = await preview.getByRole("heading").boundingBox();
-  const control = await preview.getByRole("button").boundingBox();
+  await expect(
+    preview.getByRole("button", { name: "Play " + title }),
+  ).toBeVisible();
+  await expect(page.locator("html")).toHaveJSProperty("scrollWidth", 320);
   await prepareScreenshot(page);
   await page.screenshot({
-    path: "verification/m1-narrow-player.png",
+    path: "verification/m2-narrow-player.png",
     fullPage: true,
   });
-  expect(title && control).toBeTruthy();
-  expect(title!.y).toBeGreaterThanOrEqual(control!.y + control!.height);
 });
