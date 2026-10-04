@@ -1,0 +1,45 @@
+# Message histories and code-readiness review
+
+Reviewed 2026-10-04 (Asia/Beirut), following the user's request for newest-first comments, bounded comment/question scrolling, clean code and an honest GitHub/extra-feature assessment.
+
+Final source revision: `27b29ceaa3d6cb29669f5e8a90c778fdea14a8c6`; production build `vXamhXwO-HHQrawJ5Qmal`. Commit `fix: show newest messages in bounded histories` uses the existing configured author and committer, ahmad kassar. No remote action occurred.
+
+## Changes
+
+New local reviews appear newest-first above the existing server-rendered sample reviews. Saved questions also appear newest-first. Copied arrays are reversed only for presentation: immutable chronological storage, validation, latest-50 retention and persisted history remain unchanged. There is no migration or reset of existing data.
+
+The shared `MessageHistory` component supplies a named keyboard-focusable region, native vertical scrolling, stable scrollbar space and long-text containment. Comments cap at `min(36rem, 65svh)`; questions at `min(22rem, 40svh)`. Forms stay outside their history scrollers. Posting resets only the corresponding history to its top, leaving page position and focus intact; typing does not change the latest-ID dependency. Mobile comments include the sticky-player scroll offset so programmatic navigation can reveal the first row. The popup's outer scroll remains available on short viewports/enlarged text, and its Close control stays reachable.
+
+These height/order refinements are explicitly requested by the user, rather than inferred Figma behavior. Their overflow appears only when content exceeds the cap; reference section order and typography remain.
+
+## Verification
+
+Type/lint/active-rule/format/build passed. Full production Chrome suite: **41 passed**, 242.258785s from2026-10-04T14:18:54.185Z, one worker/no retries/skips/unexpected/flaky. Raw report: `message-history-full-browser-results.json`. That run used build `A1NMQU2MPN-k8Jy7Wg6fm`, before the final mobile scroll-margin/capture correction.
+
+Two new stress tests at320/1440px submit eight long Arabic/unbroken reviews and questions, then a newest message. They verify newest/previous ordering, seed-row retention, no horizontal overflow, actual height caps/overflow, native PageDown, page-position/focus retention on posting, reset-to-top, hard reload, course isolation and Axe scans of populated dialogs. Existing checks cover enlarged text, intermediate/short viewports, storage failures, catalogue/media/progress/exam/PDF/question flows and native focus behavior.
+
+On final build `vXamhXwO-HHQrawJ5Qmal`, **6 affected production tests passed**, 50.500824s from2026-10-04T14:40:03.077Z, one worker/no retries/skips/unexpected/flaky. Raw: `message-history-final-browser-results.json`. These cover both stress histories,200% text/spacing, long comments, keyboard/sticky-player behavior and intermediate layouts. The populated question dialogs had zero Axe violations. Final320/1440px comment and question captures were visually inspected: newest row visible, long text wraps, bounded scrolling and Close/form controls reachable. Files: `message-history-final-comments-320.png`, `message-history-final-comments-1440.png`, `message-history-final-questions-320.png`, `message-history-final-questions-1440.png`.
+
+Two diagnostic runs exposed issues before this acceptance: mobile capture/navigation was centered behind the sticky player and focus was measured during smooth page movement; then posting immediately after PageDown left a small question-history offset. Retained raw reports: `message-history-offset-initial-browser-results.json` (5/6), `message-history-offset-second-browser-results.json` (1/2). Native scroll-event inspection showed PageDown continuing after a `scrollTop=0` assignment; disabling anchoring and explicit instant scrolling did not stop it. The shared component now keys only its viewport to the latest message ID, replacing that viewport on a new post and stopping the old native animation. Drafts keep the same viewport; the form and submission focus remain outside it. This avoids a timer, scroll-event workaround or per-draft reset. No effect or subscription is needed.
+
+The full41 run precedes these final scrolling corrections; it is regression evidence for the earlier build, not a claim that the full suite ran again on the final build. The initial22-state Axe scans/contrast results remain in `message-history-axe-1440.json`, `message-history-axe-430.json`, `message-history-contrast.json`; zero violations with three contrast incomplete instances. Unchanged gradient/error/subtitle presentation retains the supplemental checks documented in Submission-Readiness.md; automated checks do not replace physical-device or screen-reader acceptance. Unchanged stores had17 passing unit tests during this review.
+
+Four existing interaction regressions also passed on the final build,23.634419s from2026-10-04T14:42:33.781Z, one worker/no retries/skips/unexpected/flaky. They verify question drafts/submission/course isolation, blank/literal comment validation and reload persistence, native modal focus/background/return behavior, and required popup bounds at narrow/tablet/desktop/short landscape sizes. Raw: `message-history-final-interaction-results.json`. Final type/lint/active-rule/format/build checks pass; no further runtime changes followed these ten final-build browser checks. Only this review's untracked superseded captures were removed; final captures, raw diagnostics/results and previous milestones remain.
+
+## Code audit
+
+Applied the Vercel React best-practices skill. Reviewed App Router route/metadata handling, shared components, provider-owned stores, saved-state validation and course-layout deferred dialogs in addition to the changed files. Routes validate courses/lessons, independent route inputs resolve together, and static sample reviews remain server-rendered slots. Separate learning/interaction stores keep typing from updating player/progress subscriptions. The new scrolling component has one purpose and no effect, extra data store, event subscription, dependency, network request or speculative memoization. A new post recreates its bounded history subtree; the latest50-row retention makes that deliberate cost small, while stable-ID draft edits preserve the viewport.
+
+Bounded lists retain at most50 local rows per course/kind, so virtualization is not justified by this change. Text remains escaped by React, with2000-character validation and wrapping; no `dangerouslySetInnerHTML` is used. A source search found no TODO/FIXME/HACK, `as any`, `@ts-ignore`, disabled lint rules or unsafe HTML insertion in the inspected app source. This is a scoped quality review, not a security certification or a claim that every future behavior is proven.
+
+Existing README, lockfile, asset/font notices, meaningful configured-user commits and ignored build/dependency/test/environment paths provide a reviewable local repository. No private code/history was imported. Dependency files are unchanged; the prior fresh Oct4 audit still records zero production advisories and five high development lint-chain entries. The unresolved issue remains disclosed, without a forced downgrade or disabled rule.
+
+## Extra features and public readiness
+
+The [official rubric](https://challenges.itlegend.net/frontend-hiring#criteria), read Oct4, gives design25%, responsiveness25%, code quality25%, interactions15% and performance/accessibility10%. It contains no feature-count scoring criterion. Prioritize closing original-photo/font/presentation discrepancies and actual-device/accessibility verification rather than expanding the product.
+
+Useful additions already present include original course-specific fixtures, real action-derived progress, retained answers/drafts/history, storage-failure recovery, reduced motion, keyboard support and production evidence. These are verified engineering enhancements; the official AI/assets/reuse/extras policy is still unstated. Authentication, a backend, real-time chat, certificates and unrelated visual features would add scope without satisfying a missing requirement in the inspected brief. A small CI workflow could later improve reproducibility after the destination/toolchain is settled; it is optional, not an established scoring advantage, and was not added in this pass.
+
+**The project has not been published through this workflow.** The isolated checkout has no GitHub remote; GitHub visibility cannot be established from `package.json`'s `private: true` flag. No push, live deployment or submission occurred. Exact assets/presentation conflicts, physical-phone/Safari/native zoom/screen-reader/hosted checks, official policy/timezone answers and the authorized public destination/demo remain open, as detailed in [Submission-Readiness.md](Submission-Readiness.md).
+
+Next action: finish the remaining reference and actual-device acceptance before authorized public repository/demo publication. Recommended model/effort: GPT-6.1-sol/high; settings unchanged. No broad feature expansion is needed for this next step.

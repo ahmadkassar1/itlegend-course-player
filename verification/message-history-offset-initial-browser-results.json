@@ -1,0 +1,339 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/message-history.spec.ts",
+      "tests/e2e/resilience.spec.ts"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3100",
+      "url": "http://127.0.0.1:3100",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "message-history.spec.ts",
+      "file": "message-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 320px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5382,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1849\u001b[39m\nReceived: \u001b[31m1646\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1849\u001b[39m\nReceived: \u001b[31m1646\u001b[39m\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts:70:55",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                      "column": 55,
+                      "line": 70
+                    },
+                    "snippet": "  68 |       .poll(() => comments.evaluate((element) => element.scrollTop))\n  69 |       .toBeGreaterThan(0);\n> 70 |     expect(await page.evaluate(() => window.scrollY)).toBe(pagePosition);\n     |                                                       ^\n  71 |     await comments.evaluate((element) => {\n  72 |       element.scrollTop = element.scrollHeight;\n  73 |     });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                        "column": 55,
+                        "line": 70
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1849\u001b[39m\nReceived: \u001b[31m1646\u001b[39m\n\n  68 |       .poll(() => comments.evaluate((element) => element.scrollTop))\n  69 |       .toBeGreaterThan(0);\n> 70 |     expect(await page.evaluate(() => window.scrollY)).toBe(pagePosition);\n     |                                                       ^\n  71 |     await comments.evaluate((element) => {\n  72 |       element.scrollTop = element.scrollHeight;\n  73 |     });\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts:70:55"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:04.995Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\message-history-newest-fir-407fe-rollable-histories-at-320px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\message-history-newest-fir-407fe-rollable-histories-at-320px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                    "column": 55,
+                    "line": 70
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-458e9bb71fc897486b6c",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:13.376Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-7758efdf9bcbb6223da0",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "resilience.spec.ts",
+      "file": "resilience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "200% text sizing and WCAG text spacing preserve content, reflow and all modal controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9581,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:21.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-7419054ad82ba9ef8873",
+          "file": "resilience.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "long Arabic, multiline and unbroken comments remain readable with six-to-ten-lesson curricula",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4657,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:31.244Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-4b03b1aa8a966201d757",
+          "file": "resilience.spec.ts",
+          "line": 94,
+          "column": 5
+        },
+        {
+          "title": "keyboard navigation exposes targets below the sticky player and exam radio keys retain one choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:35.931Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-cefc748079858f83d1b2",
+          "file": "resilience.spec.ts",
+          "line": 130,
+          "column": 5
+        },
+        {
+          "title": "intermediate layouts preserve measured reference relationships and usable controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10503,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:28:38.004Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-8bb7846a4ce5e4b95361",
+          "file": "resilience.spec.ts",
+          "line": 181,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T14:28:01.303Z",
+    "duration": 47831.781,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

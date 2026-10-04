@@ -1,0 +1,194 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/message-history.spec.ts"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3100",
+      "url": "http://127.0.0.1:3100",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "message-history.spec.ts",
+      "file": "message-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 320px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10913,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts:147:8",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                      "column": 8,
+                      "line": 147
+                    },
+                    "snippet": "  145 |     await expect\n  146 |       .poll(() => questions.evaluate((element) => element.scrollTop))\n> 147 |       .toBe(0);\n      |        ^\n  148 |     await expect(questions.getByRole(\"listitem\").first()).toContainText(\n  149 |       \"Newest question\",\n  150 |     );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                        "column": 8,
+                        "line": 147
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  145 |     await expect\n  146 |       .poll(() => questions.evaluate((element) => element.scrollTop))\n> 147 |       .toBe(0);\n      |        ^\n  148 |     await expect(questions.getByRole(\"listitem\").first()).toContainText(\n  149 |       \"Newest question\",\n  150 |     );\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts:147:8"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:30:57.829Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\message-history-newest-fir-407fe-rollable-histories-at-320px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\message-history-newest-fir-407fe-rollable-histories-at-320px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\message-history.spec.ts",
+                    "column": 8,
+                    "line": 147
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-458e9bb71fc897486b6c",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7129,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-04T14:31:10.865Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-7758efdf9bcbb6223da0",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-04T14:30:54.268Z",
+    "duration": 24636.177,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
