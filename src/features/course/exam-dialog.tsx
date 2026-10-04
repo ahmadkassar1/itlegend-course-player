@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   useCourseInteractions,
   useInteractionStore,
@@ -25,6 +25,13 @@ export function ExamDialog({
   const answered = questions.filter((item) => attempt.answers[item.id]).length;
   const [error, setError] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    store.dispatch(courseSlug, {
+      type: "start-exam",
+      examId: lesson.exam.id,
+      at: Date.now(),
+    });
+  }, [store, courseSlug, lesson.exam.id]);
   function navigate(index: number) {
     store.dispatch(courseSlug, {
       type: "navigate",
@@ -38,8 +45,7 @@ export function ExamDialog({
     <div className={styles.examSurface}>
       <div className={styles.exam}>
         <header className={styles.examHeader}>
-          <span className={styles.untimed}>Practice • no time limit</span>
-          <p>
+          <p className={styles.srOnly}>
             {answered} of {questions.length} answered
           </p>
           <nav aria-label="Exam questions" className={styles.questionNumbers}>
@@ -66,7 +72,10 @@ export function ExamDialog({
             </p>
           ) : null}
           <h3 ref={heading} tabIndex={-1}>
-            Question {attempt.index + 1} of {questions.length}
+            <span aria-hidden="true">{attempt.index + 1}.</span>
+            <span className={styles.srOnly}>
+              Question {attempt.index + 1} of {questions.length}
+            </span>
           </h3>
           <fieldset className={styles.options} disabled={attempt.submitted}>
             <legend>{question.prompt}</legend>
@@ -138,6 +147,7 @@ export function ExamDialog({
                 store.dispatch(courseSlug, {
                   type: "submit-exam",
                   examId: lesson.exam.id,
+                  at: Date.now(),
                 });
                 if (store.get(courseSlug).attempts[lesson.exam.id].submitted)
                   learning.dispatch(courseSlug, {
@@ -155,6 +165,10 @@ export function ExamDialog({
               answers are saved when you close this window.
             </p>
           ) : null}
+          <p className={styles.practiceNote}>
+            Practice countdown: you can continue after time runs out. Your
+            answers stay saved when you close this window.
+          </p>
         </div>
       </div>
     </div>

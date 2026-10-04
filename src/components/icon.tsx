@@ -5,6 +5,9 @@ export type IconName =
   | "arrow"
   | "chevron"
   | "clock"
+  | "lock"
+  | "unlock"
+  | "stopwatch"
   | "person"
   | "people"
   | "globe"
@@ -37,6 +40,26 @@ const paths: Record<IconName, React.ReactNode> = {
     <>
       <circle cx="12" cy="12" r="9" />
       <path d="M12 7v5l3 2" />
+    </>
+  ),
+  lock: (
+    <>
+      <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+      <rect x="6" y="10" width="12" height="12" rx="6" />
+      <path d="M12 15v3" />
+    </>
+  ),
+  unlock: (
+    <>
+      <path d="M8 10V7a4 4 0 0 1 8 0" />
+      <rect x="6" y="10" width="12" height="12" rx="6" />
+      <path d="M12 15v3" />
+    </>
+  ),
+  stopwatch: (
+    <>
+      <circle cx="12" cy="14" r="8" />
+      <path d="M9 2h6m-3 0v4m6 2 2-2M12 10v4l-2 2" />
     </>
   ),
   person: (

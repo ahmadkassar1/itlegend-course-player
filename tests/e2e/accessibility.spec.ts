@@ -181,15 +181,19 @@ test("computed progress, input, selected text and focus colors meet their contra
     exact: true,
   });
   await question.focus();
-  colors.push(
-    await question.evaluate((el) => ({
-      name: "Quiz question focus",
+  const gradientStops = await question.evaluate((el) => {
+    const surface = getComputedStyle(el.closest("dialog")!);
+    const stops = surface.backgroundImage.match(/rgb\([^)]+\)/g);
+    if (!stops?.length)
+      throw new Error("Expected the exam's computed blue gradient");
+    return stops.map((bg, index) => ({
+      name: `Quiz question focus against gradient stop ${index + 1}`,
       fg: getComputedStyle(el).outlineColor,
-      bg: getComputedStyle(el.closest("header")!.parentElement!.parentElement!)
-        .backgroundColor,
+      bg,
       minimum: 3,
-    })),
-  );
+    }));
+  });
+  colors.push(...gradientStops);
   const pairs = await page.evaluate((colors) => {
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d")!;

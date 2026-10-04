@@ -23,4 +23,6 @@ export type ExamAttempt = {
   answers: Readonly<Record<string, string>>;
   submitted: boolean;
   correct: number | null;
+  startedAt?: number;
+  finishedAt?: number;
 };

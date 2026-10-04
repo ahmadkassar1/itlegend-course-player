@@ -77,12 +77,15 @@
   line-height: 1.6;
   overflow-wrap: anywhere;
 }
-.exam,
+.exam {
+  background: linear-gradient(#4053b5, #596dff);
+}
 .exam .header,
 .exam .content {
-  background: #4e60d8;
+  background: transparent;
 }
 .exam .header {
+  position: relative;
   border: 0;
 }
 .exam .titleGroup {

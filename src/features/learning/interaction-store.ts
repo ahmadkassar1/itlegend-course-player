@@ -29,7 +29,17 @@ export type InteractionAction =
   | { type: "post"; kind: "question" | "comment"; id: string; date: string }
   | { type: "answer"; examId: string; questionId: string; optionId: string }
   | { type: "navigate"; examId: string; index: number }
-  | { type: "submit-exam"; examId: string };
+  | { type: "start-exam"; examId: string; at: number }
+  | { type: "submit-exam"; examId: string; at?: number };
+
+function validTimestamp(value: unknown): value is number {
+  return (
+    typeof value === "number" &&
+    Number.isSafeInteger(value) &&
+    value > 0 &&
+    value <= 8.64e15
+  );
+}
 
 export function validMessage(body: string) {
   return body.trim().length > 0 && body.length <= MAX_MESSAGE_LENGTH;
@@ -100,6 +110,16 @@ export function restoreInteractions(
           exam.questions.every(
             (question) => answers[question.id] !== undefined,
           );
+        const startedAt = validTimestamp(entry.startedAt)
+          ? entry.startedAt
+          : undefined;
+        const finishedAt =
+          submitted &&
+          startedAt !== undefined &&
+          validTimestamp(entry.finishedAt) &&
+          entry.finishedAt >= startedAt
+            ? entry.finishedAt
+            : undefined;
         return [
           exam.id,
           {
@@ -111,6 +131,8 @@ export function restoreInteractions(
                 ? entry.index
                 : 0,
             answers,
+            ...(startedAt !== undefined ? { startedAt } : {}),
+            ...(finishedAt !== undefined ? { finishedAt } : {}),
             submitted,
             correct: submitted
               ? exam.questions.filter(
@@ -159,7 +181,15 @@ export function updateInteractions(
   const attempt = state.attempts[action.examId];
   if (!exam || !attempt || !exam.questions.length) return state;
   let next: ExamAttempt;
-  if (action.type === "navigate") {
+  if (action.type === "start-exam") {
+    if (
+      attempt.submitted ||
+      attempt.startedAt !== undefined ||
+      !validTimestamp(action.at)
+    )
+      return state;
+    next = { ...attempt, startedAt: action.at };
+  } else if (action.type === "navigate") {
     if (
       !Number.isInteger(action.index) ||
       action.index < 0 ||
@@ -194,6 +224,11 @@ export function updateInteractions(
     next = {
       ...attempt,
       submitted: true,
+      ...(attempt.startedAt !== undefined &&
+      validTimestamp(action.at) &&
+      action.at >= attempt.startedAt
+        ? { finishedAt: action.at }
+        : {}),
       correct: exam.questions.filter(
         (question) => attempt.answers[question.id] === question.correctOptionId,
       ).length,

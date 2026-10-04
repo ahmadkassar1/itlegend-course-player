@@ -454,14 +454,14 @@
   font-size: 0.625rem;
   margin-top: 2px;
 }
-.completionIcon {
+.lessonAccessIcon {
   display: inline-flex;
   flex: 0 0 auto;
-  color: var(--action);
+  color: var(--text);
 }
-.completionIcon svg {
-  width: 12px;
-  height: 12px;
+.lessonAccessIcon svg {
+  width: 13px;
+  height: 17px;
 }
 .srOnly {
   position: absolute;

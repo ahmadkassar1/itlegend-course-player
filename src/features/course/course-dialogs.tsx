@@ -3,6 +3,7 @@
 import { Dialog } from "@/components/dialog";
 import type { Course, Lesson } from "@/types/course";
 import { ExamDialog } from "./exam-dialog";
+import { ExamTimer } from "./exam-timer";
 import { PdfDialog } from "./pdf-dialog";
 import { QuestionDialog } from "./question-dialog";
 import { LeaderboardDialog } from "./leaderboard-dialog";
@@ -40,6 +41,15 @@ export function CourseDialogs({
       fullScreen={dialog.kind === "resource"}
       compact={dialog.kind === "leaderboard"}
       exam={dialog.kind === "resource" && dialog.lesson.kind === "exam"}
+      headerContent={
+        dialog.kind === "resource" && dialog.lesson.kind === "exam" ? (
+          <ExamTimer
+            courseSlug={courseSlug}
+            examId={dialog.lesson.exam.id}
+            minutes={dialog.lesson.minutes}
+          />
+        ) : undefined
+      }
       onClose={onClose}
     >
       {dialog.kind === "question" ? (

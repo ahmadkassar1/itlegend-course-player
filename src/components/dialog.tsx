@@ -10,6 +10,7 @@ export function Dialog({
   fullScreen = false,
   compact = false,
   exam = false,
+  headerContent,
   children,
   onClose,
 }: {
@@ -18,6 +19,7 @@ export function Dialog({
   fullScreen?: boolean;
   compact?: boolean;
   exam?: boolean;
+  headerContent?: ReactNode;
   children: ReactNode;
   onClose: () => void;
 }) {
@@ -109,6 +111,7 @@ export function Dialog({
         >
           {exam ? <Icon name="chevron" /> : <span aria-hidden="true">×</span>}
         </button>
+        {headerContent}
       </header>
       <div className={styles.content}>{children}</div>
     </dialog>

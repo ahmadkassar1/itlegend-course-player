@@ -4,6 +4,7 @@ import {
   createInteractionStore,
   initialInteractions,
   updateInteractions,
+  restoreInteractions,
   MAX_MESSAGE_LENGTH,
 } from "../../src/features/learning/interaction-store.ts";
 import { rankLearners } from "../../src/lib/course.ts";
@@ -21,6 +22,69 @@ const seed = {
   ],
 };
 const date = "2026-10-04T09:00:00.000Z";
+
+test("practice clock starts once, validates restored times and freezes only a valid submitted attempt", () => {
+  const initial = initialInteractions(seed);
+  const started = updateInteractions(initial, seed, {
+    type: "start-exam",
+    examId: "exam",
+    at: 10000,
+  });
+  assert.equal(started.attempts.exam.startedAt, 10000);
+  for (const at of [20000, NaN, -1, Infinity])
+    assert.equal(
+      updateInteractions(started, seed, {
+        type: "start-exam",
+        examId: "exam",
+        at,
+      }),
+      started,
+    );
+  assert.equal(
+    updateInteractions(initial, seed, {
+      type: "start-exam",
+      examId: "exam",
+      at: NaN,
+    }),
+    initial,
+  );
+  let answered = updateInteractions(started, seed, {
+    type: "answer",
+    examId: "exam",
+    questionId: "one",
+    optionId: "a",
+  });
+  answered = updateInteractions(answered, seed, {
+    type: "answer",
+    examId: "exam",
+    questionId: "two",
+    optionId: "y",
+  });
+  const finished = updateInteractions(answered, seed, {
+    type: "submit-exam",
+    examId: "exam",
+    at: 25000,
+  });
+  assert.equal(finished.attempts.exam.finishedAt, 25000);
+  assert.equal(
+    restoreInteractions(seed, finished).attempts.exam.finishedAt,
+    25000,
+  );
+  const backwards = restoreInteractions(seed, {
+    ...finished,
+    attempts: { exam: { ...finished.attempts.exam, finishedAt: 1 } },
+  });
+  assert.equal(backwards.attempts.exam.finishedAt, undefined);
+  const invalid = restoreInteractions(seed, {
+    attempts: { exam: { startedAt: "fake", finishedAt: Infinity } },
+  });
+  assert.equal(invalid.attempts.exam.startedAt, undefined);
+  assert.equal(invalid.attempts.exam.finishedAt, undefined);
+  assert.equal(
+    restoreInteractions(seed, initial).attempts.exam.startedAt,
+    undefined,
+  );
+});
 
 test("drafts reject oversized values and posts reject blanks/duplicates/invalid metadata", () => {
   const initial = initialInteractions(seed);

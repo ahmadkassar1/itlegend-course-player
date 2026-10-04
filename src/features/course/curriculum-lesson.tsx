@@ -43,13 +43,22 @@ export function CurriculumLesson({
               {lesson.minutes} MINUTES
             </span>
           </span>
-        ) : null}
-        {completed ? (
-          <span className={styles.completionIcon}>
-            <Icon name="check" />
-            <span className={styles.srOnly}>Completed</span>
+        ) : (
+          <span
+            className={styles.lessonAccessIcon}
+            title={
+              completed
+                ? "Completed — available to review"
+                : "Not completed — available to study"
+            }
+            data-completed={completed}
+          >
+            <Icon name={completed ? "unlock" : "lock"} />
           </span>
-        ) : null}
+        )}
+        <span className={styles.srOnly}>
+          {completed ? "Completed" : "Not completed"}
+        </span>
       </Link>
     </li>
   );
