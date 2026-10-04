@@ -6,11 +6,12 @@ import styles from "./course.module.css";
 export function LessonPreview({
   lesson,
   poster,
+  onOpen,
 }: {
-  lesson: Lesson;
+  lesson: Exclude<Lesson, { kind: "video" }>;
   poster: string;
+  onOpen: () => void;
 }) {
-  const isVideo = lesson.kind === "video";
   return (
     <section className={styles.preview} aria-label="Current lesson">
       <div className={styles.previewFrame}>
@@ -23,20 +24,16 @@ export function LessonPreview({
         />
         <div className={styles.posterShade} />
         <span className={styles.previewLabel}>
-          {isVideo
-            ? "Video lesson"
-            : lesson.kind === "pdf"
-              ? "Course resource"
-              : "Knowledge check"}
+          {lesson.kind === "pdf" ? "Course resource" : "Knowledge check"}
         </span>
         <button
           className={styles.playButton}
           type="button"
-          disabled
-          aria-label={isVideo ? "Video unavailable" : "Resource unavailable"}
-          title={isVideo ? "Video unavailable" : "Resource unavailable"}
+          onClick={onOpen}
+          aria-label={lesson.kind === "pdf" ? "Open PDF" : "Open exam"}
+          title={lesson.kind === "pdf" ? "Open PDF" : "Open exam"}
         >
-          <Icon name={isVideo ? "play" : "document"} />
+          <Icon name="document" />
         </button>
         <div className={styles.lessonCaption}>
           <span>{lesson.minutes} MINUTES</span>

@@ -38,7 +38,12 @@ export default async function CoursePage({ params, searchParams }: Props) {
         course={course}
         selectedLessonId={lesson.id}
         materials={<CourseMaterials course={course} />}
-        comments={<CommentsSection comments={course.comments} />}
+        comments={
+          <CommentsSection
+            courseSlug={course.slug}
+            comments={course.comments}
+          />
+        }
       />
     </>
   );

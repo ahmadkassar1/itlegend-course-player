@@ -1,4 +1,5 @@
 import type { Comment, Course, CourseSection, Lesson } from "@/types/course";
+import { overviewExam, worksheet } from "./learning-resources";
 
 const sampleMedia = {
   src: "/media/study-plan.webm",
@@ -62,12 +63,13 @@ const seoSections: CourseSection[] = [
         description:
           "Review the key ideas from the opening lessons with a short knowledge check.",
         minutes: 10,
-        questionCount: 5,
+        exam: overviewExam,
       },
       {
         id: "reference-files",
         title: "Course Exercise / Reference Files",
         kind: "pdf",
+        resource: worksheet,
         description:
           "A companion worksheet for organizing your notes and planning your first project.",
         minutes: 5,
@@ -285,9 +287,9 @@ export const courses: Course[] = [
     initialCompletedLessonIds: [
       "introduction",
       "course-overview",
-      "knowledge-check",
-      "reference-files",
       "editor-setup",
+      "javascript-basics",
+      "components-databinding",
     ],
     initialLessonId: "introduction",
     comments,

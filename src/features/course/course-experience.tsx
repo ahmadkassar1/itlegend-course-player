@@ -19,6 +19,7 @@ export function CourseExperience({
     <CourseLayout
       course={{
         slug: course.slug,
+        title: course.title,
         poster: course.poster,
         sections: course.sections,
       }}

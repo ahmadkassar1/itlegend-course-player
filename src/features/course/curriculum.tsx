@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@/components/icon";
 import { getLessons } from "@/lib/course";
-import type { Course } from "@/types/course";
+import type { Course, Lesson } from "@/types/course";
 import styles from "./course.module.css";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { useCourseLearning } from "@/features/learning/learning-provider";
@@ -13,9 +13,11 @@ import { CourseProgress } from "./course-progress";
 export function Curriculum({
   course,
   selectedLessonId,
+  onResourceSelect,
 }: {
   course: Pick<Course, "slug" | "sections">;
   selectedLessonId: string;
+  onResourceSelect: (lesson: Exclude<Lesson, { kind: "video" }>) => void;
 }) {
   const desktop = useMediaQuery("(min-width: 1024px)");
   const learning = useCourseLearning(course.slug);
@@ -71,13 +73,16 @@ export function Curriculum({
                         <Link
                           className={`${styles.lessonRow} ${active ? styles.selectedLesson : ""}`}
                           href={`/courses/${course.slug}?lesson=${lesson.id}`}
+                          scroll={lesson.kind === "video"}
                           aria-current={active ? "step" : undefined}
-                          onClick={() =>
+                          onClick={() => {
                             setExpanded((current) => ({
                               ...current,
                               [section.id]: true,
-                            }))
-                          }
+                            }));
+                            if (lesson.kind !== "video")
+                              onResourceSelect(lesson);
+                          }}
                         >
                           <Icon name="document" />
                           <span className={styles.lessonTitle}>
@@ -91,7 +96,7 @@ export function Curriculum({
                           <span className={styles.lessonMeta}>
                             {lesson.kind === "exam" ? (
                               <span className={styles.questionBadge}>
-                                {lesson.questionCount} QUESTIONS
+                                {lesson.exam.questions.length} QUESTIONS
                               </span>
                             ) : null}
                             {lesson.kind === "pdf" ? (

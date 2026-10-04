@@ -154,7 +154,8 @@
   border: 1px solid var(--border);
   border-radius: 50%;
 }
-.sectionControls a:hover {
+.sectionControls a:hover,
+.sectionControls button:hover {
   color: var(--action);
 }
 .sectionControls button:disabled {
@@ -257,6 +258,7 @@
   font-size: 13px;
   margin: 14px 0 0;
   overflow-wrap: anywhere;
+  white-space: pre-wrap;
 }
 .commentForm {
   margin-top: 28px;
@@ -277,6 +279,16 @@
 .commentForm textarea::placeholder {
   color: var(--muted);
   opacity: 1;
+}
+.formError {
+  color: #9d233a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.formStatus {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
 }
 .submit {
   display: inline-flex;

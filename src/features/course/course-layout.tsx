@@ -8,6 +8,9 @@ import {
   type ReactNode,
 } from "react";
 import { Icon } from "@/components/icon";
+import dynamic from "next/dynamic";
+import type { CourseDialog } from "./course-dialogs";
+import { getLessons } from "@/lib/course";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { useLearningStore } from "@/features/learning/learning-provider";
 import type { Course, Lesson } from "@/types/course";
@@ -16,18 +19,23 @@ import { LessonPlayer } from "./lesson-player";
 import { LessonPreview } from "./lesson-preview";
 import styles from "./course.module.css";
 
+const CourseDialogs = dynamic(() =>
+  import("./course-dialogs").then((module) => module.CourseDialogs),
+);
+
 export function CourseLayout({
   course,
   lesson,
   materials,
   comments,
 }: {
-  course: Pick<Course, "slug" | "poster" | "sections">;
+  course: Pick<Course, "slug" | "title" | "poster" | "sections">;
   lesson: Lesson;
   materials: ReactNode;
   comments: ReactNode;
 }) {
   const [wide, setWide] = useState(false);
+  const [dialog, setDialog] = useState<CourseDialog | null>(null);
   const [playerHeight, setPlayerHeight] = useState(0);
   const main = useRef<HTMLElement>(null);
   const desktop = useMediaQuery("(min-width: 1024px)");
@@ -65,7 +73,12 @@ export function CourseLayout({
           onWide={() => setWide((value) => !value)}
         />
       ) : (
-        <LessonPreview key={lesson.id} lesson={lesson} poster={course.poster} />
+        <LessonPreview
+          key={lesson.id}
+          lesson={lesson}
+          poster={course.poster}
+          onOpen={() => setDialog({ kind: "resource", lesson })}
+        />
       )}
       <nav className={styles.sectionControls} aria-label="Course sections">
         <a
@@ -80,24 +93,39 @@ export function CourseLayout({
         </a>
         <button
           type="button"
-          disabled
           aria-label="Ask a question"
-          title="Not available"
+          title="Ask a question"
+          onClick={() => setDialog({ kind: "question" })}
         >
           <Icon name="question" />
         </button>
         <button
           type="button"
-          disabled
           aria-label="Leaderboard"
-          title="Not available"
+          title="Leaderboard"
+          onClick={() => setDialog({ kind: "leaderboard" })}
         >
           <Icon name="trophy" />
         </button>
       </nav>
       {materials}
-      <Curriculum course={course} selectedLessonId={lesson.id} />
+      <Curriculum
+        course={course}
+        selectedLessonId={lesson.id}
+        onResourceSelect={(resourceLesson) =>
+          setDialog({ kind: "resource", lesson: resourceLesson })
+        }
+      />
       {comments}
+      {dialog ? (
+        <CourseDialogs
+          dialog={dialog}
+          courseSlug={course.slug}
+          courseTitle={course.title}
+          total={getLessons(course).length}
+          onClose={() => setDialog(null)}
+        />
+      ) : null}
     </main>
   );
 }

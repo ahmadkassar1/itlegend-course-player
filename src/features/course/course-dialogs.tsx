@@ -1,0 +1,56 @@
+"use client";
+
+import { Dialog } from "@/components/dialog";
+import type { Lesson } from "@/types/course";
+import { ExamDialog } from "./exam-dialog";
+import { PdfDialog } from "./pdf-dialog";
+import { QuestionDialog } from "./question-dialog";
+import { LeaderboardDialog } from "./leaderboard-dialog";
+
+export type CourseDialog =
+  | { kind: "question" }
+  | { kind: "leaderboard" }
+  | { kind: "resource"; lesson: Exclude<Lesson, { kind: "video" }> };
+
+export function CourseDialogs({
+  dialog,
+  courseSlug,
+  courseTitle,
+  total,
+  onClose,
+}: {
+  dialog: CourseDialog;
+  courseSlug: string;
+  courseTitle: string;
+  total: number;
+  onClose: () => void;
+}) {
+  const title =
+    dialog.kind === "resource"
+      ? dialog.lesson.title
+      : dialog.kind === "question"
+        ? "Ask a question"
+        : "Leaderboard";
+  return (
+    <Dialog
+      title={title}
+      fullScreen={dialog.kind === "resource"}
+      compact={dialog.kind === "leaderboard"}
+      onClose={onClose}
+    >
+      {dialog.kind === "question" ? (
+        <QuestionDialog courseSlug={courseSlug} />
+      ) : dialog.kind === "leaderboard" ? (
+        <LeaderboardDialog
+          courseSlug={courseSlug}
+          courseTitle={courseTitle}
+          total={total}
+        />
+      ) : dialog.lesson.kind === "pdf" ? (
+        <PdfDialog courseSlug={courseSlug} lesson={dialog.lesson} />
+      ) : (
+        <ExamDialog courseSlug={courseSlug} lesson={dialog.lesson} />
+      )}
+    </Dialog>
+  );
+}

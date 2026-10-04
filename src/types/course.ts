@@ -1,3 +1,5 @@
+import type { Exam, Worksheet } from "./interaction";
+
 export type LessonKind = "video" | "pdf" | "exam";
 
 export type LessonMedia = { src: string; captions: string; transcript: string };
@@ -12,8 +14,8 @@ type LessonBase = {
 export type Lesson = LessonBase &
   (
     | { kind: "video"; media: LessonMedia }
-    | { kind: "pdf" }
-    | { kind: "exam"; questionCount: number }
+    | { kind: "pdf"; resource: Worksheet }
+    | { kind: "exam"; exam: Exam }
   );
 
 export type CourseSection = {

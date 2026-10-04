@@ -1,0 +1,24 @@
+{
+  "src": "/resources/learning-plan.pdf",
+  "preview": "/resources/learning-plan.png",
+  "title": "Your learning plan",
+  "introduction": "Turn one course lesson into a small, practical next step.",
+  "sections": [
+    {
+      "title": "1. Choose one goal",
+      "body": "Write one thing you want to understand after this lesson."
+    },
+    {
+      "title": "2. Try a small example",
+      "body": "Put the idea into practice. Keep your first example simple."
+    },
+    {
+      "title": "3. Record what happened",
+      "body": "Note what worked, what surprised you and one question to ask."
+    },
+    {
+      "title": "4. Review and repeat",
+      "body": "Explain the idea in your own words, then choose your next step."
+    }
+  ]
+}
