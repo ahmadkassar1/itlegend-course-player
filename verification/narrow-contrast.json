@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Submit text",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(33, 123, 106)",
+    "minimum": 4.5,
+    "ratio": 5.114501932190816
+  },
+  {
+    "name": "Current lesson",
+    "fg": "rgb(33, 123, 106)",
+    "bg": "rgb(244, 250, 247)",
+    "minimum": 4.5,
+    "ratio": 4.837817664599034
+  },
+  {
+    "name": "Progress fill",
+    "fg": "rgb(67, 143, 99)",
+    "bg": "rgb(232, 233, 232)",
+    "minimum": 3,
+    "ratio": 3.2259850998110493
+  },
+  {
+    "name": "Textarea boundary",
+    "fg": "rgb(122, 134, 129)",
+    "bg": "rgb(255, 255, 255)",
+    "minimum": 3,
+    "ratio": 3.7806844786099463
+  },
+  {
+    "name": "Textarea focus",
+    "fg": "rgb(33, 123, 106)",
+    "bg": "rgb(255, 255, 255)",
+    "minimum": 3,
+    "ratio": 5.114501932190816
+  },
+  {
+    "name": "Leaderboard small text",
+    "fg": "rgb(112, 112, 112)",
+    "bg": "rgb(251, 250, 255)",
+    "minimum": 4.5,
+    "ratio": 4.768228154701798
+  },
+  {
+    "name": "Exam error text",
+    "fg": "rgb(157, 35, 58)",
+    "bg": "rgb(255, 255, 255)",
+    "minimum": 4.5,
+    "ratio": 7.677879828639038
+  },
+  {
+    "name": "Quiz question focus",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(78, 96, 216)",
+    "minimum": 3,
+    "ratio": 5.264923075877425
+  }
+]

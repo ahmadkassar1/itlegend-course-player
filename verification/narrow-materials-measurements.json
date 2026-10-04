@@ -1,0 +1,101 @@
+{
+  "capturedAt": "2026-10-04T10:12:22.870Z",
+  "revision": "3800720b25075837e4785cb4c6969010a1fe1efb",
+  "buildId": "d-4IyKPY-mflOlfSZHsGr",
+  "method": "All nonempty direct label text nodes measured; icon rectangles excluded",
+  "findings": [
+    {
+      "width": 320,
+      "inset": "24px",
+      "instructorLabel": "Instructor:",
+      "textRects": [
+        {
+          "text": "Instructor",
+          "x": 70,
+          "y": 553.78125,
+          "width": 71.546875,
+          "height": 21
+        },
+        {
+          "text": ":",
+          "x": 141.546875,
+          "y": 553.78125,
+          "width": 3.203125,
+          "height": 21
+        }
+      ],
+      "lineCount": 1,
+      "availableWidth": 320,
+      "documentWidth": 320,
+      "facts": [
+        "Edward Norton",
+        "3 weeks",
+        "8",
+        "65 students",
+        "English"
+      ]
+    },
+    {
+      "width": 360,
+      "inset": "24px",
+      "instructorLabel": "Instructor:",
+      "textRects": [
+        {
+          "text": "Instructor",
+          "x": 70,
+          "y": 546.640625,
+          "width": 71.546875,
+          "height": 21
+        },
+        {
+          "text": ":",
+          "x": 141.546875,
+          "y": 546.640625,
+          "width": 3.203125,
+          "height": 21
+        }
+      ],
+      "lineCount": 1,
+      "availableWidth": 360,
+      "documentWidth": 360,
+      "facts": [
+        "Edward Norton",
+        "3 weeks",
+        "8",
+        "65 students",
+        "English"
+      ]
+    },
+    {
+      "width": 430,
+      "inset": "40px",
+      "instructorLabel": "Instructor:",
+      "textRects": [
+        {
+          "text": "Instructor",
+          "x": 86,
+          "y": 593.3125,
+          "width": 71.546875,
+          "height": 21
+        },
+        {
+          "text": ":",
+          "x": 157.546875,
+          "y": 593.3125,
+          "width": 3.203125,
+          "height": 21
+        }
+      ],
+      "lineCount": 1,
+      "availableWidth": 430,
+      "documentWidth": 430,
+      "facts": [
+        "Edward Norton",
+        "3 weeks",
+        "8",
+        "65 students",
+        "English"
+      ]
+    }
+  ]
+}

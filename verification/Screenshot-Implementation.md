@@ -1,5 +1,26 @@
 # Screenshot implementation and verification
 
+## Latest narrow-screen correction — DEC-015
+
+Verified2026-10-04 at code **3800720b25075837e4785cb4c6969010a1fe1efb**, production build **d-4IyKPY-mflOlfSZHsGr**. At320px the former40px materials inset squeezed “Instructor” into a mid-word break. Heading/facts padding is now24px at360px and below;430px retains40px. This is an intermediate-width adaptation, not a newly recovered Figma dimension. No fixture, font, media, dependency, component/state architecture or desktop rule changed.
+
+**8/8 affected production browser checks pass in77.237271s**, starting2026-10-04T10:08:38.129Z, one worker/no retries/skips/unexpected/flaky outcomes. TypeScript, lint/active-rule guards, formatting and fresh production build pass. [Browser results](narrow-browser-results.json) cover200% root text/spacing, long Arabic/unbroken comments,6–10-lesson curricula, keyboard/sticky/radio navigation, intermediate widths, mobile marker endpoints and22 rendered Axe states. Fresh Axe reports [430](narrow-axe-430.json)/[1440](narrow-axe-1440.json) showzero violations and the same three incomplete contrast nodes; previous supplementary checks below remain bounded evidence for these unchanged430/1440 styles. [Fresh contrast pairs](narrow-contrast.json) pass. The earlier29-flow run/11 units and font-inclusive performance measurements below describe376c74d; they were not rerun or relabelled as new results for this CSS-only correction.
+
+[Actual label measurements](narrow-materials-measurements.json) include all nonempty Instructor text nodes: one rendered line at320/360/430, document width equals viewport width, all five facts preserved. Final [320](narrow-materials-320.png), [360](narrow-materials-360.png), [430](narrow-materials-430.png) materials captures visually inspected. [Narrow full page](narrow-course-320.png) and [fresh intermediate measurements](narrow-layout-measurements.json) preserve additional evidence. One-off inspection helpers removed.
+
+The exact-fidelity blockers remain specific:
+
+| Missing input                        | Existing application location                                     | Required clarification                                                                                                         |
+| ------------------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Original instructor photo/video      | `public/images/lesson-poster.svg`, `public/media/study-plan.webm` | Source-resolution files/authorized use; current original demo illustration/media are substitutes                               |
+| Three reference comment portraits    | `public/images/avatar-1.svg` through `avatar-3.svg`               | Matching original portraits and rights; arbitrary replacement faces would not prove fidelity                                   |
+| Confirmed body/heading font identity | `src/app/fonts.ts`                                                | Exact family/weights if available; licensed Poppins/Spartan candidates remain visually inferred                                |
+| Desktop/mobile data presentation     | `src/data/courses.ts`                                             | Duplicated desktop facts/week groups versus mobile5 facts/8 lessons; the previously asked optional question remains unanswered |
+
+No source retry, asset import, installation, remote, push, deployment or submission. Source screenshots/documents/media/static settings remain preserved. Next independent action is **M6 current-rule/rubric/submission-readiness audit**, retaining these asset/presentation and actual-phone gaps; recommend GPT-6.1-sol/high, settings unchanged. Missing inputs were already requested; do not repeat setup or the same requests.
+
+## Previous screenshot implementation — DEC-014
+
 Recorded 2026-10-04. Tested application code: **376c74da59a7ec6f4933d6eb42a3e91afb164bab**, production build **hEzvFqKQmpwhBwwi2JMt0**. This continues the existing six-course implementation; it does not establish complete pixel fidelity, actual-phone behavior or competition clearance.
 
 ## Reference authority
