@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { bodyFont, headingFont } from "./fonts";
 import { courses } from "@/data/courses";
 import { getLessons } from "@/lib/course";
 import { LearningProvider } from "@/features/learning/learning-provider";
@@ -15,7 +16,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${bodyFont.variable} ${headingFont.variable}`}>
       <body>
         <a className="skip-link" href="#main-content">
           Skip to content

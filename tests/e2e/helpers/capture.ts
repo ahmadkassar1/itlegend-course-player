@@ -6,6 +6,7 @@ export function capturePath(name: string) {
 }
 
 export async function prepareScreenshot(page: Page) {
+  await page.evaluate(() => document.fonts.ready);
   for (const bar of await page.getByRole("progressbar").all()) {
     await bar.scrollIntoViewIfNeeded();
     await expect

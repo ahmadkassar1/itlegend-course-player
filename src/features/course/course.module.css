@@ -211,6 +211,7 @@
   min-width: 0;
 }
 .comment h3 {
+  font-family: var(--font-body), "Segoe UI", Arial, sans-serif;
   color: var(--muted);
   font-size: 1rem;
   margin: 0 0 8px;
@@ -242,7 +243,7 @@
   color: var(--text);
   background: white;
   box-shadow: 0 8px 45px #293f390b;
-  font-size: 0.8125rem;
+  font-size: 1rem;
 }
 .commentForm textarea::placeholder {
   color: var(--muted);
@@ -346,6 +347,9 @@
 }
 .courseProgress p span {
   margin: 0 4px;
+}
+.mobileProgressMarker {
+  display: none;
 }
 .sections {
   display: grid;
@@ -571,7 +575,25 @@
   }
   .curriculum > h2 {
     font-size: 1.375rem;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+  }
+  .courseProgress {
+    padding-top: 0;
+    margin-bottom: 24px;
+  }
+  .courseProgress > .progressMarker {
+    display: none;
+  }
+  .courseProgress p {
+    margin-top: 12px;
+  }
+  .mobileProgressMarker {
+    display: block;
+    position: relative;
+    height: 58px;
+  }
+  .mobileProgressMarker .progressMarker small {
+    top: 2.5rem;
   }
   .sections {
     gap: 22px;
@@ -615,7 +637,7 @@
     font-size: 0.8125rem;
   }
   .comment p {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.85;
   }
   .commentForm textarea {

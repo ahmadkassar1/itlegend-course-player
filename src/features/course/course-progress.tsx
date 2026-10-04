@@ -5,6 +5,25 @@ import { getProgress, getStudentLevel } from "@/lib/course";
 import { useMediaQuery } from "@/lib/use-media-query";
 import styles from "./course.module.css";
 
+export function ProgressMarker({
+  progress,
+  position = progress,
+}: {
+  progress: number;
+  position?: number;
+}) {
+  return (
+    <div
+      className={styles.progressMarker}
+      aria-hidden="true"
+      style={{ left: `clamp(1.5rem, ${position}%, calc(100% - 1.5rem))` }}
+    >
+      <span>You</span>
+      <small>{progress}%</small>
+    </div>
+  );
+}
+
 export function CourseProgress({
   completed,
   total,
@@ -32,13 +51,7 @@ export function CourseProgress({
   }, []);
   return (
     <div ref={target} className={styles.courseProgress}>
-      <div
-        className={styles.progressMarker}
-        style={{ left: `clamp(1.5rem, ${fill}%, calc(100% - 1.5rem))` }}
-      >
-        <span>You</span>
-        <small>{progress}%</small>
-      </div>
+      <ProgressMarker progress={progress} position={fill} />
       <div
         className={styles.progressTrack}
         role="progressbar"

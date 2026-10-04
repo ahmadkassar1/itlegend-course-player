@@ -1,6 +1,6 @@
 :root {
-  --text: #202b29;
-  --muted: #626d69;
+  --text: #181818;
+  --muted: #707070;
   --action: #217b6a;
   --progress: #438f63;
   --control-border: #7a8681;
@@ -17,8 +17,13 @@ body {
   margin: 0;
   color: var(--text);
   background: #fff;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-body), "Segoe UI", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), "Segoe UI", Arial, sans-serif;
 }
 html {
   overflow-wrap: anywhere;

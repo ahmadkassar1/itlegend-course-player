@@ -1,14 +1,13 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
-import { Icon } from "@/components/icon";
-import { getLessons } from "@/lib/course";
+import { getLessons, getProgress } from "@/lib/course";
 import type { Course, Lesson } from "@/types/course";
-import styles from "./course.module.css";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { useCourseLearning } from "@/features/learning/learning-provider";
 import { CourseProgress } from "./course-progress";
+import { CurriculumSection } from "./curriculum-section";
+import styles from "./course.module.css";
 
 export function Curriculum({
   course,
@@ -40,87 +39,25 @@ export function Curriculum({
           );
           const open =
             expanded[section.id] ?? (desktop || index === 0 || activeGroup);
-          const panelId = `section-${section.id}`;
           return (
-            <section className={styles.curriculumSection} key={section.id}>
-              <h3>
-                <button
-                  className={styles.sectionToggle}
-                  type="button"
-                  aria-expanded={open}
-                  aria-controls={panelId}
-                  onClick={() =>
-                    setExpanded((current) => ({
-                      ...current,
-                      [section.id]: !open,
-                    }))
-                  }
-                >
-                  {section.title}
-                  <Icon name={open ? "minus" : "plus"} />
-                </button>
-              </h3>
-              <div id={panelId} hidden={!open}>
-                <p className={styles.sectionDescription}>
-                  {section.description}
-                </p>
-                <ol className={styles.lessonList}>
-                  {section.lessons.map((lesson) => {
-                    const active = lesson.id === selectedLessonId;
-                    const completed = completedIds.has(lesson.id);
-                    return (
-                      <li key={lesson.id}>
-                        <Link
-                          className={`${styles.lessonRow} ${active ? styles.selectedLesson : ""}`}
-                          href={`/courses/${course.slug}?lesson=${lesson.id}`}
-                          scroll={lesson.kind === "video"}
-                          aria-current={active ? "step" : undefined}
-                          onClick={() => {
-                            setExpanded((current) => ({
-                              ...current,
-                              [section.id]: true,
-                            }));
-                            if (lesson.kind !== "video")
-                              onResourceSelect(lesson);
-                          }}
-                        >
-                          <Icon name="document" />
-                          <span className={styles.lessonTitle}>
-                            {lesson.curriculumTitle ?? lesson.title}
-                            {active ? (
-                              <span className={styles.currentLabel}>
-                                Current lesson
-                              </span>
-                            ) : null}
-                          </span>
-                          <span className={styles.lessonMeta}>
-                            {lesson.kind === "exam" ? (
-                              <span className={styles.questionBadge}>
-                                {lesson.exam.questions.length} QUESTIONS
-                              </span>
-                            ) : null}
-                            {lesson.kind === "pdf" ? (
-                              <span className={styles.questionBadge}>PDF</span>
-                            ) : (
-                              <span className={styles.durationBadge}>
-                                {lesson.minutes}{" "}
-                                {lesson.kind === "exam" ? "MINUTES" : "MIN"}
-                              </span>
-                            )}
-                          </span>
-                          {completed ? (
-                            <span className={styles.completionIcon}>
-                              <Icon name="check" />
-                              <span className={styles.srOnly}>Completed</span>
-                            </span>
-                          ) : null}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ol>
-              </div>
-            </section>
+            <CurriculumSection
+              key={section.id}
+              courseSlug={course.slug}
+              section={section}
+              selectedLessonId={selectedLessonId}
+              completedIds={completedIds}
+              open={open}
+              progress={
+                index === 0 ? getProgress(completedIds.size, total) : undefined
+              }
+              onToggle={() =>
+                setExpanded((current) => ({ ...current, [section.id]: !open }))
+              }
+              onSelect={(lesson) => {
+                setExpanded((current) => ({ ...current, [section.id]: true }));
+                if (lesson.kind !== "video") onResourceSelect(lesson);
+              }}
+            />
           );
         })}
       </div>
