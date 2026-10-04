@@ -5,7 +5,7 @@ export function getLessons(course: Pick<Course, "sections">): Lesson[] {
 }
 
 export function getProgress(completed: number, total: number): number {
-  return total > 0
+  return Number.isFinite(completed) && Number.isFinite(total) && total > 0
     ? Math.min(100, Math.max(0, Math.round((completed / total) * 100)))
     : 0;
 }
