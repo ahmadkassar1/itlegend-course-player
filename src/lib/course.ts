@@ -20,7 +20,7 @@ export function getCourseStatus(
       : "In progress";
 }
 
-export function getStudentLevel(progress: number): string {
+export function getStudentLevel(progress: number) {
   return progress === 0
     ? "Getting started"
     : progress === 100
@@ -52,4 +52,27 @@ export function resolveLesson(course: Course, requested?: string): Lesson {
     lessons[0];
   if (!lesson) throw new Error(`Course ${course.slug} has no lessons`);
   return lesson;
+}
+
+export function rankLearners(
+  peers: readonly { id: string; name: string; fraction: number }[],
+  completed: number,
+  total: number,
+) {
+  const rows = [
+    ...peers.map((peer) => ({
+      id: peer.id,
+      name: peer.name,
+      completed: Math.max(
+        0,
+        Math.min(total, Math.floor(total * peer.fraction)),
+      ),
+    })),
+    { id: "you", name: "You", completed },
+  ].sort((a, b) => b.completed - a.completed || a.id.localeCompare(b.id));
+  return rows.map((row) => ({
+    ...row,
+    progress: getProgress(row.completed, total),
+    rank: rows.findIndex((entry) => entry.completed === row.completed) + 1,
+  }));
 }

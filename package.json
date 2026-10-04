@@ -13,7 +13,7 @@
     "format": "prettier --write src tests scripts *.ts *.json *.mjs *.md",
     "format:check": "prettier --check src tests scripts *.ts *.json *.mjs *.md",
     "test:e2e": "playwright test",
-    "test:unit": "node --experimental-strip-types --test tests/unit/learning-store.test.mjs"
+    "test:unit": "node --experimental-strip-types --test tests/unit/learning-store.test.mjs tests/unit/interaction-store.test.mjs"
   },
   "engines": {
     "node": "^22.13.0 || >=24"
