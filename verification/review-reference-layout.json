@@ -1,0 +1,278 @@
+[
+  {
+    "width": 430,
+    "title": "Starting SEO as your Home Based Business",
+    "boxes": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 430,
+        "height": 131.59375,
+        "font": "16px"
+      },
+      "h1": {
+        "x": 18,
+        "y": 46,
+        "width": 394,
+        "height": 67.59375,
+        "font": "26px"
+      },
+      "[data-player-frame]": {
+        "x": 16,
+        "y": 145.59375,
+        "width": 398,
+        "height": 265.328125,
+        "font": "16px"
+      },
+      "[aria-labelledby=\"materials-heading\"]": {
+        "x": 16,
+        "y": 539.921875,
+        "width": 398,
+        "height": 315.390625,
+        "font": "16px"
+      },
+      "dl": {
+        "x": 16,
+        "y": 571.3125,
+        "width": 398,
+        "height": 284,
+        "font": "16px"
+      },
+      "#curriculum": {
+        "x": 16,
+        "y": 909.3125,
+        "width": 398,
+        "height": 817.75,
+        "font": "16px"
+      },
+      "#curriculum section": {
+        "x": 16,
+        "y": 1086.703125,
+        "width": 398,
+        "height": 452.359375,
+        "font": "16px"
+      },
+      "#comments": {
+        "x": 16,
+        "y": 1771.0625,
+        "width": 398,
+        "height": 878.515625,
+        "font": "16px"
+      },
+      "#comments textarea": {
+        "x": 16,
+        "y": 2397.578125,
+        "width": 398,
+        "height": 180,
+        "font": "16px"
+      }
+    }
+  },
+  {
+    "width": 820,
+    "title": "Starting SEO as your Home Based Business",
+    "boxes": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 820,
+        "height": 184,
+        "font": "16px"
+      },
+      "h1": {
+        "x": 60,
+        "y": 61,
+        "width": 700,
+        "height": 104,
+        "font": "40px"
+      },
+      "[data-player-frame]": {
+        "x": 60,
+        "y": 208,
+        "width": 700,
+        "height": 466.65625,
+        "font": "16px"
+      },
+      "[aria-labelledby=\"materials-heading\"]": {
+        "x": 60,
+        "y": 814.65625,
+        "width": 700,
+        "height": 263,
+        "font": "16px"
+      },
+      "dl": {
+        "x": 60,
+        "y": 877.65625,
+        "width": 700,
+        "height": 200,
+        "font": "16px"
+      },
+      "#curriculum": {
+        "x": 60,
+        "y": 1119.65625,
+        "width": 700,
+        "height": 855.671875,
+        "font": "16px"
+      },
+      "#curriculum section": {
+        "x": 60,
+        "y": 1292.25,
+        "width": 700,
+        "height": 475.078125,
+        "font": "16px"
+      },
+      "#comments": {
+        "x": 60,
+        "y": 2019.328125,
+        "width": 700,
+        "height": 813.78125,
+        "font": "16px"
+      },
+      "#comments textarea": {
+        "x": 60,
+        "y": 2587.109375,
+        "width": 700,
+        "height": 170,
+        "font": "13px"
+      }
+    }
+  },
+  {
+    "width": 1305,
+    "title": "Starting SEO as your Home Based Business",
+    "boxes": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1305,
+        "height": 132,
+        "font": "16px"
+      },
+      "h1": {
+        "x": 40,
+        "y": 61,
+        "width": 1225,
+        "height": 52,
+        "font": "40px"
+      },
+      "[data-player-frame]": {
+        "x": 40,
+        "y": 149,
+        "width": 749.734375,
+        "height": 499.8125,
+        "font": "16px"
+      },
+      "[aria-labelledby=\"materials-heading\"]": {
+        "x": 40,
+        "y": 788.8125,
+        "width": 749.734375,
+        "height": 263,
+        "font": "16px"
+      },
+      "dl": {
+        "x": 40,
+        "y": 851.8125,
+        "width": 749.734375,
+        "height": 200,
+        "font": "16px"
+      },
+      "#curriculum": {
+        "x": 859.734375,
+        "y": 149,
+        "width": 405.265625,
+        "height": 1060.453125,
+        "font": "16px"
+      },
+      "#curriculum section": {
+        "x": 859.734375,
+        "y": 315.59375,
+        "width": 405.265625,
+        "height": 490.859375,
+        "font": "16px"
+      },
+      "#comments": {
+        "x": 40,
+        "y": 1096.8125,
+        "width": 749.734375,
+        "height": 813.78125,
+        "font": "16px"
+      },
+      "#comments textarea": {
+        "x": 40,
+        "y": 1664.59375,
+        "width": 749.734375,
+        "height": 170,
+        "font": "13px"
+      }
+    }
+  },
+  {
+    "width": 1440,
+    "title": "Starting SEO as your Home Based Business",
+    "boxes": {
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 132,
+        "font": "16px"
+      },
+      "h1": {
+        "x": 100,
+        "y": 61,
+        "width": 1240,
+        "height": 52,
+        "font": "40px"
+      },
+      "[data-player-frame]": {
+        "x": 100,
+        "y": 149,
+        "width": 759.46875,
+        "height": 506.3125,
+        "font": "16px"
+      },
+      "[aria-labelledby=\"materials-heading\"]": {
+        "x": 100,
+        "y": 795.3125,
+        "width": 759.46875,
+        "height": 263,
+        "font": "16px"
+      },
+      "dl": {
+        "x": 100,
+        "y": 858.3125,
+        "width": 759.46875,
+        "height": 200,
+        "font": "16px"
+      },
+      "#curriculum": {
+        "x": 929.46875,
+        "y": 149,
+        "width": 410.53125,
+        "height": 1060.453125,
+        "font": "16px"
+      },
+      "#curriculum section": {
+        "x": 929.46875,
+        "y": 315.59375,
+        "width": 410.53125,
+        "height": 490.859375,
+        "font": "16px"
+      },
+      "#comments": {
+        "x": 100,
+        "y": 1103.3125,
+        "width": 759.46875,
+        "height": 813.78125,
+        "font": "16px"
+      },
+      "#comments textarea": {
+        "x": 100,
+        "y": 1671.09375,
+        "width": 759.46875,
+        "height": 170,
+        "font": "13px"
+      }
+    }
+  }
+]
