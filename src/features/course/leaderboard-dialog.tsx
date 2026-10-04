@@ -7,11 +7,9 @@ import styles from "./dialogs.module.css";
 
 export function LeaderboardDialog({
   courseSlug,
-  courseTitle,
   total,
 }: {
   courseSlug: string;
-  courseTitle: string;
   total: number;
 }) {
   const state = useCourseLearning(courseSlug);
@@ -20,15 +18,8 @@ export function LeaderboardDialog({
   const rows = rankLearners(sampleLearners, completed, total);
   return (
     <div className={styles.leaderboard}>
-      <h3>
-        {courseTitle}
-        <span>Leaderboard</span>
-      </h3>
       <p className={styles.motivation} lang="ar" dir="rtl">
         {motivationalMessages[level]}
-      </p>
-      <p className={styles.sampleNote}>
-        Sample learners • ranked by course completion
       </p>
       <ol className={styles.ranking} aria-label="Course leaderboard">
         {rows.map((row) => (
@@ -37,7 +28,8 @@ export function LeaderboardDialog({
             value={row.rank}
             aria-current={row.id === "you" ? "true" : undefined}
           >
-            <span className={styles.rank} aria-label={`Rank ${row.rank}`}>
+            <span className={styles.rank}>
+              <span className={styles.srOnly}>Rank </span>
               {row.rank}
             </span>
             <span className={styles.learner}>{row.name}</span>
@@ -50,6 +42,9 @@ export function LeaderboardDialog({
           </li>
         ))}
       </ol>
+      <p className={styles.sampleNote}>
+        Sample learners • ranked by course completion
+      </p>
     </div>
   );
 }

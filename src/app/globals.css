@@ -1,8 +1,9 @@
 :root {
   --text: #202b29;
   --muted: #626d69;
-  --action: #23816f;
-  --progress: #6abd8a;
+  --action: #217b6a;
+  --progress: #438f63;
+  --control-border: #7a8681;
   --border: #e5e8e7;
   --header: #f5f9fa;
 }
@@ -19,8 +20,12 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+html {
+  overflow-wrap: anywhere;
+}
 button,
 input,
+select,
 textarea {
   font: inherit;
 }
@@ -68,7 +73,7 @@ img {
   margin: auto;
 }
 .empty-page h1 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 .empty-page p {
   line-height: 1.7;

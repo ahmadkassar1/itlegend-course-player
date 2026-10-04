@@ -14,6 +14,7 @@ export function LessonPreview({
 }) {
   return (
     <section className={styles.preview} aria-label="Current lesson">
+      <h2 className={styles.srOnly}>{lesson.title}</h2>
       <div className={styles.previewFrame}>
         <Image
           src={poster}
@@ -23,9 +24,6 @@ export function LessonPreview({
           preload
         />
         <div className={styles.posterShade} />
-        <span className={styles.previewLabel}>
-          {lesson.kind === "pdf" ? "Course resource" : "Knowledge check"}
-        </span>
         <button
           className={styles.playButton}
           type="button"
@@ -35,14 +33,8 @@ export function LessonPreview({
         >
           <Icon name="document" />
         </button>
-        <div className={styles.lessonCaption}>
-          <span>{lesson.minutes} MINUTES</span>
-          <h2>{lesson.title}</h2>
-        </div>
       </div>
-      <p className={styles.lessonDescription} aria-live="polite">
-        {lesson.description}
-      </p>
+      <p className={styles.srOnly}>{lesson.description}</p>
     </section>
   );
 }

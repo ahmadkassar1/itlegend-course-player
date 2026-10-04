@@ -15,7 +15,7 @@ export default function CataloguePage() {
         </Link>
         <span className={styles.navLabel}>Learn at your own pace</span>
       </header>
-      <main id="main-content">
+      <main id="main-content" tabIndex={-1}>
         <section className={styles.hero} aria-labelledby="catalogue-title">
           <p className={styles.eyebrow}>A little progress, every day</p>
           <h1 id="catalogue-title">Your next lesson starts here.</h1>

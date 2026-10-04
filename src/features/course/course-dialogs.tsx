@@ -34,6 +34,7 @@ export function CourseDialogs({
   return (
     <Dialog
       title={title}
+      subtitle={dialog.kind === "leaderboard" ? courseTitle : undefined}
       fullScreen={dialog.kind === "resource"}
       compact={dialog.kind === "leaderboard"}
       onClose={onClose}
@@ -41,11 +42,7 @@ export function CourseDialogs({
       {dialog.kind === "question" ? (
         <QuestionDialog courseSlug={courseSlug} />
       ) : dialog.kind === "leaderboard" ? (
-        <LeaderboardDialog
-          courseSlug={courseSlug}
-          courseTitle={courseTitle}
-          total={total}
-        />
+        <LeaderboardDialog courseSlug={courseSlug} total={total} />
       ) : dialog.lesson.kind === "pdf" ? (
         <PdfDialog courseSlug={courseSlug} lesson={dialog.lesson} />
       ) : (

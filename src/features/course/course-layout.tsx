@@ -59,6 +59,7 @@ export function CourseLayout({
     <main
       ref={main}
       id="main-content"
+      tabIndex={-1}
       className={`${styles.courseLayout} ${wide && desktop ? styles.wideCourse : ""}`}
       data-wide={wide && desktop}
       style={{ "--sticky-player-height": `${playerHeight}px` } as CSSProperties}

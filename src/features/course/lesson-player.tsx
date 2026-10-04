@@ -204,7 +204,7 @@ export function LessonPlayer({
           </div>
         ) : null}
       </div>
-      <p className={styles.lessonDescription}>{lesson.description}</p>
+      <p className={styles.srOnly}>{lesson.description}</p>
       <p className={styles.srOnly}>{lesson.media.transcript}</p>
     </section>
   );

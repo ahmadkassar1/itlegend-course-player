@@ -34,7 +34,7 @@ export function CourseProgress({
     <div ref={target} className={styles.courseProgress}>
       <div
         className={styles.progressMarker}
-        style={{ left: `clamp(21px, ${fill}%, calc(100% - 21px))` }}
+        style={{ left: `clamp(1.5rem, ${fill}%, calc(100% - 1.5rem))` }}
       >
         <span>You</span>
         <small>{progress}%</small>

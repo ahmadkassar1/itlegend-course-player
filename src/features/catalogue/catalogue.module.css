@@ -10,13 +10,15 @@
   gap: 20px;
   min-height: 84px;
   border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  padding-block: 16px;
 }
 .brand {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 1.1875rem;
   letter-spacing: -0.4px;
   text-decoration: none;
 }
@@ -27,7 +29,7 @@
 }
 .navLabel {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .hero {
   padding: 54px 0 42px;
@@ -35,20 +37,20 @@
 }
 .eyebrow {
   color: var(--action);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 0 0 13px;
 }
 .hero h1 {
-  font-size: clamp(30px, 4vw, 46px);
+  font-size: 2.875rem;
   line-height: 1.18;
   letter-spacing: -1.3px;
   margin: 0 0 16px;
 }
 .hero p:last-child {
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: var(--muted);
   line-height: 1.7;
   max-width: 580px;
@@ -62,13 +64,13 @@
   gap: 14px;
 }
 .collectionHeading h2 {
-  font-size: 21px;
+  font-size: 1.3125rem;
   margin: 0;
   font-weight: 600;
 }
 .collectionHeading span {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .grid {
   display: grid;
@@ -106,10 +108,10 @@
   position: absolute;
   left: 20px;
   top: 18px;
-  font-size: 11px;
+  font-size: 0.6875rem;
   font-weight: 600;
   color: #25463c;
-  background: #ffffffed;
+  background: white;
   border-radius: 4px;
   padding: 6px 10px;
 }
@@ -120,7 +122,7 @@
   flex: 1;
 }
 .instructor {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--muted);
   margin: 0 0 10px;
   display: flex;
@@ -128,14 +130,14 @@
   gap: 7px;
 }
 .cardContent h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.4;
   margin: 0 0 10px;
   letter-spacing: -0.35px;
 }
 .description {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.65;
   margin: 0 0 24px;
   flex: 1;
@@ -144,7 +146,7 @@
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: var(--muted);
   margin-bottom: 9px;
 }
@@ -169,7 +171,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--action);
@@ -180,7 +182,7 @@
 .footer {
   padding-top: 44px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.75rem;
   text-align: center;
 }
 @media (max-width: 1099px) {
@@ -196,25 +198,26 @@
     min-height: 72px;
   }
   .brand {
-    font-size: 17px;
+    font-size: 1.0625rem;
   }
   .navLabel {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .hero {
     padding: 38px 0 32px;
   }
   .hero h1 {
+    font-size: 1.875rem;
     letter-spacing: -0.7px;
   }
   .hero p:last-child {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 22px;
   }
   .collectionHeading h2 {
-    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }

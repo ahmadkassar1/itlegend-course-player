@@ -5,12 +5,14 @@ import styles from "./dialog.module.css";
 
 export function Dialog({
   title,
+  subtitle,
   fullScreen = false,
   compact = false,
   children,
   onClose,
 }: {
   title: string;
+  subtitle?: string;
   fullScreen?: boolean;
   compact?: boolean;
   children: ReactNode;
@@ -87,10 +89,15 @@ export function Dialog({
         onClose();
       }}
     >
-      <header className={styles.header}>
-        <h2 id={titleId} tabIndex={-1} data-dialog-heading>
-          {title}
-        </h2>
+      <header
+        className={`${styles.header} ${compact ? styles.compactHeader : ""}`}
+      >
+        <div className={styles.titleGroup}>
+          {subtitle ? <p className={styles.subtitle}>{subtitle}</p> : null}
+          <h2 id={titleId} tabIndex={-1} data-dialog-heading>
+            {title}
+          </h2>
+        </div>
         <button
           className={styles.close}
           type="button"

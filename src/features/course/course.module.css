@@ -14,7 +14,7 @@
   list-style: none;
   padding: 0;
   margin: 0 0 22px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 .breadcrumb li {
   display: inline-flex;
@@ -32,10 +32,10 @@
   height: 13px;
 }
 .header h1 {
-  font-size: clamp(25px, 3.1vw, 36px);
+  font-size: 2.5rem;
   line-height: 1.3;
-  letter-spacing: -0.7px;
-  font-weight: 650;
+  letter-spacing: 0.2px;
+  font-weight: 600;
   margin: 0;
 }
 .courseLayout {
@@ -72,17 +72,7 @@
   background: #0007;
   pointer-events: none;
 }
-.previewLabel {
-  position: absolute;
-  top: 18px;
-  left: 20px;
-  font-size: 11px;
-  color: white;
-  background: #10271dbc;
-  border: 1px solid #ffffff45;
-  border-radius: 3px;
-  padding: 5px 8px;
-}
+
 .playButton {
   position: absolute;
   top: 50%;
@@ -103,35 +93,13 @@
   height: 25px;
   margin-left: 2px;
 }
-.lessonCaption {
-  position: absolute;
-  bottom: 23px;
-  left: 24px;
-  right: 24px;
-  color: white;
-}
-.lessonCaption > span {
-  font-size: 10px;
-  letter-spacing: 1.5px;
-}
-.lessonCaption h2 {
-  font-size: 21px;
-  margin: 6px 0 0;
-  line-height: 1.4;
-  font-weight: 600;
-}
-.lessonDescription {
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--muted);
-  margin: 12px 0 0;
-}
+
 .sectionControls {
   grid-area: controls;
   display: flex;
   flex-wrap: wrap;
   gap: 9px;
-  padding: 19px 0 41px;
+  padding: 24px 0 56px;
 }
 .sectionControls a,
 .sectionControls button {
@@ -170,7 +138,7 @@
 }
 .materials > h2,
 .comments > h2 {
-  font-size: 27px;
+  font-size: 1.875rem;
   line-height: 1.3;
   margin: 0 0 24px;
   font-weight: 600;
@@ -190,7 +158,7 @@
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  font-size: 13px;
+  font-size: 0.875rem;
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
@@ -244,18 +212,18 @@
 }
 .comment h3 {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0 0 8px;
   font-weight: 600;
 }
 .comment time {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.8125rem;
 }
 .comment p {
   color: var(--muted);
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 0.875rem;
   margin: 14px 0 0;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
@@ -268,13 +236,13 @@
   resize: vertical;
   width: 100%;
   min-height: 170px;
-  border: 1px solid transparent;
+  border: 1px solid var(--control-border);
   border-radius: 3px;
   padding: 19px;
   color: var(--text);
   background: white;
   box-shadow: 0 8px 45px #293f390b;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .commentForm textarea::placeholder {
   color: var(--muted);
@@ -282,12 +250,12 @@
 }
 .formError {
   color: #9d233a;
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.6;
 }
 .formStatus {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 0.8125rem;
   line-height: 1.6;
 }
 .submit {
@@ -302,7 +270,7 @@
   border-radius: 3px;
   background: var(--action);
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 .curriculum {
@@ -310,13 +278,13 @@
   scroll-margin-top: 24px;
 }
 .curriculum > h2 {
-  font-size: 23px;
+  font-size: 1.5625rem;
   line-height: 1.4;
   margin: 0 0 27px;
   font-weight: 600;
 }
 .courseProgress {
-  padding: 40px 0 0;
+  padding: 2.5rem 0 0;
   margin-bottom: 33px;
   position: relative;
 }
@@ -324,7 +292,7 @@
   position: absolute;
   top: 0;
   transform: translateX(-50%);
-  width: 42px;
+  width: 3rem;
   text-align: center;
   transition: left 1s ease-out;
 }
@@ -332,11 +300,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 31px;
-  height: 31px;
+  width: 2rem;
+  height: 2rem;
   border: 1px solid #bdc5c3;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #59618a;
   position: relative;
   background: white;
@@ -352,9 +320,9 @@
 .progressMarker small {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 3.125rem;
   width: 100%;
-  font-size: 10px;
+  font-size: 0.625rem;
   color: #59618a;
 }
 .progressTrack {
@@ -372,9 +340,9 @@
 }
 .courseProgress p {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 0.6875rem;
   line-height: 1.6;
-  margin: 31px 0 0;
+  margin: 2rem 0 0;
 }
 .courseProgress p span {
   margin: 0 4px;
@@ -388,7 +356,7 @@
   border: 1px solid var(--border);
 }
 .curriculumSection h3 {
-  font-size: 17px;
+  font-size: 1.25rem;
   line-height: 1.5;
   margin: 0;
   font-weight: 500;
@@ -401,7 +369,7 @@
   gap: 10px;
   width: 100%;
   padding: 0 0 6px;
-  min-height: 34px;
+  min-height: 44px;
   background: none;
   border: 0;
   color: var(--text);
@@ -414,7 +382,7 @@
 }
 .sectionDescription {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 1.75;
   margin: 3px 0 16px;
 }
@@ -432,7 +400,7 @@
   gap: 7px;
   text-decoration: none;
   min-height: 53px;
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 1.6;
   padding: 12px 0;
   color: #46544e;
@@ -455,7 +423,7 @@
   align-items: flex-end;
   gap: 3px;
   min-width: 0;
-  font-size: 9px;
+  font-size: 0.6875rem;
   text-align: right;
 }
 .questionBadge {
@@ -479,7 +447,7 @@
 .currentLabel {
   display: block;
   color: var(--action);
-  font-size: 9px;
+  font-size: 0.625rem;
   margin-top: 2px;
 }
 .completionIcon {
@@ -555,7 +523,7 @@
     padding: 17px 18px 21px;
   }
   .breadcrumb {
-    font-size: 12px;
+    font-size: 0.8125rem;
     gap: 5px;
     margin-bottom: 12px;
   }
@@ -563,38 +531,21 @@
     gap: 5px;
   }
   .header h1 {
-    font-size: 25px;
-    letter-spacing: -0.4px;
+    font-size: 1.625rem;
+    letter-spacing: 0.3px;
   }
   .courseLayout {
     padding: 16px 16px 40px;
   }
-  .previewLabel {
-    top: 12px;
-    left: 13px;
-    font-size: 10px;
-  }
+
   .playButton {
     width: 56px;
     height: 56px;
   }
-  .lessonCaption {
-    left: 16px;
-    right: 16px;
-    bottom: 15px;
-  }
-  .lessonCaption h2 {
-    font-size: 18px;
-  }
-  .lessonCaption > span {
-    font-size: 9px;
-  }
-  .lessonDescription {
-    font-size: 12px;
-  }
+
   .sectionControls {
     padding-top: 10px;
-    padding-bottom: 34px;
+    padding-bottom: 63px;
     padding-left: 10px;
     gap: 6px;
   }
@@ -602,24 +553,24 @@
     margin-bottom: 40px;
   }
   .materials > h2 {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0 0 8px;
-    padding: 0 27px;
+    padding: 0 40px;
   }
   .facts {
     grid-template-columns: minmax(0, 1fr);
     box-shadow: none;
-    padding: 0 27px;
+    padding: 0 40px;
   }
   .fact {
     padding: 17px 0;
-    font-size: 13px;
+    font-size: 0.875rem;
   }
   .fact:nth-last-child(2) {
     border-bottom: 1px solid var(--border);
   }
   .curriculum > h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
     margin-bottom: 20px;
   }
   .sections {
@@ -629,14 +580,24 @@
     padding: 17px 18px 9px;
   }
   .curriculumSection h3 {
-    font-size: 16px;
+    font-size: 1.125rem;
+  }
+  .sectionDescription {
+    display: none;
+  }
+  .curriculumSection:has([aria-expanded="true"]) .sectionToggle {
+    margin-bottom: 12px;
+  }
+  .courseLayout :is(a, button, textarea, input, select, summary) {
+    scroll-margin-top: calc(var(--sticky-player-height, 0px) + 20px);
+    scroll-margin-bottom: 20px;
   }
   .lessonRow {
-    font-size: 12px;
+    font-size: 0.875rem;
     min-height: 53px;
   }
   .comments > h2 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     margin-bottom: 25px;
   }
   .comment {
@@ -648,20 +609,21 @@
     height: 48px;
   }
   .comment h3 {
-    font-size: 12px;
+    font-size: 0.8125rem;
   }
   .comment time {
-    font-size: 11px;
+    font-size: 0.75rem;
   }
   .comment p {
-    font-size: 12px;
+    font-size: 0.8125rem;
     line-height: 1.85;
   }
   .commentForm textarea {
     min-height: 180px;
+    font-size: 1rem;
   }
   .submit {
-    font-size: 12px;
+    font-size: 0.8125rem;
     padding: 14px 20px;
     min-height: 46px;
   }
@@ -696,6 +658,10 @@
 .playerModes button[aria-pressed="true"] {
   background: var(--action);
 }
+.playerModes button:focus-visible {
+  outline-color: white;
+  box-shadow: 0 0 0 7px #142923;
+}
 .playerNotice {
   position: absolute;
   bottom: 50px;
@@ -705,7 +671,7 @@
   background: #11261bef;
   padding: 14px;
   color: white;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 .playerNotice button {
   display: block;
@@ -743,10 +709,5 @@
     aspect-ratio: auto;
     height: min(75vh, 720px);
     border-radius: 0;
-  }
-  .wideCourse .lessonDescription {
-    max-width: 1320px;
-    margin: 12px auto 0;
-    padding-inline: 40px;
   }
 }

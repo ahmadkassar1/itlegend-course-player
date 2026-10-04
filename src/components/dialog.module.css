@@ -14,7 +14,7 @@
   background: #14292399;
 }
 .compact {
-  width: min(400px, calc(100% - 24px));
+  width: min(360px, calc(100% - 24px));
 }
 .dialog[open] {
   display: flex;
@@ -39,7 +39,7 @@
   flex: 0 0 auto;
 }
 .header h2 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.4;
   font-weight: 600;
   margin: 0;
@@ -60,7 +60,7 @@
   background: #f5f9fa;
   border: 1px solid var(--border);
   color: var(--text);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .content {
   min-height: 0;
@@ -68,11 +68,48 @@
   overscroll-behavior: contain;
   flex: 1;
 }
+.titleGroup {
+  flex: 1;
+  min-width: 0;
+}
+.subtitle {
+  margin: 0 0 4px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.compactHeader {
+  position: relative;
+  border: 0;
+  padding: 30px 24px 0;
+  text-align: center;
+  color: #3f3990;
+}
+.compactHeader .titleGroup {
+  padding-top: 30px;
+}
+.compactHeader h2,
+.compactHeader .subtitle {
+  font-size: 0.9375rem;
+}
+.compactHeader h2 {
+  font-weight: 700;
+}
+.compactHeader .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 @media (max-width: 767px) {
   .header {
     padding: 10px 12px;
   }
   .header h2 {
-    font-size: 17px;
+    font-size: 1.0625rem;
+  }
+  .compactHeader {
+    padding: 20px 14px 0;
+  }
+  .compactHeader h2 {
+    font-size: 0.9375rem;
   }
 }
