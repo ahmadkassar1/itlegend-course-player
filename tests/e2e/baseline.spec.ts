@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import fs from "node:fs/promises";
-import { prepareScreenshot } from "./helpers/capture";
+import { prepareScreenshot, capturePath } from "./helpers/capture";
 import { courses } from "../../src/data/courses";
 
 const expectedCourses: Record<string, { lessons: number; progress: number }> = {
@@ -128,8 +128,8 @@ test("lesson navigation updates content and current state; back and invalid deep
     page.getByRole("region", { name: "Current lesson" }).getByRole("heading"),
   ).toHaveText("Course Exercise / Reference Files");
   await expect(
-    page.getByRole("button", { name: "Resource unavailable" }),
-  ).toBeDisabled();
+    page.getByRole("button", { name: "Open PDF", exact: true }),
+  ).toBeEnabled();
 });
 
 test("responsive baseline preserves order and avoids horizontal overflow", async ({
@@ -182,13 +182,13 @@ test("responsive baseline preserves order and avoids horizontal overflow", async
     await page.goto("/");
     await prepareScreenshot(page);
     await page.screenshot({
-      path: `verification/m2-${name}-catalogue.png`,
+      path: capturePath(`${name}-catalogue`),
       fullPage: true,
     });
     await page.goto("/courses/starting-seo");
     await prepareScreenshot(page);
     await page.screenshot({
-      path: `verification/m2-${name}-player.png`,
+      path: capturePath(`${name}-player`),
       fullPage: true,
     });
   }
@@ -244,7 +244,7 @@ test("long selected lesson titles stay readable without blocking mobile video co
   await expect(page.locator("html")).toHaveJSProperty("scrollWidth", 320);
   await prepareScreenshot(page);
   await page.screenshot({
-    path: "verification/m2-narrow-player.png",
+    path: capturePath("narrow-player"),
     fullPage: true,
   });
 });

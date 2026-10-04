@@ -1,3 +1,4 @@
+import { capturePath } from "./helpers/capture";
 import { expect, test } from "@playwright/test";
 import { prepareScreenshot } from "./helpers/capture";
 
@@ -33,7 +34,7 @@ test("inline media really plays and Wide/fullscreen preserve the mounted video a
   expect(materials!.y).toBeGreaterThan(frame!.y + frame!.height);
   await prepareScreenshot(page);
   await page.screenshot({
-    path: "verification/m2-desktop-wide.png",
+    path: capturePath("desktop-wide"),
     fullPage: true,
   });
   expect(
@@ -53,7 +54,7 @@ test("inline media really plays and Wide/fullscreen preserve the mounted video a
   await expect(
     page.getByRole("button", { name: "Exit fullscreen" }),
   ).toBeVisible();
-  await page.screenshot({ path: "verification/m2-desktop-fullscreen.png" });
+  await page.screenshot({ path: capturePath("desktop-fullscreen") });
   await page.evaluate(() => document.exitFullscreen());
   await expect(
     page.getByRole("button", { name: "Maximize player" }),
@@ -215,7 +216,7 @@ test("mobile sticky player leaves section targets visible and fits a short lands
       })
       .toBe(true);
   }
-  await page.screenshot({ path: "verification/m2-mobile-sticky.png" });
+  await page.screenshot({ path: capturePath("mobile-sticky") });
   await page.setViewportSize({ width: 700, height: 360 });
   await page.getByRole("link", { name: "Jump to comments" }).click();
   const small = await preview.boundingBox();
@@ -227,7 +228,7 @@ test("mobile sticky player leaves section targets visible and fits a short lands
   await expect(
     page.getByRole("heading", { name: "Comments", exact: true }),
   ).toBeInViewport();
-  await page.screenshot({ path: "verification/m2-short-landscape.png" });
+  await page.screenshot({ path: capturePath("short-landscape") });
 });
 
 test("progress animates on entry; reduced motion shows the final fill directly", async ({

@@ -1,5 +1,10 @@
 import { expect, type Page } from "@playwright/test";
 
+export function capturePath(name: string) {
+  // Default reruns keep dated milestone captures untouched.
+  return `verification/${process.env.VERIFICATION_MILESTONE ?? "local-current"}-${name}.png`;
+}
+
 export async function prepareScreenshot(page: Page) {
   for (const bar of await page.getByRole("progressbar").all()) {
     await bar.scrollIntoViewIfNeeded();
