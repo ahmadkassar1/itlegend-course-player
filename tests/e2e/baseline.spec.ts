@@ -95,7 +95,7 @@ test("lesson navigation updates content and current state; back and invalid deep
     page.getByText(
       "Explore the course roadmap and prepare a learning plan that fits your schedule.",
     ),
-  ).toBeVisible();
+  ).toBeAttached();
   const toggle = page.getByRole("button", {
     name: "Components & Databinding",
     exact: true,

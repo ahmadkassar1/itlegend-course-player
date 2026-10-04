@@ -375,9 +375,14 @@ test("leaderboard derives current progress and level-specific original Arabic en
     await expect(dialog.locator('li[aria-current="true"]')).toContainText(
       `${progress}%`,
     );
-    await expect(dialog.getByRole("heading", { level: 3 })).toContainText(
-      courses.find((course) => course.slug === slug)!.title,
-    );
+    await expect(
+      dialog.getByText(courses.find((course) => course.slug === slug)!.title, {
+        exact: true,
+      }),
+    ).toBeVisible();
+    await expect(
+      dialog.getByRole("heading", { name: "Leaderboard", exact: true }),
+    ).toHaveCount(1);
     if (slug === "starting-seo")
       await page.screenshot({
         path: capturePath("desktop-leaderboard"),
