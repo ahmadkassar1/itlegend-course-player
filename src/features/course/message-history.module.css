@@ -1,0 +1,27 @@
+.history {
+  min-width: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior-y: contain;
+  scrollbar-gutter: stable;
+  padding-inline-end: 8px;
+}
+
+.history:focus-visible {
+  outline: 2px solid var(--action);
+  outline-offset: 2px;
+}
+
+.comments {
+  max-height: min(36rem, 65svh);
+}
+
+.questions {
+  max-height: min(22rem, 40svh);
+}
+
+@media (max-width: 767px) {
+  .comments {
+    scroll-margin-top: calc(var(--sticky-player-height, 0px) + 20px);
+  }
+}

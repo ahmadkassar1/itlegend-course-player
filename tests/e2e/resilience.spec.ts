@@ -107,7 +107,7 @@ test("long Arabic, multiline and unbroken comments remain readable with six-to-t
     await expect(page.getByRole("status")).toContainText(
       "saved on this device",
     );
-    const added = page.locator("#comments li").last().locator("p");
+    const added = page.locator("#comments li").first().locator("p");
     await expect(added).toHaveText(message);
     expect(
       await added.evaluate((el) => el.scrollWidth - el.clientWidth),

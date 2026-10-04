@@ -113,7 +113,7 @@ test("comments validate blank input, render literal text once and persist after 
   await comments.getByRole("textbox").fill(body);
   await comments.getByRole("button", { name: "Submit Review" }).click();
   await expect(comments.getByRole("listitem")).toHaveCount(4);
-  await expect(comments.getByRole("listitem").last()).toContainText(body);
+  await expect(comments.getByRole("listitem").first()).toContainText(body);
   await expect(comments.getByRole("status")).toContainText(
     "saved on this device",
   );
@@ -131,7 +131,7 @@ test("comments validate blank input, render literal text once and persist after 
   await expect(comments.getByRole("listitem")).toHaveCount(4);
   await page.reload();
   await expect(comments.getByRole("listitem")).toHaveCount(4);
-  await expect(comments.getByRole("listitem").last()).toContainText(body);
+  await expect(comments.getByRole("listitem").first()).toContainText(body);
   expect(errors).toEqual([]);
 });
 

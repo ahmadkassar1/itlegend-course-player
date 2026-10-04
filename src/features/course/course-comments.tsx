@@ -7,6 +7,7 @@ import {
 } from "@/features/learning/interaction-provider";
 import { CommentItem } from "./comment-item";
 import { TextEntryForm } from "./text-entry-form";
+import { MessageHistory } from "./message-history";
 import styles from "./course.module.css";
 import { usePersistence } from "@/features/learning/persistence-provider";
 
@@ -28,19 +29,25 @@ export function CourseComments({
       aria-labelledby="comments-heading"
     >
       <h2 id="comments-heading">Comments</h2>
-      <ul className={styles.commentList}>
-        {children}
-        {state.comments.map((message) => (
-          <CommentItem
-            key={message.id}
-            comment={{
-              ...message,
-              name: "You",
-              avatar: "/images/avatar-1.svg",
-            }}
-          />
-        ))}
-      </ul>
+      <MessageHistory
+        label="Course comments list"
+        latestMessageId={state.comments.at(-1)?.id}
+        variant="comments"
+      >
+        <ul className={styles.commentList}>
+          {[...state.comments].reverse().map((message) => (
+            <CommentItem
+              key={message.id}
+              comment={{
+                ...message,
+                name: "You",
+                avatar: "/images/avatar-1.svg",
+              }}
+            />
+          ))}
+          {children}
+        </ul>
+      </MessageHistory>
       <TextEntryForm
         label="Write a comment"
         submitLabel="Submit Review"

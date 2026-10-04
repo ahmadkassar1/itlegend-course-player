@@ -5,6 +5,7 @@ import {
   useInteractionStore,
 } from "@/features/learning/interaction-provider";
 import { TextEntryForm } from "./text-entry-form";
+import { MessageHistory } from "./message-history";
 import styles from "./dialogs.module.css";
 import { usePersistence } from "@/features/learning/persistence-provider";
 
@@ -41,13 +42,19 @@ export function QuestionDialog({ courseSlug }: { courseSlug: string }) {
       {state.questions.length ? (
         <section aria-label="Your saved questions">
           <h3>Your questions</h3>
-          <ul className={styles.savedQuestions}>
-            {state.questions.map((question) => (
-              <li key={question.id} dir="auto">
-                {question.body}
-              </li>
-            ))}
-          </ul>
+          <MessageHistory
+            label="Saved question list"
+            latestMessageId={state.questions.at(-1)?.id}
+            variant="questions"
+          >
+            <ul className={styles.savedQuestions}>
+              {[...state.questions].reverse().map((question) => (
+                <li key={question.id} dir="auto">
+                  {question.body}
+                </li>
+              ))}
+            </ul>
+          </MessageHistory>
         </section>
       ) : null}
     </div>
