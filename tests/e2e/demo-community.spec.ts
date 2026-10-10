@@ -54,6 +54,7 @@ for (const width of [320, 1440]) {
     await trigger.click();
     const dialog = page.getByRole("dialog");
     const visibleText = dialog.locator("[data-motivation-text]");
+    await expect(visibleText).toBeVisible();
     await page.clock.runFor(600);
     const partial = await visibleText.textContent();
     expect(partial!.length).toBeGreaterThan(0);

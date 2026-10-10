@@ -1,5 +1,7 @@
 import { defineConfig } from "@playwright/test";
 
+const hostedURL = process.env.PLAYWRIGHT_BASE_URL;
+
 export default defineConfig({
   testDir: "./tests/e2e",
   fullyParallel: false,
@@ -7,7 +9,7 @@ export default defineConfig({
   retries: 0,
   reporter: [["list"], ["json", { outputFile: "test-results/results.json" }]],
   use: {
-    baseURL: "http://127.0.0.1:3100",
+    baseURL: hostedURL || "http://127.0.0.1:3100",
     browserName: "chromium",
     channel:
       process.env.PLAYWRIGHT_CHANNEL === "chromium"
@@ -16,10 +18,12 @@ export default defineConfig({
     viewport: { width: 1440, height: 1000 },
     trace: "retain-on-failure",
   },
-  webServer: {
-    command: "npm run start -- --port 3100",
-    url: "http://127.0.0.1:3100",
-    reuseExistingServer: !process.env.CI,
-    timeout: 60_000,
-  },
+  webServer: hostedURL
+    ? undefined
+    : {
+        command: "npm run start -- --port 3100",
+        url: "http://127.0.0.1:3100",
+        reuseExistingServer: !process.env.CI,
+        timeout: 60_000,
+      },
 });

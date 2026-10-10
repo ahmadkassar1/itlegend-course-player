@@ -106,7 +106,7 @@ test("every real entry opens its native player with truthful facts and labeled d
     );
     expect(
       new URL((await frame.getAttribute("src"))!).searchParams.get("origin"),
-    ).toBe("http://127.0.0.1:3100");
+    ).toBe(new URL(page.url()).origin);
     await expect(page.getByRole("progressbar")).toHaveAttribute(
       "aria-valuenow",
       "0",
@@ -414,6 +414,8 @@ test("real Arabic content and local surfaces retain accessibility and 200% text 
             exact: true,
           })
           .click();
+      if (state === "pdf" || state === "exam")
+        await expect(page.getByRole("dialog")).toHaveCSS("opacity", "1");
       await page.addScriptTag({
         path: path.join(process.cwd(), "node_modules/axe-core/axe.min.js"),
       });

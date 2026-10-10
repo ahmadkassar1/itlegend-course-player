@@ -1,5 +1,7 @@
 # Ali Shahin video library
 
+[Live demo](https://itlegend-course-player-taupe.vercel.app/) · [Technical report](docs/TECHNICAL_REPORT.md)
+
 A Next.js App Router and TypeScript implementation of the ITLegend course-player challenge. The catalogue contains four published Ali Shahin videos, with their original Arabic titles, YouTube thumbnails and native player. Search, topic/status filters, sorting and resume information use the same learning state as the detail pages.
 
 This is an independent challenge project, not a creator product or an endorsed course platform. Editorial descriptions and the companion worksheet/study-skills check are written for this site. Each entry contains **one published video and two site exercises**; it is not an imported playlist syllabus. Full creator collections remain available through source links.
@@ -86,7 +88,7 @@ npm run build
 npm run test:e2e
 ```
 
-The browser suite uses the installed Chrome channel, one worker and no retries. It starts the production server on port 3100; stop an existing preview first when using `CI=true`. Set `PLAYWRIGHT_CHANNEL=msedge` for installed Edge or `chromium` for an already available Playwright browser. No browser download is part of these commands.
+The browser suite uses the installed Chrome channel, one worker and no retries. It starts the production server on port 3100; stop an existing preview first when using `CI=true`. Set `PLAYWRIGHT_BASE_URL` to the live demo URL to test the hosted app without starting a local server. Set `PLAYWRIGHT_CHANNEL=msedge` for installed Edge or `chromium` for an already available Playwright browser. No browser download is part of these commands.
 
 The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero personal history, labeled demo community, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 30 representative viewport profiles. Boundary coverage includes 480/481, 767/768, 1024/1025 and 1280/1281px. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
 
@@ -108,7 +110,7 @@ Native YouTube introduces third-party costs on the player page, and original CDN
 
 ## Release boundary
 
-There is no configured Git remote or public demo. Local commits use the user's configured author and committer. No push, deployment or submission has occurred.
+The [production demo](https://itlegend-course-player-taupe.vercel.app/) is deployed to the user's Vercel account and opens anonymously. It was released from the verified app source; the parent Obsidian workspace and historical media were excluded. There is no configured Git remote yet. Local commits use the user's configured author and committer; no GitHub push or competition submission has occurred. Deployment evidence and hosted-test scope are recorded in [Shared-Controls-and-Release.md](verification/Shared-Controls-and-Release.md).
 
 ### Deploy on Vercel
 
