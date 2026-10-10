@@ -1,0 +1,2569 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3100",
+      "url": "http://127.0.0.1:3100",
+      "reuseExistingServer": false,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "demo-community.spec.ts",
+      "file": "demo-community.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "encouragement types, rotates at 4.5 seconds, pauses and cleans up at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4781,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:39.999Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-a134d179828e605c3601",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4113,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:45.305Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-fb081bc4688f9240f4c0",
+          "file": "demo-community.spec.ts",
+          "line": 104,
+          "column": 7
+        },
+        {
+          "title": "encouragement types, rotates at 4.5 seconds, pauses and cleans up at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:49.457Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-9a3174e7f3cff6f03a95",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3883,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:53.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b72e2f29fab20573b33d",
+          "file": "demo-community.spec.ts",
+          "line": 104,
+          "column": 7
+        },
+        {
+          "title": "reduced motion shows complete, static encouragement and actual completion selects its level",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1598,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:57.808Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-1e31f9d756ff3227821b",
+          "file": "demo-community.spec.ts",
+          "line": 161,
+          "column": 5
+        },
+        {
+          "title": "video-specific samples remain separate from persisted posts and completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5344,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:53:59.442Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b69f7ba84c8deff4d3d6",
+          "file": "demo-community.spec.ts",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "title": "question confirmation reports unavailable storage without claiming an actual instructor request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1554,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:54:04.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-5ee1e07a9be1624c4724",
+          "file": "demo-community.spec.ts",
+          "line": 220,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "device-layout.spec.ts",
+      "file": "device-layout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "320x568 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6048,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:06.470Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDMyMCwKICAiaGVpZ2h0IjogNTY4LAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMjg4LAogICAgImhlaWdodCI6IDM2OS4xODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTIsCiAgICAgICAgInkiOiA2NS43MDMxMjUsCiAgICAgICAgIndpZHRoIjogMjk2LAogICAgICAgICJoZWlnaHQiOiA0MzYuNTkzNzUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTIsCiAgICAgICAgInkiOiAxMiwKICAgICAgICAid2lkdGgiOiAyOTYsCiAgICAgICAgImhlaWdodCI6IDU0NAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMzIwLAogICAgICAgICJoZWlnaHQiOiA1NjgKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAzMjAsCiAgICAgICAgImhlaWdodCI6IDU2OAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-fcdaa242d16e526ae98a",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "360x800 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5172,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:12.554Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDM2MCwKICAiaGVpZ2h0IjogODAwLAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMzI4LAogICAgImhlaWdodCI6IDM5OS41OTM3NQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMTgxLjcwMzEyNSwKICAgICAgICAid2lkdGgiOiAzMzYsCiAgICAgICAgImhlaWdodCI6IDQzNi41OTM3NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAxMiwKICAgICAgICAieSI6IDEyLAogICAgICAgICJ3aWR0aCI6IDMzNiwKICAgICAgICAiaGVpZ2h0IjogNzc2CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDgwMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogODAwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-2b09d13e03d92fea060a",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "375x667 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4799,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:17.772Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDM3NSwKICAiaGVpZ2h0IjogNjY3LAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMzQzLAogICAgImhlaWdodCI6IDM5OS41OTM3NQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMTE1LjU2MDk4MTc1MDQ4ODI4LAogICAgICAgICJ3aWR0aCI6IDM1MSwKICAgICAgICAiaGVpZ2h0IjogNDM2LjU5Mzc0MjM3MDYwNTQ3CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMTIuMDc1NTg4MjI2MzE4MzYsCiAgICAgICAgIndpZHRoIjogMzUxLAogICAgICAgICJoZWlnaHQiOiA2NDIuOTk5OTczMjk3MTE5MQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMzc1LAogICAgICAgICJoZWlnaHQiOiA2NjcKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAzNzUsCiAgICAgICAgImhlaWdodCI6IDY2NwogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-644bd8f91508724f1c94",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "390x844 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5858,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:22.609Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDM5MCwKICAiaGVpZ2h0IjogODQ0LAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMywKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMzU4LAogICAgImhlaWdodCI6IDM5OS41OTM3NQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMjE1Ljk0OTYwMDIxOTcyNjU2LAogICAgICAgICJ3aWR0aCI6IDM2NiwKICAgICAgICAiaGVpZ2h0IjogNDEyLjc5Njg1OTc0MTIxMDk0CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDE1LAogICAgICAgICJ5IjogMTIuNzk3MTY4NzMxNjg5NDUzLAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogODIwLjAwMDAxMTQ0NDA5MTgKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDM5MCwKICAgICAgICAiaGVpZ2h0IjogODQ0CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImV4YW0iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMzkwLAogICAgICAgICJoZWlnaHQiOiA4NDQKICAgICAgfQogICAgfQogIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-3a0ac9679ef72d8722af",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "412x915 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5751,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:28.501Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDQxMiwKICAiaGVpZ2h0IjogOTE1LAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMzgwLAogICAgImhlaWdodCI6IDQwNC45MDYyNQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMjUxLjA5Mzc1LAogICAgICAgICJ3aWR0aCI6IDM4OCwKICAgICAgICAiaGVpZ2h0IjogNDEyLjc5Njg3NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAyNiwKICAgICAgICAieSI6IDIwLjM3NSwKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDg3NC4yNQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogNDEyLAogICAgICAgICJoZWlnaHQiOiA5MTUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA0MTIsCiAgICAgICAgImhlaWdodCI6IDkxNQogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-3cf6c619d99a03b0f759",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "430x932 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5227,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:34.288Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDQzMCwKICAiaGVpZ2h0IjogOTMyLAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMywKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTQ4LjU5Mzc1LAogICAgIndpZHRoIjogMzk4LAogICAgImhlaWdodCI6IDM1OS4wMzEyNQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEyLAogICAgICAgICJ5IjogMjU5LjY3MDEzNTQ5ODA0NjksCiAgICAgICAgIndpZHRoIjogNDA2LAogICAgICAgICJoZWlnaHQiOiA0MTIuNzk2OTA1NTE3NTc4MQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAzNSwKICAgICAgICAieSI6IDI4Ljg3NSwKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDg3NC4yNQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogNDMwLAogICAgICAgICJoZWlnaHQiOiA5MzIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA0MzAsCiAgICAgICAgImhlaWdodCI6IDkzMgogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-2beb30dc61f16249df96",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "568x320 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5362,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:39.556Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDU2OCwKICAiaGVpZ2h0IjogMzIwLAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTE0Ljc5Njg3NSwKICAgICJ3aWR0aCI6IDUzNiwKICAgICJoZWlnaHQiOiAyMDgKICB9LAogICJkaWFsb2dzIjogWwogICAgewogICAgICAibmFtZSI6ICJBc2sgYSBxdWVzdGlvbiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAxMiwKICAgICAgICAieSI6IDEzLjM3NTQ0NTM2NTkwNTc2MiwKICAgICAgICAid2lkdGgiOiA1NDQsCiAgICAgICAgImhlaWdodCI6IDI5Ni4wMDAwMTIzOTc3NjYxCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDEwNCwKICAgICAgICAieSI6IDEyLAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogMjk2CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA1NjgsCiAgICAgICAgImhlaWdodCI6IDMyMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDU2OCwKICAgICAgICAiaGVpZ2h0IjogMzIwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-0260577d9fb41a27e988",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "667x375 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4802,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:44.960Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDY2NywKICAiaGVpZ2h0IjogMzc1LAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMiwKICAicGxheWVyIjogewogICAgIngiOiAxNiwKICAgICJ5IjogMTE0Ljc5Njg3NSwKICAgICJ3aWR0aCI6IDYzNSwKICAgICJoZWlnaHQiOiAyNDMuNzUKICB9LAogICJkaWFsb2dzIjogWwogICAgewogICAgICAibmFtZSI6ICJBc2sgYSBxdWVzdGlvbiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiA0My41LAogICAgICAgICJ5IjogMTIsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiAzNTEKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTUzLjUsCiAgICAgICAgInkiOiAxMiwKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDM1MQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogNjY3LAogICAgICAgICJoZWlnaHQiOiAzNzUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA2NjcsCiAgICAgICAgImhlaWdodCI6IDM3NQogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-957f007883df5b77fbb2",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "844x390 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5104,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:49.797Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDg0NCwKICAiaGVpZ2h0IjogMzkwLAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMywKICAicGxheWVyIjogewogICAgIngiOiA3MiwKICAgICJ5IjogMjEyLAogICAgIndpZHRoIjogNzAwLAogICAgImhlaWdodCI6IDU1NS41NDY4NzUKICB9LAogICJkaWFsb2dzIjogWwogICAgewogICAgICAibmFtZSI6ICJBc2sgYSBxdWVzdGlvbiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAxMzIsCiAgICAgICAgInkiOiAxMi4zNTY2NDY1Mzc3ODA3NjIsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiAzNjYuMDAwMDEyMzk3NzY2MQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAyNDIsCiAgICAgICAgInkiOiAxMy4zNzA2NDc0MzA0MTk5MjIsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiAzNjUuOTk5OTg4NTU1OTA4MgogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogODQ0LAogICAgICAgICJoZWlnaHQiOiAzOTAKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA4NDQsCiAgICAgICAgImhlaWdodCI6IDM5MAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-123b55710d632a648624",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "932x430 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4710,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:54.937Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDkzMiwKICAiaGVpZ2h0IjogNDMwLAogICJoYXNUb3VjaCI6IHRydWUsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMywKICAicGxheWVyIjogewogICAgIngiOiAxMTYsCiAgICAieSI6IDIxMiwKICAgICJ3aWR0aCI6IDcwMCwKICAgICJoZWlnaHQiOiA1NTUuNTQ2ODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTc2LAogICAgICAgICJ5IjogMTQuODQ5MDMyNDAyMDM4NTc0LAogICAgICAgICJ3aWR0aCI6IDU4MCwKICAgICAgICAiaGVpZ2h0IjogNDA1Ljk5OTk5NzEzODk3NzA1CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDI4NiwKICAgICAgICAieSI6IDEzLjM3MzM4ODI5MDQwNTI3MywKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDQwNS45OTk5OTQyNzc5NTQxCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA5MzIsCiAgICAgICAgImhlaWdodCI6IDQzMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDkzMiwKICAgICAgICAiaGVpZ2h0IjogNDMwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-e51c0e56141e452e7ae4",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "768x1024 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4620,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:54:59.693Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDc2OCwKICAiaGVpZ2h0IjogMTAyNCwKICAiaGFzVG91Y2giOiB0cnVlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDIsCiAgInBsYXllciI6IHsKICAgICJ4IjogMzQsCiAgICAieSI6IDIxMiwKICAgICJ3aWR0aCI6IDcwMCwKICAgICJoZWlnaHQiOiA1NTUuNTQ2ODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogOTQsCiAgICAgICAgInkiOiAzMDMuNDY5ODc5MTUwMzkwNiwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxOS43OTY4NDQ0ODI0MjE5CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDIwNCwKICAgICAgICAieSI6IDYyLjY2NzY4MjY0NzcwNTA4LAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogOTAwLjI0OTk4MDkyNjUxMzcKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDc2OCwKICAgICAgICAiaGVpZ2h0IjogMTAyNAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDc2OCwKICAgICAgICAiaGVpZ2h0IjogMTAyNAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-4fef6264105c0963e885",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "800x1280 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5093,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:04.348Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDgwMCwKICAiaGVpZ2h0IjogMTI4MCwKICAiaGFzVG91Y2giOiB0cnVlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDIsCiAgInBsYXllciI6IHsKICAgICJ4IjogNTAsCiAgICAieSI6IDIxMiwKICAgICJ3aWR0aCI6IDcwMCwKICAgICJoZWlnaHQiOiA1NTUuNTQ2ODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTEwLAogICAgICAgICJ5IjogNDMwLjg5Mzg5MDM4MDg1OTQsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2OTA1NTE3NTc4MQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAyMjAsCiAgICAgICAgInkiOiAxOTAuNjcwOTc0NzMxNDQ1MywKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDkwMC4yNTAwNDU3NzYzNjcyCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA4MDAsCiAgICAgICAgImhlaWdodCI6IDEyODAKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA4MDAsCiAgICAgICAgImhlaWdodCI6IDEyODAKICAgICAgfQogICAgfQogIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-5d1140d8dd80bf26fe4d",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "820x1180 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6612,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:09.481Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDgyMCwKICAiaGVpZ2h0IjogMTE4MCwKICAiaGFzVG91Y2giOiB0cnVlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDIsCiAgInBsYXllciI6IHsKICAgICJ4IjogNjAsCiAgICAieSI6IDIxMiwKICAgICJ3aWR0aCI6IDcwMCwKICAgICJoZWlnaHQiOiA1NTUuNTQ2ODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMTIwLAogICAgICAgICJ5IjogMzgyLjE1NjYxNjIxMDkzNzUsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2ODc1CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDIzMCwKICAgICAgICAieSI6IDEzOS44NzUsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA5MDAuMjUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDgyMCwKICAgICAgICAiaGVpZ2h0IjogMTE4MAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDgyMCwKICAgICAgICAiaGVpZ2h0IjogMTE4MAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-6c94346a4898bdbd2b92",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1024x1366 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5878,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:16.129Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEwMjQsCiAgImhlaWdodCI6IDEzNjYsCiAgImhhc1RvdWNoIjogdHJ1ZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAyLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDMwLAogICAgInkiOiAxNTMsCiAgICAid2lkdGgiOiA2MDMuNjcxODc1LAogICAgImhlaWdodCI6IDUzOS4xNTYyNQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDIyMiwKICAgICAgICAieSI6IDQ3NC40NzA0Mjg0NjY3OTY5LAogICAgICAgICJ3aWR0aCI6IDU4MCwKICAgICAgICAiaGVpZ2h0IjogNDE5Ljc5NjkwNTUxNzU3ODEKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzMyLAogICAgICAgICJ5IjogMjMyLjk1MTkxOTU1NTY2NDA2LAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogOTAwLjI0OTk4NDc0MTIxMDkKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEwMjQsCiAgICAgICAgImhlaWdodCI6IDEzNjYKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxMDI0LAogICAgICAgICJoZWlnaHQiOiAxMzY2CiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-7f5bf6805725d1886cfa",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1024x768 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5516,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:22.047Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEwMjQsCiAgImhlaWdodCI6IDc2OCwKICAiaGFzVG91Y2giOiB0cnVlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDIsCiAgInBsYXllciI6IHsKICAgICJ4IjogMzAsCiAgICAieSI6IDE1MywKICAgICJ3aWR0aCI6IDYwMy42NzE4NzUsCiAgICAiaGVpZ2h0IjogNTM5LjE1NjI1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMjIyLAogICAgICAgICJ5IjogMTc0LjE2OTk5ODE2ODk0NTMsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2ODU5NzQxMjEwOTQKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzMyLAogICAgICAgICJ5IjogMTIsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA3NDQKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEwMjQsCiAgICAgICAgImhlaWdodCI6IDc2OAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEwMjQsCiAgICAgICAgImhlaWdodCI6IDc2OAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-5ad2fe3125a83a426667",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1180x820 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4999,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:27.605Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDExODAsCiAgImhlaWdodCI6IDgyMCwKICAiaGFzVG91Y2giOiB0cnVlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDIsCiAgInBsYXllciI6IHsKICAgICJ4IjogMzAsCiAgICAieSI6IDE1MywKICAgICJ3aWR0aCI6IDcwNC45Mzc1LAogICAgImhlaWdodCI6IDU3Mi4zMTI1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzAwLAogICAgICAgICJ5IjogMjAwLjA5Mzc1LAogICAgICAgICJ3aWR0aCI6IDU4MCwKICAgICAgICAiaGVpZ2h0IjogNDE5Ljc5Njg3NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiA0MTAsCiAgICAgICAgInkiOiAxMi4zNTQ2NDQ3NzUzOTA2MjUsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA3OTUuOTk5OTY5NDgyNDIxOQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMTE4MCwKICAgICAgICAiaGVpZ2h0IjogODIwCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImV4YW0iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMTE4MCwKICAgICAgICAiaGVpZ2h0IjogODIwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-455e6290e235c7e9cc5b",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1366x1024 touch layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7491,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:32.644Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEzNjYsCiAgImhlaWdodCI6IDEwMjQsCiAgImhhc1RvdWNoIjogdHJ1ZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAyLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDYzLAogICAgInkiOiAxNTMsCiAgICAid2lkdGgiOiA3NTkuNDY4NzUsCiAgICAiaGVpZ2h0IjogNjAyLjk4NDM3NQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDM5MywKICAgICAgICAieSI6IDMwMi4wOTM3NSwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxOS43OTY4NzUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogNTAzLAogICAgICAgICJ5IjogNjEuODc1LAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogOTAwLjI1CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxMzY2LAogICAgICAgICJoZWlnaHQiOiAxMDI0CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImV4YW0iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMTM2NiwKICAgICAgICAiaGVpZ2h0IjogMTAyNAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-c796f6cbb3af6219612e",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "767x900 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5125,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:40.176Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDc2NywKICAiaGVpZ2h0IjogOTAwLAogICJoYXNUb3VjaCI6IGZhbHNlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDEsCiAgInBsYXllciI6IHsKICAgICJ4IjogMTkuNSwKICAgICJ5IjogMTE0Ljc5Njg3NSwKICAgICJ3aWR0aCI6IDcyOCwKICAgICJoZWlnaHQiOiA1MjAuODU5Mzc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogOTMuNSwKICAgICAgICAieSI6IDI0My42Njk4NjA4Mzk4NDM3NSwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxMi43OTY4NzUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMjAzLjUsCiAgICAgICAgInkiOiAxMy4yMjk3NTQ0NDc5MzcwMTIsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA4NzQuMjQ5OTgxODgwMTg4CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA3NjcsCiAgICAgICAgImhlaWdodCI6IDkwMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDc2NywKICAgICAgICAiaGVpZ2h0IjogOTAwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-b6532cd80f2e77562f22",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "768x900 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4904,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:45.341Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDc2OCwKICAiaGVpZ2h0IjogOTAwLAogICJoYXNUb3VjaCI6IGZhbHNlLAogICJkZXZpY2VTY2FsZUZhY3RvciI6IDEsCiAgInBsYXllciI6IHsKICAgICJ4IjogMzQsCiAgICAieSI6IDIxMiwKICAgICJ3aWR0aCI6IDcwMCwKICAgICJoZWlnaHQiOiA1NTUuNTQ2ODc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogOTQsCiAgICAgICAgInkiOiAyNDAuODk2NTMwMTUxMzY3MiwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxOS43OTY4OTAyNTg3ODkwNgogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAyMDQsCiAgICAgICAgInkiOiAxMi4zNTQ5MDg5NDMxNzYyNywKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDg3Ni4wMDAwMTA0OTA0MTc1CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiA3NjgsCiAgICAgICAgImhlaWdodCI6IDkwMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDc2OCwKICAgICAgICAiaGVpZ2h0IjogOTAwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-e5b7c8154ed046d153e6",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1023x900 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4491,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:50.284Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEwMjMsCiAgImhlaWdodCI6IDkwMCwKICAiaGFzVG91Y2giOiBmYWxzZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAxLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDE2MS41LAogICAgInkiOiAyMTIsCiAgICAid2lkdGgiOiA3MDAsCiAgICAiaGVpZ2h0IjogNTU1LjU0Njg3NQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDIyMS41LAogICAgICAgICJ5IjogMjQwLjg5NDYwNzU0Mzk0NTMsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2ODU5NzQxMjEwOTQKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzMxLjUsCiAgICAgICAgInkiOiAxMi4wNzU4NDA5NTAwMTIyMDcsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA4NzYuMDAwMDI1NzQ5MjA2NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMTAyMywKICAgICAgICAiaGVpZ2h0IjogOTAwCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogImV4YW0iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMTAyMywKICAgICAgICAiaGVpZ2h0IjogOTAwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-0728fb85cfcf10b2bc65",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1024x900 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4617,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:54.811Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEwMjQsCiAgImhlaWdodCI6IDkwMCwKICAiaGFzVG91Y2giOiBmYWxzZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAxLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDMwLAogICAgInkiOiAxNTMsCiAgICAid2lkdGgiOiA2MDMuNjcxODc1LAogICAgImhlaWdodCI6IDUzOS4xNTYyNQogIH0sCiAgImRpYWxvZ3MiOiBbCiAgICB7CiAgICAgICJuYW1lIjogIkFzayBhIHF1ZXN0aW9uIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDIyMiwKICAgICAgICAieSI6IDI0MC44OTI4ODMzMDA3ODEyNSwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxOS43OTY4NzUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzMyLAogICAgICAgICJ5IjogMTIuMzUxODE1MjIzNjkzODQ4LAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogODc1Ljk5OTk5MTQxNjkzMTIKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEwMjQsCiAgICAgICAgImhlaWdodCI6IDkwMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEwMjQsCiAgICAgICAgImhlaWdodCI6IDkwMAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-50b0b2fbde45952e2299",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1280x720 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4668,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:55:59.466Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEyODAsCiAgImhlaWdodCI6IDcyMCwKICAiaGFzVG91Y2giOiBmYWxzZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAxLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDQwLAogICAgInkiOiAxNTMsCiAgICAid2lkdGgiOiA3MzMuNSwKICAgICJoZWlnaHQiOiA1ODguMzkwNjI1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzUwLAogICAgICAgICJ5IjogMTUxLjQ2NjcyMDU4MTA1NDcsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2ODkwMjU4Nzg5MDYKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiTGVhZGVyYm9hcmQiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogNDYwLAogICAgICAgICJ5IjogMTIsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA2OTYKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEyODAsCiAgICAgICAgImhlaWdodCI6IDcyMAogICAgICB9CiAgICB9CiAgXQp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-266a65b522b5a93e7087",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1305x1000 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5688,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:56:04.171Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDEzMDUsCiAgImhlaWdodCI6IDEwMDAsCiAgImhhc1RvdWNoIjogZmFsc2UsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMSwKICAicGxheWVyIjogewogICAgIngiOiA0MCwKICAgICJ5IjogMTUzLAogICAgIndpZHRoIjogNzQ5LjczNDM3NSwKICAgICJoZWlnaHQiOiA1OTcuNTE1NjI1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMzYyLjUsCiAgICAgICAgInkiOiAyOTAuODkyNDI1NTM3MTA5NCwKICAgICAgICAid2lkdGgiOiA1ODAsCiAgICAgICAgImhlaWdodCI6IDQxOS43OTY5MDU1MTc1NzgxCiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDQ3Mi41LAogICAgICAgICJ5IjogNTAuNjY5NDY0MTExMzI4MTI1LAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogOTAwLjI0OTk2OTQ4MjQyMTkKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDEzMDUsCiAgICAgICAgImhlaWdodCI6IDEwMDAKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxMzA1LAogICAgICAgICJoZWlnaHQiOiAxMDAwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-e9571a230eb1d10c51b8",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1440x900 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5039,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:56:09.901Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDE0NDAsCiAgImhlaWdodCI6IDkwMCwKICAiaGFzVG91Y2giOiBmYWxzZSwKICAiZGV2aWNlU2NhbGVGYWN0b3IiOiAxLAogICJwbGF5ZXIiOiB7CiAgICAieCI6IDEwMCwKICAgICJ5IjogMTUzLAogICAgIndpZHRoIjogNzU5LjQ2ODc1LAogICAgImhlaWdodCI6IDYwMi45ODQzNzUKICB9LAogICJkaWFsb2dzIjogWwogICAgewogICAgICAibmFtZSI6ICJBc2sgYSBxdWVzdGlvbiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiA0MzAsCiAgICAgICAgInkiOiAyNDEuNDY4MzIyNzUzOTA2MjUsCiAgICAgICAgIndpZHRoIjogNTgwLAogICAgICAgICJoZWlnaHQiOiA0MTkuNzk2ODc1CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIkxlYWRlcmJvYXJkIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDU0MCwKICAgICAgICAieSI6IDEyLAogICAgICAgICJ3aWR0aCI6IDM2MCwKICAgICAgICAiaGVpZ2h0IjogODc2CiAgICAgIH0KICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogIlBERiIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxNDQwLAogICAgICAgICJoZWlnaHQiOiA5MDAKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxNDQwLAogICAgICAgICJoZWlnaHQiOiA5MDAKICAgICAgfQogICAgfQogIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-7dcd1d203bba638d525f",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "1920x1080 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5335,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:56:14.984Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDE5MjAsCiAgImhlaWdodCI6IDEwODAsCiAgImhhc1RvdWNoIjogZmFsc2UsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMSwKICAicGxheWVyIjogewogICAgIngiOiAzNDAsCiAgICAieSI6IDE1MywKICAgICJ3aWR0aCI6IDc1OS40Njg3NSwKICAgICJoZWlnaHQiOiA2MDIuOTg0Mzc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogNjcwLAogICAgICAgICJ5IjogMzMwLjA5Mzc1LAogICAgICAgICJ3aWR0aCI6IDU4MCwKICAgICAgICAiaGVpZ2h0IjogNDE5Ljc5Njg3NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiA3ODAsCiAgICAgICAgInkiOiA4OS44NzUsCiAgICAgICAgIndpZHRoIjogMzYwLAogICAgICAgICJoZWlnaHQiOiA5MDAuMjUKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiUERGIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDE5MjAsCiAgICAgICAgImhlaWdodCI6IDEwODAKICAgICAgfQogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAiZXhhbSIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAwLAogICAgICAgICJ5IjogMCwKICAgICAgICAid2lkdGgiOiAxOTIwLAogICAgICAgICJoZWlnaHQiOiAxMDgwCiAgICAgIH0KICAgIH0KICBdCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-bc994612417549ca856f",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "2560x1440 mouse layout",
+          "file": "device-layout.spec.ts",
+          "line": 65,
+          "column": 8,
+          "specs": [
+            {
+              "title": "catalogue, learner lists and all four dialogs remain usable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6384,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-10T11:56:20.360Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "viewport measurements",
+                          "contentType": "application/json",
+                          "body": "ewogICJ3aWR0aCI6IDI1NjAsCiAgImhlaWdodCI6IDE0NDAsCiAgImhhc1RvdWNoIjogZmFsc2UsCiAgImRldmljZVNjYWxlRmFjdG9yIjogMSwKICAicGxheWVyIjogewogICAgIngiOiA2NjAsCiAgICAieSI6IDE1MywKICAgICJ3aWR0aCI6IDc1OS40Njg3NSwKICAgICJoZWlnaHQiOiA2MDIuOTg0Mzc1CiAgfSwKICAiZGlhbG9ncyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAiQXNrIGEgcXVlc3Rpb24iLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogOTkwLAogICAgICAgICJ5IjogNTEwLjA5Mzc1LAogICAgICAgICJ3aWR0aCI6IDU4MCwKICAgICAgICAiaGVpZ2h0IjogNDE5Ljc5Njg3NQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJMZWFkZXJib2FyZCIsCiAgICAgICJib3giOiB7CiAgICAgICAgIngiOiAxMTAwLAogICAgICAgICJ5IjogMjY5Ljg3NSwKICAgICAgICAid2lkdGgiOiAzNjAsCiAgICAgICAgImhlaWdodCI6IDkwMC4yNQogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJQREYiLAogICAgICAiYm94IjogewogICAgICAgICJ4IjogMCwKICAgICAgICAieSI6IDAsCiAgICAgICAgIndpZHRoIjogMjU2MCwKICAgICAgICAiaGVpZ2h0IjogMTQ0MAogICAgICB9CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJleGFtIiwKICAgICAgImJveCI6IHsKICAgICAgICAieCI6IDAsCiAgICAgICAgInkiOiAwLAogICAgICAgICJ3aWR0aCI6IDI1NjAsCiAgICAgICAgImhlaWdodCI6IDE0NDAKICAgICAgfQogICAgfQogIF0KfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "5cd9a6434ee2e713dec4-f0cb644d1cbcb4d7d0d3",
+              "file": "device-layout.spec.ts",
+              "line": 68,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "learner-feedback.spec.ts",
+      "file": "learner-feedback.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 320×568",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:26.818Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-aa3cc05756c291aff13c",
+          "file": "learner-feedback.spec.ts",
+          "line": 20,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 320×568",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4755,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:31.226Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-2e6f4bc2d26d9e432d39",
+          "file": "learner-feedback.spec.ts",
+          "line": 79,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 844×390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3041,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:36.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-3735461a8dd34c86f4fe",
+          "file": "learner-feedback.spec.ts",
+          "line": 20,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 844×390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4008,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:39.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-da47b65b7b5a6f60b1f4",
+          "file": "learner-feedback.spec.ts",
+          "line": 79,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 820×1180",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:43.166Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-185703ab24bf30801742",
+          "file": "learner-feedback.spec.ts",
+          "line": 20,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 820×1180",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:46.455Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-28a9ca461abd4c411fc7",
+          "file": "learner-feedback.spec.ts",
+          "line": 79,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 1440×900",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:50.291Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-44544345c827ab3678d2",
+          "file": "learner-feedback.spec.ts",
+          "line": 20,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 1440×900",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4421,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:53.778Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-059b3beee633293478d3",
+          "file": "learner-feedback.spec.ts",
+          "line": 79,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "message-history.spec.ts",
+      "file": "message-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8764,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:56:58.260Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-458e9bb71fc897486b6c",
+          "file": "message-history.spec.ts",
+          "line": 12,
+          "column": 7
+        },
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9193,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:07.072Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-7758efdf9bcbb6223da0",
+          "file": "message-history.spec.ts",
+          "line": 12,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "real-content.spec.ts",
+      "file": "real-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "published titles, thumbnails and zero history replace every fictional catalogue card",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3083,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:16.344Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-96dffb23e71db18d7ebb",
+          "file": "real-content.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Arabic and topic search combine with status filters and empty recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2507,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:19.473Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-1a28d216cd61d6920ed9",
+          "file": "real-content.spec.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "every real entry opens its native player with truthful facts and labeled demo community",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5204,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:22.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-e5faf843c49e80672271",
+          "file": "real-content.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "legacy fake history is not imported; explicit watched credit persists and stays isolated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3742,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:27.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-d4f2b30fd918581d9c80",
+          "file": "real-content.spec.ts",
+          "line": 140,
+          "column": 5
+        },
+        {
+          "title": "official SDK pause and end boundaries save real positions once without remounting for Wide",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2849,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:31.061Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-91294a445d8522fade23",
+          "file": "real-content.spec.ts",
+          "line": 188,
+          "column": 5
+        },
+        {
+          "title": "site-authored PDF and five-question exercise complete the study plan and survive review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7477,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:33.960Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-3c7083ea3a3414582208",
+          "file": "real-content.spec.ts",
+          "line": 220,
+          "column": 5
+        },
+        {
+          "title": "blocked storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:41.487Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-d23e827c53455c04b18a",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "quota storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2297,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:44.045Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-b9b8de32343302ec0534",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "corrupt storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2239,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:46.387Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-755409fa9cf5121e8cd2",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "unavailable SDK retains native playback, source fallback and explicit completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:48.680Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-0414882f600bc98c3dcd",
+          "file": "real-content.spec.ts",
+          "line": 304,
+          "column": 5
+        },
+        {
+          "title": "clearing learning data requires confirmation and restores an empty real-content baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3399,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:50.508Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-622a943ea113d7dbbda3",
+          "file": "real-content.spec.ts",
+          "line": 329,
+          "column": 5
+        },
+        {
+          "title": "related videos use original titles, intent-loaded native player and modal focus return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:53.947Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-5069c56ad5ae83ddc4bd",
+          "file": "real-content.spec.ts",
+          "line": 361,
+          "column": 5
+        },
+        {
+          "title": "real Arabic content and local surfaces retain accessibility and 200% text reflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13204,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:57:56.083Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-7ca583bb764b79e64227",
+          "file": "real-content.spec.ts",
+          "line": 394,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "shared-controls.spec.ts",
+      "file": "shared-controls.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3542,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:58:09.343Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-eefec0cf14dbeacc7579",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3630,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:58:12.923Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-46bb8d3252c045f155aa",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 820",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4120,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:58:16.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-1060dc6368256885d5db",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4108,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:58:20.745Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-919a77911ce5b4c907c5",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "thumbnail failure remains honest and reduced motion disables decorative animation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T11:58:24.891Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-7cc55a27cc86fa77a948",
+          "file": "shared-controls.spec.ts",
+          "line": 85,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-10T11:53:35.829Z",
+    "duration": 292753.39,
+    "expected": 61,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
