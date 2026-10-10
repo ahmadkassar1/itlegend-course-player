@@ -1,0 +1,728 @@
+[
+  {
+    "url": "/images/business.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1548
+  },
+  {
+    "url": "/images/lesson-poster.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 2800
+  },
+  {
+    "url": "/images/avatar-1.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 570
+  },
+  {
+    "url": "/images/avatar-2.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 570
+  },
+  {
+    "url": "/images/avatar-3.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 570
+  },
+  {
+    "url": "/media/introduction.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 125183
+  },
+  {
+    "url": "/media/introduction.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 325
+  },
+  {
+    "url": "/media/introduction.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 44237
+  },
+  {
+    "url": "/media/course-overview.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 125847
+  },
+  {
+    "url": "/media/course-overview.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 350
+  },
+  {
+    "url": "/media/course-overview.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 45152
+  },
+  {
+    "url": "/resources/starting-seo.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2474
+  },
+  {
+    "url": "/resources/starting-seo.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 126634
+  },
+  {
+    "url": "/media/editor-setup.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 125438
+  },
+  {
+    "url": "/media/editor-setup.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 323
+  },
+  {
+    "url": "/media/editor-setup.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 42682
+  },
+  {
+    "url": "/media/embedding-php.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 127495
+  },
+  {
+    "url": "/media/embedding-php.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 370
+  },
+  {
+    "url": "/media/embedding-php.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 51556
+  },
+  {
+    "url": "/media/javascript-basics.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134307
+  },
+  {
+    "url": "/media/javascript-basics.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 323
+  },
+  {
+    "url": "/media/javascript-basics.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 44368
+  },
+  {
+    "url": "/media/components-databinding.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135150
+  },
+  {
+    "url": "/media/components-databinding.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 341
+  },
+  {
+    "url": "/media/components-databinding.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43816
+  },
+  {
+    "url": "/images/web-design-foundations.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1551
+  },
+  {
+    "url": "/media/web-design-foundations-1.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135326
+  },
+  {
+    "url": "/media/web-design-foundations-1.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 332
+  },
+  {
+    "url": "/media/web-design-foundations-1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 45047
+  },
+  {
+    "url": "/media/web-design-foundations-2.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134664
+  },
+  {
+    "url": "/media/web-design-foundations-2.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 324
+  },
+  {
+    "url": "/media/web-design-foundations-2.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 45692
+  },
+  {
+    "url": "/media/web-design-foundations-3.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135557
+  },
+  {
+    "url": "/media/web-design-foundations-3.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 313
+  },
+  {
+    "url": "/media/web-design-foundations-3.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 42662
+  },
+  {
+    "url": "/media/web-design-foundations-4.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 133463
+  },
+  {
+    "url": "/media/web-design-foundations-4.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 306
+  },
+  {
+    "url": "/media/web-design-foundations-4.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 48085
+  },
+  {
+    "url": "/resources/web-design-foundations.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2410
+  },
+  {
+    "url": "/resources/web-design-foundations.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 120014
+  },
+  {
+    "url": "/images/javascript-essentials.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1547
+  },
+  {
+    "url": "/media/javascript-essentials-1.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 133636
+  },
+  {
+    "url": "/media/javascript-essentials-1.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 314
+  },
+  {
+    "url": "/media/javascript-essentials-1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41695
+  },
+  {
+    "url": "/media/javascript-essentials-2.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135392
+  },
+  {
+    "url": "/media/javascript-essentials-2.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 333
+  },
+  {
+    "url": "/media/javascript-essentials-2.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 44849
+  },
+  {
+    "url": "/media/javascript-essentials-3.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134992
+  },
+  {
+    "url": "/media/javascript-essentials-3.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 322
+  },
+  {
+    "url": "/media/javascript-essentials-3.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 42653
+  },
+  {
+    "url": "/media/javascript-essentials-4.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134479
+  },
+  {
+    "url": "/media/javascript-essentials-4.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 320
+  },
+  {
+    "url": "/media/javascript-essentials-4.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43532
+  },
+  {
+    "url": "/media/javascript-essentials-5.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134770
+  },
+  {
+    "url": "/media/javascript-essentials-5.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 332
+  },
+  {
+    "url": "/media/javascript-essentials-5.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43642
+  },
+  {
+    "url": "/media/javascript-essentials-6.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135567
+  },
+  {
+    "url": "/media/javascript-essentials-6.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 328
+  },
+  {
+    "url": "/media/javascript-essentials-6.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43753
+  },
+  {
+    "url": "/resources/javascript-essentials.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2394
+  },
+  {
+    "url": "/resources/javascript-essentials.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 110813
+  },
+  {
+    "url": "/images/responsive-css.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1548
+  },
+  {
+    "url": "/media/responsive-css-1.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134758
+  },
+  {
+    "url": "/media/responsive-css-1.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 326
+  },
+  {
+    "url": "/media/responsive-css-1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43386
+  },
+  {
+    "url": "/media/responsive-css-2.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135577
+  },
+  {
+    "url": "/media/responsive-css-2.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 322
+  },
+  {
+    "url": "/media/responsive-css-2.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 44402
+  },
+  {
+    "url": "/media/responsive-css-3.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 133456
+  },
+  {
+    "url": "/media/responsive-css-3.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 289
+  },
+  {
+    "url": "/media/responsive-css-3.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 39498
+  },
+  {
+    "url": "/media/responsive-css-4.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135500
+  },
+  {
+    "url": "/media/responsive-css-4.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 341
+  },
+  {
+    "url": "/media/responsive-css-4.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43067
+  },
+  {
+    "url": "/media/responsive-css-5.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135279
+  },
+  {
+    "url": "/media/responsive-css-5.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 338
+  },
+  {
+    "url": "/media/responsive-css-5.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 47087
+  },
+  {
+    "url": "/resources/responsive-css.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2384
+  },
+  {
+    "url": "/resources/responsive-css.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 121524
+  },
+  {
+    "url": "/images/react-components.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1550
+  },
+  {
+    "url": "/media/react-components-1.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135306
+  },
+  {
+    "url": "/media/react-components-1.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 325
+  },
+  {
+    "url": "/media/react-components-1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 44566
+  },
+  {
+    "url": "/media/react-components-2.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135168
+  },
+  {
+    "url": "/media/react-components-2.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 341
+  },
+  {
+    "url": "/media/react-components-2.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41215
+  },
+  {
+    "url": "/media/react-components-3.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135681
+  },
+  {
+    "url": "/media/react-components-3.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 333
+  },
+  {
+    "url": "/media/react-components-3.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41969
+  },
+  {
+    "url": "/media/react-components-4.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 136069
+  },
+  {
+    "url": "/media/react-components-4.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 330
+  },
+  {
+    "url": "/media/react-components-4.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43055
+  },
+  {
+    "url": "/media/react-components-5.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 132910
+  },
+  {
+    "url": "/media/react-components-5.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 319
+  },
+  {
+    "url": "/media/react-components-5.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41836
+  },
+  {
+    "url": "/media/react-components-6.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 134640
+  },
+  {
+    "url": "/media/react-components-6.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 339
+  },
+  {
+    "url": "/media/react-components-6.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 45217
+  },
+  {
+    "url": "/media/react-components-7.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135367
+  },
+  {
+    "url": "/media/react-components-7.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 353
+  },
+  {
+    "url": "/media/react-components-7.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43938
+  },
+  {
+    "url": "/media/react-components-8.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 133692
+  },
+  {
+    "url": "/media/react-components-8.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 305
+  },
+  {
+    "url": "/media/react-components-8.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 42396
+  },
+  {
+    "url": "/resources/react-components.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2373
+  },
+  {
+    "url": "/resources/react-components.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 113782
+  },
+  {
+    "url": "/images/accessible-interfaces.svg",
+    "status": 200,
+    "contentType": "image/svg+xml",
+    "bytes": 1549
+  },
+  {
+    "url": "/media/accessible-interfaces-1.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 136623
+  },
+  {
+    "url": "/media/accessible-interfaces-1.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 326
+  },
+  {
+    "url": "/media/accessible-interfaces-1.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41439
+  },
+  {
+    "url": "/media/accessible-interfaces-2.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135430
+  },
+  {
+    "url": "/media/accessible-interfaces-2.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 334
+  },
+  {
+    "url": "/media/accessible-interfaces-2.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 41977
+  },
+  {
+    "url": "/media/accessible-interfaces-3.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135474
+  },
+  {
+    "url": "/media/accessible-interfaces-3.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 327
+  },
+  {
+    "url": "/media/accessible-interfaces-3.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 42905
+  },
+  {
+    "url": "/media/accessible-interfaces-4.webm",
+    "status": 200,
+    "contentType": "video/webm",
+    "bytes": 135030
+  },
+  {
+    "url": "/media/accessible-interfaces-4.vtt",
+    "status": 200,
+    "contentType": "text/vtt; charset=UTF-8",
+    "bytes": 344
+  },
+  {
+    "url": "/media/accessible-interfaces-4.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 43113
+  },
+  {
+    "url": "/resources/accessible-interfaces.pdf",
+    "status": 200,
+    "contentType": "application/pdf",
+    "bytes": 2457
+  },
+  {
+    "url": "/resources/accessible-interfaces.png",
+    "status": 200,
+    "contentType": "image/png",
+    "bytes": 121054
+  }
+]

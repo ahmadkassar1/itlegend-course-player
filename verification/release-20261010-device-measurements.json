@@ -1,0 +1,1302 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 182.390625,
+      "width": 288,
+      "height": 192
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 65.703125,
+          "width": 296,
+          "height": 436.59375
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 12,
+          "y": 12,
+          "width": 296,
+          "height": 544
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        }
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "height": 800,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 328,
+      "height": 218.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 181.703125,
+          "width": 336,
+          "height": 436.59375
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 12,
+          "y": 12,
+          "width": 336,
+          "height": 776
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 360,
+          "height": 800
+        }
+      }
+    ]
+  },
+  {
+    "width": 375,
+    "height": 667,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 343,
+      "height": 228.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 115.203125,
+          "width": 351,
+          "height": 436.59375
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 12,
+          "y": 12,
+          "width": 351,
+          "height": 643
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 667
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 375,
+          "height": 667
+        }
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "hasTouch": true,
+    "deviceScaleFactor": 3,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 358,
+      "height": 238.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 215.59375,
+          "width": 366,
+          "height": 412.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 15,
+          "y": 12,
+          "width": 360,
+          "height": 820
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        }
+      }
+    ]
+  },
+  {
+    "width": 412,
+    "height": 915,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 380,
+      "height": 253.328125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 251.09375,
+          "width": 388,
+          "height": 412.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 26,
+          "y": 45.90625,
+          "width": 360,
+          "height": 823.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 412,
+          "height": 915
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 412,
+          "height": 915
+        }
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "hasTouch": true,
+    "deviceScaleFactor": 3,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 398,
+      "height": 265.328125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 259.59375,
+          "width": 406,
+          "height": 412.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 35,
+          "y": 54.40625,
+          "width": 360,
+          "height": 823.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 430,
+          "height": 932
+        }
+      }
+    ]
+  },
+  {
+    "width": 568,
+    "height": 320,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 148.59375,
+      "width": 536,
+      "height": 160
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 12,
+          "y": 12,
+          "width": 544,
+          "height": 296
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 104,
+          "y": 12,
+          "width": 360,
+          "height": 296
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 568,
+          "height": 320
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 568,
+          "height": 320
+        }
+      }
+    ]
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 16,
+      "y": 114.796875,
+      "width": 635,
+      "height": 187.5
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 43.5,
+          "y": 12,
+          "width": 580,
+          "height": 351
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 153.5,
+          "y": 12,
+          "width": 360,
+          "height": 351
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 667,
+          "height": 375
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 667,
+          "height": 375
+        }
+      }
+    ]
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "hasTouch": true,
+    "deviceScaleFactor": 3,
+    "player": {
+      "x": 72,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 132,
+          "y": 12,
+          "width": 580,
+          "height": 366
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 242,
+          "y": 12,
+          "width": 360,
+          "height": 366
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 844,
+          "height": 390
+        }
+      }
+    ]
+  },
+  {
+    "width": 932,
+    "height": 430,
+    "hasTouch": true,
+    "deviceScaleFactor": 3,
+    "player": {
+      "x": 116,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 176,
+          "y": 12,
+          "width": 580,
+          "height": 406
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 286,
+          "y": 12,
+          "width": 360,
+          "height": 406
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 932,
+          "height": 430
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 932,
+          "height": 430
+        }
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 34,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 94,
+          "y": 302.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 204,
+          "y": 75.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 1024
+        }
+      }
+    ]
+  },
+  {
+    "width": 800,
+    "height": 1280,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 50,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 110,
+          "y": 430.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 220,
+          "y": 203.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 800,
+          "height": 1280
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 800,
+          "height": 1280
+        }
+      }
+    ]
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 60,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 120,
+          "y": 380.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 230,
+          "y": 153.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 1180
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 820,
+          "height": 1180
+        }
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 1366,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 30,
+      "y": 153,
+      "width": 603.671875,
+      "height": 402.4375
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 222,
+          "y": 473.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 332,
+          "y": 246.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1366
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 1366
+        }
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 30,
+      "y": 153,
+      "width": 603.671875,
+      "height": 402.4375
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 222,
+          "y": 174.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 332,
+          "y": 12,
+          "width": 360,
+          "height": 744
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 768
+        }
+      }
+    ]
+  },
+  {
+    "width": 1180,
+    "height": 820,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 30,
+      "y": 153,
+      "width": 704.9375,
+      "height": 469.953125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 300,
+          "y": 200.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 410,
+          "y": 12,
+          "width": 360,
+          "height": 796
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 820
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1180,
+          "height": 820
+        }
+      }
+    ]
+  },
+  {
+    "width": 1366,
+    "height": 1024,
+    "hasTouch": true,
+    "deviceScaleFactor": 2,
+    "player": {
+      "x": 63,
+      "y": 153,
+      "width": 759.46875,
+      "height": 506.3125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 393,
+          "y": 302.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 503,
+          "y": 75.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 1024
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1366,
+          "height": 1024
+        }
+      }
+    ]
+  },
+  {
+    "width": 767,
+    "height": 900,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 19.5,
+      "y": 114.796875,
+      "width": 728,
+      "height": 450
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 93.5,
+          "y": 243.59375,
+          "width": 580,
+          "height": 412.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 203.5,
+          "y": 38.40625,
+          "width": 360,
+          "height": 823.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 767,
+          "height": 900
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 767,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "height": 900,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 34,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 94,
+          "y": 240.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 204,
+          "y": 13.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 900
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 768,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "width": 1023,
+    "height": 900,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 161.5,
+      "y": 212,
+      "width": 700,
+      "height": 466.65625
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 221.5,
+          "y": 240.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 331.5,
+          "y": 13.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1023,
+          "height": 900
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1023,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 900,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 30,
+      "y": 153,
+      "width": 603.671875,
+      "height": 402.4375
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 222,
+          "y": 240.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 332,
+          "y": 13.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 900
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1024,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 40,
+      "y": 153,
+      "width": 733.5,
+      "height": 489
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 350,
+          "y": 150.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 460,
+          "y": 12,
+          "width": 360,
+          "height": 696
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 720
+        }
+      }
+    ]
+  },
+  {
+    "width": 1305,
+    "height": 1000,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 40,
+      "y": 153,
+      "width": 749.734375,
+      "height": 499.8125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 362.5,
+          "y": 290.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 472.5,
+          "y": 63.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1305,
+          "height": 1000
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1305,
+          "height": 1000
+        }
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 100,
+      "y": 153,
+      "width": 759.46875,
+      "height": 506.3125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 430,
+          "y": 240.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 540,
+          "y": 13.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        }
+      }
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 340,
+      "y": 153,
+      "width": 759.46875,
+      "height": 506.3125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 670,
+          "y": 330.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 780,
+          "y": 103.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        }
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "height": 1440,
+    "hasTouch": false,
+    "deviceScaleFactor": 1,
+    "player": {
+      "x": 660,
+      "y": 153,
+      "width": 759.46875,
+      "height": 506.3125
+    },
+    "dialogs": [
+      {
+        "name": "Ask a question",
+        "box": {
+          "x": 990,
+          "y": 510.09375,
+          "width": 580,
+          "height": 419.796875
+        }
+      },
+      {
+        "name": "Leaderboard",
+        "box": {
+          "x": 1100,
+          "y": 283.40625,
+          "width": 360,
+          "height": 873.1875
+        }
+      },
+      {
+        "name": "PDF",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 1440
+        }
+      },
+      {
+        "name": "exam",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "width": 2560,
+          "height": 1440
+        }
+      }
+    ]
+  }
+]
