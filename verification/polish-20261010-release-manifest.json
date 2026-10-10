@@ -1,347 +1,432 @@
 {
-  "date": "2026-10-10T11:20:18.699Z",
-  "sourceCommit": "fd579decc5a79c3da6c5426d30a5b8ecf1b11763",
+  "date": "2026-10-10T11:31:06.870Z",
+  "sourceCommit": "3d8c722a0770b281d4b0eaf407e9013008ba562e",
   "scope": "Tracked app source filtered using .vercelignore. No upload or hosted build.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 40
+      "bytes": 40,
+      "sha1": "c757c0446ed50f96264087373fd86f74b94f20ee"
     },
     {
       "path": ".gitignore",
-      "bytes": 145
+      "bytes": 145,
+      "sha1": "b005e2ea170c33699c250eaa4ca8c5672e00c369"
     },
     {
       "path": ".vercelignore",
-      "bytes": 327
+      "bytes": 327,
+      "sha1": "52d6e595508ed1804d94673edbb1dc81a6e8fde7"
     },
     {
       "path": "ASSETS.md",
-      "bytes": 13714
+      "bytes": 13714,
+      "sha1": "c48621fa25aadd900ab9a8e1591ba16688f8b09e"
     },
     {
       "path": "README.md",
-      "bytes": 13056
+      "bytes": 13145,
+      "sha1": "6cf38830bf9d0ab2178d7afad078a3f2e63cb1fa"
     },
     {
       "path": "eslint.config.mjs",
-      "bytes": 470
+      "bytes": 470,
+      "sha1": "17c0cde9b2333063d348bcfb2190fdd71222ad29"
     },
     {
       "path": "next-env.d.ts",
-      "bytes": 288
+      "bytes": 288,
+      "sha1": "915946e261450f4fb6aab2ca862c8b440b748240"
     },
     {
       "path": "next.config.ts",
-      "bytes": 156
+      "bytes": 156,
+      "sha1": "b0e7bbd54e6e057aba362d9f5ef5dc28199ba626"
     },
     {
       "path": "package-lock.json",
-      "bytes": 212650
+      "bytes": 212650,
+      "sha1": "e0bd16781bcf63a597992979c053ec9a59cab76a"
     },
     {
       "path": "package.json",
-      "bytes": 1256
+      "bytes": 1256,
+      "sha1": "b6e875241297b47501869144141763cec7927200"
     },
     {
       "path": "public/images/learner.svg",
-      "bytes": 229
+      "bytes": 229,
+      "sha1": "87ee673eda647517851cd456d5a66718a66ece91"
     },
     {
       "path": "public/resources/learning-plan.pdf",
-      "bytes": 2205
+      "bytes": 2205,
+      "sha1": "d29834134643d58aebdf16b6ad0a44b46319c07a"
     },
     {
       "path": "public/resources/learning-plan.png",
-      "bytes": 102642
+      "bytes": 102642,
+      "sha1": "e12c81bdaf94065fdf5ea722e14acbb4bf470fdb"
     },
     {
       "path": "src/app/courses/[slug]/page.tsx",
-      "bytes": 1635
+      "bytes": 1635,
+      "sha1": "3bc20439164b35a95bcf8e2af1f6d148beced058"
     },
     {
       "path": "src/app/fonts.ts",
-      "bytes": 571
+      "bytes": 571,
+      "sha1": "fdea2026548643dceff445a8856c4593d72c6e5e"
     },
     {
       "path": "src/app/fonts/poppins-OFL.txt",
-      "bytes": 4385
+      "bytes": 4385,
+      "sha1": "525d837a484cdc20696e1afea410d34c971432bf"
     },
     {
       "path": "src/app/fonts/poppins-medium.woff2",
-      "bytes": 7748
+      "bytes": 7748,
+      "sha1": "0da2d17e738f46d2a09e6fb7969da451719a9820"
     },
     {
       "path": "src/app/fonts/poppins-regular.woff2",
-      "bytes": 7884
+      "bytes": 7884,
+      "sha1": "ac6d71b4d5fdd2b3dabc9a06ff6c001e4251da0b"
     },
     {
       "path": "src/app/fonts/poppins-semibold.woff2",
-      "bytes": 8000
+      "bytes": 8000,
+      "sha1": "179f97ec0275f09603a8db94d4380eb584d81cd5"
     },
     {
       "path": "src/app/fonts/spartan-OFL.txt",
-      "bytes": 4497
+      "bytes": 4497,
+      "sha1": "014d88eca0d176a74199fd44cee67b92bfde5687"
     },
     {
       "path": "src/app/fonts/spartan-variable.woff2",
-      "bytes": 33008
+      "bytes": 33008,
+      "sha1": "d902711ad5237cbb0698429e1a420aab6552862c"
     },
     {
       "path": "src/app/globals.css",
-      "bytes": 1608
+      "bytes": 1608,
+      "sha1": "8a14d36aad6dd528b57e61b14e43a6520665dd3e"
     },
     {
       "path": "src/app/icon.svg",
-      "bytes": 281
+      "bytes": 281,
+      "sha1": "c2da5fd9ace42b377ec0a8ac0e3185be506d8ff4"
     },
     {
       "path": "src/app/layout.tsx",
-      "bytes": 2084
+      "bytes": 2084,
+      "sha1": "3c6e698f4dd98d181423245021f0f6853ef4a7f9"
     },
     {
       "path": "src/app/not-found.tsx",
-      "bytes": 375
+      "bytes": 375,
+      "sha1": "c7fcf4f85edb585daaa46579d6ed012eb5bf3a50"
     },
     {
       "path": "src/app/page.tsx",
-      "bytes": 1194
+      "bytes": 1194,
+      "sha1": "81c8a09514a3b39bfe897fb63cabe0e615d67c64"
     },
     {
       "path": "src/components/dialog.module.css",
-      "bytes": 2769
+      "bytes": 2769,
+      "sha1": "e9070fb3617eb43e58296aae8bf17fe6f6d75342"
     },
     {
       "path": "src/components/dialog.tsx",
-      "bytes": 3488
+      "bytes": 3488,
+      "sha1": "4c949c0ddabcfef3e968035cd51484f1cb492b53"
     },
     {
       "path": "src/components/icon.tsx",
-      "bytes": 2960
+      "bytes": 2960,
+      "sha1": "ebed6d59f2745bb28aae066e3fc1fb2f840fb42b"
     },
     {
       "path": "src/components/select.module.css",
-      "bytes": 1833
+      "bytes": 1868,
+      "sha1": "aa00ed3b9375a8d8e50ffd07000d21e0dee8c572"
     },
     {
       "path": "src/components/select.tsx",
-      "bytes": 5649
+      "bytes": 5737,
+      "sha1": "36f5f6fc2aacf2b5d33dba9cef30c2ac38f30584"
     },
     {
       "path": "src/components/video-thumbnail.module.css",
-      "bytes": 272
+      "bytes": 272,
+      "sha1": "89f2f1f7b765c5e30da0637a5651a5f6a4840c70"
     },
     {
       "path": "src/components/video-thumbnail.tsx",
-      "bytes": 714
+      "bytes": 714,
+      "sha1": "fbc045774540861edb2b5d0d5c7ce016aa8055fd"
     },
     {
       "path": "src/components/youtube-player.module.css",
-      "bytes": 318
+      "bytes": 318,
+      "sha1": "41573bc26076887788dd19a800c87deecd8371ee"
     },
     {
       "path": "src/components/youtube-player.tsx",
-      "bytes": 3437
+      "bytes": 3437,
+      "sha1": "fd2e87d72fe25c1b84ddf6f04a5d127de65b58f0"
     },
     {
       "path": "src/data/courses.ts",
-      "bytes": 2360
+      "bytes": 2360,
+      "sha1": "6b03d1c92e779cf6966528b57ec77522013f880f"
     },
     {
       "path": "src/data/motivation.ts",
-      "bytes": 687
+      "bytes": 687,
+      "sha1": "5cefce2780d25aa821604599266619fd38056775"
     },
     {
       "path": "src/data/study-practice.ts",
-      "bytes": 2910
+      "bytes": 2910,
+      "sha1": "9df33afa5c2d0fcf65d7efc338f88a87d26065d4"
     },
     {
       "path": "src/data/video-references.ts",
-      "bytes": 2387
+      "bytes": 2387,
+      "sha1": "1adc195dc3d81cb7630aa9952bd9dbb2a89748dd"
     },
     {
       "path": "src/data/worksheet.json",
-      "bytes": 740
+      "bytes": 740,
+      "sha1": "12f56c883f5d0751ebec50aaa518632d20ec6ade"
     },
     {
       "path": "src/features/catalogue/catalogue.module.css",
-      "bytes": 10074
+      "bytes": 10074,
+      "sha1": "7a21b1a4083cb31fcd2092009f0e5bc938929b3e"
     },
     {
       "path": "src/features/catalogue/course-card.tsx",
-      "bytes": 2469
+      "bytes": 2469,
+      "sha1": "d85787e171678db9d0aef202e42a01094d7a63e8"
     },
     {
       "path": "src/features/catalogue/course-catalogue.tsx",
-      "bytes": 8309
+      "bytes": 8309,
+      "sha1": "e79c21ea04425f7fde414518bffa771d83593c6e"
     },
     {
       "path": "src/features/catalogue/learner-settings.tsx",
-      "bytes": 1043
+      "bytes": 1043,
+      "sha1": "2c8016f401e4c98099075567969973d84610e7d7"
     },
     {
       "path": "src/features/course/comment-item.tsx",
-      "bytes": 658
+      "bytes": 658,
+      "sha1": "50bfc2b5c55e1e84bdcbe22cf63817ceacd89ff3"
     },
     {
       "path": "src/features/course/comments-section.tsx",
-      "bytes": 831
+      "bytes": 831,
+      "sha1": "c58c41870035330f09fb625e2a0b23a91426cb71"
     },
     {
       "path": "src/features/course/course-comments.tsx",
-      "bytes": 2358
+      "bytes": 2358,
+      "sha1": "726b7d9a76e8382745e7c8b28f6e0b7b45de96dc"
     },
     {
       "path": "src/features/course/course-dialogs.tsx",
-      "bytes": 1981
+      "bytes": 1981,
+      "sha1": "bbbae0c2a00cdddb394e9f93696c11a8884da76a"
     },
     {
       "path": "src/features/course/course-experience.tsx",
-      "bytes": 781
+      "bytes": 781,
+      "sha1": "a0a21067c604f441cc291145a438fc94695b23a1"
     },
     {
       "path": "src/features/course/course-header.tsx",
-      "bytes": 1119
+      "bytes": 1119,
+      "sha1": "75d732ac4e0597902d0e6bc24de7433658c986f2"
     },
     {
       "path": "src/features/course/course-layout.tsx",
-      "bytes": 4071
+      "bytes": 4071,
+      "sha1": "5d23925ef490d092bcfd7108d7d61f2c4a2aacae"
     },
     {
       "path": "src/features/course/course-materials.tsx",
-      "bytes": 1743
+      "bytes": 1743,
+      "sha1": "3bc36d9ced735cc06f8d5a8701aa47a51cdbc973"
     },
     {
       "path": "src/features/course/course-progress.tsx",
-      "bytes": 1878
+      "bytes": 1878,
+      "sha1": "29f9ab27dae826a212f371772290fbec2bb4efe7"
     },
     {
       "path": "src/features/course/course.module.css",
-      "bytes": 14842
+      "bytes": 14842,
+      "sha1": "679048416993597b1767007c6124bdf192f19a8c"
     },
     {
       "path": "src/features/course/curriculum-lesson.tsx",
-      "bytes": 1839
+      "bytes": 1839,
+      "sha1": "af5090088c1a26fc61f9f7b42ddec85bb14be156"
     },
     {
       "path": "src/features/course/curriculum-section.tsx",
-      "bytes": 1807
+      "bytes": 1807,
+      "sha1": "bb585fd0b7d41abea364c68fe7ac4d5d2c6fb861"
     },
     {
       "path": "src/features/course/curriculum.tsx",
-      "bytes": 2350
+      "bytes": 2350,
+      "sha1": "3013561cab18ba5ea631e843f226e4659bfe44a1"
     },
     {
       "path": "src/features/course/dialogs.module.css",
-      "bytes": 6734
+      "bytes": 6734,
+      "sha1": "894bde07a2cc9f919f904561c336a4c50faeda16"
     },
     {
       "path": "src/features/course/exam-dialog.tsx",
-      "bytes": 6832
+      "bytes": 6832,
+      "sha1": "b016a3ce19dc912626c5b25debfff49b78fbe59e"
     },
     {
       "path": "src/features/course/exam-timer.tsx",
-      "bytes": 1677
+      "bytes": 1677,
+      "sha1": "7417c29f7194fb3b2f47e92fbef2d66814dbe853"
     },
     {
       "path": "src/features/course/leaderboard-dialog.tsx",
-      "bytes": 1746
+      "bytes": 1746,
+      "sha1": "de4a8d24da1c836118fdea4f36e353590658c898"
     },
     {
       "path": "src/features/course/lesson-player.tsx",
-      "bytes": 4548
+      "bytes": 4548,
+      "sha1": "726f8825dfe66628faa2fadbe5e608af27e56884"
     },
     {
       "path": "src/features/course/lesson-preview.tsx",
-      "bytes": 1163
+      "bytes": 1163,
+      "sha1": "b2092421d3d2a3478a843814139f633a3ed9e950"
     },
     {
       "path": "src/features/course/message-history.module.css",
-      "bytes": 463
+      "bytes": 463,
+      "sha1": "0deda75346324ce47c13829221635dfe5d1bebe9"
     },
     {
       "path": "src/features/course/message-history.tsx",
-      "bytes": 666
+      "bytes": 666,
+      "sha1": "069529172b8fb9b455a1f1a42df8fb3f3b7e1a20"
     },
     {
       "path": "src/features/course/pdf-dialog.tsx",
-      "bytes": 2809
+      "bytes": 2809,
+      "sha1": "84250dd07c936edefbffd1241ec8102f29a0ab8c"
     },
     {
       "path": "src/features/course/question-dialog.tsx",
-      "bytes": 2078
+      "bytes": 2078,
+      "sha1": "29231684a74859d32690ad9da3c3f7d3ab4e47e0"
     },
     {
       "path": "src/features/course/text-entry-form.tsx",
-      "bytes": 2475
+      "bytes": 2475,
+      "sha1": "f2ad437f7e0f005ba1944b3c657c7b9294641399"
     },
     {
       "path": "src/features/learning/browser-persistence.ts",
-      "bytes": 3203
+      "bytes": 3203,
+      "sha1": "1fdd3adb309b6e12c3bce656e475fba1dc285241"
     },
     {
       "path": "src/features/learning/interaction-provider.tsx",
-      "bytes": 943
+      "bytes": 943,
+      "sha1": "9101076191991aab74e756ea897e090938712b6f"
     },
     {
       "path": "src/features/learning/interaction-store.ts",
-      "bytes": 9088
+      "bytes": 9088,
+      "sha1": "bd01c1de8c3922a4e962e839d4802b5b8890ed1a"
     },
     {
       "path": "src/features/learning/learning-provider.tsx",
-      "bytes": 951
+      "bytes": 951,
+      "sha1": "4db7975adc07a29ced44de01bc68880008304fab"
     },
     {
       "path": "src/features/learning/learning-store.ts",
-      "bytes": 4654
+      "bytes": 4654,
+      "sha1": "4cc58a6a5878275d6dd0e38bd06268f9b566c6e2"
     },
     {
       "path": "src/features/learning/persistence-provider.tsx",
-      "bytes": 1180
+      "bytes": 1180,
+      "sha1": "44d5f02b78a3168e710bc16ccd9c7fc9fbecca81"
     },
     {
       "path": "src/features/learning/saved-state.ts",
-      "bytes": 428
+      "bytes": 428,
+      "sha1": "4989e6fae53ed7f2a10c96cd354fb66a05091980"
     },
     {
       "path": "src/features/references/reference-collection.tsx",
-      "bytes": 2268
+      "bytes": 2268,
+      "sha1": "0008754a0dd9a8b2a95a2de07604f23253eea9a8"
     },
     {
       "path": "src/features/references/reference-dialog.tsx",
-      "bytes": 2497
+      "bytes": 2497,
+      "sha1": "b635bd8615c1d30f9379219f2e4c981520e6f204"
     },
     {
       "path": "src/features/references/references.module.css",
-      "bytes": 2195
+      "bytes": 2195,
+      "sha1": "c0a8baaf2ecf3e08bd6f6ab5aa593192bd716e69"
     },
     {
       "path": "src/lib/course.ts",
-      "bytes": 2356
+      "bytes": 2356,
+      "sha1": "ec43d175100859c0be01d1028eb9cd77cf28153b"
     },
     {
       "path": "src/lib/use-media-query.ts",
-      "bytes": 561
+      "bytes": 561,
+      "sha1": "403ee50aea9959b0486e741ef558767903306c69"
     },
     {
       "path": "src/lib/youtube.ts",
-      "bytes": 1749
+      "bytes": 1749,
+      "sha1": "87164dbb1df365a08df35dd4898109d009ced5b7"
     },
     {
       "path": "src/types/course.ts",
-      "bytes": 1322
+      "bytes": 1322,
+      "sha1": "3af51bb427c5d31e521ce7441dda7eeb4dc0d7a3"
     },
     {
       "path": "src/types/interaction.ts",
-      "bytes": 632
+      "bytes": 632,
+      "sha1": "dae230812a06581ecd292f930a48ad266086882e"
     },
     {
       "path": "src/types/reference.ts",
-      "bytes": 190
+      "bytes": 190,
+      "sha1": "a538e5951bf7fbd3e5dc0cb241fae32b4b542b60"
     },
     {
       "path": "tsconfig.json",
-      "bytes": 738
+      "bytes": 738,
+      "sha1": "a123b6044c5963fc5cf8807f86179702053d0502"
     }
   ]
 }
