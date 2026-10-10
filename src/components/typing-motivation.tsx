@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "@/lib/use-media-query";
+import { Icon } from "@/components/icon";
 import styles from "./typing-motivation.module.css";
 
 const ROTATION_MS = 4_500;
@@ -53,18 +54,16 @@ export function TypingMotivation({
           {!staticText ? <span className={styles.cursor} /> : null}
         </span>
       </p>
-      {reducedMotion ? (
-        <p className={styles.hint}>Animation off · Reduced motion</p>
-      ) : (
+      {!reducedMotion ? (
         <button
           className={styles.control}
           type="button"
-          aria-pressed={paused}
+          aria-label={paused ? "Play messages" : "Pause messages"}
           onClick={() => setPaused((current) => !current)}
         >
-          {paused ? "Resume encouragement" : "Pause encouragement"}
+          <Icon name={paused ? "play" : "pause"} />
         </button>
-      )}
+      ) : null}
     </section>
   );
 }

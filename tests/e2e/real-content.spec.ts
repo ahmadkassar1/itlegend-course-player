@@ -123,7 +123,7 @@ test("every real entry opens its native player with truthful facts and labeled d
       .getByRole("button", { name: "Leaderboard", exact: true })
       .click();
     await expect(page.getByRole("dialog").getByRole("listitem")).toHaveCount(5);
-    await expect(page.getByRole("dialog")).toContainText("Demo leaderboard");
+    await expect(page.getByRole("dialog")).toContainText("Sample leaderboard");
     await page.keyboard.press("Escape");
   }
   await page.goto("/courses/not-a-course");

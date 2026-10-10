@@ -23,9 +23,7 @@ export function LeaderboardDialog({
   return (
     <div className={styles.leaderboard}>
       <TypingMotivation key={level} messages={motivationalMessages[level]} />
-      <p className={styles.sampleNote}>
-        Demo leaderboard · Sample learners. Your row uses your saved progress.
-      </p>
+      <p className={styles.sampleNote}>Sample leaderboard</p>
       <ol className={styles.ranking} aria-label="Course leaderboard">
         {rows.map((row) => (
           <li
@@ -54,9 +52,6 @@ export function LeaderboardDialog({
           </li>
         ))}
       </ol>
-      <p className={styles.sampleNote}>
-        Fictional examples for this demo, not live classmates or a competition.
-      </p>
     </div>
   );
 }

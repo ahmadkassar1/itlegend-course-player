@@ -16,6 +16,7 @@ export type IconName =
   | "trophy"
   | "document"
   | "play"
+  | "pause"
   | "check"
   | "plus"
   | "minus"
@@ -24,6 +25,7 @@ export type IconName =
   | "shrink";
 
 const paths: Record<IconName, React.ReactNode> = {
+  pause: <path d="M9 5v14M15 5v14" />,
   book: (
     <>
       <path d="M3 4h7a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H3z" />

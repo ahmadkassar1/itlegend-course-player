@@ -37,7 +37,7 @@ The exam route for the first video is `/courses/webology?lesson=study-check`; th
 
 Each video has three clearly labeled, fictional discussion examples written for its topic. The demo leaderboard has four sample learners alongside your real saved progress; sample activity never enters browser storage or changes your completion. Posting adds your own literal text above the samples in the bounded history. Drafts survive closing and reopening dialogs. Nothing is posted to YouTube or sent to an instructor. Question submission shows a demo review confirmation, local-saving status and actions to ask another question or explore more videos. Review is simulated; no moderation service is connected.
 
-The leaderboard’s original Arabic encouragement follows your completion level, types one message at a time and changes every 4.5 seconds. A pause control shows the complete current message; reduced-motion preferences disable typing and rotation. Timers are cleaned up when the dialog closes, and character updates are hidden from assistive technology to avoid repetitive announcements. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
+The leaderboard’s original Arabic encouragement follows your completion level, types one message at a time and changes every 4.5 seconds. A compact pause/play icon has an accessible name and shows the complete current message when paused; reduced-motion preferences disable typing and rotation. Timers are cleaned up when the dialog closes, and character updates are hidden from assistive technology to avoid repetitive announcements. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
 
 ## Structure
 
@@ -68,13 +68,15 @@ Four titles, authors and thumbnails were verified against YouTube's official oEm
 
 Opening a video detail page contacts YouTube through the official privacy-enhanced iframe and SDK. The catalogue contacts the thumbnail CDN, but does not mount a player or load the SDK. Related preview dialogs mount their player only after **Load YouTube player**. Each iframe has an explicit title, origin, inline playback, fullscreen permission and `strict-origin-when-cross-origin` referrer policy. YouTube controls advertising, regional availability and captions; the direct source link remains available.
 
-For a new video, verify its channel ownership and published metadata first, then add a typed record to `video-references.ts`. Do not invent durations, reviews or playlist lesson counts. Record source/date/permissions in `ASSETS.md` and update the real-content journeys.
+For a new video, verify its channel ownership and published metadata first, then add a typed record to `video-references.ts`. Do not invent creator metadata, durations or playlist lesson counts. Keep fictional discussion examples explicitly labeled and separate from actual learner activity. Record source/date/permissions in `ASSETS.md` and update the real-content journeys.
 
 Earlier locally authored demo media, worksheets and `course-content.json` are preserved for provenance and the historical authoring scripts. They are **not active course data**. The unused demo adapter was removed. Source screenshots/DOCX, Obsidian notes and the user's existing private app are outside this isolated repository.
 
 `.vercelignore` excludes historical media/data, tests and local verification files from source-upload releases while retaining the active worksheet and learner avatar. Repository history remains available for review.
 
 ## Check the project
+
+See the [technical report](docs/TECHNICAL_REPORT.md) for the architecture, state model, media handling and release boundaries.
 
 ```sh
 npm run check
@@ -86,7 +88,7 @@ npm run test:e2e
 
 The browser suite uses the installed Chrome channel, one worker and no retries. It starts the production server on port 3100; stop an existing preview first when using `CI=true`. Set `PLAYWRIGHT_CHANNEL=msedge` for installed Edge or `chromium` for an already available Playwright browser. No browser download is part of these commands.
 
-The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero history, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 26 representative viewport profiles. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
+The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero personal history, labeled demo community, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 30 representative viewport profiles. Boundary coverage includes 480/481, 767/768, 1024/1025 and 1280/1281px. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
 
 [Current control/release verification](verification/Shared-Controls-and-Release.md) and [real-content verification](verification/Real-YouTube-Content.md) identify tested revisions/builds and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
 

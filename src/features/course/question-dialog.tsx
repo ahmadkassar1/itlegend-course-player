@@ -53,10 +53,6 @@ export function QuestionDialog({
               Review is simulated in this demo; nothing is sent to an
               instructor.
             </p>
-            <p>
-              Keep your curiosity going. Ask a follow-up or find your next
-              video.
-            </p>
             <div className={styles.nextActions}>
               <button type="button" onClick={askAnother}>
                 Ask another question

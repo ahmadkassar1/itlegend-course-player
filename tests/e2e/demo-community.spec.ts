@@ -68,12 +68,14 @@ for (const width of [320, 1440]) {
     await expect(
       dialog.getByRole("region", { name: "Study encouragement" }),
     ).toContainText(motivationalMessages["Getting started"][1]);
-    await dialog.getByRole("button", { name: "Pause encouragement" }).click();
+    const pauseButton = dialog.getByRole("button", { name: "Pause messages" });
+    await expect(pauseButton).toHaveText("");
+    await pauseButton.click();
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][1],
     );
-    const pause = dialog.getByRole("button", { name: "Resume encouragement" });
-    await expect(pause).toHaveAttribute("aria-pressed", "true");
+    const pause = dialog.getByRole("button", { name: "Play messages" });
+    await expect(pause).toHaveAccessibleName("Play messages");
     await page.clock.runFor(9000);
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][1],
@@ -93,7 +95,7 @@ for (const width of [320, 1440]) {
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][0],
     );
-    await dialog.getByRole("button", { name: "Pause encouragement" }).click();
+    await dialog.getByRole("button", { name: "Pause messages" }).click();
     // Axe uses timers internally; let the clock run while the message remains paused.
     await page.clock.resume();
     await scan(page, `leaderboard-${width}`);
@@ -171,10 +173,8 @@ test("reduced motion shows complete, static encouragement and actual completion 
   const text = dialog.locator("[data-motivation-text]");
   await expect(text).toHaveText(motivationalMessages["Building momentum"][0]);
   await expect(dialog.locator("[aria-current=true]")).toContainText("33%");
-  await expect(
-    dialog.getByRole("button", { name: /encouragement/ }),
-  ).toHaveCount(0);
-  await expect(dialog).toContainText("Animation off");
+  await expect(dialog.getByRole("button", { name: /messages/ })).toHaveCount(0);
+  await expect(dialog).not.toContainText("Animation off");
   await page.clock.install();
   await page.clock.runFor(10_000);
   await expect(text).toHaveText(motivationalMessages["Building momentum"][0]);

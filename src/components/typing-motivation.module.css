@@ -22,24 +22,19 @@
   animation: blink 900ms step-end infinite;
 }
 .control {
+  display: grid;
+  place-items: center;
+  width: 44px;
   min-height: 44px;
-  border: 0;
+  margin: 4px 0 0 auto;
+  border: 1px solid #d9d7e9;
   border-radius: 4px;
   padding: 8px;
   color: #4c4691;
   background: transparent;
-  font-size: 0.75rem;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 .control:hover {
   background: #eaeaf4;
-}
-.hint {
-  color: var(--muted);
-  font-size: 0.75rem;
-  line-height: 1.7;
-  margin: 12px 0 0;
 }
 .srOnly {
   position: absolute;
