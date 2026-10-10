@@ -1,0 +1,9 @@
+{
+  "CheckedAt": "2026-10-10T13:44:45.2338481Z",
+  "SourceCommit": "7b879ee8d749d1fbca72f9f275bef05546b392ce",
+  "FileCount": 89,
+  "ZipBytes": 295715,
+  "ZipSHA256": "283f44f030605e170ad0c341ef2bd7c978aed5e211e953ccc0b0fa76f29d0a2c",
+  "AllEntryChecksumsMatch": true,
+  "Scope": "Local filtered committed source archive; not uploaded."
+}
