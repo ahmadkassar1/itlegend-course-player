@@ -261,6 +261,14 @@ try {
     const question = await snapshot(page, requests, errors);
     await page.keyboard.press("Escape");
     await page
+      .getByRole("button", { name: "Your study practice", exact: true })
+      .click();
+    await page
+      .locator('a[href="/courses/webology?lesson=study-worksheet"]')
+      .evaluate((element) =>
+        element.scrollIntoView({ block: "end", behavior: "instant" }),
+      );
+    await page
       .locator('a[href="/courses/webology?lesson=study-worksheet"]')
       .click();
     await page.getByRole("dialog").waitFor();
