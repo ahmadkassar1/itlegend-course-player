@@ -2,7 +2,7 @@
 
 ## Scope
 
-A responsive video library and course player built for the ITLegend frontend challenge. The course-detail layout follows the supplied desktop/mobile screenshot and Arabic interaction annotations. Four published Ali Shahin videos supply their verified original titles, thumbnails and native YouTube players. Site-authored practice and fictional discussion/ranking examples are labeled separately from the creator’s material and the learner’s actual activity.
+A responsive video library and course player built for the ITLegend frontend challenge. The course-detail layout follows the supplied desktop/mobile screenshot and Arabic interaction annotations. Six published Ali Shahin videos supply their verified original titles, thumbnails and native YouTube players. Site-authored practice and fictional discussion/ranking examples are labeled separately from the creator’s material and the learner’s actual activity.
 
 Exact source-font/photo fidelity, physical-device acceptance and final organizer-policy questions remain separate from local implementation verification. This report does not claim an official score or submission acceptance.
 

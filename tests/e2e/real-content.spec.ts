@@ -394,6 +394,8 @@ test("related videos use original titles, intent-loaded native player and modal 
 test("real Arabic content and local surfaces retain accessibility and 200% text reflow", async ({
   page,
 }) => {
+  // Ten rendered-state scans and fourteen navigations need more than the default on a hosted origin.
+  test.setTimeout(60_000);
   const results: unknown[] = [];
   for (const width of [320, 1440]) {
     await page.setViewportSize({ width, height: 900 });
