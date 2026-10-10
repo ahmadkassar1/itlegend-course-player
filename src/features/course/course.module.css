@@ -254,7 +254,8 @@
   font-size: 0.8125rem;
   line-height: 1.6;
 }
-.formStatus {
+.formStatus,
+.formHint {
   color: var(--muted);
   font-size: 0.8125rem;
   line-height: 1.6;

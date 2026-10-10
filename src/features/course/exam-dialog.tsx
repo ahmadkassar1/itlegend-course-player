@@ -23,8 +23,15 @@ export function ExamDialog({
   const { questions } = lesson.exam;
   const question = questions[attempt.index];
   const answered = questions.filter((item) => attempt.answers[item.id]).length;
+  const firstUnanswered = questions.findIndex(
+    (item) => !attempt.answers[item.id],
+  );
   const [error, setError] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
+  const errorSummary = useRef<HTMLParagraphElement>(null);
+  useEffect(() => {
+    if (error) errorSummary.current?.focus();
+  }, [error]);
   useEffect(() => {
     store.dispatch(courseSlug, {
       type: "start-exam",
@@ -39,7 +46,7 @@ export function ExamDialog({
       index,
     });
     setError(false);
-    heading.current?.focus({ preventScroll: true });
+    heading.current?.focus();
   }
   return (
     <div className={styles.examSurface}>
@@ -160,10 +167,24 @@ export function ExamDialog({
             </button>
           ) : null}
           {error ? (
-            <p role="alert" className={styles.error}>
-              Answer all {questions.length} questions before submitting. Your
-              answers are saved when you close this window.
-            </p>
+            <div>
+              <p
+                ref={errorSummary}
+                tabIndex={-1}
+                role="alert"
+                className={styles.error}
+              >
+                Answer all {questions.length} questions before submitting. You
+                have {questions.length - answered}{" "}
+                {questions.length - answered === 1 ? "question" : "questions"}{" "}
+                left. Your answers are saved when you close this window.
+              </p>
+              <div className={styles.examNavigation}>
+                <button type="button" onClick={() => navigate(firstUnanswered)}>
+                  Go to first unanswered question
+                </button>
+              </div>
+            </div>
           ) : null}
           <p className={styles.practiceNote}>
             Practice countdown: you can continue after time runs out. Your

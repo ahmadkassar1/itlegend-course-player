@@ -27,6 +27,8 @@ export function TextEntryForm({
   const textarea = useRef<HTMLTextAreaElement>(null);
   const [error, setError] = useState(false);
   const [posted, setPosted] = useState(false);
+  const remaining = MAX_MESSAGE_LENGTH - value.length;
+  const nearLimit = remaining <= 200;
   return (
     <form
       className={styles.commentForm}
@@ -56,13 +58,23 @@ export function TextEntryForm({
         maxLength={MAX_MESSAGE_LENGTH}
         dir="auto"
         aria-invalid={error || undefined}
-        aria-describedby={error ? `${id}-error` : undefined}
+        aria-describedby={`${id}-limit${error ? ` ${id}-error` : ""}`}
         onChange={(event) => {
           onChange(event.target.value);
           setError(false);
           setPosted(false);
         }}
       />
+      <p
+        id={`${id}-limit`}
+        className={nearLimit ? styles.formHint : styles.srOnly}
+      >
+        {remaining === 0
+          ? "Character limit reached. Edit your message to keep writing."
+          : nearLimit
+            ? `${remaining} ${remaining === 1 ? "character" : "characters"} left (2,000 maximum).`
+            : "Maximum 2,000 characters."}
+      </p>
       {error ? (
         <p id={`${id}-error`} role="alert" className={styles.formError}>
           Please write a message before submitting.

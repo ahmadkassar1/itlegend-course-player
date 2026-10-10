@@ -169,12 +169,21 @@ test("computed progress, input, selected text and focus colors meet their contra
     .getByRole("button", { name: "Submit answers", exact: true })
     .click();
   colors.push(
-    await dialog.getByRole("alert").evaluate((el) => ({
-      name: "Exam error text",
-      fg: getComputedStyle(el).color,
-      bg: getComputedStyle(el.parentElement!).backgroundColor,
-      minimum: 4.5,
-    })),
+    await dialog.getByRole("alert").evaluate((el) => {
+      let surface = el.parentElement;
+      while (
+        surface &&
+        getComputedStyle(surface).backgroundColor === "rgba(0, 0, 0, 0)"
+      )
+        surface = surface.parentElement;
+      if (!surface) throw new Error("Expected an opaque exam error surface");
+      return {
+        name: "Exam error text",
+        fg: getComputedStyle(el).color,
+        bg: getComputedStyle(surface).backgroundColor,
+        minimum: 4.5,
+      };
+    }),
   );
   const question = dialog.getByRole("button", {
     name: "Question 2",
