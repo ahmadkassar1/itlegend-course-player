@@ -1,6 +1,6 @@
 # Submission and device audit
 
-Subsequent learner-feedback changes and the fresh 76-check Chrome run at `e06f890` are recorded in [Learner-Usability.md](Learner-Usability.md). The installed Edge and current-build performance follow-up below uses that same runtime. Earlier sections retain the source/build conditions of the preceding 68-check audit; public-link and submission blockers remain open.
+The current catalogue/reference change at `959b722`, build `CrtDayk2MRpR7Nl6PrdXJ`, is recorded in [Catalogue-Discovery.md](Catalogue-Discovery.md): 84 production Chrome checks, verified channel sources and one actual YouTube playback observation. The learner-feedback pass and installed-Edge/performance follow-up below retain their earlier `e06f890` runtime. Earlier sections also retain the preceding 68-check audit conditions; public-link, physical-device, exact-asset and submission blockers remain open.
 
 ## Installed-browser and current-build follow-up — 10 October 2026
 

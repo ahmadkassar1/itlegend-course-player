@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-10 before 08:00:23 UTC",
+  "revision": "959b722f2748eebe101a765dd03b80d573239eeb",
+  "build": "CrtDayk2MRpR7Nl6PrdXJ",
+  "method": "In-app browser UI inspection and read-only video element observation after Preview collection, Load YouTube player, then native Play video; no response stub or autoplay",
+  "url": "http://127.0.0.1:3100/",
+  "iframe": "https://www.youtube-nocookie.com/embed/1fSAAzrxK6E?playsinline=1&rel=0&cc_load_policy=1",
+  "visibleCreator": "Ali Shahin",
+  "visibleNativeTitle": "كل اللي لازم تعرفه عن الـ DNS قبل ما تعمل موقعك",
+  "video": {
+    "paused": false,
+    "duration": 1558.421,
+    "readyState": 4,
+    "currentTime": 30.724905
+  },
+  "closeOutcome": "Native dialog closed; focus visibly returned to Preview Webology علم الويب",
+  "limits": [
+    "One actual desktop in-app-browser video checked; other videos and physical devices not playback-tested.",
+    "Future availability, localization, captions, advertising and recommendations are controlled by YouTube.",
+    "Automated iframe regression uses a controlled response; it is separate from this real playback observation.",
+    "Browser tab closed before performance measurement; no local creator footage or thumbnail stored."
+  ]
+}
