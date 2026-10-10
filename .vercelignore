@@ -1,0 +1,14 @@
+# Local evidence and historical authoring sources stay in Git, outside the release.
+.env*
+.vercel/
+verification/
+tests/
+scripts/
+playwright.config.ts
+public/media/
+src/data/course-content.json
+public/resources/*
+!public/resources/learning-plan.pdf
+!public/resources/learning-plan.png
+public/images/*
+!public/images/learner.svg

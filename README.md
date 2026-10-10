@@ -70,6 +70,8 @@ For a new video, verify its channel ownership and published metadata first, then
 
 Earlier locally authored demo media, worksheets and `course-content.json` are preserved for provenance and the historical authoring scripts. They are **not active course data**. The unused demo adapter was removed. Source screenshots/DOCX, Obsidian notes and the user's existing private app are outside this isolated repository.
 
+`.vercelignore` excludes historical media/data, tests and local verification files from source-upload releases while retaining the active worksheet and learner avatar. Repository history remains available for review.
+
 ## Check the project
 
 ```sh
