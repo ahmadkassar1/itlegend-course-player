@@ -37,8 +37,7 @@
   font-size: 0.875rem;
 }
 .resourceToolbar a,
-.resourceToolbar button,
-.resourceToolbar select {
+.resourceToolbar > button {
   display: inline-flex;
   align-items: center;
   min-height: 44px;

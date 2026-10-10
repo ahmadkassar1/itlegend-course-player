@@ -72,7 +72,6 @@ export function CourseLayout({
           key={lesson.id}
           courseSlug={course.slug}
           lesson={lesson}
-          poster={course.poster}
           wide={wide && desktop}
           onWide={() => setWide((value) => !value)}
         />

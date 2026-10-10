@@ -3,7 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { Icon } from "@/components/icon";
-import Image from "next/image";
+import { VideoThumbnail } from "@/components/video-thumbnail";
 import type { VideoReference } from "@/types/reference";
 import styles from "./references.module.css";
 
@@ -24,12 +24,9 @@ export function ReferenceCollection({
       {references.map((reference) => (
         <div key={reference.id} className={styles.card}>
           <div className={styles.cover}>
-            <Image
+            <VideoThumbnail
               src={reference.thumbnail}
-              alt={`YouTube thumbnail: ${reference.videoTitle}`}
-              width={480}
-              height={360}
-              unoptimized
+              title={reference.videoTitle}
             />
           </div>
           <div className={styles.body}>

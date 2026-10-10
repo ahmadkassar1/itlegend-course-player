@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { VideoThumbnail } from "@/components/video-thumbnail";
 import Link from "next/link";
 import { Icon } from "@/components/icon";
 import { getCourseStatus, getProgress } from "@/lib/course";
@@ -18,12 +18,9 @@ export function CourseCard({ course }: { course: CourseSummary }) {
   return (
     <article className={styles.card}>
       <div className={styles.artwork}>
-        <Image
+        <VideoThumbnail
           src={course.thumbnail}
-          alt={`YouTube thumbnail: ${course.title}`}
-          width={480}
-          height={360}
-          unoptimized
+          title={course.title}
           sizes="(max-width: 639px) 100vw, (max-width: 1099px) 50vw, 33vw"
         />
       </div>

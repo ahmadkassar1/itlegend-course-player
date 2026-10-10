@@ -5,6 +5,7 @@ import type axe from "axe-core";
 import { courses } from "../../src/data/courses";
 import { videoReferences } from "../../src/data/video-references";
 import { controlYouTube } from "./helpers/youtube";
+import { chooseOption } from "./helpers/select";
 import { capturePath, prepareScreenshot } from "./helpers/capture";
 
 test.beforeEach(async ({ page }) => {
@@ -61,9 +62,10 @@ test("Arabic and topic search combine with status filters and empty recovery", a
   await page
     .getByRole("button", { name: "Web foundations", exact: true })
     .click();
-  await page
-    .getByLabel("Learning status", { exact: true })
-    .selectOption("Completed");
+  await chooseOption(
+    page.getByLabel("Learning status", { exact: true }),
+    "Completed",
+  );
   await expect(
     page.getByRole("heading", { name: "No videos match yet" }),
   ).toBeVisible();
@@ -73,7 +75,10 @@ test("Arabic and topic search combine with status filters and empty recovery", a
   await search.fill("مكونات");
   await expect(page.locator("article")).toHaveCount(1);
   await page.getByRole("button", { name: "Clear filters" }).click();
-  await page.getByLabel("Sort by", { exact: true }).selectOption("title");
+  await chooseOption(
+    page.getByLabel("Sort by", { exact: true }),
+    "Course name",
+  );
   expect(await page.locator("article h3").allTextContents()).toEqual(
     courses.map((c) => c.title).sort((a, b) => a.localeCompare(b)),
   );
@@ -165,9 +170,10 @@ test("legacy fake history is not imported; explicit watched credit persists and 
   await expect(page.getByLabel("Your learning summary")).toContainText(
     "1 learning steps completed",
   );
-  await page
-    .getByLabel("Learning status", { exact: true })
-    .selectOption("In progress");
+  await chooseOption(
+    page.getByLabel("Learning status", { exact: true }),
+    "In progress",
+  );
   await expect(page.locator("article")).toHaveCount(1);
   await page.goto("/courses/computer-science");
   await expect(page.getByRole("progressbar")).toHaveAttribute(
@@ -224,7 +230,7 @@ test("site-authored PDF and five-question exercise complete the study plan and s
   await page.getByRole("button", { name: "Open PDF", exact: true }).click();
   const dialog = page.getByRole("dialog");
   await expect(dialog.getByRole("img")).toBeVisible();
-  await dialog.getByLabel("PDF page size").selectOption("200");
+  await chooseOption(dialog.getByLabel("PDF page size"), "200%");
   await dialog.getByRole("button", { name: "Mark read", exact: true }).click();
   await expect(
     dialog.getByRole("button", { name: "Read ✓", exact: true }),
@@ -255,9 +261,10 @@ test("site-authored PDF and five-question exercise complete the study plan and s
     "100",
   );
   await page.goto("/");
-  await page
-    .getByLabel("Learning status", { exact: true })
-    .selectOption("Completed");
+  await chooseOption(
+    page.getByLabel("Learning status", { exact: true }),
+    "Completed",
+  );
   await expect(page.locator("article")).toHaveCount(1);
 });
 

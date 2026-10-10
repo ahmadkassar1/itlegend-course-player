@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Select } from "@/components/select";
 import { useState } from "react";
 import {
   useCourseLearning,
@@ -25,18 +26,18 @@ export function PdfDialog({
   return (
     <div className={styles.pdf}>
       <div className={styles.resourceToolbar}>
-        <label>
-          Page size{" "}
-          <select
-            aria-label="PDF page size"
-            value={zoom}
-            onChange={(event) => setZoom(Number(event.target.value))}
-          >
-            <option value={100}>Fit width</option>
-            <option value={150}>150%</option>
-            <option value={200}>200%</option>
-          </select>
-        </label>
+        <Select
+          label="Page size"
+          accessibleLabel="PDF page size"
+          inline
+          value={String(zoom)}
+          onChange={(value) => setZoom(Number(value))}
+          options={[
+            { value: "100", label: "Fit width" },
+            { value: "150", label: "150%" },
+            { value: "200", label: "200%" },
+          ]}
+        />
         <a href={resource.src} target="_blank" rel="noreferrer">
           Open original PDF <span className={styles.srOnly}>(new tab)</span>
         </a>

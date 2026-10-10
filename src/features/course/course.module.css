@@ -815,6 +815,7 @@
   color: #52665c;
 }
 .youtubeLoading {
+  aspect-ratio: 16 / 9;
   min-height: 200px;
   background: #f5f9f6;
   padding: 24px;

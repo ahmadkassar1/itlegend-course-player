@@ -19,6 +19,17 @@
 .dialog[open] {
   display: flex;
   flex-direction: column;
+  animation: openDialog 180ms ease-out;
+}
+@keyframes openDialog {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .fullScreen {
   position: fixed;

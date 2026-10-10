@@ -249,8 +249,7 @@
   color: #405a4e;
   margin-bottom: 8px;
 }
-.toolbar input,
-.toolbar select {
+.toolbar input {
   display: block;
   width: 100%;
   min-height: 46px;
@@ -334,6 +333,7 @@
   display: flex;
   flex-direction: column;
   transition:
+    transform 0.2s,
     box-shadow 0.2s,
     border-color 0.2s;
 }
@@ -341,6 +341,11 @@
 .card:focus-within {
   border-color: #9dbba9;
   box-shadow: 0 8px 28px #23493d0c;
+}
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-3px);
+  }
 }
 .artwork {
   position: relative;
@@ -568,8 +573,7 @@
     padding: 16px;
     gap: 14px;
   }
-  .toolbar input,
-  .toolbar select {
+  .toolbar input {
     font-size: 1rem;
   }
   .grid {

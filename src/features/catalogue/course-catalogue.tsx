@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef, useState, useSyncExternalStore } from "react";
 import { Icon } from "@/components/icon";
+import { Select } from "@/components/select";
 import { useLearningStore } from "@/features/learning/learning-provider";
 import { getCourseStatus, getProgress } from "@/lib/course";
 import type { CourseSummary } from "@/types/course";
@@ -165,29 +166,29 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
             />
           </div>
           <div className={styles.selectField}>
-            <label htmlFor="course-status">Learning status</label>
-            <select
-              id="course-status"
+            <Select
+              label="Learning status"
               value={status}
-              onChange={(event) => setStatus(event.target.value)}
-            >
-              <option value="all">All statuses</option>
-              <option>Not started</option>
-              <option>In progress</option>
-              <option>Completed</option>
-            </select>
+              onChange={setStatus}
+              options={[
+                { value: "all", label: "All statuses" },
+                { value: "Not started", label: "Not started" },
+                { value: "In progress", label: "In progress" },
+                { value: "Completed", label: "Completed" },
+              ]}
+            />
           </div>
           <div className={styles.selectField}>
-            <label htmlFor="course-sort">Sort by</label>
-            <select
-              id="course-sort"
+            <Select
+              label="Sort by"
               value={sort}
-              onChange={(event) => setSort(event.target.value)}
-            >
-              <option value="featured">Featured order</option>
-              <option value="title">Course name</option>
-              <option value="progress">Most progress</option>
-            </select>
+              onChange={setSort}
+              options={[
+                { value: "featured", label: "Featured order" },
+                { value: "title", label: "Course name" },
+                { value: "progress", label: "Most progress" },
+              ]}
+            />
           </div>
         </div>
         <fieldset className={styles.topics}>

@@ -19,7 +19,6 @@ export function LessonPlayer({
 }: {
   courseSlug: string;
   lesson: Extract<Lesson, { kind: "video" }>;
-  poster: string;
   wide: boolean;
   onWide: () => void;
 }) {

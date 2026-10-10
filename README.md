@@ -45,7 +45,7 @@ Comments and questions start empty. Posting adds your own literal text at the to
 | `src/data/video-references.ts`                 | Verified video IDs, original titles/thumbnails, source collections and editorial summaries |
 | `src/data/courses.ts`                          | Typed video entries and explicitly independent study exercises                             |
 | `src/data/study-practice.ts`, `worksheet.json` | Original site exercise content                                                             |
-| `src/components`                               | Shared dialog, icons and native YouTube player                                             |
+| `src/components`                               | Shared dialogs, select-only combobox, thumbnails, icons and native YouTube player          |
 | `src/lib/youtube.ts`                           | Typed, deduplicated official iframe SDK loader with failure handling                       |
 | `src/features/catalogue`                       | Cards, search/filter/sort, summary and learning-data reset                                 |
 | `src/features/course`                          | Responsive player layout, curriculum, PDF/exam, comments and questions                     |
@@ -59,6 +59,8 @@ The server selects route data; client providers own each browser's learning stat
 Learning is stored under `course-library:youtube-learner:v1`, content version `2026-10-youtube-content-1`. Earlier fictional-course history is preserved under its old key and is not imported. Browser storage can be cleared, blocked or full; the UI reports memory-only operation honestly. **Clear my learning data** asks for confirmation and resets all current entries to empty history. Data is local to this browser/origin, with no cross-device sync or shared backend.
 
 ## Source and media handling
+
+The shared `Select` replaces browser-default menus in catalogue filters and PDF zoom. It supports arrows, Home/End, typeahead, Enter/Space, Tab, Escape and outside dismissal while retaining focus on the trigger. Menus choose their opening direction and scroll within the viewport. Escape closes a PDF menu before closing its parent dialog. Original thumbnails share one component with an honest unavailable state. Menu/dialog entrances and pointer hover motion respect `prefers-reduced-motion`; essential content never depends on animation.
 
 Four titles, authors and thumbnails were verified against YouTube's official oEmbed responses on **10 October 2026**. See [metadata](verification/youtube-20261010-metadata.json) and [asset provenance](ASSETS.md). Thumbnails load directly from their published `i.ytimg.com` URLs, preserving the original 4:3 image. No creator footage or image is downloaded or rehosted.
 
@@ -101,6 +103,12 @@ Native YouTube introduces third-party costs on the player page, and original CDN
 ## Release boundary
 
 There is no configured Git remote or public demo. Local commits use the user's configured author and committer. No push, deployment or submission has occurred.
+
+### Deploy on Vercel
+
+Deploy only this `challenge-app` directory, never the parent Obsidian workspace. For a repository containing this directory at its root, leave **Root Directory** empty; for a parent repository, set it to `challenge-app`. Choose the **Next.js** framework preset and **Node.js 24.x**. Keep the default install/build/output settings; the lockfile and `build` script are committed. No runtime secrets or database provisioning are needed. `.vercel` and environment files are excluded from Git.
+
+Build and test locally before releasing. Check the hosted catalogue, all four course routes, PDF, custom controls and saved progress on the deployment origin, then verify that the final production URL opens without signing in. Localhost history does not transfer to a new domain. Keep the public repository and final production demo URLs together for the submission form; a local preview or protected preview URL is not a submission link.
 
 The last successful official terms/form inspection was **4 October 2026**. Public GitHub and an anonymously accessible live demo were required; the displayed deadline was **31 October 2026, 9:59 p.m.**, with timezone unresolved. A 10 October access recheck failed, including one browser fallback. AI assistance, reuse, external assets, extras and eligibility nuance remain unanswered; silence is not permission.
 
