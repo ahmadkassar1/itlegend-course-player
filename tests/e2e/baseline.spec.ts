@@ -135,6 +135,8 @@ test("lesson navigation updates content and current state; back and invalid deep
 test("responsive baseline preserves order and avoids horizontal overflow", async ({
   page,
 }) => {
+  // This check visits 32 route/width pairs, then prepares four full-page captures.
+  test.setTimeout(90_000);
   await fs.mkdir("verification", { recursive: true });
   for (const width of [320, 360, 390, 430, 768, 820, 1024, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
