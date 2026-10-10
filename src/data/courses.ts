@@ -2,6 +2,7 @@ import type { Course } from "@/types/course";
 import { videoReferences } from "./video-references";
 import { studyPractice } from "./study-practice";
 import worksheet from "./worksheet.json";
+import { getDemoCommunity } from "./demo-community";
 
 // Published videos, not a fabricated creator syllabus.
 export const courses: Course[] = videoReferences.map((video) => ({
@@ -19,8 +20,7 @@ export const courses: Course[] = videoReferences.map((video) => ({
     : undefined,
   initialCompletedLessonIds: [],
   initialLessonId: video.videoId,
-  comments: [],
-  peers: [],
+  ...getDemoCommunity(video.id),
   sections: [
     {
       id: "published-video",

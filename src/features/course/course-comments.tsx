@@ -15,10 +15,12 @@ export function CourseComments({
   courseSlug,
   children,
   references,
+  hasSampleComments = false,
 }: {
   courseSlug: string;
   children: ReactNode;
   references?: ReactNode;
+  hasSampleComments?: boolean;
 }) {
   const state = useCourseInteractions(courseSlug);
   const store = useInteractionStore();
@@ -31,7 +33,12 @@ export function CourseComments({
       aria-labelledby="comments-heading"
     >
       <h2 id="comments-heading">Comments</h2>
-      {state.comments.length === 0 ? (
+      {hasSampleComments ? (
+        <p className={styles.videoNote}>
+          Sample discussion for this video. Names and comments are fictional;
+          your own posts stay on this device and are not posted to YouTube.
+        </p>
+      ) : state.comments.length === 0 ? (
         <p className={styles.videoNote}>
           No comments yet. Your comments are saved locally and are not posted to
           YouTube.

@@ -150,8 +150,15 @@ for (const viewport of profiles) {
         "Maximum 2,000 characters.",
       );
       await expect(container.getByRole("status")).toContainText(
-        "saved on this device",
+        kind === "question"
+          ? "Thank you for submitting your question!"
+          : "saved on this device",
       );
+      if (kind === "question") {
+        await expect(
+          container.getByRole("region", { name: "Question next steps" }),
+        ).toContainText("saved on this device");
+      }
       await expect(container.getByRole("listitem").first()).toContainText(
         "س".repeat(MAX_MESSAGE_LENGTH - 1),
       );

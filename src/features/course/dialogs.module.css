@@ -303,15 +303,49 @@
   margin: auto;
   padding: 22px;
 }
-.motivation {
-  color: #4c4691;
-  background: #f5f9fa;
-  border-radius: 4px;
+.rowLabel {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.625rem;
+}
+.questionNext {
+  margin-block: 16px;
   padding: 16px;
-  line-height: 1.9;
-  font-size: 0.9375rem;
-  text-align: center;
-  margin: 0 0 22px;
+  border: 1px solid #cbdcd8;
+  border-radius: 6px;
+  background: #f5f9fa;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.questionNext p {
+  margin: 0 0 12px;
+}
+.nextActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nextActions button,
+.nextActions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 14px;
+  border: 1px solid #bdc5c3;
+  border-radius: 4px;
+  background: white;
+  color: var(--text);
+  text-decoration: none;
+}
+.nextActions button {
+  color: white;
+  background: #187364;
+  border-color: #187364;
+}
+.nextActions a:hover {
+  background: #edf4f2;
 }
 .sampleNote {
   font-size: 0.75rem;

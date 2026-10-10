@@ -84,7 +84,7 @@ test("Arabic and topic search combine with status filters and empty recovery", a
   );
 });
 
-test("every real entry opens its own native player and truthful facts without fabricated social data", async ({
+test("every real entry opens its native player with truthful facts and labeled demo community", async ({
   page,
 }) => {
   const errors: string[] = [];
@@ -118,14 +118,12 @@ test("every real entry opens its own native player and truthful facts without fa
       page
         .getByRole("region", { name: "Course comments list" })
         .getByRole("listitem"),
-    ).toHaveCount(0);
+    ).toHaveCount(3);
     await page
       .getByRole("button", { name: "Leaderboard", exact: true })
       .click();
-    await expect(page.getByRole("dialog").getByRole("listitem")).toHaveCount(1);
-    await expect(page.getByRole("dialog")).toContainText(
-      "Your saved activity only",
-    );
+    await expect(page.getByRole("dialog").getByRole("listitem")).toHaveCount(5);
+    await expect(page.getByRole("dialog")).toContainText("Demo leaderboard");
     await page.keyboard.press("Escape");
   }
   await page.goto("/courses/not-a-course");

@@ -39,7 +39,7 @@ for (const width of [320, 1440]) {
     await expect(comments.getByRole("listitem").nth(1)).toContainText(
       "Review 7",
     );
-    await expect(comments.getByRole("listitem")).toHaveCount(8);
+    await expect(comments.getByRole("listitem")).toHaveCount(11);
     const checkBounds = async (
       region: typeof comments,
       rem: number,
@@ -203,6 +203,6 @@ for (const width of [320, 1440]) {
       page
         .getByRole("region", { name: "Course comments list", exact: true })
         .getByRole("listitem"),
-    ).toHaveCount(0);
+    ).toHaveCount(3);
   });
 }

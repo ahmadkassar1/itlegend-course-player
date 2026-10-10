@@ -1,0 +1,56 @@
+.panel {
+  color: #4c4691;
+  background: #f5f9fa;
+  border-radius: 4px;
+  padding: 16px;
+  text-align: center;
+}
+.message {
+  min-height: 5.7em;
+  line-height: 1.9;
+  font-size: 0.9375rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-inline-start: 3px;
+  vertical-align: -0.1em;
+  animation: blink 900ms step-end infinite;
+}
+.control {
+  min-height: 44px;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px;
+  color: #4c4691;
+  background: transparent;
+  font-size: 0.75rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.control:hover {
+  background: #eaeaf4;
+}
+.hint {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  margin: 12px 0 0;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

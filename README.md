@@ -35,7 +35,9 @@ Under **Topics for This Course → Your study practice**, open:
 
 The exam route for the first video is `/courses/webology?lesson=study-check`; the worksheet is `/courses/webology?lesson=study-worksheet`. Timers, grades and completion describe your local practice, not published creator statistics.
 
-Comments and questions start empty. Posting adds your own literal text at the top of the bounded history. Drafts survive closing and reopening dialogs. Nothing is posted to YouTube or sent to an instructor. The leaderboard dialog shows only your saved activity; no classmates, enrollments, reviews or comparative ranking are fabricated. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
+Each video has three clearly labeled, fictional discussion examples written for its topic. The demo leaderboard has four sample learners alongside your real saved progress; sample activity never enters browser storage or changes your completion. Posting adds your own literal text above the samples in the bounded history. Drafts survive closing and reopening dialogs. Nothing is posted to YouTube or sent to an instructor. Question submission shows a demo review confirmation, local-saving status and actions to ask another question or explore more videos. Review is simulated; no moderation service is connected.
+
+The leaderboard’s original Arabic encouragement follows your completion level, types one message at a time and changes every 4.5 seconds. A pause control shows the complete current message; reduced-motion preferences disable typing and rotation. Timers are cleaned up when the dialog closes, and character updates are hidden from assistive technology to avoid repetitive announcements. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
 
 ## Structure
 

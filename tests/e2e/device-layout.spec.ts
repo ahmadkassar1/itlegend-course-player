@@ -103,7 +103,7 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
         name: "Course comments list",
         exact: true,
       });
-      await expect(comments.getByRole("listitem")).toHaveCount(0);
+      await expect(comments.getByRole("listitem")).toHaveCount(3);
       await fitsViewport(page, comments);
       if (illustrated.has(size)) {
         await prepareScreenshot(page);
@@ -139,7 +139,7 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
           const ranking = dialog.getByRole("list", {
             name: "Course leaderboard",
           });
-          await expect(ranking.getByRole("listitem")).toHaveCount(1);
+          await expect(ranking.getByRole("listitem")).toHaveCount(5);
           await expect(ranking.locator('[aria-current="true"]')).toContainText(
             "0%",
           );

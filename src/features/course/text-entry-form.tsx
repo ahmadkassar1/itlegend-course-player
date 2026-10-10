@@ -1,6 +1,12 @@
 "use client";
 
-import { useId, useRef, useState } from "react";
+import {
+  useId,
+  useRef,
+  useState,
+  type ReactNode,
+  type MouseEventHandler,
+} from "react";
 import { Icon } from "@/components/icon";
 import {
   MAX_MESSAGE_LENGTH,
@@ -15,6 +21,7 @@ export function TextEntryForm({
   onChange,
   onSubmit,
   confirmation,
+  afterSubmit,
 }: {
   label: string;
   submitLabel: string;
@@ -22,6 +29,7 @@ export function TextEntryForm({
   onChange: (body: string) => void;
   onSubmit: () => void;
   confirmation: string;
+  afterSubmit?: (askAnother: MouseEventHandler<HTMLButtonElement>) => ReactNode;
 }) {
   const id = useId();
   const textarea = useRef<HTMLTextAreaElement>(null);
@@ -88,6 +96,12 @@ export function TextEntryForm({
           {confirmation}
         </p>
       ) : null}
+      {posted && afterSubmit
+        ? afterSubmit((event) => {
+            setPosted(false);
+            event.currentTarget.form?.querySelector("textarea")?.focus();
+          })
+        : null}
     </form>
   );
 }

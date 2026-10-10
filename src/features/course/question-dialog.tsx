@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   useCourseInteractions,
   useInteractionStore,
@@ -9,7 +10,13 @@ import { MessageHistory } from "./message-history";
 import styles from "./dialogs.module.css";
 import { usePersistence } from "@/features/learning/persistence-provider";
 
-export function QuestionDialog({ courseSlug }: { courseSlug: string }) {
+export function QuestionDialog({
+  courseSlug,
+  onClose,
+}: {
+  courseSlug: string;
+  onClose: () => void;
+}) {
   const state = useCourseInteractions(courseSlug);
   const store = useInteractionStore();
   const { status } = usePersistence();
@@ -33,11 +40,33 @@ export function QuestionDialog({ courseSlug }: { courseSlug: string }) {
             date: new Date().toISOString(),
           })
         }
-        confirmation={
-          status === "saved"
-            ? "Your question was saved on this device. It has not been sent to an instructor."
-            : "Your question was kept for this visit. Saving is unavailable; it has not been sent to an instructor."
-        }
+        confirmation="Thank you for submitting your question! It will be reviewed soon."
+        afterSubmit={(askAnother) => (
+          <section
+            className={styles.questionNext}
+            aria-label="Question next steps"
+          >
+            <p className={styles.muted}>
+              {status === "saved"
+                ? "Your question is saved on this device."
+                : "Your question is kept for this visit. Saving is unavailable."}{" "}
+              Review is simulated in this demo; nothing is sent to an
+              instructor.
+            </p>
+            <p>
+              Keep your curiosity going. Ask a follow-up or find your next
+              video.
+            </p>
+            <div className={styles.nextActions}>
+              <button type="button" onClick={askAnother}>
+                Ask another question
+              </button>
+              <Link href="/#courses" onClick={onClose}>
+                Explore more videos
+              </Link>
+            </div>
+          </section>
+        )}
       />
       {state.questions.length ? (
         <section aria-label="Your saved questions">

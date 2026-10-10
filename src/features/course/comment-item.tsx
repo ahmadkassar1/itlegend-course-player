@@ -14,7 +14,12 @@ export function CommentItem({ comment }: { comment: Comment }) {
     <li className={styles.comment}>
       <Image src={comment.avatar} width={80} height={80} alt="" />
       <div>
-        <h3>{comment.name}</h3>
+        <h3>
+          {comment.name}
+          {comment.sample ? (
+            <small className={styles.sampleBadge}>Sample</small>
+          ) : null}
+        </h3>
         <time dateTime={comment.date}>
           {dateFormat.format(new Date(comment.date))}
         </time>

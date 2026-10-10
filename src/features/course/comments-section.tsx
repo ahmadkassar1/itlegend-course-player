@@ -15,6 +15,7 @@ export function CommentsSection({
   return (
     <CourseComments
       courseSlug={courseSlug}
+      hasSampleComments={comments.some((comment) => comment.sample)}
       references={
         <ReferenceCollection
           compact

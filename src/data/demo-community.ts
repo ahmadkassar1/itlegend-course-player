@@ -1,0 +1,82 @@
+import type { Course } from "@/types/course";
+
+// Original fictional discussion examples, never imported from YouTube or saved as user activity.
+const discussions: Record<string, readonly [string, string][]> = {
+  webology: [
+    [
+      "Mariam Hassan",
+      "شرح الـ DNS خلّاني أفهم أخيراً إزاي اسم الموقع بيوصلنا للسيرفر. رسم الخطوات في ورقة ساعدني أرتّب الفكرة.",
+    ],
+    [
+      "Omar Nabil",
+      "جزء الـ cache مهم جداً. هجرّب أغيّر DNS على جهاز تجريبي وأقارن نتيجة البحث قبل وبعد.",
+    ],
+    [
+      "Nour Adel",
+      "كنت بخلط بين الدومين والاستضافة. دلوقتي عندي صورة أوضح، ولسه محتاجة أراجع خطوات حل اسم الدومين مرة كمان.",
+    ],
+  ],
+  "computer-science": [
+    [
+      "Mariam Hassan",
+      "المقارنة بين RAM والتخزين وضّحت لي ليه الملفات بتفضل موجودة بعد إغلاق الكمبيوتر، لكن بيانات البرنامج المؤقتة لا.",
+    ],
+    [
+      "Omar Nabil",
+      "رسمت خريطة بسيطة تربط المعالج والذاكرة ووحدات الإدخال والإخراج. الشرح أسهل لما أربطه بأجزاء جهازي.",
+    ],
+    [
+      "Nour Adel",
+      "بدأت ألاحظ الفرق بين دور المعالج ودور الذاكرة بدل ما أعتبر سرعة الجهاز رقم واحد بس. بداية مفيدة لعلوم الحاسب.",
+    ],
+  ],
+  "cpp-foundations": [
+    [
+      "Mariam Hassan",
+      "معرفة سبب ظهور C++ وتطورها أضافت سياق مهم قبل تعلّم الصياغة. هكتب خطاً زمنياً صغيراً في ملاحظاتي.",
+    ],
+    [
+      "Omar Nabil",
+      "عجبني ربط تاريخ اللغة بالمشكلات اللي حاولت تحلّها. الخطوة الجاية عندي كتابة برنامج بسيط وتجربة المترجم.",
+    ],
+    [
+      "Nour Adel",
+      "الفيديو شجّعني أفهم الفكرة وراء اللغة قبل حفظ الأوامر. هراجع تاريخها، وبعدها أبدأ بمثال صغير قابل للتشغيل.",
+    ],
+  ],
+  "learning-skills": [
+    [
+      "Mariam Hassan",
+      "حوّلت المشاهدة لخطة أسبوع: فكرة واحدة أتعلمها، مشروع صغير أطبّق فيه، ومراجعة لما نجح وما احتاج تعديل.",
+    ],
+    [
+      "Omar Nabil",
+      "هستخدم أدوات AI للمساعدة في فهم الأخطاء، وبعدها أشرح الحل بنفسي وأختبره. التجربة أهم من مجرد نسخ الإجابة.",
+    ],
+    [
+      "Nour Adel",
+      "بدل التنقل بين أدوات كثيرة، اخترت مهارة واحدة ومهمة واضحة للتطبيق. الخطة دي خلت البداية أقل تشتتاً.",
+    ],
+  ],
+};
+
+export function getDemoCommunity(
+  slug: string,
+): Pick<Course, "comments" | "peers"> {
+  return {
+    comments: (discussions[slug] ?? []).map(([name, body], index) => ({
+      id: `sample-${slug}-${index}`,
+      name,
+      body,
+      date: `2026-10-${String(10 - index).padStart(2, "0")}T09:00:00.000Z`,
+      avatar: "/images/learner.svg",
+      sample: true,
+    })),
+    peers: [
+      { id: "sample-mariam", name: "Mariam Hassan", completed: 3 },
+      { id: "sample-omar", name: "Omar Nabil", completed: 2 },
+      { id: "sample-nour", name: "Nour Adel", completed: 2 },
+      { id: "sample-youssef", name: "Youssef Sami", completed: 1 },
+    ],
+  };
+}

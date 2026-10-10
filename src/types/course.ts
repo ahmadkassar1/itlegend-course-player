@@ -36,6 +36,7 @@ export type Comment = {
   date: string;
   body: string;
   avatar: string;
+  sample?: boolean;
 };
 
 export type Course = {

@@ -53,7 +53,7 @@ export function CourseDialogs({
       onClose={onClose}
     >
       {dialog.kind === "question" ? (
-        <QuestionDialog courseSlug={courseSlug} />
+        <QuestionDialog courseSlug={courseSlug} onClose={onClose} />
       ) : dialog.kind === "leaderboard" ? (
         <LeaderboardDialog
           courseSlug={courseSlug}
