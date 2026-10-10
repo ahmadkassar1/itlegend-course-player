@@ -774,9 +774,11 @@
   height: 22px;
 }
 .youtubeFrame {
+  --player-aspect-ratio: 3 / 2;
   background: #101010;
 }
 .youtubeFrame:fullscreen {
+  --player-aspect-ratio: 16 / 9;
   display: grid;
   place-items: center;
 }
@@ -815,7 +817,7 @@
   color: #52665c;
 }
 .youtubeLoading {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: var(--player-aspect-ratio, 3 / 2);
   min-height: 200px;
   background: #f5f9f6;
   padding: 24px;

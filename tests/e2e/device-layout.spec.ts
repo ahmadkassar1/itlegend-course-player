@@ -103,6 +103,13 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
         .boundingBox())!;
       expect(player.x).toBeGreaterThanOrEqual(0);
       expect(player.x + player.width).toBeLessThanOrEqual(width + 1);
+      const nativeFrame = (await page
+        .locator("[data-player-frame] iframe")
+        .boundingBox())!;
+      expect(nativeFrame.height).toBeCloseTo(
+        Math.max(200, (nativeFrame.width * 2) / 3),
+        0,
+      );
       const comments = page.getByRole("region", {
         name: "Course comments list",
         exact: true,
