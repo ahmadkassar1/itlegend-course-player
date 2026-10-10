@@ -48,6 +48,28 @@ export const videoReferences: VideoReference[] = [
     topic: "Learning habits",
     videoId: "q5rXYEuFzEQ",
   },
+  {
+    id: "computer-science-fields",
+    title: "علوم الحاسب و مجالاتها",
+    videoTitle: "علوم الحاسب و مجالاتها",
+    thumbnail: "https://i.ytimg.com/vi/jNBuTmLw0TY/hqdefault.jpg",
+    description:
+      "Explore the fields of computer science and how they connect to programming.",
+    topic: "Computer science",
+    videoId: "jNBuTmLw0TY",
+    playlistId: "PLv3VqjyehAoRUEU3Gr1Fwzhdmz4wH0tNJ",
+  },
+  {
+    id: "programming-introduction",
+    title: "مقدمة عن البرمجة",
+    videoTitle: "مقدمة عن البرمجة",
+    thumbnail: "https://i.ytimg.com/vi/LzIF-McKz0w/hqdefault.jpg",
+    description:
+      "Start with the idea of programming before choosing a language or writing code.",
+    topic: "Programming",
+    videoId: "LzIF-McKz0w",
+    playlistId: "PLv3VqjyehAoRUEU3Gr1Fwzhdmz4wH0tNJ",
+  },
 ];
 
 export const catalogueReferences = videoReferences.filter(

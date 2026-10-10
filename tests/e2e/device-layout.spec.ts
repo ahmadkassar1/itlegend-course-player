@@ -89,7 +89,7 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
         } else await control.click();
       };
       await page.goto("/");
-      await expect(page.locator("article")).toHaveCount(4);
+      await expect(page.locator("article")).toHaveCount(6);
       await fitsViewport(page);
       await page.goto("/courses/webology");
       await expect(page.locator("[data-player-frame] iframe")).toBeVisible();

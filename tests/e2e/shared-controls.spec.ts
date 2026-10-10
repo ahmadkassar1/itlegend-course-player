@@ -28,7 +28,7 @@ for (const viewport of [
     await expect(page.locator("article")).toHaveCount(0);
     await expect(status).toBeFocused();
     await status.press("a");
-    await expect(page.locator("article")).toHaveCount(4);
+    await expect(page.locator("article")).toHaveCount(6);
     await status.click();
     await status.press("ArrowDown");
     await status.press("Escape");

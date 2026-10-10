@@ -16,7 +16,7 @@ test("published titles, thumbnails and zero history replace every fictional cata
   page,
 }) => {
   await page.goto("/");
-  await expect(page.locator("article")).toHaveCount(4);
+  await expect(page.locator("article")).toHaveCount(6);
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Learn with Ali Shahin.",
   );
@@ -71,7 +71,7 @@ test("Arabic and topic search combine with status filters and empty recovery", a
   ).toBeVisible();
   await page.getByRole("button", { name: "Show all videos" }).click();
   await expect(search).toBeFocused();
-  await expect(page.locator("article")).toHaveCount(4);
+  await expect(page.locator("article")).toHaveCount(6);
   await search.fill("مكونات");
   await expect(page.locator("article")).toHaveCount(1);
   await page.getByRole("button", { name: "Clear filters" }).click();
