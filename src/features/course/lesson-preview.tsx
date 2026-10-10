@@ -18,7 +18,8 @@ export function LessonPreview({
       <div className={styles.previewFrame}>
         <Image
           src={poster}
-          alt="Illustration of an instructor teaching at a desk"
+          alt="YouTube thumbnail for the selected video"
+          unoptimized
           fill
           sizes="(max-width: 1023px) 100vw, 65vw"
           preload

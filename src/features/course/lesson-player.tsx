@@ -1,223 +1,157 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "@/components/icon";
-import { useLearningStore } from "@/features/learning/learning-provider";
+import { YouTubePlayer } from "@/components/youtube-player";
+import {
+  useCourseLearning,
+  useLearningStore,
+} from "@/features/learning/learning-provider";
+import { usePersistence } from "@/features/learning/persistence-provider";
 import type { Lesson } from "@/types/course";
 import styles from "./course.module.css";
 
-type Props = {
+export function LessonPlayer({
+  courseSlug,
+  lesson,
+  wide,
+  onWide,
+}: {
   courseSlug: string;
   lesson: Extract<Lesson, { kind: "video" }>;
   poster: string;
   wide: boolean;
   onWide: () => void;
-};
-type MobileVideo = HTMLVideoElement & { webkitEnterFullscreen?: () => void };
-
-export function LessonPlayer({
-  courseSlug,
-  lesson,
-  poster,
-  wide,
-  onWide,
-}: Props) {
+}) {
   const frame = useRef<HTMLDivElement>(null);
-  const video = useRef<HTMLVideoElement>(null);
   const store = useLearningStore();
-  const [started, setStarted] = useState(false);
+  const learning = useCourseLearning(courseSlug);
+  const { status } = usePersistence();
+  // Capture restored position only when the connected player mounts.
   const [fullscreen, setFullscreen] = useState(false);
   const [message, setMessage] = useState("");
-  const [failed, setFailed] = useState(false);
-
-  useEffect(() => {
-    const element = video.current;
-    function syncFullscreen() {
-      setFullscreen(document.fullscreenElement === frame.current);
-    }
-    function nativeEnter() {
-      setFullscreen(true);
-    }
-    function nativeExit() {
-      setFullscreen(false);
-    }
-    document.addEventListener("fullscreenchange", syncFullscreen);
-    function saveOnHide() {
-      if (element)
-        store.dispatch(courseSlug, {
-          type: "position",
-          lessonId: lesson.id,
-          seconds: element.ended ? 0 : element.currentTime,
-        });
-    }
-    window.addEventListener("pagehide", saveOnHide);
-    document.addEventListener("visibilitychange", saveOnHide);
-    element?.addEventListener("webkitbeginfullscreen", nativeEnter);
-    element?.addEventListener("webkitendfullscreen", nativeExit);
-    return () => {
-      document.removeEventListener("fullscreenchange", syncFullscreen);
-      window.removeEventListener("pagehide", saveOnHide);
-      document.removeEventListener("visibilitychange", saveOnHide);
-      element?.removeEventListener("webkitbeginfullscreen", nativeEnter);
-      element?.removeEventListener("webkitendfullscreen", nativeExit);
-      if (element) {
-        store.dispatch(courseSlug, {
-          type: "position",
-          lessonId: lesson.id,
-          seconds: element.ended ? 0 : element.currentTime,
-        });
-        element.pause();
-      }
-    };
-  }, [courseSlug, lesson.id, store]);
-
-  function savePosition() {
-    const element = video.current;
-    if (element)
+  const complete = useCallback(
+    () => store.dispatch(courseSlug, { type: "complete", lessonId: lesson.id }),
+    [courseSlug, lesson.id, store],
+  );
+  const savePosition = useCallback(
+    (seconds: number) =>
       store.dispatch(courseSlug, {
         type: "position",
         lessonId: lesson.id,
-        seconds: element.ended ? 0 : element.currentTime,
-      });
-  }
-
-  async function play() {
-    const element = video.current;
-    if (!element) return;
-    setMessage("");
-    try {
-      await element.play();
-    } catch {
-      if (element.isConnected)
-        setMessage(
-          "Playback could not start. Try Play again or use the video controls.",
-        );
+        seconds,
+      }),
+    [courseSlug, lesson.id, store],
+  );
+  useEffect(() => {
+    function sync() {
+      setFullscreen(document.fullscreenElement === frame.current);
     }
-  }
-
+    document.addEventListener("fullscreenchange", sync);
+    return () => document.removeEventListener("fullscreenchange", sync);
+  }, []);
   async function maximize() {
-    const element = video.current as MobileVideo | null;
     setMessage("");
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
       else if (frame.current?.requestFullscreen && document.fullscreenEnabled)
         await frame.current.requestFullscreen();
-      else if (element?.webkitEnterFullscreen) element.webkitEnterFullscreen();
       else
         setMessage(
-          "Fullscreen is unavailable here. Use your browser's video controls.",
+          "Use the YouTube player’s fullscreen control in this browser.",
         );
     } catch {
-      setMessage("Fullscreen could not open. You can continue playing inline.");
+      setMessage(
+        "Fullscreen could not open. Use the YouTube controls or continue inline.",
+      );
     }
   }
-
   return (
-    <section className={styles.preview} aria-label="Current lesson">
-      <h2 id="lesson-title" className={styles.srOnly}>
+    <section
+      className={styles.preview}
+      aria-label="Current lesson"
+      tabIndex={0}
+    >
+      <h2 id="lesson-title" className={styles.srOnly} dir="auto">
         {lesson.title}
       </h2>
-      <div ref={frame} className={styles.previewFrame} data-player-frame>
-        <video
-          ref={video}
-          className={styles.video}
-          src={lesson.media.src}
-          poster={lesson.media.poster ?? poster}
-          preload="none"
-          playsInline
-          controls={started}
-          aria-labelledby="lesson-title"
-          onLoadedMetadata={() => {
-            const element = video.current;
-            const saved = store.get(courseSlug).positions[lesson.id] ?? 0;
-            if (element && saved > 0 && saved < element.duration)
-              element.currentTime = saved;
-          }}
-          onPlay={() => {
-            setStarted(true);
-            setFailed(false);
-          }}
-          onPause={savePosition}
-          onSeeked={savePosition}
-          onEnded={() => {
-            store.dispatch(courseSlug, {
-              type: "complete",
-              lessonId: lesson.id,
-            });
-            store.dispatch(courseSlug, {
-              type: "position",
-              lessonId: lesson.id,
-              seconds: 0,
-            });
-          }}
-          onError={() => {
-            setFailed(true);
-            setMessage("The lesson video could not load. Retry playback.");
-          }}
+      <div className={styles.youtubeModes}>
+        <button
+          type="button"
+          aria-label={wide ? "Exit Wide mode" : "Wide mode"}
+          aria-pressed={wide}
+          onClick={onWide}
         >
-          <track
-            kind="captions"
-            src={lesson.media.captions}
-            srcLang="en"
-            label="English captions"
-          />
-          Your browser cannot play this video.{" "}
-          <a href={lesson.media.src}>Download the lesson video</a>.
-        </video>
-        {!started && !failed ? (
-          <>
-            <div className={styles.posterShade} />
-            <button
-              className={styles.playButton}
-              type="button"
-              aria-label={`Play ${lesson.title}`}
-              onClick={play}
-            >
-              <Icon name="play" />
-            </button>
-          </>
-        ) : null}
-        <div className={styles.playerModes}>
-          <button
-            className={styles.wideButton}
-            type="button"
-            aria-label={wide ? "Exit Wide mode" : "Wide mode"}
-            aria-pressed={wide}
-            title={wide ? "Exit Wide mode" : "Wide"}
-            onClick={onWide}
-          >
-            <Icon name="wide" />
-          </button>
-          <button
-            type="button"
-            aria-label={fullscreen ? "Exit fullscreen" : "Maximize player"}
-            title={fullscreen ? "Exit fullscreen" : "Maximize"}
-            onClick={maximize}
-          >
-            <Icon name={fullscreen ? "shrink" : "expand"} />
-          </button>
-        </div>
-        {message ? (
-          <div className={styles.playerNotice} role="status">
-            {message}
-            {failed ? (
-              <button
-                type="button"
-                onClick={() => {
-                  setFailed(false);
-                  setMessage("");
-                  video.current?.load();
-                  void play();
-                }}
-              >
-                Retry playback
-              </button>
-            ) : null}
-          </div>
-        ) : null}
+          <Icon name="wide" />
+        </button>
+        <button
+          type="button"
+          aria-label={fullscreen ? "Exit fullscreen" : "Maximize player"}
+          onClick={maximize}
+        >
+          <Icon name={fullscreen ? "shrink" : "expand"} />
+        </button>
       </div>
-      <p className={styles.srOnly}>{lesson.description}</p>
-      <p className={styles.srOnly}>{lesson.media.transcript}</p>
+      <div ref={frame} data-player-frame className={styles.youtubeFrame}>
+        {status !== "loading" ? (
+          <RestoredPlayer
+            key={lesson.id}
+            courseSlug={courseSlug}
+            lesson={lesson}
+            onEnded={complete}
+            onPosition={savePosition}
+          />
+        ) : (
+          <div className={styles.youtubeLoading}>
+            Opening your learning history…
+          </div>
+        )}
+      </div>
+      <div className={styles.youtubeActions}>
+        <a href={lesson.media.src} target="_blank" rel="noopener noreferrer">
+          Watch on YouTube ↗
+        </a>
+        <button
+          type="button"
+          disabled={learning.completedLessonIds.includes(lesson.id)}
+          onClick={complete}
+        >
+          {learning.completedLessonIds.includes(lesson.id)
+            ? "Watched ✓"
+            : "I watched this video"}
+        </button>
+      </div>
+      <p className={styles.videoNote}>
+        Completion is saved on this device when the video ends, or when you mark
+        it watched.
+      </p>
+      {message ? <p role="status">{message}</p> : null}
     </section>
+  );
+}
+
+function RestoredPlayer({
+  courseSlug,
+  lesson,
+  onEnded,
+  onPosition,
+}: {
+  courseSlug: string;
+  lesson: Extract<Lesson, { kind: "video" }>;
+  onEnded: () => void;
+  onPosition: (seconds: number) => void;
+}) {
+  const store = useLearningStore();
+  const [startSeconds] = useState(
+    () => store.get(courseSlug).positions[lesson.id] ?? 0,
+  );
+  return (
+    <YouTubePlayer
+      videoId={lesson.media.youtubeId}
+      title={lesson.title}
+      startSeconds={startSeconds}
+      onEnded={onEnded}
+      onPosition={onPosition}
+    />
   );
 }

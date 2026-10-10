@@ -29,7 +29,7 @@ export function CourseHeader({
             </li>
           </ol>
         </nav>
-        <h1>
+        <h1 dir="auto">
           {prefix}
           {prefix !== title ? (
             <span className={styles.desktopTitleContinuation}>

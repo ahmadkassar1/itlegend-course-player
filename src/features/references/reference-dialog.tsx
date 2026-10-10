@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Dialog } from "@/components/dialog";
+import { YouTubePlayer } from "@/components/youtube-player";
 import { creatorChannel } from "@/data/video-references";
 import type { VideoReference } from "@/types/reference";
 import styles from "./references.module.css";
@@ -30,13 +31,9 @@ export function ReferenceDialog({
           {reference.videoTitle}
         </h3>
         {loaded ? (
-          <iframe
-            className={styles.embed}
-            src={`https://www.youtube-nocookie.com/embed/${reference.videoId}?playsinline=1&rel=0&cc_load_policy=1`}
-            title={`Ali Shahin: ${reference.videoTitle}`}
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            allowFullScreen
-            referrerPolicy="strict-origin-when-cross-origin"
+          <YouTubePlayer
+            videoId={reference.videoId}
+            title={reference.videoTitle}
           />
         ) : (
           <div className={styles.consent}>
@@ -54,7 +51,7 @@ export function ReferenceDialog({
           </div>
         )}
         <p className={styles.note}>
-          Reference viewing does not change your practice-course progress.
+          Previewing a related video does not update your saved learning steps.
         </p>
         <div className={styles.sourceLinks}>
           <a href={watchURL} target="_blank" rel="noopener noreferrer">

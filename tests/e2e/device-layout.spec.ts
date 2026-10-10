@@ -1,5 +1,10 @@
+import { controlYouTube } from "./helpers/youtube";
 import { expect, test, type Locator, type Page } from "@playwright/test";
 import { capturePath, prepareScreenshot } from "./helpers/capture";
+
+test.beforeEach(async ({ page }) => {
+  await controlYouTube(page);
+});
 
 const viewports = [
   [320, 568, true, 2],
@@ -72,12 +77,12 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
       const activate = (control: Locator) =>
         hasTouch ? control.tap() : control.click();
       await page.goto("/");
-      await expect(page.locator("article")).toHaveCount(6);
+      await expect(page.locator("article")).toHaveCount(4);
       await fitsViewport(page);
-      await page.goto("/courses/starting-seo");
+      await page.goto("/courses/webology");
       await expect(page.getByRole("progressbar")).toHaveAttribute(
         "aria-valuenow",
-        "63",
+        "0",
       );
       await fitsViewport(page);
       const player = (await page
@@ -89,7 +94,7 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
         name: "Course comments list",
         exact: true,
       });
-      await expect(comments.getByRole("listitem")).toHaveCount(3);
+      await expect(comments.getByRole("listitem")).toHaveCount(0);
       await fitsViewport(page, comments);
       if (illustrated.has(size)) {
         await prepareScreenshot(page);
@@ -103,7 +108,7 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
       for (const name of ["Ask a question", "Leaderboard", "PDF", "exam"]) {
         if (name === "PDF" || name === "exam") {
           await page.goto(
-            `/courses/starting-seo?lesson=${name === "PDF" ? "reference-files" : "knowledge-check"}`,
+            `/courses/webology?lesson=${name === "PDF" ? "study-worksheet" : "study-check"}`,
           );
           await activate(
             page.getByRole("button", { name: `Open ${name}`, exact: true }),
@@ -125,9 +130,9 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
           const ranking = dialog.getByRole("list", {
             name: "Course leaderboard",
           });
-          await expect(ranking.getByRole("listitem")).toHaveCount(6);
+          await expect(ranking.getByRole("listitem")).toHaveCount(1);
           await expect(ranking.locator('[aria-current="true"]')).toContainText(
-            "63%",
+            "0%",
           );
           await fitsViewport(page, ranking);
           if (illustrated.has(size))

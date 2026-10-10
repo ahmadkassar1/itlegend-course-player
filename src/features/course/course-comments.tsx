@@ -31,6 +31,12 @@ export function CourseComments({
       aria-labelledby="comments-heading"
     >
       <h2 id="comments-heading">Comments</h2>
+      {state.comments.length === 0 ? (
+        <p className={styles.videoNote}>
+          No comments yet. Your comments are saved locally and are not posted to
+          YouTube.
+        </p>
+      ) : null}
       <MessageHistory
         label="Course comments list"
         latestMessageId={state.comments.at(-1)?.id}
@@ -43,7 +49,7 @@ export function CourseComments({
               comment={{
                 ...message,
                 name: "You",
-                avatar: "/images/avatar-1.svg",
+                avatar: "/images/learner.svg",
               }}
             />
           ))}

@@ -7,16 +7,18 @@ export function CourseMaterials({ course }: { course: Course }) {
   const facts: { label: string; value: string; icon: IconName }[] = [
     { label: "Instructor", value: course.instructor, icon: "person" },
     {
-      label: "Duration",
-      value: `${course.durationWeeks} weeks`,
-      icon: "clock",
-    },
-    {
-      label: "Lessons",
-      value: String(getLessons(course).length),
+      label: "Videos",
+      value: String(
+        getLessons(course).filter((lesson) => lesson.kind === "video").length,
+      ),
       icon: "book",
     },
-    { label: "Enrolled", value: `${course.enrolled} students`, icon: "people" },
+    { label: "Source", value: "YouTube", icon: "globe" },
+    {
+      label: "Exercises",
+      value: "2 · Created for this site",
+      icon: "document",
+    },
     { label: "Language", value: course.language, icon: "globe" },
   ];
   return (
@@ -33,6 +35,24 @@ export function CourseMaterials({ course }: { course: Course }) {
           </div>
         ))}
       </dl>
+      <p className={styles.sourceNote}>
+        <a href={course.sourceURL} target="_blank" rel="noopener noreferrer">
+          Original video ↗
+        </a>
+        {course.playlistURL ? (
+          <>
+            {" "}
+            ·{" "}
+            <a
+              href={course.playlistURL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Creator’s full collection ↗
+            </a>
+          </>
+        ) : null}
+      </p>
     </section>
   );
 }

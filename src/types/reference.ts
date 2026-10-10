@@ -5,5 +5,6 @@ export type VideoReference = {
   description: string;
   topic: string;
   videoId: string;
+  thumbnail: string;
   playlistId?: string;
 };

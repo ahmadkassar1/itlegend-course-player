@@ -8,7 +8,8 @@ export function LearnerSettings() {
   return (
     <div className={styles.learnerSettings}>
       <p>
-        Demo courses with fictional learners and original practice resources.
+        Videos by Ali Shahin. Your notes and exercise results stay on this
+        device.
       </p>
       <p role="status" aria-label="Learning storage status">
         {status === "loading"
@@ -22,13 +23,13 @@ export function LearnerSettings() {
         onClick={() => {
           if (
             window.confirm(
-              "Reset all course progress, drafts, reviews and exam attempts to the demo starting point?",
+              "Clear your saved progress, notes, comments and exercise attempts for every video?",
             )
           )
             reset();
         }}
       >
-        Reset demo learning data
+        Clear my learning data
       </button>
     </div>
   );

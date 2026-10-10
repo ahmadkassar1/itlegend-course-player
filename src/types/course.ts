@@ -4,9 +4,8 @@ export type LessonKind = "video" | "pdf" | "exam";
 
 export type LessonMedia = {
   src: string;
-  captions: string;
-  transcript: string;
   poster?: string;
+  youtubeId: string;
 };
 
 type LessonBase = {
@@ -46,8 +45,8 @@ export type Course = {
   description: string;
   instructor: string;
   category: string;
-  durationWeeks: number;
-  enrolled: number;
+  sourceURL?: string;
+  playlistURL?: string;
   language: string;
   thumbnail: string;
   poster: string;

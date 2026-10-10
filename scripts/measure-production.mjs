@@ -227,7 +227,7 @@ const report = {
 };
 try {
   for (const profile of profiles) {
-    for (const route of ["/", "/courses/starting-seo"]) {
+    for (const route of ["/", "/courses/webology"]) {
       for (let run = 1; run <= 3; run++) {
         const { context, page, requests, errors } = await createPage(
           browser,
@@ -250,7 +250,7 @@ try {
       profile,
       false,
     );
-    await page.goto(`${baseURL}/courses/starting-seo`);
+    await page.goto(`${baseURL}/courses/webology`);
     await page.waitForTimeout(1000);
     const initial = await snapshot(page, requests, errors);
     await page
@@ -261,7 +261,7 @@ try {
     const question = await snapshot(page, requests, errors);
     await page.keyboard.press("Escape");
     await page
-      .locator('a[href="/courses/starting-seo?lesson=reference-files"]')
+      .locator('a[href="/courses/webology?lesson=study-worksheet"]')
       .click();
     await page.getByRole("dialog").waitFor();
     const image = page.getByRole("dialog").getByRole("img");
@@ -269,21 +269,11 @@ try {
     await image.evaluate((element) => element.decode());
     const pdf = await snapshot(page, requests, errors);
     await page.keyboard.press("Escape");
-    requests.clear();
-    await page.goto(`${baseURL}/courses/starting-seo`);
-    await page.getByRole("button", { name: /^Play / }).click();
-    await page.waitForFunction(
-      () => document.querySelector("video")?.currentTime > 0,
-      undefined,
-      { timeout: 15_000 },
-    );
-    const playback = await snapshot(page, requests, errors);
     report.interactions.push({
       profile: profile.name,
       initial,
       question,
       pdf,
-      playback,
     });
     await context.close();
   }

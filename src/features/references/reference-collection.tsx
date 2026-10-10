@@ -3,6 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { Icon } from "@/components/icon";
+import Image from "next/image";
 import type { VideoReference } from "@/types/reference";
 import styles from "./references.module.css";
 
@@ -20,21 +21,23 @@ export function ReferenceCollection({
   const [selected, setSelected] = useState<VideoReference | null>(null);
   const items = (
     <div className={compact ? styles.list : styles.grid}>
-      {references.map((reference, index) => (
+      {references.map((reference) => (
         <div key={reference.id} className={styles.card}>
-          {!compact ? (
-            <div className={styles.cover} aria-hidden="true">
-              <span>ALI SHAHIN / YOUTUBE</span>
-              <strong>{String(index + 1).padStart(2, "0")}</strong>
-              <Icon name="play" />
-            </div>
-          ) : null}
+          <div className={styles.cover}>
+            <Image
+              src={reference.thumbnail}
+              alt={`YouTube thumbnail: ${reference.videoTitle}`}
+              width={480}
+              height={360}
+              unoptimized
+            />
+          </div>
           <div className={styles.body}>
             <p className={styles.topic}>
               {reference.topic} ·{" "}
               {reference.playlistId ? "Collection" : "Video"}
             </p>
-            <h3 dir="auto">{reference.title}</h3>
+            <h3 dir="auto">{reference.videoTitle}</h3>
             <p className={styles.description}>{reference.description}</p>
             <button
               type="button"
@@ -56,7 +59,8 @@ export function ReferenceCollection({
         <details className={styles.related}>
           <summary>Related videos from Ali Shahin</summary>
           <p className={styles.note}>
-            Optional background viewing, separate from this practice syllabus.
+            More published videos. Watching a preview does not update your saved
+            learning steps.
           </p>
           {items}
         </details>

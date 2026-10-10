@@ -20,19 +20,20 @@ export function CourseCard({ course }: { course: CourseSummary }) {
       <div className={styles.artwork}>
         <Image
           src={course.thumbnail}
-          alt={`Illustration for ${course.title}`}
-          width={720}
-          height={420}
+          alt={`YouTube thumbnail: ${course.title}`}
+          width={480}
+          height={360}
+          unoptimized
           sizes="(max-width: 639px) 100vw, (max-width: 1099px) 50vw, 33vw"
         />
-        <span className={styles.category}>{course.category}</span>
       </div>
       <div className={styles.cardContent}>
+        <span className={styles.category}>{course.category}</span>
         <p className={styles.instructor}>
-          {course.instructor} <span aria-hidden="true">·</span>{" "}
-          {course.lessonCount} lessons
+          {course.instructor} <span aria-hidden="true">·</span> 1 video · 2 site
+          exercises
         </p>
-        <h3>{course.title}</h3>
+        <h3 dir="auto">{course.title}</h3>
         <p className={styles.description}>{course.description}</p>
         <div className={styles.progressLabel}>
           <span className={progress === 100 ? styles.complete : ""}>
@@ -41,8 +42,8 @@ export function CourseCard({ course }: { course: CourseSummary }) {
           <span>{progress}%</span>
         </div>
         <p className={styles.completionCount}>
-          {learning.completedLessonIds.length} of {course.lessonCount} lessons
-          completed
+          {learning.completedLessonIds.length} of {course.lessonCount} learning
+          steps completed
         </p>
         <div
           className={styles.track}
@@ -63,7 +64,7 @@ export function CourseCard({ course }: { course: CourseSummary }) {
           }
           aria-label={`${progress > 0 ? "Continue" : "Start"} ${course.title}`}
         >
-          {progress > 0 ? "Continue Course" : "Start Course"}
+          {progress > 0 ? "Continue learning" : "Watch & learn"}
           <Icon name="arrow" />
         </Link>
       </div>

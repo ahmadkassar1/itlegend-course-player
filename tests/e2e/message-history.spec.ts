@@ -1,7 +1,12 @@
+import { controlYouTube } from "./helpers/youtube";
 import { expect, test } from "@playwright/test";
 import path from "node:path";
 import type axe from "axe-core";
 import { capturePath } from "./helpers/capture";
+
+test.beforeEach(async ({ page }) => {
+  await controlYouTube(page);
+});
 
 for (const width of [320, 1440]) {
   test(`newest-first comments and questions retain bounded keyboard-scrollable histories at ${width}px`, async ({
@@ -9,7 +14,7 @@ for (const width of [320, 1440]) {
   }) => {
     test.setTimeout(90_000);
     await page.setViewportSize({ width, height: 900 });
-    await page.goto("/courses/starting-seo");
+    await page.goto("/courses/webology");
     const comments = page.getByRole("region", {
       name: "Course comments list",
       exact: true,
@@ -34,7 +39,7 @@ for (const width of [320, 1440]) {
     await expect(comments.getByRole("listitem").nth(1)).toContainText(
       "Review 7",
     );
-    await expect(comments.getByRole("listitem")).toHaveCount(11);
+    await expect(comments.getByRole("listitem")).toHaveCount(8);
     const checkBounds = async (
       region: typeof comments,
       rem: number,
@@ -193,11 +198,11 @@ for (const width of [320, 1440]) {
         .first(),
     ).toContainText("Newest question");
     await page.keyboard.press("Escape");
-    await page.goto("/courses/javascript-essentials");
+    await page.goto("/courses/computer-science");
     await expect(
       page
         .getByRole("region", { name: "Course comments list", exact: true })
         .getByRole("listitem"),
-    ).toHaveCount(3);
+    ).toHaveCount(0);
   });
 }

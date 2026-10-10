@@ -1,4 +1,4 @@
-import type { DemoMessage, ExamAttempt } from "../../types/interaction";
+import type { SavedMessage, ExamAttempt } from "../../types/interaction";
 import { record, boundedText } from "./saved-state.ts";
 
 export const MAX_MESSAGE_LENGTH = 2000;
@@ -19,8 +19,8 @@ export type InteractionSeed = {
 export type CourseInteractions = {
   questionDraft: string;
   commentDraft: string;
-  questions: readonly DemoMessage[];
-  comments: readonly DemoMessage[];
+  questions: readonly SavedMessage[];
+  comments: readonly SavedMessage[];
   attempts: Readonly<Record<string, ExamAttempt>>;
 };
 
@@ -60,7 +60,7 @@ export function initialInteractions(seed: InteractionSeed): CourseInteractions {
   };
 }
 
-function restoreMessages(value: unknown): DemoMessage[] {
+function restoreMessages(value: unknown): SavedMessage[] {
   if (!Array.isArray(value)) return [];
   const seen = new Set<string>();
   return value.slice(-50).flatMap((item) => {

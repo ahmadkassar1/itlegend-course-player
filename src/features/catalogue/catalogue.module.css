@@ -344,18 +344,17 @@
 }
 .artwork {
   position: relative;
-  aspect-ratio: 12 / 7;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
 }
 .artwork img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .category {
-  position: absolute;
-  left: 18px;
-  top: 18px;
+  align-self: flex-start;
+  margin-bottom: 12px;
   font-size: 0.6875rem;
   font-weight: 600;
   color: #25463c;

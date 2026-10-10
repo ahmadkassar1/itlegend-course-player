@@ -1,6 +1,11 @@
+import { controlYouTube } from "./helpers/youtube";
 import { expect, test } from "@playwright/test";
 import { MAX_MESSAGE_LENGTH } from "../../src/features/learning/interaction-store";
 import { capturePath } from "./helpers/capture";
+
+test.beforeEach(async ({ page }) => {
+  await controlYouTube(page);
+});
 
 const profiles = [
   { width: 320, height: 568 },
@@ -16,7 +21,7 @@ for (const viewport of profiles) {
     page,
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/courses/starting-seo?lesson=knowledge-check");
+    await page.goto("/courses/webology?lesson=study-check");
     await page.getByRole("button", { name: "Open exam", exact: true }).click();
     const dialog = page.getByRole("dialog");
     const question = (index: number) =>
@@ -75,7 +80,7 @@ for (const viewport of profiles) {
     page,
   }) => {
     await page.setViewportSize(viewport);
-    await page.goto("/courses/starting-seo");
+    await page.goto("/courses/webology");
     for (const kind of ["comment", "question"] as const) {
       if (kind === "question")
         await page

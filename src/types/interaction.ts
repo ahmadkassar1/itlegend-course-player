@@ -16,7 +16,7 @@ export type Worksheet = {
   sections: { title: string; body: string }[];
 };
 
-export type DemoMessage = { id: string; body: string; date: string };
+export type SavedMessage = { id: string; body: string; date: string };
 
 export type ExamAttempt = {
   index: number;

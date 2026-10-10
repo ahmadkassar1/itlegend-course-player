@@ -2,8 +2,8 @@ import { record } from "./saved-state.ts";
 import type { LearningStore } from "./learning-store.ts";
 import type { createInteractionStore } from "./interaction-store.ts";
 
-export const STORAGE_KEY = "course-library:learner:v1";
-export const CONTENT_VERSION = "2026-10-course-content-1";
+export const STORAGE_KEY = "course-library:youtube-learner:v1";
+export const CONTENT_VERSION = "2026-10-youtube-content-1";
 export type SaveStatus = "loading" | "saved" | "session";
 
 type PersistentStore = {

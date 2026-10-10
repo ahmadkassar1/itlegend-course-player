@@ -10,7 +10,7 @@ import { PersistenceProvider } from "@/features/learning/persistence-provider";
 export const metadata: Metadata = {
   title: { default: "Course Library", template: "%s | Course Library" },
   description:
-    "Explore six guided courses and continue learning at your own pace.",
+    "Learn with published Ali Shahin videos, original YouTube thumbnails and your own saved learning activity.",
 };
 
 export default function RootLayout({

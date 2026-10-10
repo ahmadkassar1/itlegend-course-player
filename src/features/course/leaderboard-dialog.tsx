@@ -31,10 +31,12 @@ export function LeaderboardDialog({
             value={row.rank}
             aria-current={row.id === "you" ? "true" : undefined}
           >
-            <span className={styles.rank}>
-              <span className={styles.srOnly}>Rank </span>
-              {row.rank}
-            </span>
+            {peers.length > 0 ? (
+              <span className={styles.rank}>
+                <span className={styles.srOnly}>Rank </span>
+                {row.rank}
+              </span>
+            ) : null}
             <span className={styles.learner}>{row.name}</span>
             <span className={styles.score}>
               {row.progress}%
@@ -46,7 +48,8 @@ export function LeaderboardDialog({
         ))}
       </ol>
       <p className={styles.sampleNote}>
-        Sample learners • ranked by course completion
+        Your saved activity only. There is no shared leaderboard or invented
+        classmates.
       </p>
     </div>
   );

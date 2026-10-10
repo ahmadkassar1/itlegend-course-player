@@ -74,17 +74,18 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
     <>
       <section className={styles.hero} aria-labelledby="catalogue-title">
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>A little progress, every day</p>
-          <h1 id="catalogue-title">Your next lesson starts here.</h1>
+          <p className={styles.eyebrow}>Published videos. Your own progress.</p>
+          <h1 id="catalogue-title">Learn with Ali Shahin.</h1>
           <p className={styles.heroDescription}>
-            Practise the foundations, build something useful, and learn from a
-            fresh perspective.
+            Watch the original videos, keep useful notes, and put one idea into
+            practice.
           </p>
           <a className={styles.primaryLink} href="#courses">
             Find your next course <Icon name="arrow" />
           </a>
           <p className={styles.heroFootnote}>
-            {courses.length} practice courses · Worksheets & knowledge checks
+            {courses.length} published videos · Original YouTube titles &
+            thumbnails
           </p>
         </div>
         {next ? (
@@ -99,10 +100,10 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
             <span className={styles.resumeIcon}>
               <Icon name="book" />
             </span>
-            <h2>{next.course.title}</h2>
+            <h2 dir="auto">{next.course.title}</h2>
             <p>
               {next.state.completedLessonIds.length} of{" "}
-              {next.course.lessonCount} lessons completed
+              {next.course.lessonCount} learning steps completed
             </p>
             <div className={styles.resumeTrack} aria-hidden="true">
               <span style={{ width: `${next.progress}%` }} />
@@ -124,17 +125,17 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
       <div
         className={styles.learningSummary}
         role="region"
-        aria-label="Your practice learning summary"
+        aria-label="Your learning summary"
       >
         <span>
           <strong>{active.length}</strong> in progress
         </span>
         <span>
-          <strong>{completed}</strong> {completed === 1 ? "course" : "courses"}{" "}
-          completed
+          <strong>{completed}</strong>{" "}
+          {completed === 1 ? "study plan" : "study plans"} completed
         </span>
         <span>
-          <strong>{completedLessons}</strong> lessons completed
+          <strong>{completedLessons}</strong> learning steps completed
         </span>
         <p>Progress saved on this device when available</p>
       </div>
@@ -147,20 +148,20 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
         <div className={styles.collectionHeading}>
           <div>
             <p className={styles.eyebrow}>Learn by doing</p>
-            <h2 id="collection-title">Explore your courses</h2>
+            <h2 id="collection-title">Explore the videos</h2>
           </div>
-          <span>{courses.length} practice courses</span>
+          <span>{courses.length} published videos</span>
         </div>
         <div className={styles.toolbar}>
           <div className={styles.search}>
-            <label htmlFor="course-search">Search courses</label>
+            <label htmlFor="course-search">Search videos</label>
             <input
               ref={search}
               id="course-search"
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder="Try JavaScript, design or an instructor"
+              placeholder="Search a video title or topic"
             />
           </div>
           <div className={styles.selectField}>
@@ -203,8 +204,8 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
           ))}
         </fieldset>
         <div className={styles.results}>
-          <p role="status" aria-label="Course results">
-            {filtered.length} {filtered.length === 1 ? "course" : "courses"}
+          <p role="status" aria-label="Video results">
+            {filtered.length} {filtered.length === 1 ? "video" : "videos"}
             {hasFilters ? " found" : " to explore"}
           </p>
           {hasFilters ? (
@@ -222,13 +223,13 @@ export function CourseCatalogue({ courses }: { courses: CourseSummary[] }) {
         ) : (
           <div className={styles.empty}>
             <Icon name="book" />
-            <h3>No courses match yet</h3>
+            <h3>No videos match yet</h3>
             <p>
               Try a different search or clear your filters to see all{" "}
-              {courses.length} practice courses.
+              {courses.length} videos.
             </p>
             <button type="button" onClick={clearFilters}>
-              Show all courses
+              Show all videos
             </button>
           </div>
         )}
