@@ -8,6 +8,7 @@ import { brotliCompressSync, gzipSync } from "node:zlib";
 // A bounded lab measurement, not Lighthouse, field CWV, or a timing assertion.
 const baseURL = process.env.PERF_BASE_URL || "http://127.0.0.1:3100";
 const output = process.argv[2] || "verification/local-performance.json";
+const measureNavigation = !process.argv.includes("--interactions-only");
 const profiles = [
   {
     name: "desktop-local",
@@ -212,7 +213,7 @@ const report = {
   baseURL,
   conditions: {
     profiles,
-    repetitions: 3,
+    repetitions: measureNavigation ? 3 : 0,
     observation:
       "load event plus four seconds without input; fresh context and disabled browser cache per sample; warm localhost production server; sequential",
     networkBytes:
@@ -228,7 +229,7 @@ const report = {
 try {
   for (const profile of profiles) {
     for (const route of ["/", "/courses/webology"]) {
-      for (let run = 1; run <= 3; run++) {
+      for (let run = 1; measureNavigation && run <= 3; run++) {
         const { context, page, requests, errors } = await createPage(
           browser,
           profile,
@@ -260,9 +261,12 @@ try {
     await page.waitForTimeout(500);
     const question = await snapshot(page, requests, errors);
     await page.keyboard.press("Escape");
-    await page
-      .getByRole("button", { name: "Your study practice", exact: true })
-      .click();
+    const practice = page.getByRole("button", {
+      name: "Your study practice",
+      exact: true,
+    });
+    if ((await practice.getAttribute("aria-expanded")) === "false")
+      await practice.click();
     await page
       .locator('a[href="/courses/webology?lesson=study-worksheet"]')
       .evaluate((element) =>
