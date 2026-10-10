@@ -1,8 +1,8 @@
 # Ali Shahin video library
 
-[Live demo](https://itlegend-course-player-taupe.vercel.app/) · [Technical report](docs/TECHNICAL_REPORT.md)
+[Live demo](https://itlegend-course-player-taupe.vercel.app/) · [GitHub repository](https://github.com/ahmadkassar1/itlegend-course-player) · [Technical report](docs/TECHNICAL_REPORT.md)
 
-A Next.js App Router and TypeScript implementation of the ITLegend course-player challenge. The catalogue contains four published Ali Shahin videos, with their original Arabic titles, YouTube thumbnails and native player. Search, topic/status filters, sorting and resume information use the same learning state as the detail pages.
+A Next.js App Router and TypeScript implementation of the ITLegend course-player challenge. The catalogue contains six published Ali Shahin videos, with their original Arabic titles, YouTube thumbnails and native player. Search, topic/status filters, sorting and resume information use the same learning state as the detail pages.
 
 This is an independent challenge project, not a creator product or an endorsed course platform. Editorial descriptions and the companion worksheet/study-skills check are written for this site. Each entry contains **one published video and two site exercises**; it is not an imported playlist syllabus. Full creator collections remain available through source links.
 
@@ -66,7 +66,7 @@ Learning is stored under `course-library:youtube-learner:v1`, content version `2
 
 The shared `Select` replaces browser-default menus in catalogue filters and PDF zoom. It supports arrows, Home/End, typeahead, Enter/Space, Tab, Escape and outside dismissal while retaining focus on the trigger. Menus choose their opening direction and scroll within the viewport. Escape closes a PDF menu before closing its parent dialog. Original thumbnails share one component with an honest unavailable state. Menu/dialog entrances and pointer hover motion respect `prefers-reduced-motion`; essential content never depends on animation.
 
-Four titles, authors and thumbnails were verified against YouTube's official oEmbed responses on **10 October 2026**. See [metadata](verification/youtube-20261010-metadata.json) and [asset provenance](ASSETS.md). Thumbnails load directly from their published `i.ytimg.com` URLs, preserving the original 4:3 image. No creator footage or image is downloaded or rehosted.
+All six titles, authors and thumbnails were verified against YouTube's official oEmbed responses on **10 October 2026**. See the [first four records](verification/youtube-20261010-metadata.json), [two additional records](verification/release-20261010-additional-video-metadata.json) and [asset provenance](ASSETS.md). Thumbnails load directly from their published `i.ytimg.com` URLs, preserving the original 4:3 image. No creator footage or image is downloaded or rehosted.
 
 Opening a video detail page contacts YouTube through the official privacy-enhanced iframe and SDK. The catalogue contacts the thumbnail CDN, but does not mount a player or load the SDK. Related preview dialogs mount their player only after **Load YouTube player**. Each iframe has an explicit title, origin, inline playback, fullscreen permission and `strict-origin-when-cross-origin` referrer policy. YouTube controls advertising, regional availability and captions; the direct source link remains available.
 
@@ -90,9 +90,9 @@ npm run test:e2e
 
 The browser suite uses the installed Chrome channel, one worker and no retries. It starts the production server on port 3100; stop an existing preview first when using `CI=true`. Set `PLAYWRIGHT_BASE_URL` to the live demo URL to test the hosted app without starting a local server. Set `PLAYWRIGHT_CHANNEL=msedge` for installed Edge or `chromium` for an already available Playwright browser. No browser download is part of these commands.
 
-The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero personal history, labeled demo community, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 30 representative viewport profiles. Boundary coverage includes 480/481, 767/768, 1024/1025 and 1280/1281px. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
+The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all six routes, zero personal history, labeled demo community, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 30 representative viewport profiles. Boundary coverage includes 480/481, 767/768, 1024/1025 and 1280/1281px. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
 
-[Current control/release verification](verification/Shared-Controls-and-Release.md) and [real-content verification](verification/Real-YouTube-Content.md) identify tested revisions/builds and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
+[Current release review](verification/GitHub-and-Acceptance.md), [earlier deployment verification](verification/Shared-Controls-and-Release.md) and [real-content verification](verification/Real-YouTube-Content.md) identify tested revisions/builds and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
 
 ## Performance
 
@@ -110,13 +110,13 @@ Native YouTube introduces third-party costs on the player page, and original CDN
 
 ## Release boundary
 
-The [production demo](https://itlegend-course-player-taupe.vercel.app/) is deployed to the user's Vercel account and opens anonymously. It was released from the verified app source; the parent Obsidian workspace and historical media were excluded. There is no configured Git remote yet. Local commits use the user's configured author and committer; no GitHub push or competition submission has occurred. Deployment evidence and hosted-test scope are recorded in [Shared-Controls-and-Release.md](verification/Shared-Controls-and-Release.md).
+The [production demo](https://itlegend-course-player-taupe.vercel.app/) opens anonymously. Source is published in [ahmadkassar1/itlegend-course-player](https://github.com/ahmadkassar1/itlegend-course-player). Releases use verified app snapshots; the parent Obsidian workspace and historical media are excluded from source uploads. Commits retain the user's configured author and committer. [Release evidence](verification/GitHub-and-Acceptance.md) distinguishes local and hosted checks. No competition submission has been sent.
 
 ### Deploy on Vercel
 
 Deploy only this `challenge-app` directory, never the parent Obsidian workspace. For a repository containing this directory at its root, leave **Root Directory** empty; for a parent repository, set it to `challenge-app`. Choose the **Next.js** framework preset and **Node.js 24.x**. Keep the default install/build/output settings; the lockfile and `build` script are committed. No runtime secrets or database provisioning are needed. `.vercel` and environment files are excluded from Git.
 
-Build and test locally before releasing. Check the hosted catalogue, all four course routes, PDF, custom controls and saved progress on the deployment origin, then verify that the final production URL opens without signing in. Localhost history does not transfer to a new domain. Keep the public repository and final production demo URLs together for the submission form; a local preview or protected preview URL is not a submission link.
+Build and test locally before releasing. Check the hosted catalogue, all six course routes, PDF, custom controls and saved progress on the deployment origin, then verify that the final production URL opens without signing in. Localhost history does not transfer to a new domain. Keep the public repository and final production demo URLs together for the submission form; a local preview or protected preview URL is not a submission link.
 
 The last successful official terms/form inspection was **4 October 2026**. Public GitHub and an anonymously accessible live demo were required; the displayed deadline was **31 October 2026, 9:59 p.m.**, with timezone unresolved. A 10 October access recheck failed, including one browser fallback. AI assistance, reuse, external assets, extras and eligibility nuance remain unanswered; silence is not permission.
 

@@ -1,6 +1,8 @@
 # Verification evidence index
 
-Latest exam/curriculum and submission review: [Submission-Readiness.md](Submission-Readiness.md). Current realistic content and persistent learner state: [Content-and-Persistence.md](Content-and-Persistence.md). These reports identify their runtime revisions, final versus diagnostic runs and limits.
+Current release: [GitHub and acceptance review](GitHub-and-Acceptance.md). Deployment evidence: [Shared controls and release](Shared-Controls-and-Release.md). Published media: [Real YouTube content](Real-YouTube-Content.md). Each report identifies its revision, verified scope and limits.
+
+The dated reports below preserve earlier implementation evidence. Their fictional-course datasets, screenshots, local paths and source-document references describe those historical revisions and may not exist in the current public runtime. The original supplied design documents and the private Obsidian vault are intentionally outside this repository.
 
 Historical source/layout reviews: [Figma-Inventory.md](Figma-Inventory.md), [Screenshot-Implementation.md](Screenshot-Implementation.md), [Design-Review.md](Design-Review.md). Previous milestone evidence: [M2.md](M2.md), [M3.md](M3.md), [M4.md](M4.md), [M5.md](M5.md). Captures and raw reports are retained for provenance; they are not all captures of the latest code.
 

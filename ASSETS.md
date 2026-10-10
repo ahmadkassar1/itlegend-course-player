@@ -1,5 +1,7 @@
 # Asset provenance
 
+Current release, 10 October 2026: six Ali Shahin videos use original titles, direct YouTube CDN thumbnails and native embeds. The two additional entries are verified in [official metadata](verification/release-20261010-additional-video-metadata.json); the first four are recorded in [earlier metadata](verification/youtube-20261010-metadata.json). No creator media is downloaded or rehosted. Historical entries below retain their original dates and describe superseded fixture assets. Organizer external-asset and AI policies remain unanswered.
+
 Recorded 2026-10-03. No third-party media or font files are included in M1.
 
 | Files                                                                                                                                                              | Origin / use                                                               | Rights and limitation                                                                             |
