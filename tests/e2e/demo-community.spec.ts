@@ -163,7 +163,9 @@ test("reduced motion shows complete, static encouragement and actual completion 
 }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/courses/webology");
-  await page.getByRole("button", { name: "Mark watched", exact: true }).click();
+  await page
+    .getByRole("button", { name: "I watched this video", exact: true })
+    .click();
   await page.getByRole("button", { name: "Leaderboard", exact: true }).click();
   const dialog = page.getByRole("dialog");
   const text = dialog.locator("[data-motivation-text]");
