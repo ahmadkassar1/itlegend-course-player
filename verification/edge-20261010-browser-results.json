@@ -1,0 +1,1886 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep-invert",
+      "(touch|mouse) layout"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run start -- --port 3100",
+      "url": "http://127.0.0.1:3100",
+      "reuseExistingServer": true,
+      "timeout": 60000
+    }
+  },
+  "suites": [
+    {
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "rendered accessibility scan at 430px includes catalogue, every course and all modal states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19829,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T06:59:19.085Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-3d24f6e31160dd6e0874",
+          "file": "accessibility.spec.ts",
+          "line": 37,
+          "column": 7
+        },
+        {
+          "title": "rendered accessibility scan at 1440px includes catalogue, every course and all modal states",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18049,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T06:59:39.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-ff8a5a94caf7ed28d57e",
+          "file": "accessibility.spec.ts",
+          "line": 37,
+          "column": 7
+        },
+        {
+          "title": "computed progress, input, selected text and focus colors meet their contrast thresholds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T06:59:57.589Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ddd864604af8a6a0198f-319c76697218e7292c83",
+          "file": "accessibility.spec.ts",
+          "line": 105,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "baseline.spec.ts",
+      "file": "baseline.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all six course cards open anonymous players with matching progress and lesson counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5909,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:00.836Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-e640a7e8211f8dd0b71a",
+          "file": "baseline.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "lesson navigation updates content and current state; back and invalid deep links stay coherent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:06.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-adf6cda3b994916fcbcb",
+          "file": "baseline.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "responsive baseline preserves order and avoids horizontal overflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:09.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-4adbdde0797bef59c392",
+          "file": "baseline.spec.ts",
+          "line": 135,
+          "column": 5
+        },
+        {
+          "title": "keyboard navigation, section targets, and not-found behavior work",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1738,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:26.538Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-4676f5cccf3019462405",
+          "file": "baseline.spec.ts",
+          "line": 199,
+          "column": 5
+        },
+        {
+          "title": "long selected lesson titles stay readable without blocking mobile video controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:28.314Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d2923076b323a8336a93-e25b420eeea8fc4da5aa",
+          "file": "baseline.spec.ts",
+          "line": 233,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "exam-design.spec.ts",
+      "file": "exam-design.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "submitted practice freezes its nonzero clock across review and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2616,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:31.768Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-0ee33efd08cea7a0b279",
+          "file": "exam-design.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "curriculum lock symbols reflect real completion after reading and reload; exam keeps its two badges",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4826,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:34.416Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-694e0ae6e5f6157ef081",
+          "file": "exam-design.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "practice timer advances by wall time across close and reload, never discards answers at zero, and freezes at submission",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:39.272Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9b338304dbabead7799-1fb1b9b422c13db52cdb",
+          "file": "exam-design.spec.ts",
+          "line": 76,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "interactions.spec.ts",
+      "file": "interactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "question draft survives Escape, reopening and client navigation, with isolated courses and local submission",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3618,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:41.826Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-0f2019a8920c3790c97e",
+          "file": "interactions.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "comments validate blank input, render literal text once and persist after reload and stay isolated by course",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4008,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:45.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-1db24082509ac569f3b3",
+          "file": "interactions.spec.ts",
+          "line": 96,
+          "column": 5
+        },
+        {
+          "title": "exam retains answer and current question after closing/navigation, validates submission and keeps the derived result",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4508,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:49.507Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-02856591cb42fc107c5c",
+          "file": "interactions.spec.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "title": "PDF displays its actual rendered page and accessible text, zooms inside the popup and credits explicit read once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2477,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:54.041Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-932f09d684176a87af75",
+          "file": "interactions.spec.ts",
+          "line": 247,
+          "column": 5
+        },
+        {
+          "title": "native modal contains keyboard focus, blocks background scroll and restores trigger/scroll under the sticky player",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:56.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-e75dda87c47d7958f56d",
+          "file": "interactions.spec.ts",
+          "line": 314,
+          "column": 5
+        },
+        {
+          "title": "leaderboard derives current progress and level-specific original Arabic encouragement for all level buckets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:00:58.783Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-a610ba2c8b2f2b660029",
+          "file": "interactions.spec.ts",
+          "line": 362,
+          "column": 5
+        },
+        {
+          "title": "all required popups fit narrow, tablet, desktop and short landscape viewports with reachable close controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9209,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:02.643Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-5b216ffb3202aa158439",
+          "file": "interactions.spec.ts",
+          "line": 403,
+          "column": 5
+        },
+        {
+          "title": "PDF preview failure keeps readable document text and the original-file alternative inside the popup",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:11.882Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e3a1181bd00640addebc-80498dde2c6310151903",
+          "file": "interactions.spec.ts",
+          "line": 454,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "learner-feedback.spec.ts",
+      "file": "learner-feedback.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 320×568",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:13.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-aa3cc05756c291aff13c",
+          "file": "learner-feedback.spec.ts",
+          "line": 15,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 320×568",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:15.705Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-2e6f4bc2d26d9e432d39",
+          "file": "learner-feedback.spec.ts",
+          "line": 74,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 844×390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2850,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:19.847Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-3735461a8dd34c86f4fe",
+          "file": "learner-feedback.spec.ts",
+          "line": 15,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 844×390",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3728,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:22.730Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-da47b65b7b5a6f60b1f4",
+          "file": "learner-feedback.spec.ts",
+          "line": 74,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 820×1180",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:26.491Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-185703ab24bf30801742",
+          "file": "learner-feedback.spec.ts",
+          "line": 15,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 820×1180",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3773,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:29.553Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-28a9ca461abd4c411fc7",
+          "file": "learner-feedback.spec.ts",
+          "line": 74,
+          "column": 7
+        },
+        {
+          "title": "incomplete exam guides keyboard learners to a visible unanswered question at 1440×900",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:33.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-44544345c827ab3678d2",
+          "file": "learner-feedback.spec.ts",
+          "line": 15,
+          "column": 7
+        },
+        {
+          "title": "comment and question forms explain their limit and preserve drafts at 1440×900",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3640,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:36.806Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8c3e7dd87c5a8cda790b-059b3beee633293478d3",
+          "file": "learner-feedback.spec.ts",
+          "line": 74,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "loading.spec.ts",
+      "file": "loading.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "media and document payloads wait for intent at 430px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1940,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:40.484Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1be41964e0574414b0cd-04f265fb6d8f7a91032b",
+          "file": "loading.spec.ts",
+          "line": 4,
+          "column": 7
+        },
+        {
+          "title": "media and document payloads wait for intent at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:42.455Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1be41964e0574414b0cd-6012e8949128137af0aa",
+          "file": "loading.spec.ts",
+          "line": 4,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "message-history.spec.ts",
+      "file": "message-history.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:44.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-458e9bb71fc897486b6c",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        },
+        {
+          "title": "newest-first comments and questions retain bounded keyboard-scrollable histories at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8711,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:01:51.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f603849f9bb4bf8b82ff-7758efdf9bcbb6223da0",
+          "file": "message-history.spec.ts",
+          "line": 7,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "persistence.spec.ts",
+      "file": "persistence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "restoration reconciles a valid submitted exam with missing lesson credit and ignores a forged score",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1485,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:00.124Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-7c7d1c1c692ae51ea721",
+          "file": "persistence.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "video position and genuine completion survive hard reload without duplicate credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:01.639Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-b39ede3273904e924232",
+          "file": "persistence.spec.ts",
+          "line": 57,
+          "column": 5
+        },
+        {
+          "title": "partial exam, submitted score, PDF read, drafts and reset survive reload and reconcile with catalogue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6607,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:05.627Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-76f54a56d4cf97f40f76",
+          "file": "persistence.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "blocked browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:12.266Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-1096f6dea80e1686e18d",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "quota browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1601,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:13.792Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-f1d55c8febe38139cad5",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "corrupt browser storage keeps anonymous flows working with truthful feedback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1805,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:15.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-bf6c0709bf0d822f9127",
+          "file": "persistence.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "every course has its own readable PDF, playable captioned video and scored assessment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16383,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:17.259Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a5ef73a4e2a1baaea746-53bf552d1a7894309bdc",
+          "file": "persistence.spec.ts",
+          "line": 248,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "player.spec.ts",
+      "file": "player.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "inline media really plays and Wide/fullscreen preserve the mounted video and playback position",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2930,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:33.697Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-7024845c8a0c8811b990",
+          "file": "player.spec.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "switching lessons saves individual positions and does not carry timestamps into another lesson",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:36.664Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-a9012936d35e3997cdc3",
+          "file": "player.spec.ts",
+          "line": 89,
+          "column": 5
+        },
+        {
+          "title": "ended media credits once, updates catalogue, preserves course isolation and returns to selected lesson",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3551,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:38.802Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-421a73e61addc4ba02d5",
+          "file": "player.spec.ts",
+          "line": 128,
+          "column": 5
+        },
+        {
+          "title": "mobile sticky player leaves section targets visible and fits a short landscape viewport",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4123,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:42.385Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-87abd90205b75833a012",
+          "file": "player.spec.ts",
+          "line": 189,
+          "column": 5
+        },
+        {
+          "title": "progress animates on entry; reduced motion shows the final fill directly",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2592,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:46.538Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-c5faa500d7334d6f0168",
+          "file": "player.spec.ts",
+          "line": 234,
+          "column": 5
+        },
+        {
+          "title": "unsupported fullscreen and failed media give truthful recovery without progress credit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1583,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:49.160Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f0d17164d8f62ffcd92a-cbb5f9e00634da98b410",
+          "file": "player.spec.ts",
+          "line": 267,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "resilience.spec.ts",
+      "file": "resilience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "200% text sizing and WCAG text spacing preserve content, reflow and all modal controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10936,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:02:50.784Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-7419054ad82ba9ef8873",
+          "file": "resilience.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "long Arabic, multiline and unbroken comments remain readable with six-to-ten-lesson curricula",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:03:01.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-4b03b1aa8a966201d757",
+          "file": "resilience.spec.ts",
+          "line": 94,
+          "column": 5
+        },
+        {
+          "title": "keyboard navigation exposes targets below the sticky player and exam radio keys retain one choice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:03:06.586Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-cefc748079858f83d1b2",
+          "file": "resilience.spec.ts",
+          "line": 130,
+          "column": 5
+        },
+        {
+          "title": "intermediate layouts preserve measured reference relationships and usable controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:03:08.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-8bb7846a4ce5e4b95361",
+          "file": "resilience.spec.ts",
+          "line": 181,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "resource-links.spec.ts",
+      "file": "resource-links.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "every course page and local media, caption, image and worksheet link resolves",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:03:19.616Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "verified resource links",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJ1cmwiOiAiL2ltYWdlcy9idXNpbmVzcy5zdmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9zdmcreG1sIiwKICAgICJieXRlcyI6IDE1NDgKICB9LAogIHsKICAgICJ1cmwiOiAiL2ltYWdlcy9sZXNzb24tcG9zdGVyLnN2ZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgImJ5dGVzIjogMjgwMAogIH0sCiAgewogICAgInVybCI6ICIvaW1hZ2VzL2F2YXRhci0xLnN2ZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgImJ5dGVzIjogNTcwCiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvYXZhdGFyLTIuc3ZnIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsCiAgICAiYnl0ZXMiOiA1NzAKICB9LAogIHsKICAgICJ1cmwiOiAiL2ltYWdlcy9hdmF0YXItMy5zdmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9zdmcreG1sIiwKICAgICJieXRlcyI6IDU3MAogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvaW50cm9kdWN0aW9uLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEyNTE4MwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvaW50cm9kdWN0aW9uLnZ0dCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInRleHQvdnR0OyBjaGFyc2V0PVVURi04IiwKICAgICJieXRlcyI6IDMyNQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvaW50cm9kdWN0aW9uLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0NDIzNwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvY291cnNlLW92ZXJ2aWV3LndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEyNTg0NwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvY291cnNlLW92ZXJ2aWV3LnZ0dCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInRleHQvdnR0OyBjaGFyc2V0PVVURi04IiwKICAgICJieXRlcyI6IDM1MAogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvY291cnNlLW92ZXJ2aWV3LnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0NTE1MgogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL3N0YXJ0aW5nLXNlby5wZGYiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJhcHBsaWNhdGlvbi9wZGYiLAogICAgImJ5dGVzIjogMjQ3NAogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL3N0YXJ0aW5nLXNlby5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTI2NjM0CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9lZGl0b3Itc2V0dXAud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTI1NDM4CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9lZGl0b3Itc2V0dXAudnR0IiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidGV4dC92dHQ7IGNoYXJzZXQ9VVRGLTgiLAogICAgImJ5dGVzIjogMzIzCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9lZGl0b3Itc2V0dXAucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQyNjgyCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9lbWJlZGRpbmctcGhwLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEyNzQ5NQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvZW1iZWRkaW5nLXBocC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNzAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2VtYmVkZGluZy1waHAucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDUxNTU2CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWJhc2ljcy53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzQzMDcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtYmFzaWNzLnZ0dCIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInRleHQvdnR0OyBjaGFyc2V0PVVURi04IiwKICAgICJieXRlcyI6IDMyMwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1iYXNpY3MucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQ0MzY4CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9jb21wb25lbnRzLWRhdGFiaW5kaW5nLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzNTE1MAogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvY29tcG9uZW50cy1kYXRhYmluZGluZy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNDEKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2NvbXBvbmVudHMtZGF0YWJpbmRpbmcucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQzODE2CiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvd2ViLWRlc2lnbi1mb3VuZGF0aW9ucy5zdmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9zdmcreG1sIiwKICAgICJieXRlcyI6IDE1NTEKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMS53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzUzMjYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMS5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDUwNDcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMi53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzQ2NjQKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjQKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMi5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDU2OTIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMy53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzU1NTcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMTMKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtMy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDI2NjIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtNC53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzM0NjMKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtNC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMDYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3dlYi1kZXNpZ24tZm91bmRhdGlvbnMtNC5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDgwODUKICB9LAogIHsKICAgICJ1cmwiOiAiL3Jlc291cmNlcy93ZWItZGVzaWduLWZvdW5kYXRpb25zLnBkZiIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImFwcGxpY2F0aW9uL3BkZiIsCiAgICAiYnl0ZXMiOiAyNDEwCiAgfSwKICB7CiAgICAidXJsIjogIi9yZXNvdXJjZXMvd2ViLWRlc2lnbi1mb3VuZGF0aW9ucy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTIwMDE0CiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvamF2YXNjcmlwdC1lc3NlbnRpYWxzLnN2ZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgImJ5dGVzIjogMTU0NwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTEud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTMzNjM2CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtMS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMTQKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy0xLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MTY5NQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTIud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM1MzkyCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtMi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzMKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy0yLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0NDg0OQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTMud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM0OTkyCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtMy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy0zLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MjY1MwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTQud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM0NDc5CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtNC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy00LnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MzUzMgogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTUud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM0NzcwCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtNS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy01LnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MzY0MgogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvamF2YXNjcmlwdC1lc3NlbnRpYWxzLTYud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM1NTY3CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9qYXZhc2NyaXB0LWVzc2VudGlhbHMtNi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjgKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2phdmFzY3JpcHQtZXNzZW50aWFscy02LnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0Mzc1MwogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL2phdmFzY3JpcHQtZXNzZW50aWFscy5wZGYiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJhcHBsaWNhdGlvbi9wZGYiLAogICAgImJ5dGVzIjogMjM5NAogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL2phdmFzY3JpcHQtZXNzZW50aWFscy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTEwODEzCiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvcmVzcG9uc2l2ZS1jc3Muc3ZnIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2Uvc3ZnK3htbCIsCiAgICAiYnl0ZXMiOiAxNTQ4CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9yZXNwb25zaXZlLWNzcy0xLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzNDc1OAogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvcmVzcG9uc2l2ZS1jc3MtMS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3Jlc3BvbnNpdmUtY3NzLTEucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQzMzg2CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9yZXNwb25zaXZlLWNzcy0yLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzNTU3NwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvcmVzcG9uc2l2ZS1jc3MtMi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3Jlc3BvbnNpdmUtY3NzLTIucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQ0NDAyCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9yZXNwb25zaXZlLWNzcy0zLndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzMzQ1NgogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvcmVzcG9uc2l2ZS1jc3MtMy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAyODkKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3Jlc3BvbnNpdmUtY3NzLTMucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDM5NDk4CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9yZXNwb25zaXZlLWNzcy00LndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzNTUwMAogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvcmVzcG9uc2l2ZS1jc3MtNC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNDEKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3Jlc3BvbnNpdmUtY3NzLTQucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQzMDY3CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9yZXNwb25zaXZlLWNzcy01LndlYm0iLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ2aWRlby93ZWJtIiwKICAgICJieXRlcyI6IDEzNTI3OQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvcmVzcG9uc2l2ZS1jc3MtNS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzgKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3Jlc3BvbnNpdmUtY3NzLTUucG5nIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgICJieXRlcyI6IDQ3MDg3CiAgfSwKICB7CiAgICAidXJsIjogIi9yZXNvdXJjZXMvcmVzcG9uc2l2ZS1jc3MucGRmIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAiYXBwbGljYXRpb24vcGRmIiwKICAgICJieXRlcyI6IDIzODQKICB9LAogIHsKICAgICJ1cmwiOiAiL3Jlc291cmNlcy9yZXNwb25zaXZlLWNzcy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTIxNTI0CiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvcmVhY3QtY29tcG9uZW50cy5zdmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9zdmcreG1sIiwKICAgICJieXRlcyI6IDE1NTAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMS53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzUzMDYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjUKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMS5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDQ1NjYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMi53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzUxNjgKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNDEKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMi5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDEyMTUKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMy53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzU2ODEKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzMKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtMy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDE5NjkKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNC53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzYwNjkKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNC5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDMwNTUKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNS53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzI5MTAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMTkKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNS5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDE4MzYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNi53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzQ2NDAKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzkKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNi5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDUyMTcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNy53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzUzNjcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNTMKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtNy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDM5MzgKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtOC53ZWJtIiwKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiY29udGVudFR5cGUiOiAidmlkZW8vd2VibSIsCiAgICAiYnl0ZXMiOiAxMzM2OTIKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtOC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMDUKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL3JlYWN0LWNvbXBvbmVudHMtOC5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogNDIzOTYKICB9LAogIHsKICAgICJ1cmwiOiAiL3Jlc291cmNlcy9yZWFjdC1jb21wb25lbnRzLnBkZiIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImFwcGxpY2F0aW9uL3BkZiIsCiAgICAiYnl0ZXMiOiAyMzczCiAgfSwKICB7CiAgICAidXJsIjogIi9yZXNvdXJjZXMvcmVhY3QtY29tcG9uZW50cy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTEzNzgyCiAgfSwKICB7CiAgICAidXJsIjogIi9pbWFnZXMvYWNjZXNzaWJsZS1pbnRlcmZhY2VzLnN2ZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgImJ5dGVzIjogMTU0OQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvYWNjZXNzaWJsZS1pbnRlcmZhY2VzLTEud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM2NjIzCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9hY2Nlc3NpYmxlLWludGVyZmFjZXMtMS52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjYKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2FjY2Vzc2libGUtaW50ZXJmYWNlcy0xLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MTQzOQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvYWNjZXNzaWJsZS1pbnRlcmZhY2VzLTIud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM1NDMwCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9hY2Nlc3NpYmxlLWludGVyZmFjZXMtMi52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMzQKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2FjY2Vzc2libGUtaW50ZXJmYWNlcy0yLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MTk3NwogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvYWNjZXNzaWJsZS1pbnRlcmZhY2VzLTMud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM1NDc0CiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9hY2Nlc3NpYmxlLWludGVyZmFjZXMtMy52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzMjcKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2FjY2Vzc2libGUtaW50ZXJmYWNlcy0zLnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MjkwNQogIH0sCiAgewogICAgInVybCI6ICIvbWVkaWEvYWNjZXNzaWJsZS1pbnRlcmZhY2VzLTQud2VibSIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogInZpZGVvL3dlYm0iLAogICAgImJ5dGVzIjogMTM1MDMwCiAgfSwKICB7CiAgICAidXJsIjogIi9tZWRpYS9hY2Nlc3NpYmxlLWludGVyZmFjZXMtNC52dHQiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJ0ZXh0L3Z0dDsgY2hhcnNldD1VVEYtOCIsCiAgICAiYnl0ZXMiOiAzNDQKICB9LAogIHsKICAgICJ1cmwiOiAiL21lZGlhL2FjY2Vzc2libGUtaW50ZXJmYWNlcy00LnBuZyIsCiAgICAic3RhdHVzIjogMjAwLAogICAgImNvbnRlbnRUeXBlIjogImltYWdlL3BuZyIsCiAgICAiYnl0ZXMiOiA0MzExMwogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL2FjY2Vzc2libGUtaW50ZXJmYWNlcy5wZGYiLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJhcHBsaWNhdGlvbi9wZGYiLAogICAgImJ5dGVzIjogMjQ1NwogIH0sCiAgewogICAgInVybCI6ICIvcmVzb3VyY2VzL2FjY2Vzc2libGUtaW50ZXJmYWNlcy5wbmciLAogICAgInN0YXR1cyI6IDIwMCwKICAgICJjb250ZW50VHlwZSI6ICJpbWFnZS9wbmciLAogICAgImJ5dGVzIjogMTIxMDU0CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f52c89042241ff4f7e88-7c17d6fc5a1e2cfe655e",
+          "file": "resource-links.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "screenshot-refinement.spec.ts",
+      "file": "screenshot-refinement.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mobile course markers preserve their value and do not cover section titles or lessons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T07:03:20.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c51584ad3a275481b27d-089e0e15a0b67b594a65",
+          "file": "screenshot-refinement.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-10T06:59:17.666Z",
+    "duration": 248714.85,
+    "expected": 50,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
