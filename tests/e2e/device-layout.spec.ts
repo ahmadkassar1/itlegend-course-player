@@ -74,12 +74,21 @@ for (const [width, height, hasTouch, deviceScaleFactor] of viewports) {
       page.on("console", (message) => {
         if (message.type() === "error") errors.push(message.text());
       });
-      const activate = (control: Locator) =>
-        hasTouch ? control.tap() : control.click();
+      const activate = async (control: Locator) => {
+        if (hasTouch) {
+          // Centre-scrolling can place a tap beneath the sticky native player
+          // on a short screen. Bring the control into the exposed lower area.
+          await control.evaluate((element) =>
+            element.scrollIntoView({ block: "end", behavior: "instant" }),
+          );
+          await control.tap();
+        } else await control.click();
+      };
       await page.goto("/");
       await expect(page.locator("article")).toHaveCount(4);
       await fitsViewport(page);
       await page.goto("/courses/webology");
+      await expect(page.locator("[data-player-frame] iframe")).toBeVisible();
       await expect(page.getByRole("progressbar")).toHaveAttribute(
         "aria-valuenow",
         "0",

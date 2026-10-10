@@ -25,13 +25,13 @@ export async function prepareScreenshot(page: Page) {
       .toBe(true);
   }
   // Full-page capture alone does not load images below the browser viewport.
-  for (const image of await page.locator("img").all()) {
+  for (const image of await page.locator("img:visible").all()) {
     await image.scrollIntoViewIfNeeded();
   }
   await expect
     .poll(() =>
       page
-        .locator("img")
+        .locator("img:visible")
         .evaluateAll((images) =>
           images.every(
             (image) =>

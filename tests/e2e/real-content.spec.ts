@@ -241,10 +241,10 @@ test("site-authored PDF and five-question exercise complete the study plan and s
   await dialog
     .getByRole("button", { name: "Submit answers", exact: true })
     .click();
-  await expect(dialog).toContainText("5 / 5");
+  await expect(dialog).toContainText("5 of 5 correct (100%)");
   await page.reload();
   await page.getByRole("button", { name: "Open exam", exact: true }).click();
-  await expect(dialog).toContainText("5 / 5");
+  await expect(dialog).toContainText("5 of 5 correct (100%)");
   await page.keyboard.press("Escape");
   await page.goto("/courses/webology");
   await page
