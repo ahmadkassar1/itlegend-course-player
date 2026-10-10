@@ -1,0 +1,45 @@
+# Shared controls and release preparation
+
+Reviewed 10 October 2026. This report covers local implementation and release preparation; it is not competition acceptance or a deployed-site report.
+
+## Changes
+
+- One shared select-only combobox replaces the PDF size menu and catalogue status/sort menus. It retains focus, supports keyboard navigation/typeahead/commit/dismissal, chooses an opening direction and bounds vertical scrolling. Escape dismisses its list before the containing PDF dialog.
+- Main and related video cards share `VideoThumbnail`, preserving original remote images and displaying an honest failure state. The ambiguous image-input request was interpreted as thumbnail rendering pending clarification; no upload feature was invented.
+- Dialog/menu entrances and pointer-only card hover use restrained motion. Reduced-motion preferences disable decorative animation. Fullscreen dialogs fade without translation; their boundaries stay inside the viewport during entrance.
+- The restored-player placeholder reserves the same 16:9/minimum-height area as the native iframe. This is a layout correction; no new performance improvement figure is claimed.
+- README covers setup, architecture, source provenance, storage, custom controls and Vercel release settings. `.vercel` stays out of Git; `.vercelignore` excludes historical demo assets, tests/evidence and private environment paths from source-upload releases, preserving active fonts/worksheet/avatar.
+
+## Completion and persistence audit
+
+The official SDK state `0` calls the provider-owned learning store's completion action. Duplicate events earn one step. Pauses/periodic viewing/page exit save the actual position without completing a step. A completed video resets its resume position to zero. PDF Mark read and a valid submitted exercise each earn one step: 0 → 33 → 67 → 100 for three learning steps, regardless of completion order.
+
+One versioned localStorage envelope under `course-library:youtube-learner:v1` stores progress, positions, questions/comments/drafts and exam attempts. Content version is `2026-10-youtube-content-1`. Restoration validates IDs, bounded text and answers, recomputes scores and recovers missed exam completion. Storage failure retains session actions and reports memory-only operation. Old fictional history is not imported. IndexedDB is unnecessary for this small structured record.
+
+Storage is browser/origin-specific, user-editable and not a secure server record. There is no cloud/device sync; concurrent tabs use last-write-wins. Moving from localhost to Vercel starts a separate history. Related previews do not earn course credit. External SDK/player failures retain source/manual-completion fallback.
+
+## Evidence and limitations
+
+Feature `22a14755ab53559726fe13c651e523d530b82fb5` passed 17 state tests, type/lint/rule/format checks and 18 targeted browser journeys at build `QGCUoiRlxy8_RFkfO_JU1`. The initial full run was interrupted after eight failures/three passes: fullscreen translation briefly exceeded the screen boundary. [Diagnostic](polish-20261010-initial-dialog-diagnostic.md) is preserved. Assertions were retained; opacity-only fullscreen correction is `b63a30ffc143acce3ca898102a3c8c23bb3b0b54`, build `_GPN5q4YcFojg2rFPzGhA`.
+
+The corrected full production Chrome suite passed **54/54**, no retries/skips/flaky/unexpected results, from `2026-10-10T11:15:54.216Z` in 257.279839 seconds. It includes 26 viewport profiles/17 touch contexts, message overflow/newest-first/drafts, all dialogs, exam guidance/scoring, original titles/thumbnails, all routes, progress/end/reload/isolation, storage failure/reset, and five shared-control journeys. [Full results](polish-20261010-full-results-before-icon-review.json) retain that revision's evidence.
+
+Final ARIA/icon refinement `e5e54a85d63a62403a1fd02580fe79c76b55881a` references a list ID only while mounted and uses existing SVG icons instead of text glyphs. It preserves application/store behavior. Build `SGEwJo7PJkYyyBE7ZO7j_` passed type/lint/rule checks and all **18 affected controls/real-content journeys**, from `2026-10-10T11:23:01.934Z` in68.772251 seconds, no retries/skips/flaky/unexpected. [Final affected results](polish-20261010-final-affected-results.json) identify this recheck. Full54 evidence is not silently relabeled as a later revision. Final format check passes;17 state tests remain unchanged/passing.
+
+The initial ten-state Axe report contained zero violations but required manual review of closed-list ID references and decorative glyphs, alongside existing PDF heading/exam numeral contrast incompletes. [Initial raw report](polish-20261010-initial-axe.json) is retained. Four additional open-PDF-menu scans reported zero violations; their incomplete entries were not exported. Automated scans/emulated viewports are bounded evidence, not physical-device or screen-reader certification.
+
+The [final ten-state Axe report](polish-20261010-real-content-axe.json) has zero violations and three remaining color-contrast incomplete rule instances: one PDF heading at320px and exam question numerals2–5 at320/1440px (nine nodes total). New menu-reference/glyph incompletes are resolved. Earlier scoped contrast/visibility evidence for unchanged heading/exam colors remains in Real-YouTube-Content.md; it is not silently called a new physical-device or screen-reader test. Four open-menu scans pass zero violations at320/844/820/1440, and keyboard/zoom/bounded geometry/nestedEscape are rechecked on the final build.
+
+Actual uncontrolled IAB playback and native keyboard seeking were observed, with seek time changing from36 to101 seconds and completion remaining0. Full actual video end was not observed. Automated SDK/embed responses are explicitly controlled integration boundaries; they prove application event handling, not every external stream's availability. Prior actual play/pause/reload evidence remains in [real-content report](Real-YouTube-Content.md). Original Figma font/assets, physical phone/Safari/fullscreen/rotation-off/native zoom/assistive technology remain open.
+
+## Publication status
+
+Connected GitHub account `ahmadkassar1` and Vercel team `ahmadkassar1s-projects` were read-only verified. An ITLegend-name project search returned none. The proposed new project-name response remains pending; prior GitHub destination/visibility input remains pending and was not repeatedly requested. Local commits use configured `ahmad kassar` author and committer. No source upload, project creation, remote/push/deployment, competition submission, private import, dependency installation or costs occurred.
+
+User now explicitly authorizes Vercel deployment, superseding earlier step-only no-deployment boundaries. Deployment remains uncompleted while its specific target is pending. The [deployment skill](C:/Users/PC/.codex/plugins/cache/openai-curated-remote/vercel/0.54.1/skills/deployments-cicd/SKILL.md) requires: “Before a deployment or release, verify the intended team, project, commit, and environment.” Keep the app isolated from the parent vault and existing private deployment. A future release must verify anonymous production access, routes/assets/player/storage on the hosted origin and actual public repository visibility. No live URL exists yet.
+
+The [release manifest](polish-20261010-release-manifest.json) verifies 85 filtered tracked app files and retained active resources; its identified source revision is explicit. It is a filter audit, not an uploaded/hosted build. Current deployment must regenerate this manifest for the actual release revision. Git-integrated deployment should be checked separately; the source-upload exclusion audit alone does not certify its served files.
+
+## Primary sources
+
+Accessed 10 October 2026: [WAI combobox pattern](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) for focus/keyboard semantics; [Next.js on Vercel](https://vercel.com/docs/frameworks/full-stack/nextjs) for framework deployment; [Vercel file exclusions](https://vercel.com/docs/deployments/vercel-ignore) for source-upload filtering. These technical sources do not resolve competition AI/reuse/assets/extras/eligibility/timezone questions.

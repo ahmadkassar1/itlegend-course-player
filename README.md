@@ -86,7 +86,7 @@ The browser suite uses the installed Chrome channel, one worker and no retries. 
 
 The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero history, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 26 representative viewport profiles. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
 
-[Current verification](verification/Real-YouTube-Content.md) identifies the tested revision/build and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
+[Current control/release verification](verification/Shared-Controls-and-Release.md) and [real-content verification](verification/Real-YouTube-Content.md) identify tested revisions/builds and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
 
 ## Performance
 
