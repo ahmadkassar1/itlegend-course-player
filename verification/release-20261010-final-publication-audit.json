@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-10T15:07:26.090Z",
+  "source": "e95cbe9247e70eaa36f953fe75a402e9f2f72bd0",
+  "trackedFiles": 845,
+  "historyObjects": 1302,
+  "textBlobsScanned": 473,
+  "highConfidenceSecretMatches": [],
+  "forbiddenTrackedPaths": [],
+  "limits": "Pattern scan, not proof of absence of every secret. Isolated challenge history; vault and original private project remain outside this repository."
+}

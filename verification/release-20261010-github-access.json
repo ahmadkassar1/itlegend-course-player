@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-10T14:57:43.639Z",
+  "anonymous": true,
+  "rows": [
+    {
+      "url": "https://github.com/ahmadkassar1/itlegend-course-player",
+      "status": 200,
+      "finalURL": "https://github.com/ahmadkassar1/itlegend-course-player",
+      "bytes": 330646
+    },
+    {
+      "url": "https://api.github.com/repos/ahmadkassar1/itlegend-course-player/git/ref/heads/main",
+      "status": 200,
+      "finalURL": "https://api.github.com/repos/ahmadkassar1/itlegend-course-player/git/ref/heads/main",
+      "bytes": 368,
+      "sha": "9c740f204ee332de051890f3400abc185a1119a7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ahmadkassar1/itlegend-course-player/main/README.md",
+      "status": 200,
+      "finalURL": "https://raw.githubusercontent.com/ahmadkassar1/itlegend-course-player/main/README.md",
+      "bytes": 15023,
+      "hasLiveLink": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ahmadkassar1/itlegend-course-player/main/docs/TECHNICAL_REPORT.md",
+      "status": 200,
+      "finalURL": "https://raw.githubusercontent.com/ahmadkassar1/itlegend-course-player/main/docs/TECHNICAL_REPORT.md",
+      "bytes": 7218
+    }
+  ]
+}

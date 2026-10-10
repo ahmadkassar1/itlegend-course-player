@@ -1,0 +1,1936 @@
+{
+  "checkedAt": "2026-10-10T15:05:25.021Z",
+  "deployment": {
+    "id": "dpl_AvZr7Xft95aVGmiUQSgTK8mV4ZD3",
+    "name": "itlegend-course-player",
+    "url": "itlegend-course-player-mruui7z3s-ahmadkassar1s-projects.vercel.app",
+    "type": "LAMBDAS",
+    "state": "READY",
+    "createdAt": 1791644254008,
+    "creator": {
+      "uid": "Jiq80WcbfQcIrmlBbvpI30jD",
+      "username": "ahmadkassar1"
+    },
+    "project": {
+      "id": "prj_xiPUNa4TRAicQYUMoTurLwSCbvGF",
+      "name": "itlegend-course-player",
+      "framework": "nextjs"
+    },
+    "meta": {
+      "githubCommitRef": "main",
+      "githubCommitSha": "9c740f204ee332de051890f3400abc185a1119a7",
+      "githubCommitMessage": "docs: prepare public repository and release verification",
+      "githubRepo": "itlegend-course-player",
+      "githubOrg": "ahmadkassar1"
+    },
+    "alias": [
+      "itlegend-course-player-taupe.vercel.app",
+      "itlegend-course-player-ahmadkassar1s-projects.vercel.app"
+    ],
+    "target": "production",
+    "regions": ["iad1"],
+    "buildingAt": 1791644257062,
+    "ready": 1791644300676,
+    "readyState": "READY",
+    "aliasError": null
+  },
+  "sourceManifest": {
+    "checkedAt": "2026-10-10T14:55:14.261Z",
+    "sourceCommit": "9c740f204ee332de051890f3400abc185a1119a7",
+    "runtimeCommit": "71005d6b1af95f9cf81dbdd5501a7e30eb613c7e",
+    "build": "RAuwby2PI9Ttr4W_-tpnw",
+    "fileCount": 89,
+    "totalBytes": 598753,
+    "scope": "Committed app snapshot filtered using the same reviewed source-upload path list; excludes vault, environment, deployment metadata, tests, verification and historical unused media.",
+    "files": [
+      {
+        "file": ".gitattributes",
+        "sha": "c757c0446ed50f96264087373fd86f74b94f20ee",
+        "size": 40,
+        "sha256": "190072c592d9d3ff45b167eecdb7059a782195c012bf9bb1110eb18472c2c049"
+      },
+      {
+        "file": ".gitignore",
+        "sha": "b005e2ea170c33699c250eaa4ca8c5672e00c369",
+        "size": 145,
+        "sha256": "d93bfadb8b1ed05d58df148abc2fe6d2de77638ea8786ebaa0a641fc328a8db7"
+      },
+      {
+        "file": ".vercelignore",
+        "sha": "52d6e595508ed1804d94673edbb1dc81a6e8fde7",
+        "size": 327,
+        "sha256": "2ef643391996f6508a4a66d040f4db15a406e5194bf6247dcfb7f3d3741ec5f6"
+      },
+      {
+        "file": "ASSETS.md",
+        "sha": "db5ffac9b7d41d5fd940b7836f018b7b552e921f",
+        "size": 15117,
+        "sha256": "9ed9ddb832e436ee3aa3bf13a47970c98be0fefa18dd3ccaf03535276943433b"
+      },
+      {
+        "file": "README.md",
+        "sha": "cbf5685c117e0198f59db8027ba2b4dbef3f11f5",
+        "size": 15023,
+        "sha256": "f4b3d58fba346828c2e200e3538c4453ea2b95d58b0c5c968e59147b1ec3b18a"
+      },
+      {
+        "file": "docs/TECHNICAL_REPORT.md",
+        "sha": "2ba1263871a5de1cf24ee46b87a833c03d91e465",
+        "size": 7218,
+        "sha256": "4fecaba15800cc22f94964c2917fe5397751fb4cbe39107e7af9fac0ba5c5812"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "sha": "17c0cde9b2333063d348bcfb2190fdd71222ad29",
+        "size": 470,
+        "sha256": "20d9d5377bde547d8b00e5bf141d5877ee280f0c369b8a9fab67c440b8117b44"
+      },
+      {
+        "file": "next-env.d.ts",
+        "sha": "915946e261450f4fb6aab2ca862c8b440b748240",
+        "size": 288,
+        "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+      },
+      {
+        "file": "next.config.ts",
+        "sha": "b0e7bbd54e6e057aba362d9f5ef5dc28199ba626",
+        "size": 156,
+        "sha256": "5fa04a810adc1aaac0575af373dd8b43b61690efb2e13f6a116c270782c6f791"
+      },
+      {
+        "file": "package-lock.json",
+        "sha": "e0bd16781bcf63a597992979c053ec9a59cab76a",
+        "size": 212650,
+        "sha256": "74a6c9624a3eaddf0126e68f8e82ed4a703d12a668d200f0644ab3b271a782e8"
+      },
+      {
+        "file": "package.json",
+        "sha": "b6e875241297b47501869144141763cec7927200",
+        "size": 1256,
+        "sha256": "dc83c75c47eff80c7bbde45efa3e6017d40d4075dc8dfaaef0bc1346ae9d69db"
+      },
+      {
+        "file": "public/images/learner.svg",
+        "sha": "87ee673eda647517851cd456d5a66718a66ece91",
+        "size": 229,
+        "sha256": "df6a6e5f652c446d9f593e7fc7c3e207987a95860155f9c203bcf75cd91364a6"
+      },
+      {
+        "file": "public/resources/learning-plan.pdf",
+        "sha": "d29834134643d58aebdf16b6ad0a44b46319c07a",
+        "size": 2205,
+        "sha256": "4a758a0e7a186ec18436ad35ccae9b3e4e629cad8cd1f59815249f9152b3a4dc"
+      },
+      {
+        "file": "public/resources/learning-plan.png",
+        "sha": "e12c81bdaf94065fdf5ea722e14acbb4bf470fdb",
+        "size": 102642,
+        "sha256": "918bd9a703158d3d84944b04813d2f51c202b06dd7c2fcc9ccd782959cff9572"
+      },
+      {
+        "file": "src/app/courses/[slug]/page.tsx",
+        "sha": "3bc20439164b35a95bcf8e2af1f6d148beced058",
+        "size": 1635,
+        "sha256": "c363cc85a6958a4094ae7fa81df0b7d886dede7cf88c299789dd359fc6b54d6e"
+      },
+      {
+        "file": "src/app/fonts.ts",
+        "sha": "fdea2026548643dceff445a8856c4593d72c6e5e",
+        "size": 571,
+        "sha256": "db43b58ab8a243808a463f557d75b4ff282a1c4e1b49167bf6d779423f9d20f0"
+      },
+      {
+        "file": "src/app/fonts/poppins-OFL.txt",
+        "sha": "525d837a484cdc20696e1afea410d34c971432bf",
+        "size": 4385,
+        "sha256": "6be04893d770899a015649c7aa3b582f871b272f8747a92b78b17c3e5c8b2573"
+      },
+      {
+        "file": "src/app/fonts/poppins-medium.woff2",
+        "sha": "0da2d17e738f46d2a09e6fb7969da451719a9820",
+        "size": 7748,
+        "sha256": "cd36de204aca2d5fa263a731f7c20009b5e3d754ba1f1e03c33e93a48f3e7446"
+      },
+      {
+        "file": "src/app/fonts/poppins-regular.woff2",
+        "sha": "ac6d71b4d5fdd2b3dabc9a06ff6c001e4251da0b",
+        "size": 7884,
+        "sha256": "7d93459d86585bfcdbb7e0376056226adb25821ee54b96236fe2123e9560929f"
+      },
+      {
+        "file": "src/app/fonts/poppins-semibold.woff2",
+        "sha": "179f97ec0275f09603a8db94d4380eb584d81cd5",
+        "size": 8000,
+        "sha256": "f4e80d9dfd374d02989b87a27b5ed4cb78fbb177c27f1478e9a8b0afb7513149"
+      },
+      {
+        "file": "src/app/fonts/spartan-OFL.txt",
+        "sha": "8103da7fd0212741a52dd1d13eb2cf935a8f8252",
+        "size": 4402,
+        "sha256": "21e407e72f2e9a4de17d6fbb27f376310554ad2cdc9cba4962323aea021ef94e"
+      },
+      {
+        "file": "src/app/fonts/spartan-variable.woff2",
+        "sha": "d902711ad5237cbb0698429e1a420aab6552862c",
+        "size": 33008,
+        "sha256": "0e6bde53280ffff74447f376a66cd051deacd0c2295aea8d6ab7488d3fea19db"
+      },
+      {
+        "file": "src/app/globals.css",
+        "sha": "8a14d36aad6dd528b57e61b14e43a6520665dd3e",
+        "size": 1608,
+        "sha256": "847a7c59dbf4dbbef87b88a1c7e02185c884e20047bf3138916c8fb4834aaf51"
+      },
+      {
+        "file": "src/app/icon.svg",
+        "sha": "c2da5fd9ace42b377ec0a8ac0e3185be506d8ff4",
+        "size": 281,
+        "sha256": "a795da8292f9c17b354c4b574be4e32d401efd0ef59b744817828001b7da30bd"
+      },
+      {
+        "file": "src/app/layout.tsx",
+        "sha": "3c6e698f4dd98d181423245021f0f6853ef4a7f9",
+        "size": 2084,
+        "sha256": "4f954136a044e14aa3e532d35aa7e7ca4bc5071bb4425a2d11578bb2d3b8cf82"
+      },
+      {
+        "file": "src/app/not-found.tsx",
+        "sha": "c7fcf4f85edb585daaa46579d6ed012eb5bf3a50",
+        "size": 375,
+        "sha256": "3998fa5e944208b407e6113fb57c1ef1833274cf5137d1c33f534aa653d00da3"
+      },
+      {
+        "file": "src/app/page.tsx",
+        "sha": "81c8a09514a3b39bfe897fb63cabe0e615d67c64",
+        "size": 1194,
+        "sha256": "8e0c8c75dadc330784b0f67980cf97034705d02d3280394a8dc4ce2b622baa38"
+      },
+      {
+        "file": "src/components/dialog.module.css",
+        "sha": "e9070fb3617eb43e58296aae8bf17fe6f6d75342",
+        "size": 2769,
+        "sha256": "6a002dca9dc5710f3e2ffb8e30fa3633ec1c034aa8100978a96ae4ae480d54dc"
+      },
+      {
+        "file": "src/components/dialog.tsx",
+        "sha": "4c949c0ddabcfef3e968035cd51484f1cb492b53",
+        "size": 3488,
+        "sha256": "6758f67f75d0462388c809aa7076499d33631f3b1c764a61d658639152636bcc"
+      },
+      {
+        "file": "src/components/icon.tsx",
+        "sha": "d8b46d7e5daca9741553b0460f6265e64fba7883",
+        "size": 3011,
+        "sha256": "c9ac47027c62b0c9fd6a6e547eaf662e6354d8ae328d45a29e3b92cb81468b6d"
+      },
+      {
+        "file": "src/components/select.module.css",
+        "sha": "aa00ed3b9375a8d8e50ffd07000d21e0dee8c572",
+        "size": 1868,
+        "sha256": "3619e0de8d98e237e7576c9aaea536f16ccd9146c889df61dd14230a6b6eda67"
+      },
+      {
+        "file": "src/components/select.tsx",
+        "sha": "36f5f6fc2aacf2b5d33dba9cef30c2ac38f30584",
+        "size": 5737,
+        "sha256": "b64eb8a3cd68ff10c37c0849ea227e09e5a0e46ff20340da30c7f86bb3345204"
+      },
+      {
+        "file": "src/components/typing-motivation.module.css",
+        "sha": "79704869286a70e1b18532268584ae1f6556cf16",
+        "size": 869,
+        "sha256": "fbec07e775ea1ca4aaea2d2f4db3ac378fd9e94dfdb9c468a316003cd1dcb078"
+      },
+      {
+        "file": "src/components/typing-motivation.tsx",
+        "sha": "96165160723e6785e482131ca01f11ee360b624e",
+        "size": 2242,
+        "sha256": "172d62a332d72d0f7b34e47436d3ff61a9b83dda677813721e9ec94bdb346782"
+      },
+      {
+        "file": "src/components/video-thumbnail.module.css",
+        "sha": "89f2f1f7b765c5e30da0637a5651a5f6a4840c70",
+        "size": 272,
+        "sha256": "9f068b1bfa1972efc349171566a24161eb9df6392adbfc96776d7bfa7aa2ee42"
+      },
+      {
+        "file": "src/components/video-thumbnail.tsx",
+        "sha": "fbc045774540861edb2b5d0d5c7ce016aa8055fd",
+        "size": 714,
+        "sha256": "14108bd7cfff83e16e51e44c1c207dc3d6b6b107e42d3e256026bacea4f81f7a"
+      },
+      {
+        "file": "src/components/youtube-player.module.css",
+        "sha": "d471998a907dfd37d6481e97ec99b21adbcec4f1",
+        "size": 346,
+        "sha256": "d647c86874da81d25c861139dc66e45a3833cdaa5fde3fdd97a34cb89143fc9f"
+      },
+      {
+        "file": "src/components/youtube-player.tsx",
+        "sha": "fd2e87d72fe25c1b84ddf6f04a5d127de65b58f0",
+        "size": 3437,
+        "sha256": "055d3b20ae24a3214708da44104849e6b209214ddb9c6562764db24490427c27"
+      },
+      {
+        "file": "src/data/courses.ts",
+        "sha": "7f759bf5dc859b12633c21780ad34656143ab96d",
+        "size": 2417,
+        "sha256": "8674e339e6b59d2d67b826ade6201f7d3833bbb44336d9f97383839453da952c"
+      },
+      {
+        "file": "src/data/demo-community.ts",
+        "sha": "69b0a81ef24711791b722e8ca5e48a1fba5d4811",
+        "size": 5117,
+        "sha256": "a96a6fe621960fd97a7600425dc05be71cab102460b41d6efb22a277fa89dfa8"
+      },
+      {
+        "file": "src/data/motivation.ts",
+        "sha": "b31ad220325f533e96537812760f0831a2f16da5",
+        "size": 1686,
+        "sha256": "87a2e1445d48534bb7cddcb6a7a8a4ddf4ed3267eef4d706fc051758d30fe317"
+      },
+      {
+        "file": "src/data/study-practice.ts",
+        "sha": "9df33afa5c2d0fcf65d7efc338f88a87d26065d4",
+        "size": 2910,
+        "sha256": "d920a0df048b31ce6eaffef9c036e9410d3481e3b1d3f5fd6d16425940f1a0b2"
+      },
+      {
+        "file": "src/data/video-references.ts",
+        "sha": "8d6aaca80235fbe8c8118b51fafadb6ff165b667",
+        "size": 3250,
+        "sha256": "24822d9585dbcfde469f183d3234239139f06fd3a4f592b58994dc3dc4124132"
+      },
+      {
+        "file": "src/data/worksheet.json",
+        "sha": "12f56c883f5d0751ebec50aaa518632d20ec6ade",
+        "size": 740,
+        "sha256": "6a3f37047d55d126cb794c8b5b355c671d720a633c234b272333cc3adef650d8"
+      },
+      {
+        "file": "src/features/catalogue/catalogue.module.css",
+        "sha": "7a21b1a4083cb31fcd2092009f0e5bc938929b3e",
+        "size": 10074,
+        "sha256": "349e5f6a604720d7f33965dbd48149aa9b08563bec6d68f5a9b8871c14980d7f"
+      },
+      {
+        "file": "src/features/catalogue/course-card.tsx",
+        "sha": "d85787e171678db9d0aef202e42a01094d7a63e8",
+        "size": 2469,
+        "sha256": "2b98451a66e558359913914d0a28c6342be821b4d2dceeb1db8fd2497d332a20"
+      },
+      {
+        "file": "src/features/catalogue/course-catalogue.tsx",
+        "sha": "e79c21ea04425f7fde414518bffa771d83593c6e",
+        "size": 8309,
+        "sha256": "3e3881c5f8dcf505a2c2c2bb1848273c60779d2ab54397274196365785af435b"
+      },
+      {
+        "file": "src/features/catalogue/learner-settings.tsx",
+        "sha": "2c8016f401e4c98099075567969973d84610e7d7",
+        "size": 1043,
+        "sha256": "5d0cb1674eb92eb0a6f51f011dccbf355975734c6861e0e29064a5f5a814e288"
+      },
+      {
+        "file": "src/features/course/comment-item.tsx",
+        "sha": "6b4677fa6a7f4ee0ef8b0620ba012abb4d255146",
+        "size": 793,
+        "sha256": "5cc09a5c8e8822eda92c43c1bb0e08bdeb529f371bf3b961775a383cec16587f"
+      },
+      {
+        "file": "src/features/course/comments-section.tsx",
+        "sha": "b655f3c8ba97f9172fd3ae36bec05a6f52ec3743",
+        "size": 900,
+        "sha256": "aea2847880c5f57c577b7577203c7836272a5b633bb0ac1e679fec8f4760b2d8"
+      },
+      {
+        "file": "src/features/course/course-comments.tsx",
+        "sha": "785389db708749bf5e5389d7dbc6061615732b50",
+        "size": 2658,
+        "sha256": "22fb51a81dd8109193f74bf95e141558735eff44f38133aca2594e05eed54268"
+      },
+      {
+        "file": "src/features/course/course-dialogs.tsx",
+        "sha": "38879312202383f305431bba981340a6cc62bbd0",
+        "size": 1999,
+        "sha256": "9ad298cf2dff51fb9df588825eb335fc79f759620693491bf66911e5e76d2367"
+      },
+      {
+        "file": "src/features/course/course-experience.tsx",
+        "sha": "a0a21067c604f441cc291145a438fc94695b23a1",
+        "size": 781,
+        "sha256": "c691b7fbda8c3e5b7c6bd14fb1db398e77c3cd0c1ed4f8cd331b2cea42d7eb51"
+      },
+      {
+        "file": "src/features/course/course-header.tsx",
+        "sha": "75d732ac4e0597902d0e6bc24de7433658c986f2",
+        "size": 1119,
+        "sha256": "50e7b9d9d89dac37c946e922e9c3ad7e7bb072a5bf798092b71b8796e53601fe"
+      },
+      {
+        "file": "src/features/course/course-layout.tsx",
+        "sha": "5d23925ef490d092bcfd7108d7d61f2c4a2aacae",
+        "size": 4071,
+        "sha256": "3822528b4e34a4bfbb9d159d3d39ceebbb20df1c1c4a750365e0877d9493d2d2"
+      },
+      {
+        "file": "src/features/course/course-materials.tsx",
+        "sha": "3bc36d9ced735cc06f8d5a8701aa47a51cdbc973",
+        "size": 1743,
+        "sha256": "1d9810239872d03c562f1f48990580cbbf9293810eb0b8bda79637c5a89a3b83"
+      },
+      {
+        "file": "src/features/course/course-progress.tsx",
+        "sha": "29f9ab27dae826a212f371772290fbec2bb4efe7",
+        "size": 1878,
+        "sha256": "b2d97b4fb72084211162fe5f5cf651eceb2eb907b9846d9eb40ac9ce33fa8fa1"
+      },
+      {
+        "file": "src/features/course/course.module.css",
+        "sha": "6f7ae3a5d278c8e382d9764921c42e3110925264",
+        "size": 15156,
+        "sha256": "2d84371ad6105eb9e60c10dbc7f3992f83c050e26108bdfcbfcc6a5c5d91f153"
+      },
+      {
+        "file": "src/features/course/curriculum-lesson.tsx",
+        "sha": "af5090088c1a26fc61f9f7b42ddec85bb14be156",
+        "size": 1839,
+        "sha256": "ea948dcf531d123a7bb533b8b8c24b21a41a4160ac4ace31e2d551c8b2447536"
+      },
+      {
+        "file": "src/features/course/curriculum-section.tsx",
+        "sha": "bb585fd0b7d41abea364c68fe7ac4d5d2c6fb861",
+        "size": 1807,
+        "sha256": "579568486a16c0b4064e0a52150772fd36e45297473461208c35cf07364c38b0"
+      },
+      {
+        "file": "src/features/course/curriculum.tsx",
+        "sha": "3013561cab18ba5ea631e843f226e4659bfe44a1",
+        "size": 2350,
+        "sha256": "0631664e5683e22bb991d7b44b5e6ea3cf4e9bada7afd8ca89c5d04de43f041d"
+      },
+      {
+        "file": "src/features/course/dialogs.module.css",
+        "sha": "1fe93e38a81f94d2f286234e7bc5d6ecf1c03199",
+        "size": 7340,
+        "sha256": "172b4f822528046880d83e9a113d9b35e148b86501bb6b658da1c497c64cab21"
+      },
+      {
+        "file": "src/features/course/exam-dialog.tsx",
+        "sha": "b016a3ce19dc912626c5b25debfff49b78fbe59e",
+        "size": 6832,
+        "sha256": "edd062b30eb84cf2b6ca6a2e700a0f22b57bc972fcec35edc542a89825ab06e1"
+      },
+      {
+        "file": "src/features/course/exam-timer.tsx",
+        "sha": "7417c29f7194fb3b2f47e92fbef2d66814dbe853",
+        "size": 1677,
+        "sha256": "b0ce8cde70d601467ce5e0cc995a444237676588f1526d5a13c86e57e32ccaca"
+      },
+      {
+        "file": "src/features/course/leaderboard-dialog.tsx",
+        "sha": "dd4fb8bcc4bc833381f28e6f068ed322fc7b78b0",
+        "size": 1869,
+        "sha256": "4c595a9ddc3313031a645bb750c7a623f294c3e5ad22001938ccd3aed21a7f88"
+      },
+      {
+        "file": "src/features/course/lesson-player.tsx",
+        "sha": "726f8825dfe66628faa2fadbe5e608af27e56884",
+        "size": 4548,
+        "sha256": "08af18b02eb3d23166493cfa978bde347b87b2373a8eda29aa8e7c88be3b24e4"
+      },
+      {
+        "file": "src/features/course/lesson-preview.tsx",
+        "sha": "b2092421d3d2a3478a843814139f633a3ed9e950",
+        "size": 1163,
+        "sha256": "f6700d38f251b3d64e295fac1b3b6d1e874a0809a49fe53626607b93b831190e"
+      },
+      {
+        "file": "src/features/course/message-history.module.css",
+        "sha": "0deda75346324ce47c13829221635dfe5d1bebe9",
+        "size": 463,
+        "sha256": "2ae117cc856f0c174a651d7f99350c386860d790f35b7bba8b90a017dfbe48fd"
+      },
+      {
+        "file": "src/features/course/message-history.tsx",
+        "sha": "069529172b8fb9b455a1f1a42df8fb3f3b7e1a20",
+        "size": 666,
+        "sha256": "0d5028cf3fa7364207276aad51d893b8d0226c84798d57ae93bfbb1606ab0ab3"
+      },
+      {
+        "file": "src/features/course/pdf-dialog.tsx",
+        "sha": "84250dd07c936edefbffd1241ec8102f29a0ab8c",
+        "size": 2809,
+        "sha256": "16e9ef7c7f692551d8cc1f7343490dab4078821431522eb191a6f66f70c0f78e"
+      },
+      {
+        "file": "src/features/course/question-dialog.tsx",
+        "sha": "7710077a97c2bcb4b045dff7e69f5a528c89d3d5",
+        "size": 2789,
+        "sha256": "ae3f022f460c7bfdedf3297383539867020f078257a08a445a93e6b1a012cea8"
+      },
+      {
+        "file": "src/features/course/text-entry-form.tsx",
+        "sha": "4969ec689a8946fab91758597a36b8b4398f2510",
+        "size": 2819,
+        "sha256": "539d5df09c14992f466243006b30e1889d60a701d9c400dfd14d2b7beb8743d5"
+      },
+      {
+        "file": "src/features/learning/browser-persistence.ts",
+        "sha": "1fdd3adb309b6e12c3bce656e475fba1dc285241",
+        "size": 3203,
+        "sha256": "582d7519f0cca3bc892571f190c3980a7f4fad58c46d6c16628758d409405f71"
+      },
+      {
+        "file": "src/features/learning/interaction-provider.tsx",
+        "sha": "9101076191991aab74e756ea897e090938712b6f",
+        "size": 943,
+        "sha256": "172c127f17cadd87b36e050cad851edcb06c0b256eff488f497d0b8d71d6bed3"
+      },
+      {
+        "file": "src/features/learning/interaction-store.ts",
+        "sha": "bd01c1de8c3922a4e962e839d4802b5b8890ed1a",
+        "size": 9088,
+        "sha256": "20f9f5d6706fb9a23ec749ea99cc4e829651d2b88581ff54036b394beec55677"
+      },
+      {
+        "file": "src/features/learning/learning-provider.tsx",
+        "sha": "4db7975adc07a29ced44de01bc68880008304fab",
+        "size": 951,
+        "sha256": "da41f26de4de15457e655b97dc8720265fb24a9d14c461b47eb6f7f93944e577"
+      },
+      {
+        "file": "src/features/learning/learning-store.ts",
+        "sha": "4cc58a6a5878275d6dd0e38bd06268f9b566c6e2",
+        "size": 4654,
+        "sha256": "d4d811f7daf3d6e54d0d74799f68e7cc11bf06450cd0a656b3c687f5b311694c"
+      },
+      {
+        "file": "src/features/learning/persistence-provider.tsx",
+        "sha": "44d5f02b78a3168e710bc16ccd9c7fc9fbecca81",
+        "size": 1180,
+        "sha256": "d943acd0c9be6323259eb2f4f9f09ce545d457086c03bff9605f70b145bb724a"
+      },
+      {
+        "file": "src/features/learning/saved-state.ts",
+        "sha": "4989e6fae53ed7f2a10c96cd354fb66a05091980",
+        "size": 428,
+        "sha256": "790c2f62cb61d561d0059ed805bbc83ab69b9e5d2453d882ebf2b6e78a520ea1"
+      },
+      {
+        "file": "src/features/references/reference-collection.tsx",
+        "sha": "0008754a0dd9a8b2a95a2de07604f23253eea9a8",
+        "size": 2268,
+        "sha256": "6a9faa7268bf6622d24eaf50f6913504f7bd0e6dd9928d5085cf7ad33805cfb9"
+      },
+      {
+        "file": "src/features/references/reference-dialog.tsx",
+        "sha": "b635bd8615c1d30f9379219f2e4c981520e6f204",
+        "size": 2497,
+        "sha256": "c66b2676ab3c09c9e48d4be6757e479586c6f5d0c53795481270a7585bd9d93d"
+      },
+      {
+        "file": "src/features/references/references.module.css",
+        "sha": "c0a8baaf2ecf3e08bd6f6ab5aa593192bd716e69",
+        "size": 2195,
+        "sha256": "6e88c205d1ac4f6cc4c8eb3fa2dd31d956a5e2c1e3839581b53dbac569ad9c36"
+      },
+      {
+        "file": "src/lib/course.ts",
+        "sha": "ec43d175100859c0be01d1028eb9cd77cf28153b",
+        "size": 2356,
+        "sha256": "f3f6fceb4dbcb47570419f5b0040e758a3743424fb587e2b1a005fa3b9523355"
+      },
+      {
+        "file": "src/lib/use-media-query.ts",
+        "sha": "403ee50aea9959b0486e741ef558767903306c69",
+        "size": 561,
+        "sha256": "05613fa2b8d2f4b5e8aadd4c70f2d0a793baae93f3912d9309a9b7b4d94e80bc"
+      },
+      {
+        "file": "src/lib/youtube.ts",
+        "sha": "87164dbb1df365a08df35dd4898109d009ced5b7",
+        "size": 1749,
+        "sha256": "f318eac4822266d30740875fd958c52fff1cfd21b3ef81b2c46c36d20cfcd6ea"
+      },
+      {
+        "file": "src/types/course.ts",
+        "sha": "b231ac5d1ea99958100a0cb11a78e612d0ea8ce3",
+        "size": 1342,
+        "sha256": "f4f38372a017c2456f866c1b6bc17a918e6f8e7d7072a2f07fd1b52946992af9"
+      },
+      {
+        "file": "src/types/interaction.ts",
+        "sha": "dae230812a06581ecd292f930a48ad266086882e",
+        "size": 632,
+        "sha256": "279df366779d289c6975f5ddd627c371eef84698eeb4682f65cfa648f663f85f"
+      },
+      {
+        "file": "src/types/reference.ts",
+        "sha": "a538e5951bf7fbd3e5dc0cb241fae32b4b542b60",
+        "size": 190,
+        "sha256": "ab82b8596e91cf66cfe735fb494dcf6f709fc6a94daa66c21b9513f0024cda72"
+      },
+      {
+        "file": "tsconfig.json",
+        "sha": "a123b6044c5963fc5cf8807f86179702053d0502",
+        "size": 738,
+        "sha256": "ec19fe842f7bc3f95afd9fe0001e7b3a66e6a795c133b8aa60401cf38e5f40be"
+      }
+    ]
+  },
+  "buildEvents": [
+    {
+      "created": 1791644256609,
+      "date": 1791644256609,
+      "type": "stdout",
+      "text": "Running build in Washington, D.C., USA (East) – iad1",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644256610,
+      "date": 1791644256610,
+      "type": "stdout",
+      "text": "Build machine configuration: 2 cores, 8 GB",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644256671,
+      "date": 1791644256671,
+      "type": "stdout",
+      "text": "Retrieving list of deployment files...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644257028,
+      "date": 1791644257028,
+      "type": "stdout",
+      "text": "Downloading 89 deployment files...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644258248,
+      "date": 1791644258248,
+      "type": "stdout",
+      "text": "Restored build cache from previous deployment (8WbJNHZf6uT6BBoT5WDbaPuvieMg)",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644260536,
+      "date": 1791644260536,
+      "type": "stdout",
+      "text": "Running \"vercel build\"",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644260616,
+      "date": 1791644260616,
+      "type": "stderr",
+      "text": "Vercel CLI 62.7.0",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644261386,
+      "date": 1791644261386,
+      "type": "stderr",
+      "text": "Warning: Detected \"engines\": { \"node\": \"^22.13.0 || >=24\" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: https://vercel.link/node-version",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644261400,
+      "date": 1791644261400,
+      "type": "stdout",
+      "text": "Running \"install\" command: `npm ci`...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263875,
+      "date": 1791644263875,
+      "type": "stderr",
+      "text": "npm warn ERESOLVE overriding peer dependency",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263877,
+      "date": 1791644263877,
+      "type": "stderr",
+      "text": "npm warn While resolving: eslint-plugin-import@2.32.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263877,
+      "date": 1791644263877,
+      "type": "stderr",
+      "text": "npm warn Found: eslint@10.12.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263877,
+      "date": 1791644263877,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263877,
+      "date": 1791644263877,
+      "type": "stderr",
+      "text": "npm warn   dev eslint@\"10.12.0\" from the root project",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263877,
+      "date": 1791644263877,
+      "type": "stderr",
+      "text": "npm warn   11 more (@eslint-community/eslint-utils, @eslint/compat, ...)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn Could not resolve dependency:",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn peer eslint@\"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9\" from eslint-plugin-import@2.32.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint-config-next/node_modules/eslint-plugin-import",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn   eslint-plugin-import@\"^2.32.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn   1 more (eslint-import-resolver-typescript)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn Conflicting peer dependency: eslint@9.39.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn   peer eslint@\"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9\" from eslint-plugin-import@2.32.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next/node_modules/eslint-plugin-import",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn     eslint-plugin-import@\"^2.32.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn     node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263878,
+      "date": 1791644263878,
+      "type": "stderr",
+      "text": "npm warn     1 more (eslint-import-resolver-typescript)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263951,
+      "date": 1791644263951,
+      "type": "stderr",
+      "text": "npm warn ERESOLVE overriding peer dependency",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263953,
+      "date": 1791644263953,
+      "type": "stderr",
+      "text": "npm warn While resolving: eslint-plugin-jsx-a11y@6.10.2",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263953,
+      "date": 1791644263953,
+      "type": "stderr",
+      "text": "npm warn Found: eslint@10.12.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   dev eslint@\"10.12.0\" from the root project",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   11 more (@eslint-community/eslint-utils, @eslint/compat, ...)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn Could not resolve dependency:",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9\" from eslint-plugin-jsx-a11y@6.10.2",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint-config-next/node_modules/eslint-plugin-jsx-a11y",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   eslint-plugin-jsx-a11y@\"^6.10.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn Conflicting peer dependency: eslint@9.39.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9\" from eslint-plugin-jsx-a11y@6.10.2",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next/node_modules/eslint-plugin-jsx-a11y",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn     eslint-plugin-jsx-a11y@\"^6.10.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644263954,
+      "date": 1791644263954,
+      "type": "stderr",
+      "text": "npm warn     node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264024,
+      "date": 1791644264024,
+      "type": "stderr",
+      "text": "npm warn ERESOLVE overriding peer dependency",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264025,
+      "date": 1791644264025,
+      "type": "stderr",
+      "text": "npm warn While resolving: eslint-plugin-react@7.37.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn Found: eslint@10.12.0",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   dev eslint@\"10.12.0\" from the root project",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   11 more (@eslint-community/eslint-utils, @eslint/compat, ...)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn Could not resolve dependency:",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7\" from eslint-plugin-react@7.37.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn node_modules/eslint-config-next/node_modules/eslint-plugin-react",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   eslint-plugin-react@\"^7.37.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn Conflicting peer dependency: eslint@9.39.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7\" from eslint-plugin-react@7.37.5",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn   node_modules/eslint-config-next/node_modules/eslint-plugin-react",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn     eslint-plugin-react@\"^7.37.0\" from eslint-config-next@16.3.8",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644264026,
+      "date": 1791644264026,
+      "type": "stderr",
+      "text": "npm warn     node_modules/eslint-config-next",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285187,
+      "date": 1791644285187,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285187,
+      "date": 1791644285187,
+      "type": "stdout",
+      "text": "added 345 packages, and audited 346 packages in 23s",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285192,
+      "date": 1791644285192,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285192,
+      "date": 1791644285192,
+      "type": "stdout",
+      "text": "136 packages are looking for funding",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285192,
+      "date": 1791644285192,
+      "type": "stdout",
+      "text": "  run `npm fund` for details",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285272,
+      "date": 1791644285272,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285272,
+      "date": 1791644285272,
+      "type": "stdout",
+      "text": "5 high severity vulnerabilities",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285272,
+      "date": 1791644285272,
+      "type": "stdout",
+      "text": "To address all issues (including breaking changes), run:",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285272,
+      "date": 1791644285272,
+      "type": "stdout",
+      "text": "  npm audit fix --force",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285272,
+      "date": 1791644285272,
+      "type": "stdout",
+      "text": "Run `npm audit` for details.",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285278,
+      "date": 1791644285278,
+      "type": "stderr",
+      "text": "npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285280,
+      "date": 1791644285280,
+      "type": "stderr",
+      "text": "npm warn install-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285280,
+      "date": 1791644285280,
+      "type": "stderr",
+      "text": "npm warn install-scripts",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285280,
+      "date": 1791644285280,
+      "type": "stderr",
+      "text": "npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285364,
+      "date": 1791644285364,
+      "type": "stdout",
+      "text": "Detected Next.js version: 16.3.8",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285366,
+      "date": 1791644285366,
+      "type": "stdout",
+      "text": "Running \"npm run build\"",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285576,
+      "date": 1791644285576,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285577,
+      "date": 1791644285577,
+      "type": "stdout",
+      "text": "> itlegend-course-player@0.1.0 build",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285577,
+      "date": 1791644285577,
+      "type": "stdout",
+      "text": "> next build",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644285577,
+      "date": 1791644285577,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644286226,
+      "date": 1791644286226,
+      "type": "stdout",
+      "text": "▲ Next.js 16.3.8 (Turbopack)",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644287195,
+      "date": 1791644287195,
+      "type": "stdout",
+      "text": "  Applying modifyConfig from Vercel",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644287200,
+      "date": 1791644287200,
+      "type": "stdout",
+      "text": "✓ Running next.config.ts took 974ms",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644287221,
+      "date": 1791644287221,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644287310,
+      "date": 1791644287310,
+      "type": "stdout",
+      "text": "  Creating an optimized production build ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644288987,
+      "date": 1791644288987,
+      "type": "stdout",
+      "text": "✓ Compiled successfully in 673ms",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644288993,
+      "date": 1791644288993,
+      "type": "stdout",
+      "text": "  Running TypeScript ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644291922,
+      "date": 1791644291922,
+      "type": "stdout",
+      "text": "  Finished TypeScript in 2.9s ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644291930,
+      "date": 1791644291930,
+      "type": "stdout",
+      "text": "  Collecting page data using 1 worker ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644292809,
+      "date": 1791644292809,
+      "type": "stdout",
+      "text": "  Generating static pages using 1 worker (0/10) ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644292979,
+      "date": 1791644292979,
+      "type": "stdout",
+      "text": "  Generating static pages using 1 worker (2/10) \r",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644292995,
+      "date": 1791644292995,
+      "type": "stdout",
+      "text": "  Generating static pages using 1 worker (4/10) \r",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293055,
+      "date": 1791644293055,
+      "type": "stdout",
+      "text": "  Generating static pages using 1 worker (7/10) \r",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293090,
+      "date": 1791644293090,
+      "type": "stdout",
+      "text": "✓ Generating static pages using 1 worker (10/10) in 281ms",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293208,
+      "date": 1791644293208,
+      "type": "stdout",
+      "text": "  Finalizing page optimization ...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293263,
+      "date": 1791644293263,
+      "type": "stdout",
+      "text": "  Running onBuildComplete from Vercel",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293324,
+      "date": 1791644293324,
+      "type": "stderr",
+      "text": "Warning: Detected \"engines\": { \"node\": \"^22.13.0 || >=24\" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: https://vercel.link/node-version",
+      "level": "warning",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293662,
+      "date": 1791644293662,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "Route (app)",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "┌ ○ /",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "├ ○ /_not-found",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "├ ƒ /courses/[slug]",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "└ ○ /icon.svg",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "○  (Static)   prerendered as static content",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293665,
+      "date": 1791644293665,
+      "type": "stdout",
+      "text": "ƒ  (Dynamic)  server-rendered on demand",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293666,
+      "date": 1791644293666,
+      "type": "stdout",
+      "text": "",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293829,
+      "date": 1791644293829,
+      "type": "stderr",
+      "text": "Build Completed in /vercel/output [33s]",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644293859,
+      "date": 1791644293859,
+      "type": "stdout",
+      "text": "Deploying outputs...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644300876,
+      "date": 1791644300876,
+      "type": "stdout",
+      "text": "Deployment completed",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644300881,
+      "date": 1791644300881,
+      "type": "stdout",
+      "text": "Creating build cache...",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644314127,
+      "date": 1791644314127,
+      "type": "stdout",
+      "text": "Created build cache: 13s",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644314128,
+      "date": 1791644314128,
+      "type": "stdout",
+      "text": "Uploading build cache [169.02 MB]",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    },
+    {
+      "created": 1791644316849,
+      "date": 1791644316849,
+      "type": "stdout",
+      "text": "Build cache uploaded: 2.721s",
+      "info": {
+        "type": "build",
+        "name": "bld_8q7i008e8",
+        "entrypoint": "."
+      }
+    }
+  ],
+  "protection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "scope": "Public production release through source-upload API. No SSO changes, Git integration, premium upgrades or competition submission."
+}

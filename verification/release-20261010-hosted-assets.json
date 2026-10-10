@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-10T14:59:34.605Z",
+  "origin": "https://itlegend-course-player-taupe.vercel.app",
+  "assets": [
+    {
+      "path": "public/resources/learning-plan.pdf",
+      "status": 200,
+      "bytes": 2205,
+      "sha256": "4a758a0e7a186ec18436ad35ccae9b3e4e629cad8cd1f59815249f9152b3a4dc",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "public/resources/learning-plan.png",
+      "status": 200,
+      "bytes": 102642,
+      "sha256": "918bd9a703158d3d84944b04813d2f51c202b06dd7c2fcc9ccd782959cff9572",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "public/images/learner.svg",
+      "status": 200,
+      "bytes": 229,
+      "sha256": "df6a6e5f652c446d9f593e7fc7c3e207987a95860155f9c203bcf75cd91364a6",
+      "matchesCommittedSource": true
+    }
+  ],
+  "excluded": {
+    "path": "public/media/accessible-interfaces-1.png",
+    "status": 404,
+    "expected": 404
+  }
+}

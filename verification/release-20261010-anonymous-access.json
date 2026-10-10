@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-10T15:05:36.521Z",
+  "anonymous": true,
+  "rows": [
+    {
+      "url": "https://itlegend-course-player-taupe.vercel.app/",
+      "status": 200,
+      "redirectHost": null,
+      "containsApp": true,
+      "hasSixEntries": true
+    },
+    {
+      "url": "https://itlegend-course-player-taupe.vercel.app/courses/computer-science-fields",
+      "status": 200,
+      "redirectHost": null,
+      "containsApp": true
+    },
+    {
+      "url": "https://itlegend-course-player-taupe.vercel.app/courses/programming-introduction",
+      "status": 200,
+      "redirectHost": null,
+      "containsApp": true
+    },
+    {
+      "url": "https://itlegend-course-player-ahmadkassar1s-projects.vercel.app/",
+      "status": 302,
+      "redirectHost": "vercel.com",
+      "containsApp": false
+    }
+  ]
+}
