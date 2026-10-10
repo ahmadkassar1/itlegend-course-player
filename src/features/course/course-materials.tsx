@@ -16,7 +16,7 @@ export function CourseMaterials({ course }: { course: Course }) {
     { label: "Source", value: "YouTube", icon: "globe" },
     {
       label: "Exercises",
-      value: "2 · Created for this site",
+      value: "2 site exercises",
       icon: "document",
     },
     { label: "Language", value: course.language, icon: "globe" },
