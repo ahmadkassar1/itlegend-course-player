@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-10T08:59:59.756Z",
+  "revision": "311e857b53192be008a86dbb6771175e467cb0c6",
+  "buildId": "TN_kcJcwyMYH4vA3QNdNY",
+  "method": "Fresh installed Chrome contexts; real CDN images and real YouTube iframe, no interception",
+  "profiles": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "mobile": false,
+      "cards": [
+        {
+          "title": "كل اللي لازم تعرفه عن الـ DNS قبل ما تعمل موقعك",
+          "thumbnail": "https://i.ytimg.com/vi/1fSAAzrxK6E/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "مكونات الكمبيوتر | مقدمة  في علوم الحاسب",
+          "thumbnail": "https://i.ytimg.com/vi/2mySUIR9k20/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "لغة c++ من مخترعها ؟ و كيف تطورت ؟",
+          "thumbnail": "https://i.ytimg.com/vi/Gd6RBwunPL4/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "الحل النهائي للنجاة في عصر ال AI",
+          "thumbnail": "https://i.ytimg.com/vi/q5rXYEuFzEQ/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        }
+      ],
+      "nativeControls": "Real Play video control visible",
+      "iframeURL": "https://www.youtube-nocookie.com/embed/1fSAAzrxK6E?enablejsapi=1&origin=http%3A%2F%2F127.0.0.1%3A3100&playsinline=1&rel=0&cc_load_policy=1&start=0",
+      "horizontalOverflow": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "cards": [
+        {
+          "title": "كل اللي لازم تعرفه عن الـ DNS قبل ما تعمل موقعك",
+          "thumbnail": "https://i.ytimg.com/vi/1fSAAzrxK6E/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "مكونات الكمبيوتر | مقدمة  في علوم الحاسب",
+          "thumbnail": "https://i.ytimg.com/vi/2mySUIR9k20/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "لغة c++ من مخترعها ؟ و كيف تطورت ؟",
+          "thumbnail": "https://i.ytimg.com/vi/Gd6RBwunPL4/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        },
+        {
+          "title": "الحل النهائي للنجاة في عصر ال AI",
+          "thumbnail": "https://i.ytimg.com/vi/q5rXYEuFzEQ/hqdefault.jpg",
+          "naturalWidth": 480,
+          "progress": "0"
+        }
+      ],
+      "nativeControls": "Real Play video control visible",
+      "iframeURL": "https://www.youtube-nocookie.com/embed/1fSAAzrxK6E?enablejsapi=1&origin=http%3A%2F%2F127.0.0.1%3A3100&playsinline=1&rel=0&cc_load_policy=1&start=0",
+      "horizontalOverflow": 0
+    }
+  ]
+}

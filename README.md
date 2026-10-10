@@ -1,119 +1,92 @@
-# ITLegend course player
+# Ali Shahin video library
 
-An isolated Next.js App Router and TypeScript frontend with six anonymous course journeys. The player implements inline video, sticky mobile playback, desktop Wide/fullscreen, curriculum selection, course progress, PDF/exam/question/leaderboard dialogs and local comments. It follows the supplied desktop/mobile image and Arabic annotations. Exact photo/avatars, confirmed source-font metadata and physical-phone checks remain open; this is not a claim of complete fidelity or competition clearance.
+A Next.js App Router and TypeScript implementation of the ITLegend course-player challenge. The catalogue contains four published Ali Shahin videos, with their original Arabic titles, YouTube thumbnails and native player. Search, topic/status filters, sorting and resume information use the same learning state as the detail pages.
+
+This is an independent challenge project, not a creator product or an endorsed course platform. Editorial descriptions and the companion worksheet/study-skills check are written for this site. Each entry contains **one published video and two site exercises**; it is not an imported playlist syllabus. Full creator collections remain available through source links.
 
 ## Run locally
 
-Use Node **22.13+ within 22.x, or 24+**. Verification uses Node 22.14.0/npm 10.9.2; `package-lock.json` pins the installed dependency graph. No account, API keys, backend or environment variables are required.
+Use Node.js `^22.13.0 || >=24` and npm. From this directory:
 
 ```sh
 npm ci
-npm run dev
+npm run dev -- --port 3100
 ```
 
-Production preview:
+Open [localhost](http://127.0.0.1:3100/). For the production version:
 
 ```sh
 npm run build
 npm run start -- --port 3100
 ```
 
-Scripts bind to localhost. Open `http://127.0.0.1:3100`; this is a local preview, not a deployment. GitHub visibility is independent of package.json's `private: true`, which prevents accidental npm publication.
+No YouTube API key, account, database or environment variable is required. An internet connection is needed for the original thumbnails, player and creator links. Fonts, the worksheet and site interface are local. No dependencies were added for YouTube.
 
-## Architecture
+## Explore and learn
 
-| Location                            | Responsibility                                                                                     |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `src/app`                           | Server route pages, metadata, root layout and not-found handling; awaited route/search parameters  |
-| `src/app/fonts.ts`, `src/app/fonts` | Self-hosted Latin font definitions and accompanying OFL notices                                    |
-| `src/data`, `src/types`             | Six course fixtures, explicit discriminated lesson types, worksheet, quiz and motivational content |
-| `src/lib`                           | Shared lesson/status/progress/ranking selectors and media-query subscription                       |
-| `src/features/catalogue`            | Discovery filters, progress summary, resume/card destinations and local learning settings          |
-| `src/features/references`           | Shared attributed video collections and a deferred, intent-loaded reference player                 |
-| `src/features/course`               | Player/layout/curriculum, server facts/comment slots, focused dialog/form components               |
-| `src/features/learning`             | Separate provider-owned learning and interaction stores with validated pure transitions            |
-| `src/components`                    | Shared native dialog shell and original inline SVG icons                                           |
-| `public`                            | Original local SVG illustrations, WebM/captions and worksheet PDF/page preview                     |
-| `tests`, `scripts`                  | Unit/browser checks, lint guard, authoring tools and reproducible production measurements          |
+Choose a video from the catalogue. Its detail page plays the actual YouTube video inline with native controls, captions when available, playback speed and fullscreen. There is no autoplay. Desktop Wide moves the curriculum below the player. Mobile keeps the player at the top; short displays provide vertical scrolling without covering YouTube controls. Browser/device fullscreen support varies.
 
-Server pages resolve valid URLs and supply static header, facts and seeded comment rows as server slots. Client components handle media, layout controls, curriculum, forms and state subscriptions. Full course fixture modules stay out of the initial client JavaScript graph; the route serializes relevant display content and the providers receive minimal validation seeds. Small motivational strings load with the deferred leaderboard code. New comment rows are a client island. Dialog code is dynamically imported only after a dialog opens. There is no arbitrary-PDF renderer, external UI library, third-party font request at runtime or analytics bundle. Fonts are local WOFF2 files loaded through `next/font/local` at the root layout; the application builds without a Google Fonts network dependency.
+Progress starts at **zero**. A video earns one learning step when the official player reports its end, or when you choose **I watched this video**. Pause, periodic playing updates and page exit save the actual playback position; reopening resumes at that position. An unavailable YouTube SDK displays a clear message and retains the native iframe, direct source link and explicit watched action. Watching related previews does not give completion credit.
 
-Curriculum responsibilities are explicit: `Curriculum` coordinates accordion and course state, `CurriculumSection` renders a labelled group, and `CurriculumLesson` renders one navigable lesson. `ProgressMarker` is shared by the desktop progress summary and the mobile first-section marker; its mobile lane reserves space for endpoint values and longer titles. Native dialog semantics and the shared `TextEntryForm` serve every popup/form without a duplicate state store.
+Under **Topics for This Course → Your study practice**, open:
 
-```mermaid
-flowchart TD
-  Routes[Server routes and metadata] --> Slots[Header, facts and seeded comments]
-  Routes --> Player[Client course layout and lesson player]
-  Player --> Curriculum[Curriculum sections and lesson rows]
-  Player --> Dialogs[Deferred PDF, exam, question and leaderboard]
-  Providers[Provider-owned learning and interaction stores] --> Player
-  Providers --> Catalogue[Catalogue progress and Continue links]
-  Providers --> Forms[Comment and question forms]
-```
+- **Study worksheet · Site exercise**: a full-screen dialog with the original site PDF, rendered page, accessible text, zoom controls and a Mark read action.
+- **Study skills check · Site exercise**: five original questions, a ten-minute practice clock, saved answers, unanswered-question guidance and scored review. This is neither an Ali Shahin assessment nor a certification.
 
-Learning state tracks selected/completed lessons and per-lesson playback positions. A separate interaction store tracks question/comment drafts, posted demo rows and quiz attempts so typing does not update the media/progress subscription. Stores belong to the mounted providers: no mutable server singleton, cross-user state or backend. A small browser coordinator saves both stores in one versioned localStorage envelope after mount, preserving cached server snapshots during hydration. Pure transitions reject foreign IDs, invalid options/indices, nonfinite positions, blank/oversized messages and duplicate completion/submission. Course-specific snapshots keep unrelated courses unchanged.
+The exam route for the first video is `/courses/webology?lesson=study-check`; the worksheet is `/courses/webology?lesson=study-worksheet`. Timers, grades and completion describe your local practice, not published creator statistics.
 
-URLs select lessons, support direct links and browser back/forward, and fall back safely for invalid lesson IDs. Missing courses show a 404. Local state survives dialog reopening and client navigation; **reloads and new tabs restore valid browser history for the same origin**. This user-directed realism improvement is not an explicit Figma rule. Progress, selected lesson, paused/hidden playback position, drafts, the latest 50 local questions/reviews per course, exam answers/index, practice start/finish timestamps and submitted result persist. Scores are recalculated from validated answers; removed lesson/question/option IDs are discarded. Schema or content-version changes return to the mock baseline. Persistence is device/origin specific, unauthenticated and editable by the browser user; it is not a server grade record. Simultaneously open tabs do not live-sync: the last successful whole-envelope write wins. Private browsing, cleared storage, blocked storage or quota limits can prevent retention. The catalogue reports saving status and provides a confirmed reset for every course. Work remains functional in memory when saving fails, and confirmations do not claim durable saving in that case.
+Comments and questions start empty. Posting adds your own literal text at the top of the bounded history. Drafts survive closing and reopening dialogs. Nothing is posted to YouTube or sent to an instructor. The leaderboard dialog shows only your saved activity; no classmates, enrollments, reviews or comparative ranking are fabricated. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
 
-## Design and required behavior
+## Structure
 
-CSS Modules share color variables. Desktop places the player beside curriculum with the source's column/gap relationships. Below 1024px content stacks; below 768px the player stays sticky, with measured section-scroll offsets and a short-viewport height cap. Controls retain 44px targets. One dataset serves every width. The reference course shows the shorter desktop title and full mobile title; the accessible heading and metadata retain its full name. Optional data aliases provide presentation labels without duplicating courses or lesson state. Canonical facts/syllabus keep the screenshot's conflicting datasets explicit; see [design review](verification/Design-Review.md).
+| Location                                       | Responsibility                                                                             |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| `src/app`                                      | App Router pages, metadata, global tokens and self-hosted fonts                            |
+| `src/data/video-references.ts`                 | Verified video IDs, original titles/thumbnails, source collections and editorial summaries |
+| `src/data/courses.ts`                          | Typed video entries and explicitly independent study exercises                             |
+| `src/data/study-practice.ts`, `worksheet.json` | Original site exercise content                                                             |
+| `src/components`                               | Shared dialog, icons and native YouTube player                                             |
+| `src/lib/youtube.ts`                           | Typed, deduplicated official iframe SDK loader with failure handling                       |
+| `src/features/catalogue`                       | Cards, search/filter/sort, summary and learning-data reset                                 |
+| `src/features/course`                          | Responsive player layout, curriculum, PDF/exam, comments and questions                     |
+| `src/features/learning`                        | Provider-scoped learning/interaction stores, validation and atomic browser persistence     |
+| `src/features/references`                      | Related videos and an intent-loaded preview dialog                                         |
+| `tests/unit`, `tests/e2e`                      | State invariants and production-browser journeys                                           |
+| `verification`                                 | Dated results, captures, source records and limitations                                    |
 
-Play starts the original, lesson-specific silent demo **inline**, with native controls, captions and an accessible transcript. No autoplay on lesson selection; `preload="none"` prevents initial video downloads. Normal/Wide/fullscreen keep one mounted video and its time. Changing lesson retains its own position. Maximize requests real browser fullscreen or the native video fallback, with truthful unavailable/error feedback. Actual phone fullscreen with auto-rotate disabled remains unverified.
+The server selects route data; client providers own each browser's learning state. Discriminated lesson types require the correct resource for video, PDF or exam. UI components do not write storage directly. Validated stores reject unknown IDs, invalid options, oversized drafts and duplicate completion, and recompute submitted scores when restoring saved data.
 
-Ended video credits completion once. PDF completion requires explicit **Mark read**. A fully answered submitted exam credits completion once regardless of score; the result becomes immutable while answers remain reviewable. Initial SEO completion is five video lessons out of eight, rounded to 63%; PDF/exam start unfinished. Progress and Continue destinations stay consistent with the catalogue. Progress animates on viewport entry; reduced motion shows its final value directly.
+Learning is stored under `course-library:youtube-learner:v1`, content version `2026-10-youtube-content-1`. Earlier fictional-course history is preserved under its old key and is not imported. Browser storage can be cleared, blocked or full; the UI reports memory-only operation honestly. **Clear my learning data** asks for confirmation and resets all current entries to empty history. Data is local to this browser/origin, with no cross-device sync or shared backend.
 
-The shared native dialog supplies modal semantics, inert background, contained Tab/Shift+Tab, Escape, visible Close, focus return and body-scroll restoration. PDF/exam cover the viewport. PDF displays the actual rendered original page with fit/150%/200% zoom, equivalent accessible text and an original-file link; preview failure exposes text automatically. Questions share comment styling and retain drafts. Comments validate input and render submitted content as literal text. New local comments appear newest-first above the unchanged server-rendered seed rows; saved questions also appear newest-first. Both histories use the shared `MessageHistory` component: labeled keyboard-focusable scroll regions, `overflow-y: auto`, viewport/rem height limits, stable scrollbar space and wrapped long text. Comment history caps at `min(36rem, 65svh)`; saved questions cap at `min(22rem, 40svh)`. Forms remain outside these history scrollers. A new post resets only its history to the top, preserving page position and focus; draft edits do not reset scrolling. Storage remains chronological with its existing last-50 retention, so no data migration is needed. Demo submissions have no network side effects. Near the existing 2,000-character limit, both forms show remaining space and explain when the limit is reached; ordinary drafts keep the reference layout. Assistive technology can read the limit description at any length.
+## Source and media handling
 
-The exam follows the blue gradient, back-chevron Close, centered yellow stopwatch, numbered navigation and white answer card. Its five questions are original fixtures. Incomplete submission focuses feedback with the number of missing answers and a button to the first unanswered question. Question navigation brings the current prompt into view, including short landscape displays; saved answers stay intact. A ten-minute **practice countdown** starts once and continues by wall-clock time through closing/reloading, then freezes when answers are submitted. It clamps at zero and permits continued practice without discarding answers or automatic submission. Optional validated timestamps extend existing saves without resetting prior history. These expiry defaults are interpretations: the screenshots show a timer but give no enforcement policy. The compact leaderboard uses fictional learners, tied ranks and level-dependent original Arabic encouragement with RTL and ordinary emoji. Copy is not an authentic Ali Shahin quote or endorsement. Completion, level and quiz rules are documented engineering defaults, not official organizer policies.
+Four titles, authors and thumbnails were verified against YouTube's official oEmbed responses on **10 October 2026**. See [metadata](verification/youtube-20261010-metadata.json) and [asset provenance](ASSETS.md). Thumbnails load directly from their published `i.ytimg.com` URLs, preserving the original 4:3 image. No creator footage or image is downloaded or rehosted.
 
-M4 adjusts sampled colors for contrast: action teal `#217b6a` is 5.11:1 on white; progress green `#438f63` is 3.23:1 on its track. Main/section targets accept keyboard focus and inputs have visible boundaries. Typography now uses locally hosted Poppins body text and Spartan headings, selected by visual comparison; exact source-family metadata is still unconfirmed. Original photo/avatars remain illustrative substitutes. Populated topic-specific demo rows, readable touch targets/contrast and functional navigation remain declared differences. Curriculum rows show a closed lock when incomplete and an open lock when complete, with accessible completion text; exam rows retain their two badges. All lessons remain selectable. The source shows lock symbols even beside the current lesson at63%, so gating prerequisites cannot be inferred from it; the state-dependent shackle is a documented interpretation. The exam uses native radio semantics styled as the reference's square controls, with a native appearance fallback in forced colors and a white back-chevron Close on the blue surface. The screenshot-only Figma export is intentional and remains the reference; inaccessible live Figma was not repeatedly retried. [Asset provenance](ASSETS.md) records every included source and limitation.
+Opening a video detail page contacts YouTube through the official privacy-enhanced iframe and SDK. The catalogue contacts the thumbnail CDN, but does not mount a player or load the SDK. Related preview dialogs mount their player only after **Load YouTube player**. Each iframe has an explicit title, origin, inline playback, fullscreen permission and `strict-origin-when-cross-origin` referrer policy. YouTube controls advertising, regional availability and captions; the direct source link remains available.
 
-## Catalogue discovery and video references
+For a new video, verify its channel ownership and published metadata first, then add a typed record to `video-references.ts`. Do not invent durations, reviews or playlist lesson counts. Record source/date/permissions in `ASSETS.md` and update the real-content journeys.
 
-The catalogue offers case-insensitive search by course, description, topic or instructor, topic buttons, learning-status filters and sorting by featured order, name or progress. Filters combine; Clear filters and the empty-state action restore the full list and focus search. A resume card follows the selected lesson of the first course in progress, with an unstarted course as its fallback. The learning summary and card counts come from the same provider-owned state as the player. Initial history is still a fictional demo baseline; there is no cross-device account history. Catalogue filters are local to the page visit and reset on reload.
+Earlier locally authored demo media, worksheets and `course-content.json` are preserved for provenance and the historical authoring scripts. They are **not active course data**. The unused demo adapter was removed. Source screenshots/DOCX, Obsidian notes and the user's existing private app are outside this isolated repository.
 
-The separate **Learn with Ali Shahin** collection contains verified Webology, computer-science and Arabic C++ playlists from his requested channel. Preview opens the first listed video with creator and full-collection links. Detail pages offer two related references under **Comments → Related videos from Ali Shahin**, including a general learning-skills video. The channel material complements our six original practice courses; it does not replace the Figma curriculum or imply that Ali Shahin authored or endorsed our demo syllabi, reviews, worksheets or exams.
-
-`src/data/video-references.ts` holds the curated source IDs and editorial descriptions; `src/features/references` shares the reference cards and deferred dialog. No YouTube iframe, thumbnail, SDK, preconnect or network request is added to the initial page. **Load YouTube player** mounts an official privacy-enhanced `youtube-nocookie.com` iframe, with inline playback, native controls/fullscreen and default captions when available. It sends the origin Referer using `strict-origin-when-cross-origin`; `rel=0` limits YouTube’s related recommendations to the source channel, rather than disabling them. No autoplay is requested. Direct watch/playlist/channel links remain available for restricted or failed embeds. Closing unmounts the player and restores the trigger focus; reopening requires a fresh deliberate load. External viewing has no local completion or persistence side effects. The original local lessons keep their existing playback/completion behavior.
-
-Source titles/ownership/URLs were checked on 10 October 2026; titles can be localized and collections can change. See [source evidence](verification/catalogue-20261010-reference-sources.json) and [asset provenance](ASSETS.md). No creator footage, portrait or thumbnail was downloaded or rehosted. YouTube controls availability, captions and advertising. Existing competition-policy and publication gaps remain unresolved.
-
-## Usage and extending the fixtures
-
-Open the catalogue and choose Start or Continue. **Find the SEO exam under Topics for This Course → Course Introduction → the third Course Overview row (5 QUESTIONS /10 MINUTES)**; clicking the row opens it. Its direct route is `/courses/starting-seo?lesson=knowledge-check`; choose Open exam on the preview. The other five courses expose Final Knowledge Check at the end of the curriculum. Select a curriculum lesson to update the player and its URL. Play remains inline; use Wide on desktop or Maximize for browser fullscreen. Curriculum/comments controls scroll to their sections, and the other two controls open question and leaderboard dialogs. PDF and exam rows open screen-sized dialogs; answers, drafts, posted comments and action-derived progress are saved on this device when storage is available. Reset demo learning data in the catalogue footer to restore the seeded history; cancellation keeps it unchanged.
-
-To add a course, create a typed entry in `src/data/courses.ts` with a unique slug, section/lesson IDs and valid `initialLessonId`/`initialCompletedLessonIds`. Catalogue cards, routes and provider seeds derive from that data. Lesson kinds are discriminated in `src/types/course.ts`: videos require media/captions/transcript, PDFs require a worksheet, and exams require a structured question set. Keep original content separate from presentation aliases, and update tests when changing fixture contracts.
-
-Use `src/data/course-content.json` as the source of truth for 45 lesson outlines, 18 fictional reviews, six worksheets, six five-question assessments and six distinct peer groups. `course-content.ts` adapts this JSON to typed resources; `motivation.ts` supplies the original level-dependent Arabic encouragement. Course/lesson IDs and initial completion counts remain stable. Five supplemental courses replace their final two generic video slots with a topic worksheet and assessment; the source SEO curriculum labels stay unchanged despite its hybrid SEO/development syllabus. Every video has four unique topic steps, its own 900×600 poster, WebM, captions and transcript. These are roughly 16-second silent demo summaries, not full commercial lectures or original reference footage; one-minute video rows are rounded estimates, worksheets/exams are practice allowances and week counts are fictional course pacing. No placeholder Student Name Goes Here/lorem ipsum or repeated study-plan clip is used in the active fixture. `scripts/generate-course-media.mjs` uses installed Playwright/Chrome; `scripts/generate-course-worksheets.py <pdftoppm-path>` uses Python/ReportLab/Poppler. Both read the same JSON and are authoring tools only; normal setup/build needs neither Python nor Poppler. `scripts/verify-course-media.mjs` decodes every new clip and checks four distinct frames. Historical study-plan/learning-plan assets remain unchanged for provenance; active lessons use the new files. Record replacement assets and their permissions in `ASSETS.md`. Keep stylesheet changes in CSS Modules and shared tokens in `src/app/globals.css`, and verify long text and intermediate widths after changes.
-
-## Verification
-
-Current evidence: [Catalogue-Discovery.md](verification/Catalogue-Discovery.md) records the catalogue/reference implementation at `959b722`, 84 production browser checks, 17 unit checks, 26 viewport profiles, dated creator sources and one actual YouTube playback observation. Automated iframe checks use a controlled response; the real playback observation is separate. Public submission and physical-device acceptance remain open.
+## Check the project
 
 ```sh
 npm run check
-npm run format:check
 npm run test:unit
+npm run format:check
 npm run build
 npm run test:e2e
 ```
 
-`check` combines TypeScript, ESLint and invalid-snippet guards proving Next, Hooks and accessibility rules remain active. ESLint 10 uses the official `@eslint/compat` bridge for preset plugins still calling removed context APIs; no rules are disabled. Unit checks use Node's experimental type stripping, with runner-only warnings.
+The browser suite uses the installed Chrome channel, one worker and no retries. It starts the production server on port 3100; stop an existing preview first when using `CI=true`. Set `PLAYWRIGHT_CHANNEL=msedge` for installed Edge or `chromium` for an already available Playwright browser. No browser download is part of these commands.
 
-Playwright uses installed Chrome, starts/reuses the production server on port 3100, and runs one worker with no retries. `CI=true` forces a fresh server. For Edge set `PLAYWRIGHT_CHANNEL=msedge`; for Playwright Chromium install its browser and set `PLAYWRIGHT_CHANNEL=chromium`. No browser download was needed in this environment. In PowerShell, use `$env:PLAYWRIGHT_CHANNEL = "msedge"`.
+The current suite replaces obsolete fictional-course assertions with real-content journeys: exact titles/thumbnail URLs, all four routes, zero history, SDK position/end handling, storage failures/reset, PDF/exam, search, bounded message histories, modal focus, accessibility and 26 representative viewport profiles. The SDK and embed response are controlled in automated tests to verify our integration deterministically. Actual third-party playback is checked separately and recorded with its scope. Axe and emulated viewports are bounded checks, not accessibility certification or physical-device acceptance.
 
-The suite also verifies mobile marker bounds at 0%, 63% and 100%, fonts without third-party runtime requests, and waits for font readiness before captures. It covers six journeys, URL/history/404 handling, playback/resume/ended/Wide/fullscreen, isolated state, all popup/comment flows, native keyboard focus, layout bounds, long Arabic/unbroken content, varied lesson counts, 200% root text sizing plus increased text spacing, rendered Axe checks and computed text/control/focus contrast. M5 adds mobile/desktop request-level checks that video/PDF payloads wait for intent. No timing threshold is used as a flaky functional assertion.
+[Current verification](verification/Real-YouTube-Content.md) identifies the tested revision/build and results. Earlier reports retain their original revisions; the previous 84-case suite does not certify this content replacement.
 
-Default screenshot reruns use ignored `verification/local-current-*` names. Set `VERIFICATION_MILESTONE=m5` only when intentionally saving a new milestone; use `$env:VERIFICATION_MILESTONE = "m5"` in PowerShell. Existing M1-M4 captures must not be overwritten. [M4 evidence](verification/M4.md) records the previous 26-flow verification; [M5 production evidence](verification/M5.md) records historical performance conditions; [design review](verification/Design-Review.md) records the previous comparison; [screenshot implementation evidence](verification/Screenshot-Implementation.md) records the latest refinements and fresh checks.
+## Performance
 
-The latest narrow-layout correction (`3800720`) reduces materials insets at360px and below so labels fit naturally. Eight affected production browser checks pass; the preceding29-flow run is retained as historical evidence for `376c74d`. [Latest screenshot evidence](verification/Screenshot-Implementation.md) distinguishes both revisions and lists the exact remaining asset/presentation gaps. The subsequent [Figma and mock-data inventory](verification/Figma-Inventory.md) lists every observed element/function, confirms19 fresh catalogue/player/dialog checks on the unchanged build, and records the generic fixtures and refresh-reset behavior before the [content and persistence pass](verification/Content-and-Persistence.md). That report records the current implementation and verification separately from earlier milestones.
-
-Axe results and emulated viewports are bounded evidence, not WCAG certification. Actual screen-reader review, browser-native zoom, physical-phone fullscreen/orientation, Safari, touch and virtual-keyboard behavior remain open. Root text sizing and 320 CSS pixel reflow do not establish native browser zoom behavior.
-
-## Performance measurement
-
-With the production server already running, use another terminal:
+With the production server running:
 
 ```sh
 node scripts/measure-production.mjs
@@ -121,34 +94,16 @@ node node_modules/next/dist/bin/next experimental-analyze --output
 node scripts/summarize-bundle.mjs
 ```
 
-Reports default to ignored `verification/local-*.json`. An optional output-path argument saves intentional milestone evidence. `PERF_BASE_URL` overrides the measurement target; the default is localhost. The analyzer is built into the installed Next version and performs a separate experimental compile, not a deployable build. Its summarizer supports the inspected Next 16.3.8 internal format and fails visibly if that format changes. Runtime bytes are measured separately.
+The measurement script uses three cache-disabled loads per catalogue/player route and desktop/mobile profile, observed through load plus four seconds without input. Mobile conditions are 430×932/DPR2/touch, 4× CPU slowdown, 150ms latency, 1.6Mbps download and 0.75Mbps upload. Results include requests, LCP, session-window CLS and long tasks, plus question/PDF snapshots. Pass an output filename followed by `--interactions-only` to check just those interactions without repeating navigation timings. Playback is deliberately verified separately; the script does not fabricate a successful external stream. Default `local-*.json` reports are ignored. `PERF_BASE_URL` and an output argument select a target/report.
 
-The lab script records three fresh, cache-disabled loads per route/profile: 1440x1000 desktop/DPR 1/local CPU/network, and 430x932 touch viewport/DPR2 with 4x CPU slowdown, 150ms latency, 1.6Mbps download and 0.75Mbps upload. It observes load plus four seconds without input on a warm localhost server. It records navigation/paint/LCP, session-window CLS, long tasks, requests, image dimensions and asset/chunk inventories. This is neither Lighthouse nor field Core Web Vitals/INP. Hardware, local server, observation window and synthetic throttling limit interpretation.
+Native YouTube introduces third-party costs on the player page, and original CDN thumbnails require network access. Earlier local-demo timings do not describe this version. Lab measurements are not field Core Web Vitals or INP.
 
-Small original SVGs preserve intrinsic dimensions without raster conversion. Four self-hosted Latin WOFF2 files total 56,640 source bytes: three Poppins weights and one Spartan variable font. The heading font is preloaded; body weights are discovered as used. Non-Latin comments and Arabic use the system fallback. Licenses and downloaded hashes are recorded in [asset provenance](ASSETS.md). The worksheet PNG is optimized by `next/image` into a responsive WebP; original PDF/video bytes wait for explicit actions. Native preload-none media, conditional dialogs, server slots and minimal seeds avoid unnecessary initial payloads.
+## Release boundary
 
-Fresh measurements at code revision `376c74d` include the font changes: mobile lab median LCP is 1,324ms catalogue /1,416ms player, with observed CLS zero across those six mobile samples. Desktop medians are 420ms /380ms; maximum desktop CLS is 0.001808. Initial completed font responses total 49,790 bytes including overhead (three files actually requested); completed Script responses total 149,282 catalogue /165,349 player bytes. These bounded lab values describe the historical font-refinement build, not a field-performance guarantee or a controlled speed comparison with M5. [Latest evidence](verification/Screenshot-Implementation.md) records conditions and raw results; M5 retains historical module analysis and measurements.
+There is no configured Git remote or public demo. Local commits use the user's configured author and committer. No push, deployment or submission has occurred.
 
-## Release and submission limits
+The last successful official terms/form inspection was **4 October 2026**. Public GitHub and an anonymously accessible live demo were required; the displayed deadline was **31 October 2026, 9:59 p.m.**, with timezone unresolved. A 10 October access recheck failed, including one browser fallback. AI assistance, reuse, external assets, extras and eligibility nuance remain unanswered; silence is not permission.
 
-The **10 October 2026** npm audit reports zero production advisories and five high-severity entries in one **development-only** chain: braces → micromatch → fast-glob → Next lint plugin/config. npm's proposed config downgrade to 14.2.35 is not a compatible fix for this Next 16 project. No forced downgrade, vendored patch, disabled rule or dependency installation was applied. Active lint guards still pass; the upstream issue remains disclosed. Raw audits are linked from the [current readiness audit](verification/Final-Readiness-Audit.md).
+Exact original Figma assets/font/presentation reconciliation, physical phone/Safari/fullscreen with rotation off, browser-native zoom, screen-reader and virtual-keyboard checks remain open. The real-content change preserves core reference layout while deliberately replacing placeholder identity and local demo media.
 
-Local Git uses the user's configured author/committer and meaningful staged-work commits. No remote is configured because the destination/name/visibility is still missing; no private code/history was imported, and no push/deployment/submission occurred. Source DOCX/PNG and the existing app/deployment are outside this isolated implementation.
-
-Official challenge and terms pages reread on 2026-10-04 require an individual, one submission, a public GitHub repository and an anonymous live demo; displayed deadline is **31 October 2026, 9:59 p.m., timezone unresolved**. AI assistance, reuse, external assets, additional-feature policies and eligibility nuance remain unanswered. Silence is not permission. These rules require a fresh readiness check before authorized publication/submission. Rubric evidence is not an official judging score.
-
-The [current readiness audit](verification/Final-Readiness-Audit.md) distinguishes local verification from a public submission. No repository remote or public demo URL is configured. Exact assets, physical-device checks and official policy answers remain open. An access recheck on 10 October could not open the official pages, including one browser fallback; the last successful terms/form inspection was on 4 October. Historical evidence is preserved; build/dependency/test-output directories and environment files are ignored.
-
-The parent Obsidian vault retains requirements, source locators, decisions and handoff. Technical references checked 2026-10-04: [Next bundle analysis](https://nextjs.org/docs/app/guides/package-bundling), [Next Image](https://nextjs.org/docs/app/api-reference/components/image), [Chrome network conditions](https://developer.chrome.com/docs/devtools/network/reference), [LCP](https://web.dev/articles/lcp), [CLS](https://web.dev/articles/cls).
-
-Persistence references checked 2026-10-04: [React external-store server snapshots](https://react.dev/reference/react/useSyncExternalStore), [MDN localStorage lifetime and access failures](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage). Saved data is plain browser-local demo data; avoid entering sensitive information. No question or review is sent to an instructor.
-
-The 10 October device audit adds checks for 26 representative CSS viewports, touch/mouse contexts, portrait/landscape tablets and phones, breakpoint edges and large desktops. It also checks every course's local media, caption, image and worksheet URL. Results and limits are in [Final-Readiness-Audit.md](verification/Final-Readiness-Audit.md); viewport emulation does not establish physical-device compatibility.
-
-Historical milestones keep their original revisions and conditions:
-
-- [Content and persistence](verification/Content-and-Persistence.md): six datasets,33 clips, six PDFs, browser state and bounded lab measurements.
-- [Exam and curriculum](verification/Submission-Readiness.md): screenshot corrections, practice timer and release gaps.
-- [Message histories](verification/Message-History-Review.md): newest-first ordering, bounded scrolling and focused code review.
-
-The historical [learner usability pass](verification/Learner-Usability.md) records actionable exam feedback, near-limit form guidance and 76 production Chrome checks. Its [Edge and performance follow-up](verification/Final-Readiness-Audit.md#installed-browser-and-current-build-follow-up--10-october-2026) adds 50 selected installed-Edge checks and 12 Chrome navigation samples on the preceding runtime. Those timings do not describe the new catalogue build; every report retains its original revision and measurement conditions.
+The dated 10 October npm audit reports zero production advisories and five high-severity development lint-chain entries. An incompatible forced downgrade was not applied. See [readiness audit](verification/Final-Readiness-Audit.md) for historical raw records and pending acceptance. Local verification alone is not submission readiness.

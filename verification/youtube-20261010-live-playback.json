@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-10",
+  "method": "Uncontrolled actual YouTube iframe and official SDK in the in-app browser, local production app",
+  "buildId": "d3Qy9Xf1PGxnLjqUQwcx2",
+  "route": "http://127.0.0.1:3100/courses/webology",
+  "videoId": "1fSAAzrxK6E",
+  "originalTitle": "كل اللي لازم تعرفه عن الـ DNS قبل ما تعمل موقعك",
+  "observations": {
+    "playing": { "currentTime": 7.954306, "duration": 1558.421, "paused": false, "readyState": 4 },
+    "paused": { "currentTime": 15.230312, "duration": 1558.421, "paused": true, "readyState": 4 },
+    "reloadIframeURL": "https://www.youtube-nocookie.com/embed/1fSAAzrxK6E?enablejsapi=1&origin=http%3A%2F%2F127.0.0.1%3A3100&playsinline=1&rel=0&cc_load_policy=1&start=15",
+    "progressAfterPartialViewing": 0,
+    "nativeControls": ["Play video", "Playback Settings", "Mute", "Enter full screen", "Seek slider"],
+    "note": "The native player subsequently localized its displayed title into English; site metadata retains the verified original Arabic oEmbed title. Caption availability is provider controlled. No advertised subscriber count was copied into site facts."
+  },
+  "limits": "One actual video playback/pause/resume check. No full 26-minute ended playback, every-video playback certification, physical-phone/Safari/fullscreen/rotation/virtual-keyboard verification, account integration or external completion claim. End/state/reset failures are verified separately with a controlled SDK boundary."
+}

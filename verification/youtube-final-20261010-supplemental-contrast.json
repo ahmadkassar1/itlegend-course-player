@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-10T09:04:26.736Z",
+  "revision": "311e857b53192be008a86dbb6771175e467cb0c6",
+  "method": "Current targeted DOM colours, ancestor backgrounds, bounds and centre hit tests. Gradient colours sampled conservatively at target bottom; not a whole-page accessibility certificate.",
+  "records": [
+    {
+      "width": 320,
+      "state": "pdf",
+      "text": "Study worksheet · Site exercise",
+      "color": "rgb(24, 24, 24)",
+      "background": {
+        "color": "rgb(255, 255, 255)"
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 12,
+        "y": 10,
+        "width": 236,
+        "height": 47.59375
+      },
+      "backgroundRGB": [
+        255,
+        255,
+        255
+      ],
+      "contrastRatio": 17.756264715186326
+    },
+    {
+      "width": 320,
+      "state": "exam",
+      "text": "2",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.15555555555555556
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 84,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.88888888888889,
+        87.04444444444445,
+        192.51111111111112
+      ],
+      "contrastRatio": 6.221480738997337
+    },
+    {
+      "width": 320,
+      "state": "exam",
+      "text": "3",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.15555555555555556
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 138,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.88888888888889,
+        87.04444444444445,
+        192.51111111111112
+      ],
+      "contrastRatio": 6.221480738997337
+    },
+    {
+      "width": 320,
+      "state": "exam",
+      "text": "4",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.15555555555555556
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 192,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.88888888888889,
+        87.04444444444445,
+        192.51111111111112
+      ],
+      "contrastRatio": 6.221480738997337
+    },
+    {
+      "width": 320,
+      "state": "exam",
+      "text": "5",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.15555555555555556
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 246,
+        "y": 96,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.88888888888889,
+        87.04444444444445,
+        192.51111111111112
+      ],
+      "contrastRatio": 6.221480738997337
+    },
+    {
+      "width": 1440,
+      "state": "exam",
+      "text": "2",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.14666666666666667
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 644,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.66666666666667,
+        86.81333333333333,
+        191.85333333333332
+      ],
+      "contrastRatio": 6.249083035213755
+    },
+    {
+      "width": 1440,
+      "state": "exam",
+      "text": "3",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.14666666666666667
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 698,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.66666666666667,
+        86.81333333333333,
+        191.85333333333332
+      ],
+      "contrastRatio": 6.249083035213755
+    },
+    {
+      "width": 1440,
+      "state": "exam",
+      "text": "4",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.14666666666666667
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 752,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.66666666666667,
+        86.81333333333333,
+        191.85333333333332
+      ],
+      "contrastRatio": 6.249083035213755
+    },
+    {
+      "width": 1440,
+      "state": "exam",
+      "text": "5",
+      "color": "rgb(255, 255, 255)",
+      "background": {
+        "gradient": "linear-gradient(rgb(64, 83, 181), rgb(89, 109, 255))",
+        "y": 0.14666666666666667
+      },
+      "visibleAtCenter": true,
+      "overlapsClose": false,
+      "box": {
+        "x": 806,
+        "y": 88,
+        "width": 44,
+        "height": 44
+      },
+      "backgroundRGB": [
+        67.66666666666667,
+        86.81333333333333,
+        191.85333333333332
+      ],
+      "contrastRatio": 6.249083035213755
+    }
+  ]
+}

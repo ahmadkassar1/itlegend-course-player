@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-10",
+  "channel": "https://www.youtube.com/@AliShahin",
+  "author": "Ali Shahin",
+  "method": "Published YouTube oEmbed JSON read through IAB. Each response author_name and author_url match the requested channel; exact original titles and thumbnail_url recorded. Descriptions are editorial summaries. No image or footage downloaded.",
+  "transportLimits": "Web reader unavailable once; shell TLS failed once per ID; browser fallback succeeded. No TLS verification disabled or blocked-source loop.",
+  "sources": [
+    {
+      "thumbnail": "https://i.ytimg.com/vi/1fSAAzrxK6E/hqdefault.jpg",
+      "title": "كل اللي لازم تعرفه عن الـ DNS قبل ما تعمل موقعك",
+      "videoId": "1fSAAzrxK6E"
+    },
+    {
+      "thumbnail": "https://i.ytimg.com/vi/2mySUIR9k20/hqdefault.jpg",
+      "title": "مكونات الكمبيوتر | مقدمة  في علوم الحاسب",
+      "videoId": "2mySUIR9k20"
+    },
+    {
+      "thumbnail": "https://i.ytimg.com/vi/Gd6RBwunPL4/hqdefault.jpg",
+      "title": "لغة c++ من مخترعها ؟ و كيف تطورت ؟",
+      "videoId": "Gd6RBwunPL4"
+    },
+    {
+      "thumbnail": "https://i.ytimg.com/vi/q5rXYEuFzEQ/hqdefault.jpg",
+      "title": "الحل النهائي للنجاة في عصر ال AI",
+      "videoId": "q5rXYEuFzEQ"
+    }
+  ],
+  "technicalSources": [
+    "https://developers.google.com/youtube/iframe_api_reference",
+    "https://developers.google.com/youtube/player_parameters"
+  ]
+}

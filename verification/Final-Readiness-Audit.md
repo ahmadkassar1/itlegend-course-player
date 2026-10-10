@@ -1,6 +1,6 @@
 # Submission and device audit
 
-The current catalogue/reference change at `959b722`, build `CrtDayk2MRpR7Nl6PrdXJ`, is recorded in [Catalogue-Discovery.md](Catalogue-Discovery.md): 84 production Chrome checks, verified channel sources and one actual YouTube playback observation. The learner-feedback pass and installed-Edge/performance follow-up below retain their earlier `e06f890` runtime. Earlier sections also retain the preceding 68-check audit conditions; public-link, physical-device, exact-asset and submission blockers remain open.
+The current published-video catalogue/player replacement is recorded in [Real-YouTube-Content.md](Real-YouTube-Content.md): four verified Ali Shahin entries, original titles/thumbnails, zero fabricated learner history, native playback/pause/resume observation,49 full browser checks plus28 affected checks after a narrow-screen copy correction. Application revision311e857/buildTN_kcJcwyMYH4vA3QNdNY. Earlier84-case [Catalogue-Discovery.md](Catalogue-Discovery.md), learner-feedback and installed-Edge/performance sections retain their historical revisions. Public links, physical devices, exact Figma assets and submission-policy acceptance remain open.
 
 ## Installed-browser and current-build follow-up — 10 October 2026
 
