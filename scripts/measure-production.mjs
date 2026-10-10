@@ -218,7 +218,7 @@ const report = {
     networkBytes:
       "CDP loadingFinished encodedDataLength includes response overhead; unfinished/cancelled requests are listed separately with available receivedBodyBytes; inventory gzip/Brotli are estimates, not transferred bytes",
     interaction:
-      "fresh context, same viewports/DPR, no CPU/network throttling; cumulative initial/question/PDF request snapshots, playback starts a new request window; independent from navigation metrics",
+      "fresh context, same viewports/DPR, no CPU/network throttling; cumulative initial/question/PDF request snapshots; external playback is verified separately; independent from navigation metrics",
   },
   chunks: await inventory(".next/static/chunks"),
   assets: await inventory("public"),
