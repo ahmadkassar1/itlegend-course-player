@@ -1,0 +1,1059 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/real-content.spec.ts",
+      "tests/e2e/shared-controls.spec.ts",
+      "tests/e2e/demo-community.spec.ts"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo-community.spec.ts",
+      "file": "demo-community.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "encouragement types, rotates at 4.5 seconds, pauses and cleans up at 320px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3234,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts:59:29",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                      "column": 29,
+                      "line": 59
+                    },
+                    "snippet": "  57 |     await page.clock.runFor(600);\n  58 |     const partial = await visibleText.textContent();\n> 59 |     expect(partial!.length).toBeGreaterThan(0);\n     |                             ^\n  60 |     expect(partial!.length).toBeLessThan(\n  61 |       motivationalMessages[\"Getting started\"][0].length,\n  62 |     );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                        "column": 29,
+                        "line": 59
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  57 |     await page.clock.runFor(600);\n  58 |     const partial = await visibleText.textContent();\n> 59 |     expect(partial!.length).toBeGreaterThan(0);\n     |                             ^\n  60 |     expect(partial!.length).toBeLessThan(\n  61 |       motivationalMessages[\"Getting started\"][0].length,\n  62 |     );\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts:59:29"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:10.613Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\demo-community-encourageme-42d9c-uses-and-cleans-up-at-320px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\demo-community-encourageme-42d9c-uses-and-cleans-up-at-320px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                    "column": 29,
+                    "line": 59
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-a134d179828e605c3601",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:16.298Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-fb081bc4688f9240f4c0",
+          "file": "demo-community.spec.ts",
+          "line": 106,
+          "column": 7
+        },
+        {
+          "title": "encouragement types, rotates at 4.5 seconds, pauses and cleans up at 1440px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2049,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts:59:29",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                      "column": 29,
+                      "line": 59
+                    },
+                    "snippet": "  57 |     await page.clock.runFor(600);\n  58 |     const partial = await visibleText.textContent();\n> 59 |     expect(partial!.length).toBeGreaterThan(0);\n     |                             ^\n  60 |     expect(partial!.length).toBeLessThan(\n  61 |       motivationalMessages[\"Getting started\"][0].length,\n  62 |     );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                        "column": 29,
+                        "line": 59
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  57 |     await page.clock.runFor(600);\n  58 |     const partial = await visibleText.textContent();\n> 59 |     expect(partial!.length).toBeGreaterThan(0);\n     |                             ^\n  60 |     expect(partial!.length).toBeLessThan(\n  61 |       motivationalMessages[\"Getting started\"][0].length,\n  62 |     );\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts:59:29"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:23.096Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\demo-community-encourageme-3dfff-ses-and-cleans-up-at-1440px\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\demo-community-encourageme-3dfff-ses-and-cleans-up-at-1440px\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\demo-community.spec.ts",
+                    "column": 29,
+                    "line": 59
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-9a3174e7f3cff6f03a95",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5169,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:26.741Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b72e2f29fab20573b33d",
+          "file": "demo-community.spec.ts",
+          "line": 106,
+          "column": 7
+        },
+        {
+          "title": "reduced motion shows complete, static encouragement and actual completion selects its level",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:32.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-1e31f9d756ff3227821b",
+          "file": "demo-community.spec.ts",
+          "line": 163,
+          "column": 5
+        },
+        {
+          "title": "video-specific samples remain separate from persisted posts and completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:34.392Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b69f7ba84c8deff4d3d6",
+          "file": "demo-community.spec.ts",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "title": "question confirmation reports unavailable storage without claiming an actual instructor request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1919,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:43.607Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-5ee1e07a9be1624c4724",
+          "file": "demo-community.spec.ts",
+          "line": 220,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "real-content.spec.ts",
+      "file": "real-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "published titles, thumbnails and zero history replace every fictional catalogue card",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3508,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:45.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-96dffb23e71db18d7ebb",
+          "file": "real-content.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Arabic and topic search combine with status filters and empty recovery",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3347,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:49.172Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-1a28d216cd61d6920ed9",
+          "file": "real-content.spec.ts",
+          "line": 55,
+          "column": 5
+        },
+        {
+          "title": "every real entry opens its native player with truthful facts and labeled demo community",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7482,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:06:52.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-e5faf843c49e80672271",
+          "file": "real-content.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "legacy fake history is not imported; explicit watched credit persists and stays isolated",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4670,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:00.139Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-d4f2b30fd918581d9c80",
+          "file": "real-content.spec.ts",
+          "line": 140,
+          "column": 5
+        },
+        {
+          "title": "official SDK pause and end boundaries save real positions once without remounting for Wide",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3379,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:04.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-91294a445d8522fade23",
+          "file": "real-content.spec.ts",
+          "line": 188,
+          "column": 5
+        },
+        {
+          "title": "site-authored PDF and five-question exercise complete the study plan and survive review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9791,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:08.264Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-3c7083ea3a3414582208",
+          "file": "real-content.spec.ts",
+          "line": 220,
+          "column": 5
+        },
+        {
+          "title": "blocked storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2330,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:18.100Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-d23e827c53455c04b18a",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "quota storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2323,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:20.473Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-b9b8de32343302ec0534",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "corrupt storage keeps real-content interactions usable and truthfully reported",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:22.837Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-755409fa9cf5121e8cd2",
+          "file": "real-content.spec.ts",
+          "line": 270,
+          "column": 7
+        },
+        {
+          "title": "unavailable SDK retains native playback, source fallback and explicit completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1831,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:25.280Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-0414882f600bc98c3dcd",
+          "file": "real-content.spec.ts",
+          "line": 304,
+          "column": 5
+        },
+        {
+          "title": "clearing learning data requires confirmation and restores an empty real-content baseline",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4235,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:27.160Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-622a943ea113d7dbbda3",
+          "file": "real-content.spec.ts",
+          "line": 329,
+          "column": 5
+        },
+        {
+          "title": "related videos use original titles, intent-loaded native player and modal focus return",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2398,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:31.433Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-5069c56ad5ae83ddc4bd",
+          "file": "real-content.spec.ts",
+          "line": 361,
+          "column": 5
+        },
+        {
+          "title": "real Arabic content and local surfaces retain accessibility and 200% text reflow",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5620,
+                  "error": {
+                    "message": "Error: pdf 320\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 60\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"help\": \"Elements must meet minimum color contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI\",\u001b[39m\n\u001b[31m+     \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"bgColor\": \"#f5f9fa\",\u001b[39m\n\u001b[31m+               \"colorParse\": undefined,\u001b[39m\n\u001b[31m+               \"contrastRatio\": 3.8,\u001b[39m\n\u001b[31m+               \"expectedContrastRatio\": \"4.5:1\",\u001b[39m\n\u001b[31m+               \"fgColor\": \"#6f837a\",\u001b[39m\n\u001b[31m+               \"fontSize\": \"10.5pt (14px)\",\u001b[39m\n\u001b[31m+               \"fontWeight\": \"normal\",\u001b[39m\n\u001b[31m+               \"messageKey\": null,\u001b[39m\n\u001b[31m+               \"shadowColor\": undefined,\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [\u001b[39m\n\u001b[31m+               Object {\u001b[39m\n\u001b[31m+                 \"html\": \"<div class=\\\"dialogs-module__qksrwq__pdf\\\">\",\u001b[39m\n\u001b[31m+                 \"target\": Array [\u001b[39m\n\u001b[31m+                   \".dialogs-module__qksrwq__pdf\",\u001b[39m\n\u001b[31m+                 ],\u001b[39m\n\u001b[31m+               },\u001b[39m\n\u001b[31m+             ],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+         \"html\": \"<label for=\\\"_r_1_\\\">Page size</label>\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"label[for=\\\"_r_1_\\\"]\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.color\",\u001b[39m\n\u001b[31m+       \"wcag2aa\",\u001b[39m\n\u001b[31m+       \"wcag143\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT13.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.1.4.3\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+       \"RGAAv4\",\u001b[39m\n\u001b[31m+       \"RGAA-3.2.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: pdf 320\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 60\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"help\": \"Elements must meet minimum color contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI\",\u001b[39m\n\u001b[31m+     \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"bgColor\": \"#f5f9fa\",\u001b[39m\n\u001b[31m+               \"colorParse\": undefined,\u001b[39m\n\u001b[31m+               \"contrastRatio\": 3.8,\u001b[39m\n\u001b[31m+               \"expectedContrastRatio\": \"4.5:1\",\u001b[39m\n\u001b[31m+               \"fgColor\": \"#6f837a\",\u001b[39m\n\u001b[31m+               \"fontSize\": \"10.5pt (14px)\",\u001b[39m\n\u001b[31m+               \"fontWeight\": \"normal\",\u001b[39m\n\u001b[31m+               \"messageKey\": null,\u001b[39m\n\u001b[31m+               \"shadowColor\": undefined,\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [\u001b[39m\n\u001b[31m+               Object {\u001b[39m\n\u001b[31m+                 \"html\": \"<div class=\\\"dialogs-module__qksrwq__pdf\\\">\",\u001b[39m\n\u001b[31m+                 \"target\": Array [\u001b[39m\n\u001b[31m+                   \".dialogs-module__qksrwq__pdf\",\u001b[39m\n\u001b[31m+                 ],\u001b[39m\n\u001b[31m+               },\u001b[39m\n\u001b[31m+             ],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+         \"html\": \"<label for=\\\"_r_1_\\\">Page size</label>\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"label[for=\\\"_r_1_\\\"]\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.color\",\u001b[39m\n\u001b[31m+       \"wcag2aa\",\u001b[39m\n\u001b[31m+       \"wcag143\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT13.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.1.4.3\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+       \"RGAAv4\",\u001b[39m\n\u001b[31m+       \"RGAA-3.2.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\real-content.spec.ts:435:52",
+                    "location": {
+                      "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\real-content.spec.ts",
+                      "column": 52,
+                      "line": 435
+                    },
+                    "snippet": "  433 |         incomplete: scan.incomplete,\n  434 |       });\n> 435 |       expect(scan.violations, `${state} ${width}`).toEqual([]);\n      |                                                    ^\n  436 |     }\n  437 |     await page.goto(\"/\");\n  438 |     await page.addStyleTag({ content: \"html{font-size:200%}\" });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\real-content.spec.ts",
+                        "column": 52,
+                        "line": 435
+                      },
+                      "message": "Error: pdf 320\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 60\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"description\": \"Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"help\": \"Elements must meet minimum color contrast ratio thresholds\",\u001b[39m\n\u001b[31m+     \"helpUrl\": \"https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI\",\u001b[39m\n\u001b[31m+     \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+     \"impact\": \"serious\",\u001b[39m\n\u001b[31m+     \"nodes\": Array [\u001b[39m\n\u001b[31m+       Object {\u001b[39m\n\u001b[31m+         \"all\": Array [],\u001b[39m\n\u001b[31m+         \"any\": Array [\u001b[39m\n\u001b[31m+           Object {\u001b[39m\n\u001b[31m+             \"data\": Object {\u001b[39m\n\u001b[31m+               \"bgColor\": \"#f5f9fa\",\u001b[39m\n\u001b[31m+               \"colorParse\": undefined,\u001b[39m\n\u001b[31m+               \"contrastRatio\": 3.8,\u001b[39m\n\u001b[31m+               \"expectedContrastRatio\": \"4.5:1\",\u001b[39m\n\u001b[31m+               \"fgColor\": \"#6f837a\",\u001b[39m\n\u001b[31m+               \"fontSize\": \"10.5pt (14px)\",\u001b[39m\n\u001b[31m+               \"fontWeight\": \"normal\",\u001b[39m\n\u001b[31m+               \"messageKey\": null,\u001b[39m\n\u001b[31m+               \"shadowColor\": undefined,\u001b[39m\n\u001b[31m+             },\u001b[39m\n\u001b[31m+             \"id\": \"color-contrast\",\u001b[39m\n\u001b[31m+             \"impact\": \"serious\",\u001b[39m\n\u001b[31m+             \"message\": \"Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+             \"relatedNodes\": Array [\u001b[39m\n\u001b[31m+               Object {\u001b[39m\n\u001b[31m+                 \"html\": \"<div class=\\\"dialogs-module__qksrwq__pdf\\\">\",\u001b[39m\n\u001b[31m+                 \"target\": Array [\u001b[39m\n\u001b[31m+                   \".dialogs-module__qksrwq__pdf\",\u001b[39m\n\u001b[31m+                 ],\u001b[39m\n\u001b[31m+               },\u001b[39m\n\u001b[31m+             ],\u001b[39m\n\u001b[31m+           },\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+         \"failureSummary\": \"Fix any of the following:\u001b[39m\n\u001b[31m+   Element has insufficient color contrast of 3.8 (foreground color: #6f837a, background color: #f5f9fa, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1\",\u001b[39m\n\u001b[31m+         \"html\": \"<label for=\\\"_r_1_\\\">Page size</label>\",\u001b[39m\n\u001b[31m+         \"impact\": \"serious\",\u001b[39m\n\u001b[31m+         \"none\": Array [],\u001b[39m\n\u001b[31m+         \"target\": Array [\u001b[39m\n\u001b[31m+           \"label[for=\\\"_r_1_\\\"]\",\u001b[39m\n\u001b[31m+         ],\u001b[39m\n\u001b[31m+       },\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+     \"tags\": Array [\u001b[39m\n\u001b[31m+       \"cat.color\",\u001b[39m\n\u001b[31m+       \"wcag2aa\",\u001b[39m\n\u001b[31m+       \"wcag143\",\u001b[39m\n\u001b[31m+       \"TTv5\",\u001b[39m\n\u001b[31m+       \"TT13.c\",\u001b[39m\n\u001b[31m+       \"EN-301-549\",\u001b[39m\n\u001b[31m+       \"EN-9.1.4.3\",\u001b[39m\n\u001b[31m+       \"ACT\",\u001b[39m\n\u001b[31m+       \"RGAAv4\",\u001b[39m\n\u001b[31m+       \"RGAA-3.2.1\",\u001b[39m\n\u001b[31m+     ],\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  433 |         incomplete: scan.incomplete,\n  434 |       });\n> 435 |       expect(scan.violations, `${state} ${width}`).toEqual([]);\n      |                                                    ^\n  436 |     }\n  437 |     await page.goto(\"/\");\n  438 |     await page.addStyleTag({ content: \"html{font-size:200%}\" });\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\real-content.spec.ts:435:52"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:33.867Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\real-content-real-Arabic-c-54e30-ibility-and-200-text-reflow\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\real-content-real-Arabic-c-54e30-ibility-and-200-text-reflow\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\real-content.spec.ts",
+                    "column": 52,
+                    "line": 435
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-7ca583bb764b79e64227",
+          "file": "real-content.spec.ts",
+          "line": 394,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "shared-controls.spec.ts",
+      "file": "shared-controls.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 320",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6758,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:41.614Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-eefec0cf14dbeacc7579",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 844",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4932,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:49.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-46bb8d3252c045f155aa",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 820",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4240,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:54.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-1060dc6368256885d5db",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "shared menus support keyboard, zoom, nested Escape and bounded layout at 1440",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:07:58.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-919a77911ce5b4c907c5",
+          "file": "shared-controls.spec.ts",
+          "line": 14,
+          "column": 7
+        },
+        {
+          "title": "thumbnail failure remains honest and reduced motion disables decorative animation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1501,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-10T14:08:03.030Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d12bc622ceaaecd425f3-7cc55a27cc86fa77a948",
+          "file": "shared-controls.spec.ts",
+          "line": 85,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-10T14:06:08.904Z",
+    "duration": 116003.883,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

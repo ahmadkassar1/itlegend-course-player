@@ -1,0 +1,14 @@
+[
+  {
+    "URL": "https://itlegend-course-player-ahmadkassar1s-projects.vercel.app/",
+    "Status": 302,
+    "RedirectHost": "vercel.com",
+    "ContainsApp": false
+  },
+  {
+    "URL": "https://itlegend-course-player-taupe.vercel.app/",
+    "Status": 200,
+    "RedirectHost": null,
+    "ContainsApp": true
+  }
+]

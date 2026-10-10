@@ -1,0 +1,1212 @@
+{
+  "checkedAt": "2026-10-10T14:12:26.696Z",
+  "projectId": "prj_xiPUNa4TRAicQYUMoTurLwSCbvGF",
+  "teamId": "team_RLIeoyLb9yDmJN4e3ugjT8Ys",
+  "sourceCommit": "7b879ee8d749d1fbca72f9f275bef05546b392ce",
+  "runtimeCommit": "a4d26f0132686025dc9343280f652ed810f3cddd",
+  "uploadedFileCount": 89,
+  "production": {
+    "deployment": {
+      "id": "dpl_8WbJNHZf6uT6BBoT5WDbaPuvieMg",
+      "name": "itlegend-course-player",
+      "url": "itlegend-course-player-c128shpdu-ahmadkassar1s-projects.vercel.app",
+      "type": "LAMBDAS",
+      "state": "READY",
+      "createdAt": 1791640932699,
+      "creator": {
+        "uid": "Jiq80WcbfQcIrmlBbvpI30jD",
+        "username": "ahmadkassar1"
+      },
+      "project": {
+        "id": "prj_xiPUNa4TRAicQYUMoTurLwSCbvGF",
+        "name": "itlegend-course-player",
+        "framework": "nextjs"
+      },
+      "meta": {},
+      "alias": [
+        "itlegend-course-player-taupe.vercel.app",
+        "itlegend-course-player-ahmadkassar1s-projects.vercel.app"
+      ],
+      "target": "production",
+      "regions": ["iad1"],
+      "buildingAt": 1791640936231,
+      "ready": 1791640991744,
+      "readyState": "READY",
+      "aliasError": null
+    }
+  },
+  "aliases": {
+    "aliases": [
+      {
+        "uid": "2a45b2f6ce9c0f87f9d6bb4e52b156c1b3c4f024922bef5556cc6be568de204a9311f391c5f33a929abda83fd518603e9681342210540fa63f75fa1895300db7",
+        "alias": "itlegend-course-player-ahmadkassar1s-projects.vercel.app",
+        "created": "2026-10-10T14:03:11.855Z",
+        "redirect": null
+      },
+      {
+        "uid": "293dbfb17b95bec9e9760bbbba99ebc5a8fb8df337133965fa8899b5663ede144a944a2c5114b00a875514a0430db0ffc1ebf4de74ea694f6a7656d7ab033bd8",
+        "alias": "itlegend-course-player-taupe.vercel.app",
+        "created": "2026-10-10T14:03:11.854Z",
+        "redirect": null
+      }
+    ]
+  },
+  "capturedBuildEvents": {
+    "events": [
+      {
+        "created": 1791640935850,
+        "date": 1791640935850,
+        "type": "stdout",
+        "text": "Running build in Washington, D.C., USA (East) – iad1",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640935851,
+        "date": 1791640935851,
+        "type": "stdout",
+        "text": "Build machine configuration: 2 cores, 8 GB",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640935907,
+        "date": 1791640935907,
+        "type": "stdout",
+        "text": "Retrieving list of deployment files...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640936054,
+        "date": 1791640936054,
+        "type": "stdout",
+        "text": "Previous build caches not available.",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640936241,
+        "date": 1791640936241,
+        "type": "stdout",
+        "text": "Downloading 89 deployment files...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640941289,
+        "date": 1791640941289,
+        "type": "stdout",
+        "text": "Running \"vercel build\"",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640941312,
+        "date": 1791640941312,
+        "type": "stderr",
+        "text": "Vercel CLI 62.7.0",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640941891,
+        "date": 1791640941891,
+        "type": "stderr",
+        "text": "Warning: Detected \"engines\": { \"node\": \"^22.13.0 || >=24\" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: https://vercel.link/node-version",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640941915,
+        "date": 1791640941915,
+        "type": "stdout",
+        "text": "Running \"install\" command: `npm ci`...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948164,
+        "date": 1791640948164,
+        "type": "stderr",
+        "text": "npm warn ERESOLVE overriding peer dependency",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948167,
+        "date": 1791640948167,
+        "type": "stderr",
+        "text": "npm warn While resolving: eslint-plugin-import@2.32.0",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn Found: eslint@10.12.0",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn   dev eslint@\"10.12.0\" from the root project",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn   11 more (@eslint-community/eslint-utils, @eslint/compat, ...)",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn Could not resolve dependency:",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn peer eslint@\"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9\" from eslint-plugin-import@2.32.0",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint-config-next/node_modules/eslint-plugin-import",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn   eslint-plugin-import@\"^2.32.0\" from eslint-config-next@16.3.8",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948168,
+        "date": 1791640948168,
+        "type": "stderr",
+        "text": "npm warn   node_modules/eslint-config-next",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948170,
+        "date": 1791640948170,
+        "type": "stderr",
+        "text": "npm warn   1 more (eslint-import-resolver-typescript)",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948171,
+        "date": 1791640948171,
+        "type": "stderr",
+        "text": "npm warn",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948171,
+        "date": 1791640948171,
+        "type": "stderr",
+        "text": "npm warn Conflicting peer dependency: eslint@9.39.5",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948172,
+        "date": 1791640948172,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948173,
+        "date": 1791640948173,
+        "type": "stderr",
+        "text": "npm warn   peer eslint@\"^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9\" from eslint-plugin-import@2.32.0",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948176,
+        "date": 1791640948176,
+        "type": "stderr",
+        "text": "npm warn   node_modules/eslint-config-next/node_modules/eslint-plugin-import",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948177,
+        "date": 1791640948177,
+        "type": "stderr",
+        "text": "npm warn     eslint-plugin-import@\"^2.32.0\" from eslint-config-next@16.3.8",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948177,
+        "date": 1791640948177,
+        "type": "stderr",
+        "text": "npm warn     node_modules/eslint-config-next",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948177,
+        "date": 1791640948177,
+        "type": "stderr",
+        "text": "npm warn     1 more (eslint-import-resolver-typescript)",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948243,
+        "date": 1791640948243,
+        "type": "stderr",
+        "text": "npm warn ERESOLVE overriding peer dependency",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948243,
+        "date": 1791640948243,
+        "type": "stderr",
+        "text": "npm warn While resolving: eslint-plugin-jsx-a11y@6.10.2",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948243,
+        "date": 1791640948243,
+        "type": "stderr",
+        "text": "npm warn Found: eslint@10.12.0",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   dev eslint@\"10.12.0\" from the root project",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   11 more (@eslint-community/eslint-utils, @eslint/compat, ...)",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn Could not resolve dependency:",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9\" from eslint-plugin-jsx-a11y@6.10.2",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint-config-next/node_modules/eslint-plugin-jsx-a11y",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   eslint-plugin-jsx-a11y@\"^6.10.0\" from eslint-config-next@16.3.8",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   node_modules/eslint-config-next",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn Conflicting peer dependency: eslint@9.39.5",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn node_modules/eslint",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   peer eslint@\"^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9\" from eslint-plugin-jsx-a11y@6.10.2",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn   node_modules/eslint-config-next/node_modules/eslint-plugin-jsx-a11y",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn     eslint-plugin-jsx-a11y@\"^6.10.0\" from eslint-config-next@16.3.8",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948244,
+        "date": 1791640948244,
+        "type": "stderr",
+        "text": "npm warn     node_modules/eslint-config-next",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640948308,
+        "date": 1791640948308,
+        "type": "stderr",
+        "text": "npm warn ERESOLVE overriding peer dependency",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970578,
+        "date": 1791640970578,
+        "type": "stderr",
+        "text": "npm warn install-scripts 1 package has install scripts not yet covered by allowScripts:",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970579,
+        "date": 1791640970579,
+        "type": "stderr",
+        "text": "npm warn install-scripts   unrs-resolver@1.12.2 (postinstall: node postinstall.js)",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970579,
+        "date": 1791640970579,
+        "type": "stderr",
+        "text": "npm warn install-scripts",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970579,
+        "date": 1791640970579,
+        "type": "stderr",
+        "text": "npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970664,
+        "date": 1791640970664,
+        "type": "stdout",
+        "text": "Detected Next.js version: 16.3.8",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640970667,
+        "date": 1791640970667,
+        "type": "stdout",
+        "text": "Running \"npm run build\"",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640971524,
+        "date": 1791640971524,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640971524,
+        "date": 1791640971524,
+        "type": "stdout",
+        "text": "> itlegend-course-player@0.1.0 build",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640971524,
+        "date": 1791640971524,
+        "type": "stdout",
+        "text": "> next build",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640971524,
+        "date": 1791640971524,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972138,
+        "date": 1791640972138,
+        "type": "stdout",
+        "text": "▲ Next.js 16.3.8 (Turbopack)",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972296,
+        "date": 1791640972296,
+        "type": "stdout",
+        "text": "  Applying modifyConfig from Vercel",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972304,
+        "date": 1791640972304,
+        "type": "stdout",
+        "text": "✓ Running next.config.ts took 161ms",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972354,
+        "date": 1791640972354,
+        "type": "stdout",
+        "text": "Attention: Next.js now collects completely anonymous telemetry regarding usage.",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972355,
+        "date": 1791640972355,
+        "type": "stdout",
+        "text": "This information is used to shape Next.js' roadmap and prioritize features.",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972355,
+        "date": 1791640972355,
+        "type": "stdout",
+        "text": "You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972355,
+        "date": 1791640972355,
+        "type": "stdout",
+        "text": "https://nextjs.org/telemetry",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972355,
+        "date": 1791640972355,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972383,
+        "date": 1791640972383,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640972449,
+        "date": 1791640972449,
+        "type": "stdout",
+        "text": "  Creating an optimized production build ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640979754,
+        "date": 1791640979754,
+        "type": "stdout",
+        "text": "✓ Compiled successfully in 6.3s",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640979758,
+        "date": 1791640979758,
+        "type": "stdout",
+        "text": "  Running TypeScript ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640984712,
+        "date": 1791640984712,
+        "type": "stdout",
+        "text": "  Finished TypeScript in 4.9s ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640984720,
+        "date": 1791640984720,
+        "type": "stdout",
+        "text": "  Collecting page data using 1 worker ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985551,
+        "date": 1791640985551,
+        "type": "stdout",
+        "text": "  Generating static pages using 1 worker (0/8) ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985753,
+        "date": 1791640985753,
+        "type": "stdout",
+        "text": "  Generating static pages using 1 worker (2/8) \r",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985778,
+        "date": 1791640985778,
+        "type": "stdout",
+        "text": "  Generating static pages using 1 worker (4/8) \r",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985858,
+        "date": 1791640985858,
+        "type": "stdout",
+        "text": "  Generating static pages using 1 worker (6/8) \r",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985862,
+        "date": 1791640985862,
+        "type": "stdout",
+        "text": "✓ Generating static pages using 1 worker (8/8) in 311ms",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985874,
+        "date": 1791640985874,
+        "type": "stdout",
+        "text": "  Finalizing page optimization ...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640985935,
+        "date": 1791640985935,
+        "type": "stdout",
+        "text": "  Running onBuildComplete from Vercel",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986011,
+        "date": 1791640986011,
+        "type": "stderr",
+        "text": "Warning: Detected \"engines\": { \"node\": \"^22.13.0 || >=24\" } in your `package.json` that will automatically upgrade when a new major Node.js Version is released. Learn More: https://vercel.link/node-version",
+        "level": "warning",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986060,
+        "date": 1791640986060,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986064,
+        "date": 1791640986064,
+        "type": "stdout",
+        "text": "Route (app)",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986064,
+        "date": 1791640986064,
+        "type": "stdout",
+        "text": "┌ ○ /",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986064,
+        "date": 1791640986064,
+        "type": "stdout",
+        "text": "├ ○ /_not-found",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986064,
+        "date": 1791640986064,
+        "type": "stdout",
+        "text": "├ ƒ /courses/[slug]",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986066,
+        "date": 1791640986066,
+        "type": "stdout",
+        "text": "└ ○ /icon.svg",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986066,
+        "date": 1791640986066,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986066,
+        "date": 1791640986066,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986068,
+        "date": 1791640986068,
+        "type": "stdout",
+        "text": "○  (Static)   prerendered as static content",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986068,
+        "date": 1791640986068,
+        "type": "stdout",
+        "text": "ƒ  (Dynamic)  server-rendered on demand",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986069,
+        "date": 1791640986069,
+        "type": "stdout",
+        "text": "",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986573,
+        "date": 1791640986573,
+        "type": "stderr",
+        "text": "Build Completed in /vercel/output [45s]",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640986630,
+        "date": 1791640986630,
+        "type": "stdout",
+        "text": "Deploying outputs...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640992138,
+        "date": 1791640992138,
+        "type": "stdout",
+        "text": "Deployment completed",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791640992141,
+        "date": 1791640992141,
+        "type": "stdout",
+        "text": "Creating build cache...",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791641005388,
+        "date": 1791641005388,
+        "type": "stdout",
+        "text": "Created build cache: 13s",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791641005388,
+        "date": 1791641005388,
+        "type": "stdout",
+        "text": "Uploading build cache [167.94 MB]",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      },
+      {
+        "created": 1791641009065,
+        "date": 1791641009065,
+        "type": "stdout",
+        "text": "Build cache uploaded: 3.677s",
+        "info": {
+          "type": "build",
+          "name": "bld_r50yjorsv",
+          "entrypoint": "."
+        }
+      }
+    ]
+  },
+  "protectionChange": {
+    "attempt": "ssoProtection.deploymentType=preview",
+    "applied": false,
+    "reason": "Automatic approval review rejected public-production security-setting scope.",
+    "existingSetting": "all_except_custom_domains"
+  },
+  "publicURL": "https://itlegend-course-player-taupe.vercel.app/"
+}
