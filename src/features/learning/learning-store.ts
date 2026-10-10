@@ -80,6 +80,7 @@ export function createLearningStore(seeds: readonly CourseSeed[]) {
   return {
     get,
     snapshot: () => current,
+    initialSnapshot: () => initial,
     restore(value: unknown) {
       const saved = record(value);
       current = Object.fromEntries(

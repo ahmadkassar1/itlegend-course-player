@@ -32,7 +32,7 @@ export function CourseCard({ course }: { course: CourseSummary }) {
           {course.instructor} <span aria-hidden="true">·</span>{" "}
           {course.lessonCount} lessons
         </p>
-        <h2>{course.title}</h2>
+        <h3>{course.title}</h3>
         <p className={styles.description}>{course.description}</p>
         <div className={styles.progressLabel}>
           <span className={progress === 100 ? styles.complete : ""}>
@@ -40,6 +40,10 @@ export function CourseCard({ course }: { course: CourseSummary }) {
           </span>
           <span>{progress}%</span>
         </div>
+        <p className={styles.completionCount}>
+          {learning.completedLessonIds.length} of {course.lessonCount} lessons
+          completed
+        </p>
         <div
           className={styles.track}
           role="progressbar"

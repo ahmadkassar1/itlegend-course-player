@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { Icon } from "@/components/icon";
 import { courses } from "@/data/courses";
-import { CourseCard } from "@/features/catalogue/course-card";
+import { CourseCatalogue } from "@/features/catalogue/course-catalogue";
 import { summarizeCourse } from "@/lib/course";
 import styles from "@/features/catalogue/catalogue.module.css";
 import { LearnerSettings } from "@/features/catalogue/learner-settings";
+import { catalogueReferences, creatorChannel } from "@/data/video-references";
+import { ReferenceCollection } from "@/features/references/reference-collection";
 
 export default function CataloguePage() {
   return (
@@ -14,27 +16,34 @@ export default function CataloguePage() {
           <Icon name="book" />
           Course Library
         </Link>
-        <span className={styles.navLabel}>Learn at your own pace</span>
+        <nav className={styles.navLinks} aria-label="Library sections">
+          <a href="#courses">Practice courses</a>
+          <a href="#references">Video references</a>
+        </nav>
       </header>
       <main id="main-content" tabIndex={-1}>
-        <section className={styles.hero} aria-labelledby="catalogue-title">
-          <p className={styles.eyebrow}>A little progress, every day</p>
-          <h1 id="catalogue-title">Your next lesson starts here.</h1>
-          <p>
-            Explore a new subject or pick up where you left off. A clear path,
-            practical lessons, and room to grow.
-          </p>
-        </section>
-        <section aria-labelledby="collection-title">
+        <CourseCatalogue courses={courses.map(summarizeCourse)} />
+        <section
+          id="references"
+          tabIndex={-1}
+          className={styles.referenceSection}
+          aria-labelledby="references-title"
+        >
           <div className={styles.collectionHeading}>
-            <h2 id="collection-title">Explore your courses</h2>
-            <span>{courses.length} courses</span>
+            <div>
+              <p className={styles.eyebrow}>Another perspective</p>
+              <h2 id="references-title">Learn with Ali Shahin</h2>
+            </div>
+            <a href={creatorChannel} target="_blank" rel="noopener noreferrer">
+              Visit the channel ↗
+            </a>
           </div>
-          <div className={styles.grid}>
-            {courses.map((course) => (
-              <CourseCard key={course.slug} course={summarizeCourse(course)} />
-            ))}
-          </div>
+          <p className={styles.sectionDescription}>
+            Real collections from Ali Shahin’s YouTube channel. Preview an
+            opening video here or explore the full collection on YouTube. These
+            references are separate from our practice courses.
+          </p>
+          <ReferenceCollection references={catalogueReferences} />
         </section>
       </main>
       <footer className={styles.footer}>

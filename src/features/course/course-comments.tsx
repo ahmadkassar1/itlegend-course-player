@@ -14,9 +14,11 @@ import { usePersistence } from "@/features/learning/persistence-provider";
 export function CourseComments({
   courseSlug,
   children,
+  references,
 }: {
   courseSlug: string;
   children: ReactNode;
+  references?: ReactNode;
 }) {
   const state = useCourseInteractions(courseSlug);
   const store = useInteractionStore();
@@ -69,6 +71,7 @@ export function CourseComments({
             : "Your review was kept for this visit. Saving is unavailable."
         }
       />
+      {references}
     </section>
   );
 }

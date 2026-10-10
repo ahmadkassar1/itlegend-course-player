@@ -225,7 +225,9 @@ for (const failure of ["blocked", "quota", "corrupt"]) {
       }
     }, failure);
     await page.goto("/");
-    await expect(page.getByRole("status")).toContainText(
+    await expect(
+      page.getByRole("status", { name: "Learning storage status" }),
+    ).toContainText(
       failure === "corrupt" ? "saved on this device" : "Saving is unavailable",
     );
     await page.goto("/courses/starting-seo");

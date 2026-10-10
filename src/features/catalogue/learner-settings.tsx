@@ -10,7 +10,7 @@ export function LearnerSettings() {
       <p>
         Demo courses with fictional learners and original practice resources.
       </p>
-      <p role="status">
+      <p role="status" aria-label="Learning storage status">
         {status === "loading"
           ? "Opening your learning history…"
           : status === "saved"

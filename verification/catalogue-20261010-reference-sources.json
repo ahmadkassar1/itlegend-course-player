@@ -1,0 +1,48 @@
+{
+  "accessDate": "2026-10-10",
+  "timezone": "Asia/Beirut",
+  "channel": "https://www.youtube.com/@AliShahin",
+  "method": "Visible YouTube channel, Courses/Playlists tabs and watch-page headings/creator links inspected through the in-app browser. No footage or thumbnail downloaded.",
+  "references": [
+    {
+      "id": "webology",
+      "collectionTitle": "Webology علم الويب",
+      "videoTitle": "Everything you need to know about DNS before you create your website",
+      "videoURL": "https://www.youtube.com/watch?v=1fSAAzrxK6E",
+      "playlistURL": "https://www.youtube.com/playlist?list=PLv3VqjyehAoQfMw4RrfoP0fy8BBB--ABv",
+      "ownershipEvidence": "Channel Playlists tab lists the collection; watch page and each of its three playlist rows identify Ali Shahin /@AliShahin."
+    },
+    {
+      "id": "computer-science",
+      "collectionTitle": "مقدمة في علوم الحاسب",
+      "videoTitle": "مكونات الكمبيوتر | مقدمة في علوم الحاسب",
+      "videoURL": "https://www.youtube.com/watch?v=2mySUIR9k20",
+      "playlistURL": "https://www.youtube.com/playlist?list=PLv3VqjyehAoRUEU3Gr1Fwzhdmz4wH0tNJ",
+      "ownershipEvidence": "Channel Playlists tab lists the collection; opening watch heading and creator links identify Ali Shahin /@AliShahin."
+    },
+    {
+      "id": "cpp-foundations",
+      "collectionTitle": "تعلم أساسيات البرمجة بلغة ++C",
+      "videoTitle": "Who invented the C++ programming language? And how did it develop?",
+      "videoURL": "https://www.youtube.com/watch?v=Gd6RBwunPL4",
+      "playlistURL": "https://www.youtube.com/playlist?list=PLv3VqjyehAoR9GptbwLD2_OIYsx5br43b",
+      "ownershipEvidence": "Channel Courses/Playlists tabs list the collection; opening watch heading and creator link identify Ali Shahin /@AliShahin. English title is the currently displayed translation."
+    },
+    {
+      "id": "learning-skills",
+      "videoTitle": "Learning skills",
+      "videoURL": "https://www.youtube.com/watch?v=q5rXYEuFzEQ",
+      "ownershipEvidence": "Video and ID appear in the requested channel’s Videos tab, under its Ali Shahin /@AliShahin header."
+    }
+  ],
+  "technicalSources": [
+    "https://developers.google.com/youtube/player_parameters",
+    "https://support.google.com/youtube/answer/171780?hl=en"
+  ],
+  "limitations": [
+    "Web reader returned an empty channel shell, a cached C++ title and failed computer-science/browser-navigation video fetches. Browser inspection supplied the missing primary page evidence; no repeated blocked web-reader retries.",
+    "Descriptions and course associations are our editorial summaries, not creator quotes or a claim that he authored the practice syllabus.",
+    "YouTube may localize titles, change playlists, restrict embeds or remove videos. Source links remain available; captions, ads and playback availability are controlled by YouTube.",
+    "No rights to rehost footage, creator images or thumbnails are inferred. No creator endorsement or competition asset-policy acceptance is established."
+  ]
+}
