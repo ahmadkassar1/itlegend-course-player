@@ -1,0 +1,653 @@
+[
+  {
+    "width": 430,
+    "name": "Exam feedback",
+    "ratio": 7.677879828639038,
+    "text": "Answer all 5 questions before submitting. You have 5 questions left. Your answers are saved when you close this window.",
+    "foreground": "rgb(157, 35, 58)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "lines": [
+      {
+        "x": 65.4609375,
+        "y": 753.34375,
+        "visible": true
+      },
+      {
+        "x": 107.3203125,
+        "y": 753.34375,
+        "visible": true
+      },
+      {
+        "x": 249.65625,
+        "y": 753.34375,
+        "visible": true
+      },
+      {
+        "x": 391.9921875,
+        "y": 753.34375,
+        "visible": true
+      },
+      {
+        "x": 62.09375,
+        "y": 777.140625,
+        "visible": true
+      },
+      {
+        "x": 98.0625,
+        "y": 777.140625,
+        "visible": true
+      },
+      {
+        "x": 233.4140625,
+        "y": 777.140625,
+        "visible": true
+      },
+      {
+        "x": 90.953125,
+        "y": 800.9375,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "name": "Practice note",
+    "ratio": 4.952143998137195,
+    "text": "Practice countdown: you can continue after time runs out. Your answers stay saved when you close this window.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "12px",
+    "lines": [
+      {
+        "x": 201.4140625,
+        "y": 916.234375,
+        "visible": true
+      },
+      {
+        "x": 188.4921875,
+        "y": 936.625,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "name": "Visible exam feedback",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 2\" class=\"\">2</button>",
+            "target": [
+              "button[aria-label=\"Question 2\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 3\" class=\"\">3</button>",
+            "target": [
+              "button[aria-label=\"Question 3\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 4\" class=\"\">4</button>",
+            "target": [
+              "button[aria-label=\"Question 4\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 5\" class=\"\">5</button>",
+            "target": [
+              "button[aria-label=\"Question 5\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "10.5pt (14px)",
+                  "fontWeight": "normal",
+                  "messageKey": "elmPartiallyObscuring",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it partially overlaps other elements"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p tabindex=\"-1\" role=\"alert\" class=\"dialogs-module__qksrwq__error\">Answer all 5 questions before submitting. You have 5 questions left. Your answers are saved when you close this window.</p>",
+            "target": [
+              ".dialogs-module__qksrwq__error"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.0pt (12px)",
+                  "fontWeight": "normal",
+                  "messageKey": "elmPartiallyObscuring",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it partially overlaps other elements"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"dialogs-module__qksrwq__practiceNote\">Practice countdown: you can continue after time runs out. Your answers stay saved when you close this window.</p>",
+            "target": [
+              ".dialogs-module__qksrwq__practiceNote"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "name": "comment limit guidance",
+    "ratio": 4.952143998137195,
+    "text": "Character limit reached. Edit your message to keep writing.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "lines": [
+      {
+        "x": 207.640625,
+        "y": 864.0625,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "name": "comment at its limit",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 430,
+    "name": "question limit guidance",
+    "ratio": 4.952143998137195,
+    "text": "Character limit reached. Edit your message to keep writing.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "lines": [
+      {
+        "x": 195.6640625,
+        "y": 598.09375,
+        "visible": true
+      },
+      {
+        "x": 52.2421875,
+        "y": 618.890625,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "name": "question at its limit",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "9.8pt (13px)",
+                  "fontWeight": "normal",
+                  "messageKey": "elmPartiallyObscuring",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it partially overlaps other elements"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p id=\"_r_1_-limit\" class=\"course-module__KiRphW__formHint\">Character limit reached. Edit your message to keep writing.</p>",
+            "target": [
+              "#_r_1_-limit"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "Exam feedback",
+    "ratio": 7.677879828639038,
+    "text": "Answer all 5 questions before submitting. You have 5 questions left. Your answers are saved when you close this window.",
+    "foreground": "rgb(157, 35, 58)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "14px",
+    "lines": [
+      {
+        "x": 458.4609375,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 500.3203125,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 642.65625,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 784.9921875,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 791.265625,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 827.234375,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 863.203125,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 939.625,
+        "y": 724.15625,
+        "visible": true
+      },
+      {
+        "x": 542.890625,
+        "y": 747.953125,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "Practice note",
+    "ratio": 4.952143998137195,
+    "text": "Practice countdown: you can continue after time runs out. Your answers stay saved when you close this window.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "12px",
+    "lines": [
+      {
+        "x": 718.359375,
+        "y": 863.25,
+        "visible": true
+      },
+      {
+        "x": 457.546875,
+        "y": 883.640625,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "Visible exam feedback",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 2\" class=\"\">2</button>",
+            "target": [
+              "button[aria-label=\"Question 2\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 3\" class=\"\">3</button>",
+            "target": [
+              "button[aria-label=\"Question 3\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 4\" class=\"\">4</button>",
+            "target": [
+              "button[aria-label=\"Question 4\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "shortTextContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<dialog aria-labelledby=\"_r_0_\" class=\"dialog-module__iEAtJG__dialog dialog-module__iEAtJG__fullScreen  dialog-module__iEAtJG__exam\" open=\"\">",
+                    "target": [
+                      "dialog"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element content is too short to determine if it is actual text content"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<button type=\"button\" aria-label=\"Question 5\" class=\"\">5</button>",
+            "target": [
+              "button[aria-label=\"Question 5\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "comment limit guidance",
+    "ratio": 4.952143998137195,
+    "text": "Character limit reached. Edit your message to keep writing.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "lines": [
+      {
+        "x": 291.640625,
+        "y": 828.59375,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "comment at its limit",
+    "violations": [],
+    "incomplete": []
+  },
+  {
+    "width": 1440,
+    "name": "question limit guidance",
+    "ratio": 4.952143998137195,
+    "text": "Character limit reached. Edit your message to keep writing.",
+    "foreground": "rgb(112, 112, 112)",
+    "background": "rgb(255, 255, 255)",
+    "fontSize": "13px",
+    "lines": [
+      {
+        "x": 646.640625,
+        "y": 607,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "name": "question at its limit",
+    "violations": [],
+    "incomplete": []
+  }
+]

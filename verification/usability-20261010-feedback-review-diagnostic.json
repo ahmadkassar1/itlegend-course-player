@@ -1,0 +1,1 @@
+{"step":"supplemental visible feedback review","result":"observer selector failure before measurements","reason":"Global alert locator matched exam feedback and the framework route announcer. Corrected observer scope to the exam dialog; runtime/source tests unchanged.","fullBrowserSuite":"76 passed; no retries/skips/flaky/unexpected"}

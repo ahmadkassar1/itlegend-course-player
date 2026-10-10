@@ -1,5 +1,7 @@
 # Submission and device audit
 
+Subsequent learner-feedback changes and the fresh 76-check run at `e06f890` are recorded in [Learner-Usability.md](Learner-Usability.md). This report retains the source/build conditions of the preceding 68-check audit; its public-link and submission blockers remain open.
+
 Reviewed 10 October 2026, Asia/Beirut. Starting checkout: `cbdd20afd23bf65154f6570fb8979fd4eabedcf2`; runtime source unchanged from the previous message-history implementation. This review verifies local evidence and identifies publication blockers. It is not a submission, a judging score or a claim of universal device compatibility.
 
 Verification commit: `70d16f20c702d301563910cb486d93add7a61e2a` (`test: verify device layouts and resource links`), using the existing configured ahmad kassar author/committer. Runtime source remains `27b29ceaa3d6cb29669f5e8a90c778fdea14a8c6`; no application, media or dependency changes were needed. The verified local production preview was restored on port 3100, ready in 7.7 s. This does not establish public availability.
