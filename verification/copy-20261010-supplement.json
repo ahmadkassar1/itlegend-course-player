@@ -1,0 +1,46 @@
+{
+  "revision": "a4d26f0132686025dc9343280f652ed810f3cddd",
+  "build": "4VO7Kr1kvzGtGqb6WdXBr",
+  "checkedAt": "2026-10-10T13:32:17.067Z",
+  "scope": "Production Chrome; controlled SDK/iframe; DOM contrast and keyboard scroll, not physical or screen-reader acceptance.",
+  "evidence": [
+    {
+      "width": 320,
+      "title": {
+        "foreground": [
+          63,
+          57,
+          144
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "contrast": 9.548377166639813,
+        "fontSize": "15px",
+        "visible": true
+      },
+      "ownRowVisible": true
+    },
+    {
+      "width": 1440,
+      "title": {
+        "foreground": [
+          63,
+          57,
+          144
+        ],
+        "background": [
+          255,
+          255,
+          255
+        ],
+        "contrast": 9.548377166639813,
+        "fontSize": "15px",
+        "visible": true
+      },
+      "ownRowVisible": true
+    }
+  ]
+}
