@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type KeyboardEvent } from "react";
+import { Icon } from "./icon";
 import styles from "./select.module.css";
 
 type Option = { value: string; label: string };
@@ -144,7 +145,7 @@ export function Select({
           aria-label={accessibleLabel}
           aria-expanded={open}
           aria-haspopup="listbox"
-          aria-controls={`${id}-list`}
+          aria-controls={open ? `${id}-list` : undefined}
           aria-activedescendant={open ? `${id}-option-${active}` : undefined}
           className={styles.trigger}
           onKeyDown={keyboard}
@@ -152,7 +153,7 @@ export function Select({
         >
           <span>{options[selected]?.label}</span>
           <span className={styles.chevron} aria-hidden="true">
-            ⌄
+            <Icon name="chevron" />
           </span>
         </button>
         {open ? (
@@ -181,7 +182,7 @@ export function Select({
               >
                 <span>{option.label}</span>
                 <span aria-hidden="true">
-                  {value === option.value ? "✓" : ""}
+                  {value === option.value ? <Icon name="check" /> : null}
                 </span>
               </li>
             ))}

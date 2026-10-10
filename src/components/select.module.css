@@ -47,9 +47,10 @@
   font-size: 1.25rem;
   line-height: 1;
   transition: transform 160ms;
+  transform: rotate(90deg);
 }
 .trigger[aria-expanded="true"] .chevron {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 .menu {
   position: absolute;
