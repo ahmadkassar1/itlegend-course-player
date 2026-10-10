@@ -58,7 +58,7 @@
   z-index: 20;
   margin: 0;
   padding: 4px;
-  min-width: 100%;
+  min-width: max-content;
   overflow-y: auto;
   overscroll-behavior: contain;
   list-style: none;
