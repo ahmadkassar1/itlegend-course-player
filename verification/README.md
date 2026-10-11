@@ -1,6 +1,6 @@
 # Verification evidence index
 
-Current release: [GitHub and acceptance review](GitHub-and-Acceptance.md). Deployment evidence: [Shared controls and release](Shared-Controls-and-Release.md). Published media: [Real YouTube content](Real-YouTube-Content.md). Each report identifies its revision, verified scope and limits.
+Responsive follow-up: [Mobile player and quotes](Mobile-Player-and-Quotes.md). Previous release: [GitHub and acceptance review](GitHub-and-Acceptance.md). Deployment evidence: [Shared controls and release](Shared-Controls-and-Release.md). Published media: [Real YouTube content](Real-YouTube-Content.md). Each report identifies its revision, verified scope and limits.
 
 The dated reports below preserve earlier implementation evidence. Their fictional-course datasets, screenshots, local paths and source-document references describe those historical revisions and may not exist in the current public runtime. The original supplied design documents and the private Obsidian vault are intentionally outside this repository.
 

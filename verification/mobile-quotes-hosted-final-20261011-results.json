@@ -1,0 +1,880 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/mobile-player.spec.ts",
+      "tests/e2e/demo-community.spec.ts",
+      "tests/e2e/real-content.spec.ts",
+      "--grep",
+      "encouragement|question confirmation|video-specific|deep links|official SDK|site-authored PDF|real Arabic",
+      "--max-failures=1"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "demo-community.spec.ts",
+      "file": "demo-community.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "encouragement types, rotates at nine seconds and cleans up at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5470,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:33.907Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-be558cfd9df009e02e8d",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:40.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-fb081bc4688f9240f4c0",
+          "file": "demo-community.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "encouragement types, rotates at nine seconds and cleans up at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4835,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:45.717Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-878d182b5ba3bf2778b3",
+          "file": "demo-community.spec.ts",
+          "line": 39,
+          "column": 7
+        },
+        {
+          "title": "question confirmation offers working follow-up and discovery actions at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4584,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:50.594Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b72e2f29fab20573b33d",
+          "file": "demo-community.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "reduced motion shows complete, static encouragement and actual completion selects its level",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1804,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:55.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-1e31f9d756ff3227821b",
+          "file": "demo-community.spec.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "title": "video-specific samples remain separate from persisted posts and completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7299,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:02:57.062Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-b69f7ba84c8deff4d3d6",
+          "file": "demo-community.spec.ts",
+          "line": 200,
+          "column": 5
+        },
+        {
+          "title": "question confirmation reports unavailable storage without claiming an actual instructor request",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1878,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:03:04.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "14ddc68e3d95604d7f94-5ee1e07a9be1624c4724",
+          "file": "demo-community.spec.ts",
+          "line": 237,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "mobile-player.spec.ts",
+      "file": "mobile-player.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "player and comments at 320×568",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2083,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:06.344Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjU2OCwic3RpY2t5Ijp0cnVlLCJwbGF5ZXIiOnsieCI6MTYsInkiOjAsIndpZHRoIjoyODgsImhlaWdodCI6MjAwfSwiaGVhZGluZyI6eyJ4IjoxNiwieSI6MjIwLjM3NSwid2lkdGgiOjI4OCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-1f9f00c50bf557a7c29b",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 390×844",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2206,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:08.457Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzkwLCJoZWlnaHQiOjg0NCwic3RpY2t5Ijp0cnVlLCJwbGF5ZXIiOnsieCI6MTYsInkiOjAsIndpZHRoIjozNTgsImhlaWdodCI6MjM4LjY1NjI1fSwiaGVhZGluZyI6eyJ4IjoxNiwieSI6MjU5LjIzNDM3NSwid2lkdGgiOjM1OCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-a869fbaa7943ca95f81a",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 568×320",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1951,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:10.697Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6NTY4LCJoZWlnaHQiOjMyMCwic3RpY2t5IjpmYWxzZSwicGxheWVyIjp7IngiOjE2LCJ5IjotMTA0OC4yMDMxMjUsIndpZHRoIjo1MzYsImhlaWdodCI6MzU3LjMyODEyNX0sImhlYWRpbmciOnsieCI6MTYsInkiOjI0LjEwOTM3NSwid2lkdGgiOjUzNiwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-2b97ed654e4c2c1c8810",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 667×375",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:12.679Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6NjY3LCJoZWlnaHQiOjM3NSwic3RpY2t5IjpmYWxzZSwicGxheWVyIjp7IngiOjE2LCJ5IjotMTA5MC4yMDMxMjUsIndpZHRoIjo2MzUsImhlaWdodCI6NDIzLjMyODEyNX0sImhlYWRpbmciOnsieCI6MTYsInkiOjI0LjMxMjUsIndpZHRoIjo2MzUsImhlaWdodCI6MzAuNzk2ODc1fX0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-f5182c589995994f9661",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 360×500",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1946,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:14.697Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzYwLCJoZWlnaHQiOjUwMCwic3RpY2t5IjpmYWxzZSwicGxheWVyIjp7IngiOjE2LCJ5IjotOTY1LjQwNjI1LCJ3aWR0aCI6MzI4LCJoZWlnaHQiOjIxOC42NTYyNX0sImhlYWRpbmciOnsieCI6MTYsInkiOjI0LjIzNDM3NSwid2lkdGgiOjMyOCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-dbb7cf2cf22b6e595997",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 360×501",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2089,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:16.677Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzYwLCJoZWlnaHQiOjUwMSwic3RpY2t5Ijp0cnVlLCJwbGF5ZXIiOnsieCI6MTYsInkiOjAsIndpZHRoIjozMjgsImhlaWdodCI6MjE4LjY1NjI1fSwiaGVhZGluZyI6eyJ4IjoxNiwieSI6MjM5LjIzNDM3NSwid2lkdGgiOjMyOCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-086d85c345502f72f470",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 767×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1989,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:18.797Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6NzY3LCJoZWlnaHQiOjkwMCwic3RpY2t5IjpmYWxzZSwicGxheWVyIjp7IngiOjE5LjUsInkiOi0xMTUyLjIwMzEyNSwid2lkdGgiOjcyOCwiaGVpZ2h0Ijo0ODUuMzI4MTI1fSwiaGVhZGluZyI6eyJ4IjoxOS41LCJ5IjoyNC4zMTI1LCJ3aWR0aCI6NzI4LCJoZWlnaHQiOjMwLjc5Njg3NX19"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-479cf0f633cae3619220",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 768×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2073,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:20.826Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6NzY4LCJoZWlnaHQiOjkwMCwic3RpY2t5IjpmYWxzZSwicGxheWVyIjp7IngiOjM0LCJ5IjotMTEyNCwid2lkdGgiOjcwMCwiaGVpZ2h0Ijo1MjIuNjU2MjV9LCJoZWFkaW5nIjp7IngiOjM0LCJ5IjoyNC40NTMxMjUsIndpZHRoIjo3MDAsImhlaWdodCI6MzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-72a05fbcba6772f0b041",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 1440×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1983,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T04:03:22.931Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MTQ0MCwiaGVpZ2h0Ijo5MDAsInN0aWNreSI6ZmFsc2UsInBsYXllciI6eyJ4IjoxMDAsInkiOjI0LCJ3aWR0aCI6NzU5LjQ2ODc1LCJoZWlnaHQiOjU2Mi4zMTI1fSwiaGVhZGluZyI6eyJ4Ijo5MjkuNDY4NzUsInkiOjI0LCJ3aWR0aCI6NDEwLjUzMTI1LCJoZWlnaHQiOjM1fX0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-7c9bbff9d7a416066db5",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "real-content.spec.ts",
+      "file": "real-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "official SDK pause and end boundaries save real positions once without remounting for Wide",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:03:24.975Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-91294a445d8522fade23",
+          "file": "real-content.spec.ts",
+          "line": 188,
+          "column": 5
+        },
+        {
+          "title": "site-authored PDF and five-question exercise complete the study plan and survive review",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7971,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:03:28.124Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-3c7083ea3a3414582208",
+          "file": "real-content.spec.ts",
+          "line": 220,
+          "column": 5
+        },
+        {
+          "title": "real Arabic content and local surfaces retain accessibility and 200% text reflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T04:03:36.137Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-7ca583bb764b79e64227",
+          "file": "real-content.spec.ts",
+          "line": 394,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T04:02:32.684Z",
+    "duration": 80842.242,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

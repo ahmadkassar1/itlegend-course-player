@@ -1,0 +1,464 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/e2e/mobile-player.spec.ts",
+      "tests/e2e/real-content.spec.ts",
+      "--grep",
+      "deep links|real Arabic",
+      "--max-failures=1"
+    ],
+    "configFile": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\playwright.config.ts",
+    "rootDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 1,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/PC/Desktop/ITLegend-Frontend-Challenge/challenge-app/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "mobile-player.spec.ts",
+      "file": "mobile-player.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "player and comments at 320×568",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6265,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T03:54:59.224Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjU2OCwic3RpY2t5Ijp0cnVlLCJwbGF5ZXIiOnsieCI6MTYsInkiOjAsIndpZHRoIjoyODgsImhlaWdodCI6MjAwfSwiaGVhZGluZyI6eyJ4IjoxNiwieSI6MjIzLjM3NSwid2lkdGgiOjI4OCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-1f9f00c50bf557a7c29b",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 390×844",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4066,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T03:55:06.511Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "layout",
+                          "contentType": "application/json",
+                          "body": "eyJ3aWR0aCI6MzkwLCJoZWlnaHQiOjg0NCwic3RpY2t5Ijp0cnVlLCJwbGF5ZXIiOnsieCI6MTYsInkiOjAsIndpZHRoIjozNTgsImhlaWdodCI6MjM4LjY1NjI1fSwiaGVhZGluZyI6eyJ4IjoxNiwieSI6Mjk0LjIzNDM3NSwid2lkdGgiOjM1OCwiaGVpZ2h0IjozMC43OTY4NzV9fQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-a869fbaa7943ca95f81a",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 568×320",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9082,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Topics for This Course' })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: 'Topics for This Course' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Topics for This Course' })\u001b[22m\n\u001b[2m    14 × locator resolved to <h2 id=\"curriculum-heading\">Topics for This Course</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Topics for This Course' })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: 'Topics for This Course' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Topics for This Course' })\u001b[22m\n\u001b[2m    14 × locator resolved to <h2 id=\"curriculum-heading\">Topics for This Course</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\mobile-player.spec.ts:86:32",
+                        "location": {
+                          "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\mobile-player.spec.ts",
+                          "column": 32,
+                          "line": 86
+                        },
+                        "snippet": "  84 |         name: \"Topics for This Course\",\n  85 |       });\n> 86 |       await expect(curriculum).toBeInViewport();\n     |                                ^\n  87 |       if (sticky) {\n  88 |         const frame = (await player.boundingBox())!;\n  89 |         expect((await curriculum.boundingBox())!.y).toBeGreaterThanOrEqual("
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\mobile-player.spec.ts",
+                            "column": 32,
+                            "line": 86
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { name: 'Topics for This Course' })\nExpected: in viewport\nReceived: viewport ratio 0\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" getByRole('heading', { name: 'Topics for This Course' }) with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Topics for This Course' })\u001b[22m\n\u001b[2m    14 × locator resolved to <h2 id=\"curriculum-heading\">Topics for This Course</h2>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0\"\u001b[22m\n\n\n  84 |         name: \"Topics for This Course\",\n  85 |       });\n> 86 |       await expect(curriculum).toBeInViewport();\n     |                                ^\n  87 |       if (sticky) {\n  88 |         const frame = (await player.boundingBox())!;\n  89 |         expect((await curriculum.boundingBox())!.y).toBeGreaterThanOrEqual(\n    at C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\mobile-player.spec.ts:86:32"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-11T03:55:10.613Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\mobile-player-player-and-c-7fa1c-ontrols-remain-unobstructed\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\test-results\\mobile-player-player-and-c-7fa1c-ontrols-remain-unobstructed\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\PC\\Desktop\\ITLegend-Frontend-Challenge\\challenge-app\\tests\\e2e\\mobile-player.spec.ts",
+                        "column": 32,
+                        "line": 86
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-2b97ed654e4c2c1c8810",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 667×375",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-f5182c589995994f9661",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 360×500",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-dbb7cf2cf22b6e595997",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 360×501",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-086d85c345502f72f470",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 767×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-479cf0f633cae3619220",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 768×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-72a05fbcba6772f0b041",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "player and comments at 1440×900",
+          "file": "mobile-player.spec.ts",
+          "line": 16,
+          "column": 8,
+          "specs": [
+            {
+              "title": "deep links, completion and comment controls remain unobstructed",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d5bd955ee07eabf3986f-7c9bbff9d7a416066db5",
+              "file": "mobile-player.spec.ts",
+              "line": 19,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "real-content.spec.ts",
+      "file": "real-content.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real Arabic content and local surfaces retain accessibility and 200% text reflow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fc3bb911d9bfa58c40c3-7ca583bb764b79e64227",
+          "file": "real-content.spec.ts",
+          "line": 394,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "message": "\u001b[31mTesting stopped early after 1 maximum allowed failures.\u001b[39m"
+    }
+  ],
+  "stats": {
+    "startTime": "2026-10-11T03:54:57.296Z",
+    "duration": 22939.536,
+    "expected": 2,
+    "skipped": 7,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
