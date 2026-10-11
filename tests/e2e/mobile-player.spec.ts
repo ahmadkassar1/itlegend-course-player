@@ -56,6 +56,12 @@ for (const [width, height] of [
           .getByRole("listitem")
           .first(),
       ).toContainText("leaves room to read");
+      const controls = page.getByRole("navigation", {
+        name: "Course sections",
+      });
+      const controlsTop = await controls.evaluate(
+        (element) => element.getBoundingClientRect().top + window.scrollY,
+      );
       await page
         .getByRole("button", { name: "I watched this video", exact: true })
         .click();
@@ -63,6 +69,16 @@ for (const [width, height] of [
         "aria-valuenow",
         "33",
       );
+      await expect(
+        page.getByRole("button", { name: "Watched ✓", exact: true }),
+      ).toBeDisabled();
+      await expect
+        .poll(() =>
+          controls.evaluate(
+            (element) => element.getBoundingClientRect().top + window.scrollY,
+          ),
+        )
+        .toBeCloseTo(controlsTop, 0);
       await page.getByRole("link", { name: "Jump to curriculum" }).click();
       const curriculum = page.getByRole("heading", {
         name: "Topics for This Course",

@@ -805,6 +805,7 @@
 }
 .youtubeActions button {
   min-height: 44px;
+  min-inline-size: min(12.5rem, 100%);
   border: 1px solid var(--action);
   background: white;
   color: var(--action);
