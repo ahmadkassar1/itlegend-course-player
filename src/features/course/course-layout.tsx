@@ -65,7 +65,11 @@ export function CourseLayout({
       tabIndex={-1}
       className={`${styles.courseLayout} ${wide && desktop ? styles.wideCourse : ""}`}
       data-wide={wide && desktop}
-      style={{ "--sticky-player-height": `${playerHeight}px` } as CSSProperties}
+      style={
+        playerHeight > 0
+          ? ({ "--sticky-player-height": `${playerHeight}px` } as CSSProperties)
+          : undefined
+      }
     >
       {lesson.kind === "video" ? (
         <LessonPlayer

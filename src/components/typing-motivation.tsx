@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "@/lib/use-media-query";
-import { Icon } from "@/components/icon";
 import styles from "./typing-motivation.module.css";
 
-const ROTATION_MS = 4_500;
+const ROTATION_MS = 9_000;
 const CHARACTER_MS = 30;
 
 export function TypingMotivation({
@@ -14,11 +13,10 @@ export function TypingMotivation({
   messages: readonly string[];
 }) {
   const reducedMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
-  const [paused, setPaused] = useState(false);
   const [position, setPosition] = useState({ index: 0, characters: 0 });
   const message = messages[position.index % messages.length] ?? "";
   const characters = Array.from(message);
-  const staticText = paused || reducedMotion;
+  const staticText = reducedMotion;
 
   useEffect(() => {
     if (staticText || messages.length === 0) return;
@@ -54,16 +52,6 @@ export function TypingMotivation({
           {!staticText ? <span className={styles.cursor} /> : null}
         </span>
       </p>
-      {!reducedMotion ? (
-        <button
-          className={styles.control}
-          type="button"
-          aria-label={paused ? "Play messages" : "Pause messages"}
-          onClick={() => setPaused((current) => !current)}
-        >
-          <Icon name={paused ? "play" : "pause"} />
-        </button>
-      ) : null}
     </section>
   );
 }

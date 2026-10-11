@@ -21,21 +21,6 @@
   vertical-align: -0.1em;
   animation: blink 900ms step-end infinite;
 }
-.control {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  min-height: 44px;
-  margin: 4px 0 0 auto;
-  border: 1px solid #d9d7e9;
-  border-radius: 4px;
-  padding: 8px;
-  color: #4c4691;
-  background: transparent;
-}
-.control:hover {
-  background: #eaeaf4;
-}
 .srOnly {
   position: absolute;
   width: 1px;

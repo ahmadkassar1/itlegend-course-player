@@ -36,7 +36,7 @@ async function scan(page: Page, name: string) {
 }
 
 for (const width of [320, 1440]) {
-  test(`encouragement types, rotates at 4.5 seconds, pauses and cleans up at ${width}px`, async ({
+  test(`encouragement types, rotates at nine seconds and cleans up at ${width}px`, async ({
     page,
   }) => {
     await page.setViewportSize({ width, height: width === 320 ? 568 : 1000 });
@@ -61,30 +61,28 @@ for (const width of [320, 1440]) {
     expect(partial!.length).toBeLessThan(
       motivationalMessages["Getting started"][0].length,
     );
-    await page.clock.runFor(3850);
+    await page.clock.runFor(8300);
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][0],
     );
-    await page.clock.runFor(100);
+    await expect(dialog.getByRole("button", { name: /messages/ })).toHaveCount(
+      0,
+    );
+    await page.clock.runFor(200);
     await expect(
       dialog.getByRole("region", { name: "Study encouragement" }),
     ).toContainText(motivationalMessages["Getting started"][1]);
-    const pauseButton = dialog.getByRole("button", { name: "Pause messages" });
-    await expect(pauseButton).toHaveText("");
-    await pauseButton.click();
+    await page.clock.runFor(2500);
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][1],
     );
-    const pause = dialog.getByRole("button", { name: "Play messages" });
-    await expect(pause).toHaveAccessibleName("Play messages");
-    await page.clock.runFor(9000);
+    await page.clock.runFor(6200);
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][1],
     );
     await expect(dialog.locator("[aria-current=true]")).toContainText("0%");
     await page.screenshot({ path: capturePath(`leaderboard-${width}`) });
-    await pause.click();
-    await page.clock.runFor(4500);
+    await page.clock.runFor(300);
     await expect(
       dialog.getByRole("region", { name: "Study encouragement" }),
     ).toContainText(motivationalMessages["Getting started"][2]);
@@ -96,9 +94,27 @@ for (const width of [320, 1440]) {
     await expect(visibleText).toHaveText(
       motivationalMessages["Getting started"][0],
     );
-    await dialog.getByRole("button", { name: "Pause messages" }).click();
-    // Axe uses timers internally; let the clock run while the message remains paused.
+    await page.keyboard.press("Tab");
+    await expect(
+      dialog.getByRole("button", { name: "Close Leaderboard" }),
+    ).toBeFocused();
+    await page.keyboard.press("Tab");
+    const content = dialog.getByRole("region", { name: "Leaderboard content" });
+    await expect(content).toBeFocused();
+    if (
+      await content.evaluate(
+        (element) => element.scrollHeight > element.clientHeight,
+      )
+    ) {
+      await page.keyboard.press("PageDown");
+      await page.clock.runFor(300);
+      await expect
+        .poll(() => content.evaluate((element) => element.scrollTop))
+        .toBeGreaterThan(0);
+    }
+    // Axe uses timers internally; resume the clock and use static text for its scan.
     await page.clock.resume();
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await scan(page, `leaderboard-${width}`);
     await page.keyboard.press("Escape");
     expect(errors).toEqual([]);

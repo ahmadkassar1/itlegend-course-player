@@ -33,11 +33,11 @@ Data is local to the browser and origin, user-editable and last-write-wins acros
 
 ## Interface and accessibility
 
-The detail page retains the reference layout: inline player, materials, progress/curriculum, comments and closable question/leaderboard/resource dialogs. Mobile playback stays inline and sticky during scrolling. Wide/fullscreen controls, PDF zoom and retained exam answers remain functional.
+The detail page retains the reference layout: inline player, materials, progress/curriculum, comments and closable question/leaderboard/resource dialogs. On mobile, only the video stays sticky; completion controls and explanatory text scroll normally. Screens 500px tall or less, or with a width-to-height ratio of at least 3:4, use normal page scrolling so the player cannot cover the remaining content. Wide/fullscreen controls, PDF zoom and retained exam answers remain functional.
 
 The shared select supports keyboard navigation, typeahead, dismissal and bounded menus. Dialogs contain focus, restore the trigger and release the body scroll lock on close. Comment/question histories have maximum heights, vertical scrolling, newest-first posts and literal-text rendering. Touch targets, long Arabic text, empty/error states and text reflow are included in browser checks.
 
-Motivational messages follow the learner’s completion level and rotate every 4.5 seconds. A compact icon pauses/resumes them, with a full accessible name; reduced motion makes them static. Timers are cleaned up, and assistive technology receives complete text rather than per-character live announcements. Decorative menu/dialog/card motion also respects reduced motion.
+Motivational messages follow the learner’s completion level and rotate every nine seconds without a pause/resume action. Reduced motion makes them static. Timers are cleaned up, and assistive technology receives complete text rather than per-character live announcements. Decorative menu/dialog/card motion also respects reduced motion.
 
 ## Media and performance
 

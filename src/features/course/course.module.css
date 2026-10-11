@@ -46,7 +46,7 @@
   grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
   column-gap: 70px;
   row-gap: 0;
-  grid-template-areas: "preview curriculum" "controls curriculum" "materials curriculum" "comments curriculum";
+  grid-template-areas: "preview curriculum" "playerDetails curriculum" "controls curriculum" "materials curriculum" "comments curriculum";
   align-items: start;
 }
 .courseLayout > * {
@@ -54,6 +54,9 @@
 }
 .preview {
   grid-area: preview;
+}
+.playerDetails {
+  grid-area: playerDetails;
 }
 .previewFrame {
   position: relative;
@@ -511,6 +514,9 @@
   }
 }
 @media (max-width: 767px) {
+  .courseLayout {
+    --sticky-player-height: max(200px, calc((100vw - 32px) * 2 / 3));
+  }
   .previewFrame {
     max-height: 50svh;
   }
@@ -744,7 +750,7 @@
       minmax(12px, 1fr) minmax(0, 759px) minmax(0, 411px)
       minmax(12px, 1fr);
     column-gap: 35px;
-    grid-template-areas: "preview preview preview preview" ". controls controls ." ". materials curriculum ." ". comments curriculum .";
+    grid-template-areas: "preview preview preview preview" ". playerDetails playerDetails ." ". controls controls ." ". materials curriculum ." ". comments curriculum .";
   }
   .wideCourse .previewFrame {
     aspect-ratio: auto;
@@ -823,13 +829,19 @@
   padding: 24px;
 }
 @media (max-width: 767px) {
-  .preview:has(.youtubeFrame) {
-    max-height: 65svh;
-    overflow-y: auto;
-    scrollbar-gutter: stable;
-  }
   .youtubeModes {
     display: none;
+  }
+}
+@media (max-width: 767px) and (max-height: 500px),
+  (max-width: 767px) and (min-aspect-ratio: 3 / 4) {
+  .preview {
+    position: static;
+  }
+  .curriculum,
+  .comments,
+  .courseLayout :is(a, button, textarea, input, select, summary) {
+    scroll-margin-top: 24px;
   }
 }
 .sampleBadge {

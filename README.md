@@ -26,7 +26,7 @@ No YouTube API key, account, database or environment variable is required. An in
 
 ## Explore and learn
 
-Choose a video from the catalogue. Its detail page plays the actual YouTube video inline with native controls, captions when available, playback speed and fullscreen. There is no autoplay. Desktop Wide moves the curriculum below the player. Mobile keeps the player at the top; short displays provide vertical scrolling without covering YouTube controls. Browser/device fullscreen support varies.
+Choose a video from the catalogue. Its detail page plays the actual YouTube video inline with native controls, captions when available, playback speed and fullscreen. There is no autoplay. Desktop Wide moves the curriculum below the player. On mobile, only the video stays at the top; its completion controls and explanatory text scroll normally. Short or wide mobile displays use normal page scrolling to keep content accessible. Browser/device fullscreen support varies.
 
 Progress starts at **zero**. A video earns one learning step when the official player reports its end, or when you choose **I watched this video**. Pause, periodic playing updates and page exit save the actual playback position; reopening resumes at that position. An unavailable YouTube SDK displays a clear message and retains the native iframe, direct source link and explicit watched action. Watching related previews does not give completion credit.
 
@@ -39,7 +39,7 @@ The exam route for the first video is `/courses/webology?lesson=study-check`; th
 
 Each video has three clearly labeled, fictional discussion examples written for its topic. The demo leaderboard has four sample learners alongside your real saved progress; sample activity never enters browser storage or changes your completion. Posting adds your own literal text above the samples in the bounded history. Drafts survive closing and reopening dialogs. Nothing is posted to YouTube or sent to an instructor. Question submission shows a demo review confirmation, local-saving status and actions to ask another question or explore more videos. Review is simulated; no moderation service is connected.
 
-The leaderboard’s original Arabic encouragement follows your completion level, types one message at a time and changes every 4.5 seconds. A compact pause/play icon has an accessible name and shows the complete current message when paused; reduced-motion preferences disable typing and rotation. Timers are cleaned up when the dialog closes, and character updates are hidden from assistive technology to avoid repetitive announcements. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
+The leaderboard’s original Arabic encouragement follows your completion level, types one message at a time and changes every nine seconds. Reduced-motion preferences disable typing and rotation. Timers are cleaned up when the dialog closes, and character updates are hidden from assistive technology to avoid repetitive announcements. Curriculum lock icons indicate unfinished steps, with completed steps available for review; they do not impose an unconfirmed prerequisite policy.
 
 ## Structure
 

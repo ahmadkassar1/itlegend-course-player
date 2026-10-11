@@ -66,66 +66,70 @@ export function LessonPlayer({
     }
   }
   return (
-    <section
-      className={styles.preview}
-      aria-label="Current lesson"
-      tabIndex={0}
-    >
-      <h2 id="lesson-title" className={styles.srOnly} dir="auto">
-        {lesson.title}
-      </h2>
-      <div className={styles.youtubeModes}>
-        <button
-          type="button"
-          aria-label={wide ? "Exit Wide mode" : "Wide mode"}
-          aria-pressed={wide}
-          onClick={onWide}
-        >
-          <Icon name="wide" />
-        </button>
-        <button
-          type="button"
-          aria-label={fullscreen ? "Exit fullscreen" : "Maximize player"}
-          onClick={maximize}
-        >
-          <Icon name={fullscreen ? "shrink" : "expand"} />
-        </button>
+    <>
+      <section
+        className={styles.preview}
+        aria-label="Current lesson"
+        tabIndex={0}
+      >
+        <h2 id="lesson-title" className={styles.srOnly} dir="auto">
+          {lesson.title}
+        </h2>
+        <div className={styles.youtubeModes}>
+          <button
+            type="button"
+            aria-label={wide ? "Exit Wide mode" : "Wide mode"}
+            aria-pressed={wide}
+            onClick={onWide}
+          >
+            <Icon name="wide" />
+          </button>
+          <button
+            type="button"
+            aria-label={fullscreen ? "Exit fullscreen" : "Maximize player"}
+            onClick={maximize}
+          >
+            <Icon name={fullscreen ? "shrink" : "expand"} />
+          </button>
+        </div>
+        <div ref={frame} data-player-frame className={styles.youtubeFrame}>
+          {status !== "loading" ? (
+            <RestoredPlayer
+              key={lesson.id}
+              courseSlug={courseSlug}
+              lesson={lesson}
+              onEnded={complete}
+              onPosition={savePosition}
+            />
+          ) : (
+            <div className={styles.youtubeLoading}>
+              Opening your learning history…
+            </div>
+          )}
+        </div>
+      </section>
+      <div className={styles.playerDetails}>
+        <div className={styles.youtubeActions}>
+          <a href={lesson.media.src} target="_blank" rel="noopener noreferrer">
+            Watch on YouTube ↗
+          </a>
+          <button
+            type="button"
+            disabled={learning.completedLessonIds.includes(lesson.id)}
+            onClick={complete}
+          >
+            {learning.completedLessonIds.includes(lesson.id)
+              ? "Watched ✓"
+              : "I watched this video"}
+          </button>
+        </div>
+        <p className={styles.videoNote}>
+          Completion is saved on this device when the video ends, or when you
+          mark it watched.
+        </p>
+        {message ? <p role="status">{message}</p> : null}
       </div>
-      <div ref={frame} data-player-frame className={styles.youtubeFrame}>
-        {status !== "loading" ? (
-          <RestoredPlayer
-            key={lesson.id}
-            courseSlug={courseSlug}
-            lesson={lesson}
-            onEnded={complete}
-            onPosition={savePosition}
-          />
-        ) : (
-          <div className={styles.youtubeLoading}>
-            Opening your learning history…
-          </div>
-        )}
-      </div>
-      <div className={styles.youtubeActions}>
-        <a href={lesson.media.src} target="_blank" rel="noopener noreferrer">
-          Watch on YouTube ↗
-        </a>
-        <button
-          type="button"
-          disabled={learning.completedLessonIds.includes(lesson.id)}
-          onClick={complete}
-        >
-          {learning.completedLessonIds.includes(lesson.id)
-            ? "Watched ✓"
-            : "I watched this video"}
-        </button>
-      </div>
-      <p className={styles.videoNote}>
-        Completion is saved on this device when the video ends, or when you mark
-        it watched.
-      </p>
-      {message ? <p role="status">{message}</p> : null}
-    </section>
+    </>
   );
 }
 
